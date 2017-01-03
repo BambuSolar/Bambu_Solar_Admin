@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("bidi","sv",{ltr:"Text riktning fr\xe5n v\xe4nster till h\xf6ger",rtl:"Text riktning fr\xe5n h\xf6ger till v\xe4nster"});

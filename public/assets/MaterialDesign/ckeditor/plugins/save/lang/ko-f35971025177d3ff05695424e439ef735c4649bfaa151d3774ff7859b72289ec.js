@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("save","ko",{toolbar:"\uc800\uc7a5"});

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BambuSolarAdmin</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body class="theme-teal">
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+  <div class="loader">
+    <div class="preloader">
+      <div class="spinner-layer pl-red">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+    <p>Please wait...</p>
+  </div>
+</div>
+<!-- #END# Page Loader -->
+<!-- Overlay For Sidebars -->
+<div class="overlay"></div>
+<!-- #END# Overlay For Sidebars -->
+
+<!-- Top Bar -->
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="javascript:void(0);" class="bars"></a>
+      <a class="navbar-brand" href="/">Bambu Solar Administración</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+
+    </div>
+  </div>
+</nav>
+<!-- #Top Bar -->
+<section>
+  <!-- Left Sidebar -->
+  <aside id="leftsidebar" class="sidebar">
+    <!-- User Info -->
+    <div class="user-info">
+    </div>
+    <!-- #User Info -->
+    <!-- Menu -->
+    <div class="menu">
+      <ul class="list">
+        <li class="header"></li>
+        <li>
+          <%= link_to home_landing_path do %>
+              <i class="material-icons">home</i>
+              <span>Home</span>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to member_teams_path do %>
+              <i class="material-icons">people</i>
+              <span>Equipo</span>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to opinions_path do %>
+              <i class="material-icons">question_answer</i>
+              <span>Opiniones</span>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to product_types_path do %>
+              <i class="material-icons">shopping_cart</i>
+              <span>Tipo de Productos</span>
+          <% end %>
+        </li>
+      </ul>
+    </div>
+    <!-- #Menu -->
+    <div class="legal">
+      <div class="version">
+        <b>Version: </b> 0.0.1 Beta
+      </div>
+    </div>
+  </aside>
+  <!-- #END# Left Sidebar -->
+</section>
+
+<section class="content">
+  <div class="container-fluid">
+    <%= yield %>
+  </div>
+</section>
+
+
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+</body>
+
+</html>

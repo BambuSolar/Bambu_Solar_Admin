@@ -1,0 +1,12 @@
+class CreateOpinions < ActiveRecord::Migration
+  def change
+    create_table :opinions do |t|
+      t.string :title
+      t.text :body
+      t.string :signature
+      t.string :status
+
+      t.timestamps null: false
+    end
+  end
+end

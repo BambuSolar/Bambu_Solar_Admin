@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("templates","sq",{button:"Shabllonet",emptyListMsg:"(Asnj\xeb shabllon nuk \xebsht\xeb paradefinuar)",insertOption:"Z\xebvend\xebso p\xebrmbajtjen aktuale",options:"Opsionet e Shabllonit",selectPromptMsg:"P\xebrzgjidhni shabllonin p\xebr t\xeb hapur tek redaktuesi",title:"P\xebrmbajtja e Shabllonit"});

@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("justify","sq",{block:"Zgjero",center:"Qend\xebr",left:"Rreshto majtas",right:"Rreshto Djathtas"});

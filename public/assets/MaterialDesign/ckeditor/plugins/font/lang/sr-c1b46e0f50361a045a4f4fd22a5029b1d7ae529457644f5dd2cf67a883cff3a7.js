@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("font","sr",{fontSize:{label:"\u0412\u0435\u043b\u0438\u0447\u0438\u043d\u0430 \u0444\u043e\u043d\u0442\u0430",voiceLabel:"Font Size",panelTitle:"\u0412\u0435\u043b\u0438\u0447\u0438\u043d\u0430 \u0444\u043e\u043d\u0442\u0430"},label:"\u0424\u043e\u043d\u0442",panelTitle:"\u0424\u043e\u043d\u0442",voiceLabel:"\u0424\u043e\u043d\u0442"});

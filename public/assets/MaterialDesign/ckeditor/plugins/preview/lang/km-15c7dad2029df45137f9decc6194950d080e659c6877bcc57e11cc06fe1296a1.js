@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("preview","km",{preview:"\u1798\u17be\u179b\u200b\u1787\u17b6\u200b\u1798\u17bb\u1793"});

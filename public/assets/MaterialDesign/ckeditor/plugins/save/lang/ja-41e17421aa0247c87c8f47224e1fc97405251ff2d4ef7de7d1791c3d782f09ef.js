@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("save","ja",{toolbar:"\u4fdd\u5b58"});

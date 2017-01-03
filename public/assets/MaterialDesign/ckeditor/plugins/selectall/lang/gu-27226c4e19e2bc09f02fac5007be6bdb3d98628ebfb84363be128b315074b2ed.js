@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("selectall","gu",{toolbar:"\u0aac\u0a98\u0ac1\u0a82 \u0aaa\u0ab8\u0a82\u0aa6 \u0a95\u0ab0\u0ab5\u0ac1\u0a82"});

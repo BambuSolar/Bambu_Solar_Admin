@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("iframe","fr",{border:"Afficher la bordure du cadre",noUrl:"Veuillez entrer l'URL du contenu du cadre",scrolling:"Activer les barres de d\xe9filement",title:"Propri\xe9t\xe9s du cadre de contenu incorpor\xe9",toolbar:"Cadre de contenu incorpor\xe9"});

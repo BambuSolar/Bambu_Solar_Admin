@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("uicolor","sk",{title:"UI v\xfdber farby",preview:"\u017div\xfd n\xe1h\u013ead",config:"Vlo\u017ete tento re\u0165azec do svojho s\xfaboru config.js",predefined:"Preddefinovan\xe9 sady farieb"});

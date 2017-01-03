@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("save","lt",{toolbar:"I\u0161saugoti"});

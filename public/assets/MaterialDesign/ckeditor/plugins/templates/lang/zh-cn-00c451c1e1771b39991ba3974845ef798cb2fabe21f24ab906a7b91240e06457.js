@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("templates","zh-cn",{button:"\u6a21\u677f",emptyListMsg:"(\u6ca1\u6709\u6a21\u677f)",insertOption:"\u66ff\u6362\u5f53\u524d\u5185\u5bb9",options:"\u6a21\u677f\u9009\u9879",selectPromptMsg:"\u8bf7\u9009\u62e9\u8981\u5728\u7f16\u8f91\u5668\u4e2d\u4f7f\u7528\u7684\u6a21\u677f\uff1a",title:"\u5185\u5bb9\u6a21\u677f"});

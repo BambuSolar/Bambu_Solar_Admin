@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("iframe","tt",{border:"Frame \u0447\u0438\u043a\u043b\u04d9\u0440\u0435\u043d \u043a\u04af\u0440\u0441\u04d9\u0442\u04af",noUrl:"Please type the iframe URL",scrolling:"Enable scrollbars",title:"IFrame \u04af\u0437\u043b\u0435\u043a\u043b\u04d9\u0440\u0435",toolbar:"IFrame"});

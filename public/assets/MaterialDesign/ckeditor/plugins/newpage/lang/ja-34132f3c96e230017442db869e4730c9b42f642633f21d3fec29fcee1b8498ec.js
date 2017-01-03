@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("newpage","ja",{toolbar:"\u65b0\u3057\u3044\u30da\u30fc\u30b8"});

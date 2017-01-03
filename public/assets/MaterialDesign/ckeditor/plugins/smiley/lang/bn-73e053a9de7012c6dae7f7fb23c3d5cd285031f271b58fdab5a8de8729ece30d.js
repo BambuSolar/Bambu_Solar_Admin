@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("smiley","bn",{options:"Smiley Options",title:"\u09b8\u09cd\u09ae\u09be\u0987\u09b2\u09c0 \u09af\u09c1\u0995\u09cd\u09a4 \u0995\u09b0",toolbar:"\u09b8\u09cd\u09ae\u09be\u0987\u09b2\u09c0"});

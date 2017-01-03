@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("bidi","ro",{ltr:"Direc\u021bia textului de la st\xe2nga la dreapta",rtl:"Direc\u021bia textului de la dreapta la st\xe2nga"});

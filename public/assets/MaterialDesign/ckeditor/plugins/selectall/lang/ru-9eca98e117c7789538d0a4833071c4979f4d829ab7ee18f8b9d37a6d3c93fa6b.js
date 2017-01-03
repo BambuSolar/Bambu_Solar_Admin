@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("selectall","ru",{toolbar:"\u0412\u044b\u0434\u0435\u043b\u0438\u0442\u044c \u0432\u0441\u0435"});

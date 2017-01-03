@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("pagebreak","gl",{alt:"Quebra de p\xe1xina",toolbar:"Inserir quebra de p\xe1xina"});

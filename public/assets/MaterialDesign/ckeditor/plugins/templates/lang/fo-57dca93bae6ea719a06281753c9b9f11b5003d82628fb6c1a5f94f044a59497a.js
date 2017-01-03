@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("templates","fo",{button:"Skabel\xf3nir",emptyListMsg:"(Ongar skabel\xf3nir t\xf8kar)",insertOption:"Yvirskriva n\xfaverandi innihald",options:"M\xf8guleikar fyri Template",selectPromptMsg:"Vinarliga vel ta skabel\xf3n, i\xf0 skal opnast \xed tekstvi\xf0geranum<br>(Hetta yvirskrivar n\xfaverandi innihald):",title:"Innihaldsskabel\xf3nir"});

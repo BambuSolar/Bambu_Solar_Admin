@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("smiley","lv",{options:"Smaidi\u0146u uzst\u0101d\u012bjumi",title:"Ievietot smaidi\u0146u",toolbar:"Smaidi\u0146i"});

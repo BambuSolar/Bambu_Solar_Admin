@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("preview","fr",{preview:"Aper\xe7u"});

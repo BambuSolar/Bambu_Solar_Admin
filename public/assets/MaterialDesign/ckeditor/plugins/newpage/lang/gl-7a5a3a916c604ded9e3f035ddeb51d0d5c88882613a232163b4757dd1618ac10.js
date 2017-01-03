@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("newpage","gl",{toolbar:"P\xe1xina nova"});

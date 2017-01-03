@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("preview","sv",{preview:"F\xf6rhandsgranska"});

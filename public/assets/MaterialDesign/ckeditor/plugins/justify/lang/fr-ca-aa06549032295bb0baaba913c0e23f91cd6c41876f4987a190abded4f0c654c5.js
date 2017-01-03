@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("justify","fr-ca",{block:"Justifi\xe9",center:"Centr\xe9",left:"Aligner \xe0 gauche",right:"Aligner \xe0 Droite"});

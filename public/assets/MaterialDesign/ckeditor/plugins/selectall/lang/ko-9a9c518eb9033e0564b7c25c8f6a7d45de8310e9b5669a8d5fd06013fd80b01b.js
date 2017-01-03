@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("selectall","ko",{toolbar:"\ubaa8\ub450 \uc120\ud0dd"});

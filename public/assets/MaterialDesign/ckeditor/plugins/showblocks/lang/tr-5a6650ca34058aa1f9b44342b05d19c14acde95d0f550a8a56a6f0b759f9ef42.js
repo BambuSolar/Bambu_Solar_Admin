@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("showblocks","tr",{toolbar:"Bloklar\u0131 G\xf6ster"});

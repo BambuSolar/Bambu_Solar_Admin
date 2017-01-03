@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("templates","fr-ca",{button:"Mod\xe8les",emptyListMsg:"(Aucun mod\xe8le disponible)",insertOption:"Remplacer tout le contenu actuel",options:"Options de mod\xe8les",selectPromptMsg:"S\xe9lectionner le mod\xe8le \xe0 ouvrir dans l'\xe9diteur",title:"Mod\xe8les de contenu"});

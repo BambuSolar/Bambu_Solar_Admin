@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("iframe","cy",{border:"Dangos ymyl y ffr\xe2m",noUrl:"Rhowch URL yr iframe",scrolling:"Galluogi bariau sgrolio",title:"Priodweddau IFrame",toolbar:"IFrame"});

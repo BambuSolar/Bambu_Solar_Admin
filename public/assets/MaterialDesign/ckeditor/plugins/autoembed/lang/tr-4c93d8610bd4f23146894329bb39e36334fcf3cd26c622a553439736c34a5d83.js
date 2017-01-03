@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("autoembed","tr",{embeddingInProgress:"Yap\u0131\u015ft\u0131rd\u0131\u011f\u0131n\u0131z URL g\xf6m\xfclmeye \xe7al\u0131\u015f\u0131l\u0131yor...",embeddingFailed:"Bu URL otomatik olarak g\xf6m\xfclemedi."});

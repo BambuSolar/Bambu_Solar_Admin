@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("smiley","sr",{options:"Smiley Options",title:"\u0423\u043d\u0435\u0441\u0438 \u0441\u043c\u0430\u0458\u043b\u0438\u0458\u0430",toolbar:"\u0421\u043c\u0430\u0458\u043b\u0438"});

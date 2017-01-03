@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("preview","ar",{preview:"\u0645\u0639\u0627\u064a\u0646\u0629 \u0627\u0644\u0635\u0641\u062d\u0629"});

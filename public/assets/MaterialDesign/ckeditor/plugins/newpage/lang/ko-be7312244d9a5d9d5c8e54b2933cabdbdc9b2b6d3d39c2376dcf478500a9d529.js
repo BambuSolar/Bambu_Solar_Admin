@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("newpage","ko",{toolbar:"\uc0c8 \ud398\uc774\uc9c0"});

@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("devtools","da",{title:"Information p\xe5 elementet",dialogName:"Dialogboks",tabName:"Tab beskrivelse",elementId:"ID p\xe5 element",elementType:"Type af element"});

@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("mathjax","vi",{title:"To\xe1n h\u1ecdc b\u1eb1ng TeX",button:"To\xe1n",dialogInput:"Nh\u1eadp m\xe3 TeX \u1edf \u0111\xe2y",docUrl:"http://en.wikibooks.org/wiki/LaTeX/Mathematics",docLabel:"T\xe0i li\u1ec7u TeX",loading:"\u0111ang n\u1ea1p...",pathName:"to\xe1n"});

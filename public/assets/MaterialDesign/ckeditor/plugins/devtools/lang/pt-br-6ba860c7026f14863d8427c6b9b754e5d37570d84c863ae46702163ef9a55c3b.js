@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("devtools","pt-br",{title:"Informa\xe7\xe3o do Elemento",dialogName:"Nome da janela de di\xe1logo",tabName:"Nome da aba",elementId:"ID do Elemento",elementType:"Tipo do elemento"});

@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("bidi","pt-br",{ltr:"Dire\xe7\xe3o do texto da esquerda para a direita",rtl:"Dire\xe7\xe3o do texto da direita para a esquerda"});

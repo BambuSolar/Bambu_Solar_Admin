@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("selectall","da",{toolbar:"V\xe6lg alt"});

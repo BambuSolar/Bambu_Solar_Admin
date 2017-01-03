@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @opinion.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @opinion.body %>
+</p>
+
+<p>
+  <strong>Signature:</strong>
+  <%= @opinion.signature %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @opinion.status %>
+</p>
+
+<%= link_to 'Edit', edit_opinion_path(@opinion) %> |
+<%= link_to 'Back', opinions_path %>

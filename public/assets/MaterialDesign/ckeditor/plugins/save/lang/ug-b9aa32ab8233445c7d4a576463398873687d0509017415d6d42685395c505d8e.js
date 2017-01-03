@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("save","ug",{toolbar:"\u0633\u0627\u0642\u0644\u0627"});

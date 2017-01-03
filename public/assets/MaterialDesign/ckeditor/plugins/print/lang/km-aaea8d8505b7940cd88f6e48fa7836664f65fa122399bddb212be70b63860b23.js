@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("print","km",{toolbar:"\u1794\u17c4\u17c7\u1796\u17bb\u1798\u17d2\u1796"});

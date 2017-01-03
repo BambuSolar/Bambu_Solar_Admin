@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("preview","lt",{preview:"Per\u017ei\u016bra"});

@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("print","sr-latn",{toolbar:"\u0160tampa"});

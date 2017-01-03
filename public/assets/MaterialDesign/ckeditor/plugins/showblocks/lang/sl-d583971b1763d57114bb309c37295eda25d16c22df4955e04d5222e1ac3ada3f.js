@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("showblocks","sl",{toolbar:"Prika\u017ei ograde"});

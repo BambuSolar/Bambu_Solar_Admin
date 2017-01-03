@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("pagebreak","da",{alt:"Sideskift",toolbar:"Inds\xe6t sideskift"});

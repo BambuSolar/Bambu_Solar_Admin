@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("colordialog","sk",{clear:"Vy\u010disti\u0165",highlight:"Zv\xfdrazni\u0165",options:"Mo\u017enosti farby",selected:"Vybran\xe1 farba",title:"Vybra\u0165 farbu"});

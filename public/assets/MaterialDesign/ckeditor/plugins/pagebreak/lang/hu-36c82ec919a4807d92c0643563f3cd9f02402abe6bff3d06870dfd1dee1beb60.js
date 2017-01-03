@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("pagebreak","hu",{alt:"Oldalt\xf6r\xe9s",toolbar:"Oldalt\xf6r\xe9s beilleszt\xe9se"});

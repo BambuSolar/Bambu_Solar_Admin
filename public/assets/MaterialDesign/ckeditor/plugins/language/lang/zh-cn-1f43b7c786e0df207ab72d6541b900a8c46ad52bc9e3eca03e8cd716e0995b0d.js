@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("language","zh-cn",{button:"\u8bbe\u7f6e\u8bed\u8a00",remove:"\u79fb\u9664\u8bed\u8a00"});

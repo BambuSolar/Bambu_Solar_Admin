@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("mathjax","hu",{title:"Matematika a TeX-ben",button:"Matek",dialogInput:"\xcdrd a TeX-ed ide",docUrl:"http://en.wikibooks.org/wiki/LaTeX/Mathematics",docLabel:"TeX dokument\xe1ci\xf3",loading:"t\xf6lt\xe9s...",pathName:"matek"});

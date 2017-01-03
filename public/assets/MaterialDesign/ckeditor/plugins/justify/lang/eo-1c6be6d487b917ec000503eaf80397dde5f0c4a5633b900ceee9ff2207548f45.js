@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("justify","eo",{block:"\u011cisrandigi Amba\u016dflanke",center:"Centrigi",left:"\u011cisrandigi maldekstren",right:"\u011cisrandigi dekstren"});

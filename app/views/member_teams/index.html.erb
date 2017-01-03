@@ -1,0 +1,57 @@
+<div class="block-header">
+  <ol class="breadcrumb breadcrumb-col-teal">
+    <li>
+      <a href="/">
+        <i class="material-icons">home</i>
+      </a>
+    </li>
+    <li class="active">Miembros del equipo</li>
+  </ol>
+  <h1>
+    Miembros del equipo
+  </h1>
+</div>
+<!-- Input -->
+<div class="row clearfix">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="card">
+      <div class="body table-responsive">
+        <% if @member_teams.size > 0 %>
+            <table class="table table-striped">
+              <thead>
+              <tr>
+                <th>Nombre</th>
+                <th style="width: 112px;"></th>
+              </tr>
+              </thead>
+
+              <tbody>
+              <% @member_teams.each do |member_team| %>
+                  <tr>
+                    <td><%= member_team.name %></td>
+                    <td>
+                      <%= link_to edit_member_team_path(member_team), class: 'btn btn-default'  do %>
+                          <i class="material-icons">create</i>
+                      <% end %>
+                      <%= link_to member_team, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger'  do %>
+                          <i class="material-icons">delete</i>
+                      <% end %>
+                    </td>
+                  </tr>
+              <% end %>
+              </tbody>
+            </table>
+        <% else %>
+            <div class="alert alert-info margin-0 text-center">
+              No existe ningún miembro del equipo cargado en el sistema
+            </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-sm-3">
+    <%= link_to 'Nuevo Miembro del Equipo', new_member_team_path, class:'btn btn-primary waves-effect btn-block teal' %>
+  </div>
+</div>

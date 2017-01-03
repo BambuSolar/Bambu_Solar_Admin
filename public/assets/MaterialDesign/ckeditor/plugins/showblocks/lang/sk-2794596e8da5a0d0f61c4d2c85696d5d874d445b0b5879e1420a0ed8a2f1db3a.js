@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("showblocks","sk",{toolbar:"Uk\xe1za\u0165 bloky"});

@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("newpage","fo",{toolbar:"N\xfdggj s\xed\xf0a"});

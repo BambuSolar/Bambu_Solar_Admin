@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("save","sr-latn",{toolbar:"Sa\u010duvaj"});

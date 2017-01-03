@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("justify","vi",{block:"Canh \u0111\u1ec1u",center:"Canh gi\u1eefa",left:"Canh tr\xe1i",right:"Canh ph\u1ea3i"});

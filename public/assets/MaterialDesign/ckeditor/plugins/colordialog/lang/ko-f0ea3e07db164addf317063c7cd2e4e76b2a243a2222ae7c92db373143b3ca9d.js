@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("colordialog","ko",{clear:"\ube44\uc6b0\uae30",highlight:"\uac15\uc870",options:"\uc0c9\uc0c1 \uc635\uc158",selected:"\uc120\ud0dd\ub41c \uc0c9\uc0c1",title:"\uc0c9\uc0c1 \uc120\ud0dd"});

@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("smiley","gl",{options:"Opci\xf3ns de emoticonas",title:"Inserir unha emoticona",toolbar:"Emoticona"});

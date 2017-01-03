@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("selectall","si",{toolbar:"\u0dc3\u0dd2\u0dba\u0dbd\u0dca\u0dbd\u0db8 "});

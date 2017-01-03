@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("newpage","ru",{toolbar:"\u041d\u043e\u0432\u0430\u044f \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0430"});

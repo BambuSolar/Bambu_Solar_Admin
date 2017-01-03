@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("justify","is",{block:"Jafna b\xe1\xf0um megin",center:"Mi\xf0ja texta",left:"Vinstrij\xf6fnun",right:"H\xe6grij\xf6fnun"});

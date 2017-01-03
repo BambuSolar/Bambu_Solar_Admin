@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("pagebreak","eo",{alt:"Pa\u011davanco",toolbar:"Enmeti Pa\u011davancon por Presado"});

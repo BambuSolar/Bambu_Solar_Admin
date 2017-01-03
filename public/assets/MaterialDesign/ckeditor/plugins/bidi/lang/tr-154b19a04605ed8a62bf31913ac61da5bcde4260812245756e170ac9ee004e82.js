@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("bidi","tr",{ltr:"Metin y\xf6n\xfc soldan sa\u011fa",rtl:"Metin y\xf6n\xfc sa\u011fdan sola"});

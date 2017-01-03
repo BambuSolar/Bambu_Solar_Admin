@@ -1,0 +1,29 @@
+<div class="block-header">
+  <ol class="breadcrumb breadcrumb-col-teal">
+    <li>
+      <a href="/">
+        <i class="material-icons">home</i>
+      </a>
+    </li>
+    <li>
+      <%= link_to 'Miembros del equipo', member_teams_path %>
+    </li>
+    <li class="active">Editar</li>
+  </ol>
+  <h1>
+    Miembro del Equipo
+  </h1>
+</div>
+<!-- Input -->
+<div class="row clearfix">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="card">
+      <div class="header">
+        <h2>Editar un Miebro del Equipo</h2>
+      </div>
+      <div class="body">
+        <%= render 'form' %>
+      </div>
+    </div>
+  </div>
+</div>

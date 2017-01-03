@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("autoembed","cs",{embeddingInProgress:"Pokus o vno\u0159en\xed vlo\u017een\xe9 URL",embeddingFailed:"Tato URL nem\u016f\u017ee b\xfdt automaticky vno\u0159ena."});

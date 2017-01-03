@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("justify","ko",{block:"\uc591\ucabd \ub9de\ucda4",center:"\uac00\uc6b4\ub370 \uc815\ub82c",left:"\uc67c\ucabd \uc815\ub82c",right:"\uc624\ub978\ucabd \uc815\ub82c"});

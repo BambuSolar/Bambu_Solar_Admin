@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("smiley","fr-ca",{options:"Options d'\xe9motic\xf4nes",title:"Ins\xe9rer un \xe9motic\xf4ne",toolbar:"\xc9motic\xf4ne"});

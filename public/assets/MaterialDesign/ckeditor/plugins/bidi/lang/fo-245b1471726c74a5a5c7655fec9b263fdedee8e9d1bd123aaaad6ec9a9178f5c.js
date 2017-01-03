@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("bidi","fo",{ltr:"Tekstk\xf3s fr\xe1 vinstru til h\xf8gru",rtl:"Tekstk\xf3s fr\xe1 h\xf8gru til vinstru"});

@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("justify","hr",{block:"Blok poravnanje",center:"Sredi\u0161nje poravnanje",left:"Lijevo poravnanje",right:"Desno poravnanje"});

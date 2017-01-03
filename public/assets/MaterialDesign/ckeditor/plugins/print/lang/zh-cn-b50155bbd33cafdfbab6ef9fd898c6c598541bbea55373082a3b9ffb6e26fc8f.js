@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("print","zh-cn",{toolbar:"\u6253\u5370"});

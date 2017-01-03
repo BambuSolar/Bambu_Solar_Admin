@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("smiley","hr",{options:"Opcije smje\u0161ka",title:"Ubaci smje\u0161ka",toolbar:"Smje\u0161ko"});

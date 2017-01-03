@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("iframe","hu",{border:"Legyen keret",noUrl:"K\xe9rem \xedrja be a iframe URL-t",scrolling:"G\xf6rd\xedt\u0151s\xe1v bekapcsol\xe1sa",title:"IFrame Tulajdons\xe1gok",toolbar:"IFrame"});

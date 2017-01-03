@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("iframe","tr",{border:"\xc7erceve s\u0131n\u0131rlar\u0131n\u0131 g\xf6ster",noUrl:"L\xfctfen IFrame k\xf6pr\xfc (URL) ba\u011flant\u0131s\u0131n\u0131 yaz\u0131n",scrolling:"Kayd\u0131rma \xe7ubuklar\u0131n\u0131 aktif et",title:"IFrame \xd6zellikleri",toolbar:"IFrame"});

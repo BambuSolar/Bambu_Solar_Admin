@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("mathjax","gl",{title:"Matem\xe1ticas en TeX",button:"Matem\xe1ticas",dialogInput:"Escriba o seu TeX aqu\xed",docUrl:"http://en.wikibooks.org/wiki/LaTeX/Mathematics",docLabel:"Documentaci\xf3n de TeX",loading:"cargando...",pathName:"matem\xe1ticas"});

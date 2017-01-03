@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("smiley","zh-cn",{options:"\u8868\u60c5\u56fe\u6807\u9009\u9879",title:"\u63d2\u5165\u8868\u60c5\u56fe\u6807",toolbar:"\u8868\u60c5\u7b26"});

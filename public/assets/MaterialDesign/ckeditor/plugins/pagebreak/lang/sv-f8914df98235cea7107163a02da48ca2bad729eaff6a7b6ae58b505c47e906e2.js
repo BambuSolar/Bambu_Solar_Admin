@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("pagebreak","sv",{alt:"Sidbrytning",toolbar:"Infoga sidbrytning f\xf6r utskrift"});

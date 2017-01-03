@@ -1,0 +1,60 @@
+<div class="block-header">
+  <ol class="breadcrumb breadcrumb-col-teal">
+    <li>
+      <a href="/">
+        <i class="material-icons">home</i>
+      </a>
+    </li>
+    <li class="active">Opiniones</li>
+  </ol>
+  <h1>
+    Opiniones
+  </h1>
+</div>
+<div class="row clearfix">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="card">
+      <div class="body table-responsive">
+        <% if @opinions.size > 0 %>
+            <table class="table table-striped">
+              <thead>
+              <tr>
+                <th>Título</th>
+                <th>Firma</th>
+                <th>Estado</th>
+                <th style="width: 112px;"></th>
+              </tr>
+              </thead>
+
+              <tbody>
+              <% @opinions.each do |opinion| %>
+                  <tr>
+                    <td><%= opinion.title %></td>
+                    <td><%= opinion.signature %></td>
+                    <td><%= opinion.status %></td>
+                    <td>
+                      <%= link_to edit_opinion_path(opinion), class: 'btn btn-default'  do %>
+                          <i class="material-icons">create</i>
+                      <% end %>
+                      <%= link_to opinion, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger'  do %>
+                          <i class="material-icons">delete</i>
+                      <% end %>
+                    </td>
+                  </tr>
+              <% end %>
+              </tbody>
+            </table>
+        <% else %>
+            <div class="alert alert-info margin-0 text-center">
+              No existe ninguna opinión cargada en el sistema
+            </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-sm-3">
+    <%= link_to 'Nueva Opinión', new_opinion_path, class:'btn btn-primary waves-effect btn-block teal' %>
+  </div>
+</div>

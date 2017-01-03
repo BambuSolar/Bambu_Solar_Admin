@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("preview","mn",{preview:"\u0423\u0440\u0438\u0434\u0447\u043b\u0430\u043d \u0445\u0430\u0440\u0430\u0445"});

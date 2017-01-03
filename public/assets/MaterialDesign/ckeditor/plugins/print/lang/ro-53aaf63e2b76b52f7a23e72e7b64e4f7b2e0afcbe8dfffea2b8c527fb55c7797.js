@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("print","ro",{toolbar:"Printeaz\u0103"});

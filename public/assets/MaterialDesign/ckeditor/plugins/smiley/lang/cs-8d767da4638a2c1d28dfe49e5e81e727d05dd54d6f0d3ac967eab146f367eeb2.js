@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("smiley","cs",{options:"Nastaven\xed smajl\xedk\u016f",title:"Vkl\xe1d\xe1n\xed smajl\xedk\u016f",toolbar:"Smajl\xedci"});

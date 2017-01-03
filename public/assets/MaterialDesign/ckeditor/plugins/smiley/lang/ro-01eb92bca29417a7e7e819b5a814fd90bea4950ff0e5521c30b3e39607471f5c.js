@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("smiley","ro",{options:"Op\u021biuni figuri expresive",title:"Insereaz\u0103 o figur\u0103 expresiv\u0103 (Emoticon)",toolbar:"Figur\u0103 expresiv\u0103 (Emoticon)"});

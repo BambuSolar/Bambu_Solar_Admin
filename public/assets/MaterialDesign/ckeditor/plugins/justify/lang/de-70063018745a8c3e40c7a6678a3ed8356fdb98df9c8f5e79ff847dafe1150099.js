@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("justify","de",{block:"Blocksatz",center:"Zentriert",left:"Linksb\xfcndig",right:"Rechtsb\xfcndig"});

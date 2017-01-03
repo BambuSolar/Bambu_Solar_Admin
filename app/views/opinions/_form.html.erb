@@ -1,0 +1,76 @@
+<%= form_for(@opinion, html: {novalidate:'novalidate', class: 'form_validation'}) do |f| %>
+
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <div class="form-line">
+            <%= f.text_field :title,
+                             class: 'form-control',
+                             placeholder: 'Título',
+                             required: '',
+                             :'aria-required'=>'true',
+                             :'aria-invalid'=>'true',
+                             maxlength:'100',
+                             minlength:'5'
+            %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <div class="form-line">
+            <%= f.text_field :title,
+                             class: 'form-control',
+                             placeholder: 'Comentario',
+                             required: '',
+                             :'aria-required'=>'true',
+                             :'aria-invalid'=>'true',
+                             maxlength:'100',
+                             minlength:'5'
+            %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <div class="form-line">
+            <%= f.text_field :signature,
+                             class: 'form-control',
+                             placeholder: 'Firma',
+                             required: '',
+                             :'aria-required'=>'true',
+                             :'aria-invalid'=>'true',
+                             maxlength:'100',
+                             minlength:'5'
+            %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <%= f.select :status,
+                       options_for_select(
+                               ['Sin Revisar', 'Revisado - Aceptado', 'Revisado - Rechazado'].map{ |c| [c, c] }, params[:status]
+                       )
+          %>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-6 col-sm-2">
+        <button type="submit" class="btn btn-primary m-t-15 waves-effect btn-block teal">Guardar</button>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <%= link_to 'Atrás', product_types_path, class: 'btn btn-default m-t-15 waves-effect btn-block' %>
+      </div>
+    </div>
+<% end %>

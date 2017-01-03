@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("pagebreak","zh-cn",{alt:"\u5206\u9875\u7b26",toolbar:"\u63d2\u5165\u6253\u5370\u5206\u9875\u7b26"});

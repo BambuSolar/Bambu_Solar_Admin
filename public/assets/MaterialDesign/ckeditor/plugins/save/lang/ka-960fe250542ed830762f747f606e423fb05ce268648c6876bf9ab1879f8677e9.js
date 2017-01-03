@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("save","ka",{toolbar:"\u10e9\u10d0\u10ec\u10d4\u10e0\u10d0"});

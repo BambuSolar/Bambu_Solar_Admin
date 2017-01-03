@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("save","zh",{toolbar:"\u5132\u5b58"});

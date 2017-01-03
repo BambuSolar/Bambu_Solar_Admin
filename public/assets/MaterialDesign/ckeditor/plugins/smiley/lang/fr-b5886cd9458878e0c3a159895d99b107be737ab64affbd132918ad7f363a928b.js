@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("smiley","fr",{options:"Options des frimousses",title:"Ins\xe9rer une frimousse",toolbar:"Frimousse"});

@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("iframe","sq",{border:"Shfaq kufirin e korniz\xebs",noUrl:"Ju lutemi shkruani URL-n\xeb e iframe-it",scrolling:"Lejo shirit\xebt zvarrit\xebs",title:"Karakteristikat e IFrame",toolbar:"IFrame"});

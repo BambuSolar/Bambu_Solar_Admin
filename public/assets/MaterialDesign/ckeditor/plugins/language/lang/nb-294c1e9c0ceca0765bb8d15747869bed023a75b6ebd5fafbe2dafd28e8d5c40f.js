@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("language","nb",{button:"Sett spr\xe5k",remove:"Fjern spr\xe5k"});

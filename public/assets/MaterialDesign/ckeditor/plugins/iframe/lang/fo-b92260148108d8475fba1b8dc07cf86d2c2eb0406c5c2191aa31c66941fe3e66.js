@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("iframe","fo",{border:"V\xeds frame kant",noUrl:"Vinarliga skriva URL til iframe",scrolling:"Loyv scrollbars",title:"M\xf8guleikar fyri IFrame",toolbar:"IFrame"});

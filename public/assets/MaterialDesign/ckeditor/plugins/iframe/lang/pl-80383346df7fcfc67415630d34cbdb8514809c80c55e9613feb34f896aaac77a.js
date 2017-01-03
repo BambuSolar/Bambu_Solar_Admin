@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("iframe","pl",{border:"Poka\u017c obramowanie obiektu IFrame",noUrl:"Podaj adres URL elementu IFrame",scrolling:"W\u0142\u0105cz paski przewijania",title:"W\u0142a\u015bciwo\u015bci elementu IFrame",toolbar:"IFrame"});

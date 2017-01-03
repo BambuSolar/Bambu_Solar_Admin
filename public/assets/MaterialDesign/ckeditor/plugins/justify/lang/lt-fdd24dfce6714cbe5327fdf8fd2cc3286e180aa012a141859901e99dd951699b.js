@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("justify","lt",{block:"Lygiuoti abi puses",center:"Centruoti",left:"Lygiuoti kair\u0119",right:"Lygiuoti de\u0161in\u0119"});

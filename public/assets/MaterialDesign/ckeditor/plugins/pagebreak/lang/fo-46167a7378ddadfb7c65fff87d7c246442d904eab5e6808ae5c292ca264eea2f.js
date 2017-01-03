@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("pagebreak","fo",{alt:"S\xed\xf0uskift",toolbar:"Ger s\xed\xf0uskift"});

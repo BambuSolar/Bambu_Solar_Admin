@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("justify","ja",{block:"\u4e21\u7aef\u63c3\u3048",center:"\u4e2d\u592e\u63c3\u3048",left:"\u5de6\u63c3\u3048",right:"\u53f3\u63c3\u3048"});

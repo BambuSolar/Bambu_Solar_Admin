@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("autoembed","ko",{embeddingInProgress:"\ubd99\uc5ec\ub123\uc740 URL \ucca8\ubd80 \uc2dc\ub3c4 \uc911...",embeddingFailed:"\uc774 URL\uc740 \uc790\ub3d9\uc73c\ub85c \ucca8\ubd80\ud560 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4."});

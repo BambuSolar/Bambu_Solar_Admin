@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("selectall","lt",{toolbar:"Pa\u017eym\u0117ti visk\u0105"});

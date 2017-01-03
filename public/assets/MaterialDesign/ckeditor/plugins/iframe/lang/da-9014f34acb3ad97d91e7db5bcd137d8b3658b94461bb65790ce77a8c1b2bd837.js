@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("iframe","da",{border:"Vis kant p\xe5 rammen",noUrl:"Venligst inds\xe6t URL p\xe5 iframen",scrolling:"Aktiver scrollbars",title:"Iframe egenskaber",toolbar:"Iframe"});

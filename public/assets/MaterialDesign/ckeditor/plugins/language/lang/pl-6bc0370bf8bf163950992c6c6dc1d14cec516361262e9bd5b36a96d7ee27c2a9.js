@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("language","pl",{button:"Ustaw j\u0119zyk",remove:"Usu\u0144 j\u0119zyk"});

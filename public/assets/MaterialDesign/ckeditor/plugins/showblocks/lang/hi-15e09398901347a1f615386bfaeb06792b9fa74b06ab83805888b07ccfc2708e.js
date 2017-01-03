@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("showblocks","hi",{toolbar:"\u092c\u094d\u0932\u0949\u0915 \u0926\u093f\u0916\u093e\u092f\u0947\u0902"});

@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("colordialog","hu",{clear:"\xdcr\xedt\xe9s",highlight:"Nagy\xedt\xe1s",options:"Sz\xedn opci\xf3k",selected:"Kiv\xe1lasztott",title:"V\xe1lasszon sz\xednt"});

@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("uicolor","da",{title:"Brugerflade p\xe5 farvev\xe6lger",preview:"Vis liveeksempel",config:"Inds\xe6t denne streng i din config.js fil",predefined:"Pr\xe6definerede farveskemaer"});

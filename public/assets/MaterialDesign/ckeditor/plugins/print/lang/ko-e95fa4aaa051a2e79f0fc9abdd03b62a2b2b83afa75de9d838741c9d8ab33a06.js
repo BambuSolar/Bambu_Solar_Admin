@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("print","ko",{toolbar:"\uc778\uc1c4"});

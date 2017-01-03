@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("justify","pl",{block:"Wyjustuj",center:"Wy\u015brodkuj",left:"Wyr\xf3wnaj do lewej",right:"Wyr\xf3wnaj do prawej"});

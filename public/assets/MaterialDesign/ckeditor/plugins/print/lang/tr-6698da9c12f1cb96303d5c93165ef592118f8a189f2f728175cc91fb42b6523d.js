@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("print","tr",{toolbar:"Yazd\u0131r"});

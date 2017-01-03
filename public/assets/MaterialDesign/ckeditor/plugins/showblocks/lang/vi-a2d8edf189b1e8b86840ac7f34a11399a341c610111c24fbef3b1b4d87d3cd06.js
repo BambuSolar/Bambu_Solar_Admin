@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("showblocks","vi",{toolbar:"Hi\u1ec3n th\u1ecb c\xe1c kh\u1ed1i"});

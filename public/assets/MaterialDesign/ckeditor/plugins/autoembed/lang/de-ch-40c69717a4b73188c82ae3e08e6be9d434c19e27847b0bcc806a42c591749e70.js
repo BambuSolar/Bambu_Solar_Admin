@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("autoembed","de-ch",{embeddingInProgress:"Einbetten der eingef\xfcgten URL wird versucht...",embeddingFailed:"Diese URL konnte nicht automatisch eingebettet werden."});

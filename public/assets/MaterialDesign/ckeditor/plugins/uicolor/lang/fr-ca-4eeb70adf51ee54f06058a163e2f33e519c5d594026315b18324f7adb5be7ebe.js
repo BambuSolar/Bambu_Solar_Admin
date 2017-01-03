@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("uicolor","fr-ca",{title:"S\xe9lecteur de couleur",preview:"Aper\xe7u",config:"Ins\xe9rez cette ligne dans votre fichier config.js",predefined:"Ensemble de couleur pr\xe9d\xe9finies"});

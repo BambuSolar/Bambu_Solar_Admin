@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("devtools","sq",{title:"T\xeb dh\xebnat e elementit",dialogName:"Emri i dritares s\xeb dialogut",tabName:"Emri i flet\xebs",elementId:"ID e elementit",elementType:"Lloji i elementit"});

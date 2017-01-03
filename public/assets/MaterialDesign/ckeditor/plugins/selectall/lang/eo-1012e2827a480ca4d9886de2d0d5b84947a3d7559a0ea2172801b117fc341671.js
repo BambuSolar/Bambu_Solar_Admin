@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("selectall","eo",{toolbar:"Elekti \u0109ion"});

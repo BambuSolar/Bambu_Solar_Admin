@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("save","gu",{toolbar:"\u0ab8\u0ac7\u0ab5"});

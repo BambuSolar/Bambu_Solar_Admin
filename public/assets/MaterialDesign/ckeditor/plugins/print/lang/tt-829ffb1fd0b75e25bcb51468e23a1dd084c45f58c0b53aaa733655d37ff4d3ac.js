@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("print","tt",{toolbar:"\u0411\u0430\u0441\u0442\u044b\u0440\u0443"});
