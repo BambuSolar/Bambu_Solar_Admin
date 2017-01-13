@@ -6,12 +6,12 @@ class SessionsController < ApplicationController
   end
 
   def create
-    @user = User.find_by_email(params[:session][:email])
+    @user = User.where(user_name: params[:session][:user_name]).first
     if @user && @user.authenticate(params[:session][:password])
       session[:user_id] = @user.id
       redirect_to '/'
     else
-      redirect_to 'login'
+      redirect_to '/login' , notice: 'Usuario o contraseña inválidos'
     end
   end
 

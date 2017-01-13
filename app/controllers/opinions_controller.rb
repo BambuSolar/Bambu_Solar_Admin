@@ -1,4 +1,4 @@
-class OpinionsController < ApplicationController
+class OpinionsController < SecurityController
   before_action :set_opinion, only: [:show, :edit, :update, :destroy]
 
   # GET /opinions

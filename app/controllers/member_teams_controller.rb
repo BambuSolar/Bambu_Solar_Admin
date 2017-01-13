@@ -1,4 +1,4 @@
-class MemberTeamsController < ApplicationController
+class MemberTeamsController < SecurityController
   before_action :set_member_team, only: [:show, :edit, :update, :destroy]
 
   # GET /member_teams

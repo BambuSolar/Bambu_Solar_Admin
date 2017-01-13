@@ -1,4 +1,4 @@
-class ProductsController < ApplicationController
+class ProductsController < SecurityController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
   before_action :set_product_type

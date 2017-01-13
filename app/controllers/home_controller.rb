@@ -1,4 +1,4 @@
-class HomeController < ApplicationController
+class HomeController < SecurityController
   def landing
   end
 end
