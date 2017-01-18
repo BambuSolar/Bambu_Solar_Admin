@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
   resources :opinions
+
   resources :member_teams
+
   get 'home/landing'
 
   root 'home#landing'

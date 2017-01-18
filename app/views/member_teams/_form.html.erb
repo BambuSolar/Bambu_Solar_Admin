@@ -2,37 +2,57 @@
 
     <div class="row clearfix">
       <div class="col-sm-12">
-        <div class="form-group">
+        <div class="form-group form-float">
           <div class="form-line">
             <%= f.text_field :name,
                              class: 'form-control',
-                             placeholder: 'Nombre',
                              required: '',
                              :'aria-required'=>'true',
                              :'aria-invalid'=>'true',
                              maxlength:'100',
-                             minlength:'5'
+                             minlength:'5',
+                             :autocomplete => :off
             %>
+            <label class="form-label">Nombre</label>
           </div>
         </div>
       </div>
     </div>
     <div class="row clearfix">
       <div class="col-sm-12">
-        <div class="form-group">
+        <div class="form-group form-float">
           <div class="form-line">
             <%= f.text_area :description,
-                             class: 'form-control',
-                             placeholder: 'Descripción',
-                             required: '',
-                             :'aria-required'=>'true',
-                             :'aria-invalid'=>'true',
-                             minlength:'20'
+                            class: 'form-control',
+                            required: '',
+                            :'aria-required'=>'true',
+                            :'aria-invalid'=>'true',
+                            minlength:'20',
+                            :autocomplete => :off
             %>
+            <label class="form-label">Descripción</label>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+
+            <div class="form-line input-group">
+
+              <%= f.file_field :image, class:'file', style:'display:none' %>
+
+                <span class="input-group-btn">
+                    <button class="browse btn btn-primary" type="button"><i class="glyphicon glyphicon-picture"></i></button>
+                </span>
+                <input type="text" class="form-control" disabled placeholder="Seleccione un imágen">
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="row">
       <div class="col-xs-6 col-sm-2">
         <button type="submit" class="btn btn-primary m-t-15 waves-effect btn-block teal">Guardar</button>
@@ -41,4 +61,5 @@
         <%= link_to 'Atrás', member_teams_path, class: 'btn btn-default m-t-15 waves-effect btn-block' %>
       </div>
     </div>
+
 <% end %>

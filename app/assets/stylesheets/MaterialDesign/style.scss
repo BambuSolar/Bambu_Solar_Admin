@@ -8014,3 +8014,12 @@ html.ie11 .dropdown-menu ul.menu li a {
 html.ie11 .bs-searchbox .form-control {
   width: 90%; }
 
+
+textarea{
+  resize: none;
+  min-height: 6em;
+}
+
+.input-group .form-control:last-child {
+  padding-left: 10px;
+}

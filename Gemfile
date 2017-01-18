@@ -46,3 +46,11 @@ group :development do
 end
 
 gem 'bcrypt'
+
+gem 'carrierwave'
+
+gem 'rails-i18n'
+
+gem 'uuidtools'
+
+gem 'sprockets'

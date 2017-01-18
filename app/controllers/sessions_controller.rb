@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
       session[:user_id] = @user.id
       redirect_to '/'
     else
-      redirect_to '/login' , notice: 'Usuario o contraseña inválidos'
+      redirect_to '/login' , alert: 'Usuario o contraseña inválidos'
     end
   end
 

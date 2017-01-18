@@ -19,9 +19,12 @@ ActiveRecord::Schema.define(version: 20170110030807) do
   create_table "member_teams", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
+    t.integer  "picture_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
+
+  add_index "member_teams", ["picture_id"], name: "index_member_teams_on_picture_id", using: :btree
 
   create_table "opinions", force: :cascade do |t|
     t.string   "title"
@@ -32,21 +35,34 @@ ActiveRecord::Schema.define(version: 20170110030807) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "product_types", force: :cascade do |t|
-    t.string   "name"
+  create_table "pictures", force: :cascade do |t|
+    t.string   "photo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  create_table "product_types", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "picture_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "product_types", ["picture_id"], name: "index_product_types_on_picture_id", using: :btree
+
   create_table "products", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
+    t.text     "description_detail"
     t.float    "price"
     t.boolean  "enabled"
     t.integer  "product_type_id"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.integer  "picture_id"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
   end
+
+  add_index "products", ["picture_id"], name: "index_products_on_picture_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.datetime "created_at",      null: false
@@ -57,4 +73,7 @@ ActiveRecord::Schema.define(version: 20170110030807) do
     t.string   "password_digest"
   end
 
+  add_foreign_key "member_teams", "pictures"
+  add_foreign_key "product_types", "pictures"
+  add_foreign_key "products", "pictures"
 end

@@ -1,20 +1,29 @@
-<div class="login">
-  <div class="container">
-    <div class="form">
-
-      <h1>Sign up</h1>
-
-      <%= form_for(@user) do |f|%>
-
-          <%= f.text_field :first_name %>
-          <%= f.text_field :last_name %>
-          <%= f.text_field :user_name %>
-          <%= f.password_field :password %>
-
-          <%= f.submit 'Guardar'%>
-
-      <% end %>
-
+<div class="block-header">
+  <ol class="breadcrumb breadcrumb-col-teal">
+    <li>
+      <a href="/app/assets/images">
+        <i class="material-icons">home</i>
+      </a>
+    </li>
+    <li>
+      <%= link_to 'Usuarios', users_path %>
+    </li>
+    <li class="active">Crear</li>
+  </ol>
+  <h1>
+    Usuario
+  </h1>
+</div>
+<!-- Input -->
+<div class="row clearfix">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="card">
+      <div class="header">
+        <h2>Crear Usuario</h2>
+      </div>
+      <div class="body">
+        <%= render 'form' %>
+      </div>
     </div>
   </div>
 </div>

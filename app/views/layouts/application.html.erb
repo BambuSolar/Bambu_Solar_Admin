@@ -76,6 +76,12 @@
               <span>Tipo de Productos</span>
           <% end %>
         </li>
+        <li>
+          <%= link_to users_url do %>
+              <i class="material-icons">face</i>
+              <span>Usuarios</span>
+          <% end %>
+        </li>
       </ul>
     </div>
     <!-- #Menu -->
@@ -90,6 +96,18 @@
 
 <section class="content">
   <div class="container-fluid">
+    <% if notice %>
+        <div class="alert bg-teal alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <%= notice %>
+        </div>
+    <% end %>
+    <% if alert %>
+        <div class="alert bg-pink alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <%= alert %>
+        </div>
+    <% end %>
     <%= yield %>
   </div>
 </section>
