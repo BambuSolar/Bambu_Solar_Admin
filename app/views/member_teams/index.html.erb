@@ -28,7 +28,10 @@
               <tbody>
               <% @member_teams.each do |member_team| %>
                   <tr>
-                    <td><%= member_team.name %></td>
+                    <td>
+                      <%= image_tag member_team.picture.photo_url, width: '36px', height: '36px' %>
+                      <%= member_team.name %>
+                    </td>
                     <td>
                       <%= link_to edit_member_team_path(member_team), class: 'btn btn-default'  do %>
                           <i class="material-icons">create</i>

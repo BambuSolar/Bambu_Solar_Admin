@@ -24,7 +24,14 @@ class MemberTeamsController < SecurityController
   # POST /member_teams
   # POST /member_teams.json
   def create
+    
     @member_team = MemberTeam.new(member_team_params)
+
+    p = Picture.new(photo: params[:member_team][:image])
+
+    p.save!
+
+    @member_team.picture = p
 
     respond_to do |format|
       if @member_team.save
@@ -40,6 +47,20 @@ class MemberTeamsController < SecurityController
   # PATCH/PUT /member_teams/1
   # PATCH/PUT /member_teams/1.json
   def update
+
+    unless params[:member_team][:image].nil?
+
+
+      @member_team.picture.remove_photo!
+
+      @member_team.picture.save!
+
+      @member_team.picture.update(photo: params[:member_team][:image])
+
+      @member_team.picture.save!
+
+    end
+
     respond_to do |format|
       if @member_team.update(member_team_params)
         format.html { redirect_to member_teams_url, notice: 'Member team was successfully updated.' }
@@ -54,7 +75,15 @@ class MemberTeamsController < SecurityController
   # DELETE /member_teams/1
   # DELETE /member_teams/1.json
   def destroy
+
+    p = @member_team.picture
+
+    p.remove_photo!
+
     @member_team.destroy
+
+    p.destroy!
+
     respond_to do |format|
       format.html { redirect_to member_teams_url, notice: 'Member team was successfully destroyed.' }
       format.json { head :no_content }

@@ -70,7 +70,10 @@ $(function () {
     //==================================================================================================
 
 
-    $(document).on('click', '.browse', function(){
+    $(document).on('click', '.browse', function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        e.stopImmediatePropagation();
         var file = $(this).parent().parent().parent().find('.file');
         file.trigger('click');
     });
