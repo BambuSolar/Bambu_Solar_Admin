@@ -48,7 +48,9 @@
               <%= f.file_field :image, class:'file', style:'display:none' %>
 
                 <span class="input-group-btn">
-                    <button class="browse btn btn-primary" type="button"><i class="glyphicon glyphicon-picture"></i></button>
+                    <button class="browse btn btn-primary" type="button">
+                      <i class="material-icons">insert_photo</i>
+                    </button>
                 </span>
                 <input type="text" class="form-control" disabled placeholder="Seleccione un imágen" value="<%= (@member_team.picture.nil? ? '' : @member_team.picture.photo_identifier ) %>">
           </div>
