@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("smiley","da",{options:"Smileymuligheder",title:"V\xe6lg smiley",toolbar:"Smiley"});

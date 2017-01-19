@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("bidi","es",{ltr:"Direcci\xf3n del texto de izquierda a derecha",rtl:"Direcci\xf3n del texto de derecha a izquierda"});

@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("preview","sk",{preview:"N\xe1h\u013ead"});

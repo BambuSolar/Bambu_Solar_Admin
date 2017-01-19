@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("justify","mk",{block:"Justify",center:"\u0412\u043e \u0441\u0440\u0435\u0434\u0438\u043d\u0430",left:"Align Left",right:"Align Right"});

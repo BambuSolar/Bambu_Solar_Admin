@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("preview","ku",{preview:"\u067e\u06ce\u0634\u0628\u06cc\u0646\u06cc\u0646"});

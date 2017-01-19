@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("print","gu",{toolbar:"\u0aaa\u0acd\u0ab0\u0abf\u0aa8\u0acd\u0a9f"});

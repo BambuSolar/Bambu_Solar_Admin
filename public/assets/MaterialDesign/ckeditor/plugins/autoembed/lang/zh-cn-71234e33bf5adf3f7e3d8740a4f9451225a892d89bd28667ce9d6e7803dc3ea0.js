@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("autoembed","zh-cn",{embeddingInProgress:"\u6b63\u5728\u5c1d\u8bd5\u5d4c\u5165\u7c98\u8d34\u7684 URL \u91cc\u7684\u5a92\u4f53\u5185\u5bb9...",embeddingFailed:"\u6b64 URL \u65e0\u6cd5\u81ea\u52a8\u5d4c\u5165\u5a92\u4f53\u5185\u5bb9\u3002"});

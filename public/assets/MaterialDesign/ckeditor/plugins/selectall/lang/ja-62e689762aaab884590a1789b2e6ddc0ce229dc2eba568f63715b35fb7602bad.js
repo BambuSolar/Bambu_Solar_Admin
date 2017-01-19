@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("selectall","ja",{toolbar:"\u3059\u3079\u3066\u9078\u629e"});

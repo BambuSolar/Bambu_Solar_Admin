@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("showblocks","hu",{toolbar:"Blokkok megjelen\xedt\xe9se"});

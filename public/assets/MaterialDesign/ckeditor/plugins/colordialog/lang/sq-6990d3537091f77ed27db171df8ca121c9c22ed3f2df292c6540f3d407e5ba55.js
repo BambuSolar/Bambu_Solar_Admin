@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("colordialog","sq",{clear:"Pastro",highlight:"Thekso",options:"P\xebrzgjedhjet e Ngjyrave",selected:"Ngjyra e P\xebrzgjedhur",title:"P\xebrzgjidh nj\xeb ngjyr\xeb"});

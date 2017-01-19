@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("print","he",{toolbar:"\u05d4\u05d3\u05e4\u05e1\u05d4"});

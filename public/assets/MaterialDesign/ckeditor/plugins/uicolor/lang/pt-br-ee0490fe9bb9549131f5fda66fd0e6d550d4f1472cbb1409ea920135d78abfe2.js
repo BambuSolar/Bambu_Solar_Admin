@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("uicolor","pt-br",{title:"Paleta de Cores",preview:"Visualiza\xe7\xe3o ao vivo",config:"Cole o texto no seu arquivo config.js",predefined:"Conjuntos de cores predefinidos"});

@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("iframe","zh-cn",{border:"\u663e\u793a\u6846\u67b6\u8fb9\u6846",noUrl:"\u8bf7\u8f93\u5165\u6846\u67b6\u7684 URL",scrolling:"\u5141\u8bb8\u6eda\u52a8\u6761",title:"IFrame \u5c5e\u6027",toolbar:"IFrame"});

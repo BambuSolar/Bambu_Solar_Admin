@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("smiley","ko",{options:"\uc774\ubaa8\ud2f0\ucf58 \uc635\uc158",title:"\uc774\ubaa8\ud2f0\ucf58 \uc0bd\uc785",toolbar:"\uc774\ubaa8\ud2f0\ucf58"});

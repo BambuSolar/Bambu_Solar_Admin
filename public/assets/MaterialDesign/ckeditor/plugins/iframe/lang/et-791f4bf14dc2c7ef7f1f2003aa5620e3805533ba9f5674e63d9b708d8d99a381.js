@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("iframe","et",{border:"Raami \xe4\xe4rise n\xe4itamine",noUrl:"Vali iframe URLi liik",scrolling:"Kerimisribade lubamine",title:"IFrame omadused",toolbar:"IFrame"});

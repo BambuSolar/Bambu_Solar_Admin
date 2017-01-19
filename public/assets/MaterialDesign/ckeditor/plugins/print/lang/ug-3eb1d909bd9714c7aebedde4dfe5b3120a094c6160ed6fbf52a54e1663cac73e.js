@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("print","ug",{toolbar:"\u0628\u0627\u0633 "});

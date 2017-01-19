@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("autoembed","nb",{embeddingInProgress:"Pr\xf8ver \xe5 bygge inn innlimt URL...",embeddingFailed:"URL-en kunne ikke bli automatisk bygget inn."});

@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("showblocks","fi",{toolbar:"N\xe4yt\xe4 elementit"});

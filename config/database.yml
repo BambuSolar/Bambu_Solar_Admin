@@ -45,10 +45,9 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
+  <<: *default
   adapter: postgresql
   encoding: unicode
   database: bambu_solar_admin_production
-  username: root
   pool: 5
-  password: root
   host: localhost

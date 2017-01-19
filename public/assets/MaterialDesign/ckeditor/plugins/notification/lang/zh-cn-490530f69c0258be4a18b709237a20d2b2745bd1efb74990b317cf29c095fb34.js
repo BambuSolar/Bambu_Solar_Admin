@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("notification","zh-cn",{closed:"\u901a\u77e5\u5df2\u5173\u95ed\u3002"});

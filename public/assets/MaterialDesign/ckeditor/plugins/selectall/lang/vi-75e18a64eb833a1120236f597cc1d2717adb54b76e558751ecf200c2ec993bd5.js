@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("selectall","vi",{toolbar:"Ch\u1ecdn t\u1ea5t c\u1ea3"});

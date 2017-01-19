@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("iframe","fi",{border:"N\xe4yt\xe4 kehyksen reunat",noUrl:"Anna IFrame-kehykselle l\xe4hdeosoite (src)",scrolling:"N\xe4yt\xe4 vierityspalkit",title:"IFrame-kehyksen ominaisuudet",toolbar:"IFrame-kehys"});

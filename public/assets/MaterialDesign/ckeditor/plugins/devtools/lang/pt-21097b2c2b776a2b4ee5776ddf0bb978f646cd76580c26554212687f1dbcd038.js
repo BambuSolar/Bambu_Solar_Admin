@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("devtools","pt",{title:"Informa\xe7\xe3o do elemento",dialogName:"Nome da janela de di\xe1logo",tabName:"Nome do separador",elementId:"ID do elemento",elementType:"Tipo de elemento"});

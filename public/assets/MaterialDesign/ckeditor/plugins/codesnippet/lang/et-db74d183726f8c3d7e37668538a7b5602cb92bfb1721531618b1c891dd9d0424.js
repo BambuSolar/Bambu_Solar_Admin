@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("codesnippet","et",{button:"Koodil\xf5igu sisestamine",codeContents:"Code content",emptySnippetError:"A code snippet cannot be empty.",language:"Language",title:"Code snippet",pathName:"code snippet"});

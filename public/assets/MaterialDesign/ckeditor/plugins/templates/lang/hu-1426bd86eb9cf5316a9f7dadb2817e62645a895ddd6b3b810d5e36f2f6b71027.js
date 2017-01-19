@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("templates","hu",{button:"Sablonok",emptyListMsg:"(Nincs sablon megadva)",insertOption:"Kicser\xe9li a jelenlegi tartalmat",options:"Sablon opci\xf3k",selectPromptMsg:"V\xe1lassza ki melyik sablon ny\xedljon meg a szerkeszt\u0151ben<br>(a jelenlegi tartalom elveszik):",title:"El\xe9rhet\u0151 sablonok"});

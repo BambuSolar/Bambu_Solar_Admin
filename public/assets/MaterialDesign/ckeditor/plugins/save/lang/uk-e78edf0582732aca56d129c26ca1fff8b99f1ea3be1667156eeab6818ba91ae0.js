@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("save","uk",{toolbar:"\u0417\u0431\u0435\u0440\u0435\u0433\u0442\u0438"});

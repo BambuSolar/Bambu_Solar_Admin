@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("justify","ro",{block:"Aliniere \xeen bloc (Block Justify)",center:"Aliniere central\u0103",left:"Aliniere la st\xe2nga",right:"Aliniere la dreapta"});

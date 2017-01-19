@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("selectall","et",{toolbar:"K\xf5ige valimine"});

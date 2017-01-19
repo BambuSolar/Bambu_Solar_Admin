@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("preview","tt",{preview:"\u041a\u0430\u0440\u0430\u043f \u0430\u043b\u0443"});

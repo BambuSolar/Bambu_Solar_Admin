@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("colordialog","gl",{clear:"Limpar",highlight:"Resaltar",options:"Opci\xf3ns de cor",selected:"Cor seleccionado",title:"Seleccione unha cor"});

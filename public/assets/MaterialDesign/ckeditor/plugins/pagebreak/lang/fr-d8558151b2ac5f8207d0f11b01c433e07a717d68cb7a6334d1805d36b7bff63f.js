@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("pagebreak","fr",{alt:"Saut de page",toolbar:"Ins\xe9rer un saut de page pour l'impression"});

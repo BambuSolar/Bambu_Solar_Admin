@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("smiley","ja",{options:"\u7d75\u6587\u5b57\u30aa\u30d7\u30b7\u30e7\u30f3",title:"\u9854\u6587\u5b57\u633f\u5165",toolbar:"\u7d75\u6587\u5b57"});

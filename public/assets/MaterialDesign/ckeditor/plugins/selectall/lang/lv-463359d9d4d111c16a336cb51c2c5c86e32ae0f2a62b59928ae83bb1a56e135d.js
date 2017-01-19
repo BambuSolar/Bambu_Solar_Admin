@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("selectall","lv",{toolbar:"Iez\u012bm\u0113t visu"});

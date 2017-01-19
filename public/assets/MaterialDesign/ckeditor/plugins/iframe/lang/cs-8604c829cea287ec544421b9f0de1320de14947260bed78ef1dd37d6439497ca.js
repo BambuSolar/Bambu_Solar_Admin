@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("iframe","cs",{border:"Zobrazit okraj",noUrl:"Zadejte pros\xedm URL obsahu pro IFrame",scrolling:"Zapnout posuvn\xedky",title:"Vlastnosti IFrame",toolbar:"IFrame"});

@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("justify","zh",{block:"\u5de6\u53f3\u5c0d\u9f4a",center:"\u7f6e\u4e2d",left:"\u9760\u5de6\u5c0d\u9f4a",right:"\u9760\u53f3\u5c0d\u9f4a"});

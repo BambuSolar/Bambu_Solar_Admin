@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("iframe","lv",{border:"R\u0101d\u012bt r\u0101mi",noUrl:"Nor\u0101diet iframe adresi",scrolling:"At\u013caut ritjoslas",title:"IFrame uzst\u0101d\u012bjumi",toolbar:"IFrame"});

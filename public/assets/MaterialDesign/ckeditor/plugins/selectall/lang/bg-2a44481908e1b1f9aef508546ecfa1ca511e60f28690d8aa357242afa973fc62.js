@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("selectall","bg",{toolbar:"\u0418\u0437\u0431\u0435\u0440\u0438 \u0432\u0441\u0438\u0447\u043a\u043e"});

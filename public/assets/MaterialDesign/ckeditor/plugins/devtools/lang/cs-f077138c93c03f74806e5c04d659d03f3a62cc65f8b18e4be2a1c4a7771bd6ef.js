@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("devtools","cs",{title:"Informace o prvku",dialogName:"N\xe1zev dialogov\xe9ho okna",tabName:"N\xe1zev karty",elementId:"ID prvku",elementType:"Typ prvku"});

@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("colordialog","lv",{clear:"Not\u012br\u012bt",highlight:"Paraugs",options:"Kr\u0101sas uzst\u0101d\u012bjumi",selected:"Izv\u0113l\u0113t\u0101 kr\u0101sa",title:"Izv\u0113lies kr\u0101su"});

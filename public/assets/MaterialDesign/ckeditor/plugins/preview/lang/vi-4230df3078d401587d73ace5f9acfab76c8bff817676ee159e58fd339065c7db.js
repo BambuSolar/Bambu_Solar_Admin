@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("preview","vi",{preview:"Xem tr\u01b0\u1edbc"});

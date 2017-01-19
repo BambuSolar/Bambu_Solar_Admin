@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("showblocks","ko",{toolbar:"\ube14\ub85d \ubcf4\uae30"});

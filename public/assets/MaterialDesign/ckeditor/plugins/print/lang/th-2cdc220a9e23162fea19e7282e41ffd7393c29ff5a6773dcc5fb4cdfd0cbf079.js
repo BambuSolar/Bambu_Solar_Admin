@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("print","th",{toolbar:"\u0e2a\u0e31\u0e48\u0e07\u0e1e\u0e34\u0e21\u0e1e\u0e4c"});

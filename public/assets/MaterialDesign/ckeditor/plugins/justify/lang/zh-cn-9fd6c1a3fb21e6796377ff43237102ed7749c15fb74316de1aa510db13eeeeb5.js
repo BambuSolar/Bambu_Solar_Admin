@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("justify","zh-cn",{block:"\u4e24\u7aef\u5bf9\u9f50",center:"\u5c45\u4e2d",left:"\u5de6\u5bf9\u9f50",right:"\u53f3\u5bf9\u9f50"});

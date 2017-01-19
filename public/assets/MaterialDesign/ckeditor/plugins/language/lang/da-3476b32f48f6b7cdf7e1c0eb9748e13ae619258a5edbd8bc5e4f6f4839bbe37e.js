@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("language","da",{button:"V\xe6lg sprog",remove:"Fjern sprog"});

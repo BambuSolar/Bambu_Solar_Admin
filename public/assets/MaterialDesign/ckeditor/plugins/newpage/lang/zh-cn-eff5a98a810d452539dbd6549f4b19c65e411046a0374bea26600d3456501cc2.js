@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("newpage","zh-cn",{toolbar:"\u65b0\u5efa"});

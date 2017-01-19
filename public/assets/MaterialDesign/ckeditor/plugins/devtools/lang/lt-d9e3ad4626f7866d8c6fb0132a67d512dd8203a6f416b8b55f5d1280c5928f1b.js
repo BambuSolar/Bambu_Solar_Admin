@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("devtools","lt",{title:"Elemento informacija",dialogName:"Dialogo lango pavadinimas",tabName:"Ausel\u0117s pavadinimas",elementId:"Elemento ID",elementType:"Elemento tipas"});

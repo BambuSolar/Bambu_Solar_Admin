@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("showblocks","pl",{toolbar:"Poka\u017c bloki"});

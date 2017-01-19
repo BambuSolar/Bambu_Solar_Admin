@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("preview","gu",{preview:"\u0aaa\u0ac2\u0ab0\u0acd\u0ab5\u0aa6\u0ab0\u0acd\u0ab6\u0aa8"});

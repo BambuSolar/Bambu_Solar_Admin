@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("pagebreak","lv",{alt:"Lapas p\u0101rnesums",toolbar:"Ievietot lapas p\u0101rtraukumu drukai"});

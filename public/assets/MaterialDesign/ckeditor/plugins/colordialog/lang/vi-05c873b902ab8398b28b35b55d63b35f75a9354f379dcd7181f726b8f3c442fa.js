@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("colordialog","vi",{clear:"X\xf3a b\u1ecf",highlight:"M\xe0u ch\u1ecdn",options:"T\xf9y ch\u1ecdn m\xe0u",selected:"M\xe0u \u0111\xe3 ch\u1ecdn",title:"Ch\u1ecdn m\xe0u"});

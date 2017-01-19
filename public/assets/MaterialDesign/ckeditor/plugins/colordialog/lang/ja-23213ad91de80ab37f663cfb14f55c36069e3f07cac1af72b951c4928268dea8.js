@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("colordialog","ja",{clear:"\u30af\u30ea\u30a2",highlight:"\u30cf\u30a4\u30e9\u30a4\u30c8",options:"\u30ab\u30e9\u30fc\u30aa\u30d7\u30b7\u30e7\u30f3",selected:"\u9078\u629e\u3055\u308c\u305f\u8272",title:"\u8272\u9078\u629e"});

@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("newpage","cs",{toolbar:"Nov\xe1 str\xe1nka"});

@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("mathjax","fi",{title:"Matematiikkaa TeX:ll\xe4",button:"Matematiikka",dialogInput:"Kirjoita TeX:i\xe4 t\xe4h\xe4n",docUrl:"http://en.wikibooks.org/wiki/LaTeX/Mathematics",docLabel:"TeX dokumentaatio",loading:"lataa...",pathName:"matematiikka"});

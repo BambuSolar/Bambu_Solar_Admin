@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("colordialog","fo",{clear:"Strika",highlight:"Framheva",options:"Litm\xf8guleikar",selected:"Valdur litur",title:"Vel lit"});

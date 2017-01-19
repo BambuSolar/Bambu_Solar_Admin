@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("pagebreak","es",{alt:"Salto de p\xe1gina",toolbar:"Insertar Salto de P\xe1gina"});

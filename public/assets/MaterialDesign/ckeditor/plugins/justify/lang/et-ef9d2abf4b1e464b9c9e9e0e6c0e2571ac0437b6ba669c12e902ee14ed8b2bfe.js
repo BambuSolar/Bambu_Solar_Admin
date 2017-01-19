@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("justify","et",{block:"R\xf6\xf6pjoondus",center:"Keskjoondus",left:"Vasakjoondus",right:"Paremjoondus"});

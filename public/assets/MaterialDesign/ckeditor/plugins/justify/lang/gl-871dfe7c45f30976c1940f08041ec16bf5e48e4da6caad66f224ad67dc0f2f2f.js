@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("justify","gl",{block:"Xustificado",center:"Centrado",left:"Ali\xf1ar \xe1 esquerda",right:"Ali\xf1ar \xe1 dereita"});

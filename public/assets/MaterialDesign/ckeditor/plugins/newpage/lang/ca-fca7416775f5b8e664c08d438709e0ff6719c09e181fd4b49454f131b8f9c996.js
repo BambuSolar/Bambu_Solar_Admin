@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("newpage","ca",{toolbar:"Nova p\xe0gina"});

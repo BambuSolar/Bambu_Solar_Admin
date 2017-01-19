@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("notification","cs",{closed:"Ozn\xe1men\xed zav\u0159eno."});

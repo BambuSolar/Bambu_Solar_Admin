@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("pagebreak","vi",{alt:"Ng\u1eaft trang",toolbar:"Ch\xe8n ng\u1eaft trang"});

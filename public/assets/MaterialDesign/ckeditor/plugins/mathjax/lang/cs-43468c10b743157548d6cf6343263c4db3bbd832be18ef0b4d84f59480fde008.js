@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("mathjax","cs",{title:"Matematika v TeXu",button:"Matematika",dialogInput:"Zde napi\u0161te TeXov\xfd k\xf3d",docUrl:"http://en.wikibooks.org/wiki/LaTeX/Mathematics",docLabel:"Dokumentace k TeXu",loading:"Nahr\xe1v\xe1 se...",pathName:"Matematika"});

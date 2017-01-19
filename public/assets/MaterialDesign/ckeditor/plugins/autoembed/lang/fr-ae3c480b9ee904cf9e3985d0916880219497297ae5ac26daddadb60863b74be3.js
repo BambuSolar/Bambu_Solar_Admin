@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("autoembed","fr",{embeddingInProgress:"Incorporation de l'URL coll\xe9e...",embeddingFailed:"Cette URL n'a pas pu \xeatre incorpor\xe9e automatiquement."});

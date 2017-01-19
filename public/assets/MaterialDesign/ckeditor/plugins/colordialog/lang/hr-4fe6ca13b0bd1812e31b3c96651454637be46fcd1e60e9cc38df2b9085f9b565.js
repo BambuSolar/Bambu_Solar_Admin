@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("colordialog","hr",{clear:"O\u010disti",highlight:"Istaknuto",options:"Opcije boje",selected:"Odabrana boja",title:"Odaberi boju"});

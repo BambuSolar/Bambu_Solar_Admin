@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("preview","pl",{preview:"Podgl\u0105d"});

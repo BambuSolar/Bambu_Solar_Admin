@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("templates","fi",{button:"Pohjat",emptyListMsg:"(Ei m\xe4\xe4riteltyj\xe4 pohjia)",insertOption:"Korvaa koko sis\xe4lt\xf6",options:"Sis\xe4lt\xf6pohjan ominaisuudet",selectPromptMsg:"Valitse editoriin avattava pohja",title:"Sis\xe4lt\xf6pohjat"});

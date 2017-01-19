@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("justify","sv",{block:"Justera till marginaler",center:"Centrera",left:"V\xe4nsterjustera",right:"H\xf6gerjustera"});

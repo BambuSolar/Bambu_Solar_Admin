@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("selectall","ku",{toolbar:"\u062f\u06cc\u0627\u0631\u06cc\u06a9\u0631\u062f\u0646\u06cc \u0647\u06d5\u0645\u0648\u0648\u06cc"});

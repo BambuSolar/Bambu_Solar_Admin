@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("selectall","sk",{toolbar:"Vybra\u0165 v\u0161etko"});

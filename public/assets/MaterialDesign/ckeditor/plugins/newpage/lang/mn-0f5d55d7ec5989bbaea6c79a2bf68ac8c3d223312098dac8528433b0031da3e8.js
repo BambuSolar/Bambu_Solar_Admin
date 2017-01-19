@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("newpage","mn",{toolbar:"\u0428\u0438\u043d\u044d \u0445\u0443\u0443\u0434\u0430\u0441"});

@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("pagebreak","bn",{alt:"Page Break",toolbar:"\u09aa\u09c7\u099c \u09ac\u09cd\u09b0\u09c7\u0995"});

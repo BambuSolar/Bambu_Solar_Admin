@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("preview","ca",{preview:"Visualitzaci\xf3 pr\xe8via"});

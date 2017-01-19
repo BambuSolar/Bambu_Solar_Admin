@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("showblocks","zh-cn",{toolbar:"\u663e\u793a\u533a\u5757"});

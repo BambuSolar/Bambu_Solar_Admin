@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("language","fo",{button:"Velja tungum\xe1l",remove:"Remove language"});

@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("language","sq",{button:"P\xebrzgjidhni gjuh\xebn",remove:"Largoni gjuh\xebn"});

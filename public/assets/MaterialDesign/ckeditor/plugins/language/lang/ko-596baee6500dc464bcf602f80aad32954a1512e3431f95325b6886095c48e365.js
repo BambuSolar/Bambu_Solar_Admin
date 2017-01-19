@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("language","ko",{button:"\uc5b8\uc5b4 \uc124\uc815",remove:"\uc5b8\uc5b4 \uc124\uc815 \uc9c0\uc6b0\uae30"});

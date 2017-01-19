@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("colordialog","lt",{clear:"I\u0161valyti",highlight:"Pary\u0161kinti",options:"Spalvos nustatymai",selected:"Pasirinkta spalva",title:"Pasirinkite spalv\u0105"});

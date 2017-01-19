@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("mathjax","ko",{title:"TeX \ubb38\ubc95 \uc218\uc2dd",button:"\uc218\uc2dd",dialogInput:"\uc5ec\uae30 TeX \ub97c \uc785\ub825\ud558\uc138\uc694",docUrl:"http://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:TeX_%EB%AC%B8%EB%B2%95",docLabel:"TeX \ubb38\uc11c",loading:"\ubd88\ub7ec\uc624\ub294 \uc911...",pathName:"\uc218\uc2dd"});

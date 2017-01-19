@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("iframe","vi",{border:"Hi\u1ec3n th\u1ecb vi\u1ec1n khung",noUrl:"Vui l\xf2ng nh\u1eadp \u0111\u1ecba ch\u1ec9 iframe",scrolling:"K\xedch ho\u1ea1t thanh cu\u1ed9n",title:"Thu\u1ed9c t\xednh iframe",toolbar:"Iframe"});

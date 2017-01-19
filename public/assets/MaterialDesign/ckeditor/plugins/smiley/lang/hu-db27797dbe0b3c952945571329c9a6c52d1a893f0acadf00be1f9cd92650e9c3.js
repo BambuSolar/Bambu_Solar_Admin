@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("smiley","hu",{options:"Hangulatjel opci\xf3k",title:"Hangulatjel besz\xfar\xe1sa",toolbar:"Hangulatjelek"});

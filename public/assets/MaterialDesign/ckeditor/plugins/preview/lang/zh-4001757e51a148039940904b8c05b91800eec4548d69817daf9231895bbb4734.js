@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("preview","zh",{preview:"\u9810\u89bd"});

@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("print","ja",{toolbar:"\u5370\u5237"});

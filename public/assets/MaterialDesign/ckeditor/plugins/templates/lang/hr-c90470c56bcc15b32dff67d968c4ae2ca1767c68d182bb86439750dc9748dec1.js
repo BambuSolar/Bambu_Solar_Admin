@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("templates","hr",{button:"Predlo\u0161ci",emptyListMsg:"(Nema definiranih predlo\u017eaka)",insertOption:"Zamijeni trenutne sadr\u017eaje",options:"Opcije predlo\u017eaka",selectPromptMsg:"Molimo odaberite predlo\u017eak koji \u017eelite otvoriti<br>(stvarni sadr\u017eaj \u0107e biti izgubljen):",title:"Predlo\u0161ci sadr\u017eaja"});

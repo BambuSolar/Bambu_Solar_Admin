@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("colordialog","pt",{clear:"Limpar",highlight:"Real\xe7ar",options:"Op\xe7\xf5es de cor",selected:"Cor selecionada",title:"Selecionar cor"});

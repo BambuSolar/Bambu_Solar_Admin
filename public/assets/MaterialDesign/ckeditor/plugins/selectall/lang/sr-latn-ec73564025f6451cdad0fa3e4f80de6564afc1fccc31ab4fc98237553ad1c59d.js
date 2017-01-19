@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("selectall","sr-latn",{toolbar:"Ozna\u010di sve"});

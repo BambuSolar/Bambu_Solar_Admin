@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("justify","tr",{block:"\u0130ki Kenara Yaslanm\u0131\u015f",center:"Ortalanm\u0131\u015f",left:"Sola Dayal\u0131",right:"Sa\u011fa Dayal\u0131"});

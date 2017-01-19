@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("devtools","fr",{title:"Informations sur l'\xe9l\xe9ment",dialogName:"Nom de la bo\xeete de dialogue",tabName:"Nom de l'onglet",elementId:"ID de l'\xe9l\xe9ment",elementType:"Type de l'\xe9l\xe9ment"});

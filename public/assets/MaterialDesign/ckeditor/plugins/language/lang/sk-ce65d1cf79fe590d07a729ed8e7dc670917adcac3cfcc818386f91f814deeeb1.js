@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("language","sk",{button:"Nastavi\u0165 jazyk",remove:"Odstr\xe1ni\u0165 jazyk"});

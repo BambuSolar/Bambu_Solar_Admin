@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("devtools","hr",{title:"Informacije elementa",dialogName:"Naziv prozora za dijalog",tabName:"Naziva jaha\u010da",elementId:"ID elementa",elementType:"Vrsta elementa"});

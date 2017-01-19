@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("language","hu",{button:"Nyelv be\xe1ll\xedt\xe1sa",remove:"Nyelv elt\xe1vol\xedt\xe1sa"});

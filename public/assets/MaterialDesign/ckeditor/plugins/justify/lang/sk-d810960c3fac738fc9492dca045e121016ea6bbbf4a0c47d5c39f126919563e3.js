@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("justify","sk",{block:"Zarovna\u0165 do bloku",center:"Zarovna\u0165 na stred",left:"Zarovna\u0165 v\u013eavo",right:"Zarovna\u0165 vpravo"});

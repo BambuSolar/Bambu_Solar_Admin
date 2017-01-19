@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("language","tr",{button:"Dili se\xe7",remove:"Dili kald\u0131r"});

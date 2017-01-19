@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("justify","pt",{block:"Justificado",center:"Alinhar ao centro",left:"Alinhar \xe0 esquerda",right:"Alinhar \xe0 direita"});

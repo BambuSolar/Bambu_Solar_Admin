@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("mathjax","zh",{title:"\u4ee5 TeX \u8868\u793a\u6578\u5b78",button:"\u6578\u5b78",dialogInput:"\u8acb\u8f38\u5165 TeX",docUrl:"http://en.wikibooks.org/wiki/LaTeX/Mathematics",docLabel:"TeX \u8aaa\u660e\u6587\u4ef6",loading:"\u8f09\u5165\u4e2d\u2026",pathName:"\u6578\u5b78"});

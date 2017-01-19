@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("smiley","bs",{options:"Smiley Options",title:"Ubaci smje\u0161ka",toolbar:"Smje\u0161ko"});

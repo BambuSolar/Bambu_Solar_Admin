@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("devtools","ro",{title:"Informa\u021bia elementului",dialogName:"Numele ferestrei de dialog",tabName:"Denumire de tab",elementId:"ID Element",elementType:"Tipul elementului"});

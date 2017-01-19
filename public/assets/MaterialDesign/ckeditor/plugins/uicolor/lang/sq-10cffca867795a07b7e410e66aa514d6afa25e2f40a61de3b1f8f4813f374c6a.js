@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("uicolor","sq",{title:"UI Mbledh\xebs i Ngjyrave",preview:"Parapamje direkte",config:"Hidhni k\xebt\xeb varg n\xeb sked\xebn tuaj config.js",predefined:"Setet e paradefinuara t\xeb ngjyrave"});

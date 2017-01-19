@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("templates","sk",{button:"\u0160abl\xf3ny",emptyListMsg:"(\u017diadne \u0161abl\xf3ny nedefinovan\xe9)",insertOption:"Nahradi\u0165 aktu\xe1lny obsah",options:"Mo\u017enosti \u0161abl\xf3ny",selectPromptMsg:"Pros\xedm vyberte \u0161abl\xf3nu na otvorenie v editore",title:"\u0160abl\xf3ny obsahu"});

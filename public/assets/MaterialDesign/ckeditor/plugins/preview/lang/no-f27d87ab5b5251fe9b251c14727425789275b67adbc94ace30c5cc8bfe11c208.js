@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("preview","no",{preview:"Forh\xe5ndsvis"});

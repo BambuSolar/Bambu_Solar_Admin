@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("uicolor","fr",{title:"S\xe9lecteur de couleur",preview:"Aper\xe7u interactif",config:"Collez ce texte dans votre fichier config.js",predefined:"Palettes de couleurs pr\xe9d\xe9finies"});

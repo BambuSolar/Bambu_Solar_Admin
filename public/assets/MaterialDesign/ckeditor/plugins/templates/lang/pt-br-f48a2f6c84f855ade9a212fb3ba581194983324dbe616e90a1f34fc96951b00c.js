@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("templates","pt-br",{button:"Modelos de layout",emptyListMsg:"(N\xe3o foram definidos modelos de layout)",insertOption:"Substituir o conte\xfado atual",options:"Op\xe7\xf5es de Template",selectPromptMsg:"Selecione um modelo de layout para ser aberto no editor<br>(o conte\xfado atual ser\xe1 perdido):",title:"Modelo de layout de conte\xfado"});

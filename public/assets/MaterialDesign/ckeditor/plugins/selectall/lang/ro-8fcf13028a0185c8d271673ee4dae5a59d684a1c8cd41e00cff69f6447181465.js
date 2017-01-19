@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("selectall","ro",{toolbar:"Selecteaz\u0103 tot"});

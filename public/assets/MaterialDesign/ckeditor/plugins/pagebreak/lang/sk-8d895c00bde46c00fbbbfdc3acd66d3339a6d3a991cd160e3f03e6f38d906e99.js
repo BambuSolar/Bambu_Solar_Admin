@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("pagebreak","sk",{alt:"Zalomenie strany",toolbar:"Vlo\u017ei\u0165 odde\u013eova\u010d str\xe1nky pre tla\u010d"});

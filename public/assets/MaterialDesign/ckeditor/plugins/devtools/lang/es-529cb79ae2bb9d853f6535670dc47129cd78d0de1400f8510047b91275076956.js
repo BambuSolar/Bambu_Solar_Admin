@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("devtools","es",{title:"Informaci\xf3n del Elemento",dialogName:"Nombre de la ventana de di\xe1logo",tabName:"Nombre de la pesta\xf1a",elementId:"ID del Elemento",elementType:"Tipo del elemento"});

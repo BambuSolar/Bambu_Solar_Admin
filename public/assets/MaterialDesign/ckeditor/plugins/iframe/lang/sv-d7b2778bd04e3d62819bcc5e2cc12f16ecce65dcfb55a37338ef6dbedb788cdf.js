@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("iframe","sv",{border:"Visa ramkant",noUrl:"Skriv in URL f\xf6r iFrame",scrolling:"Aktivera rullningslister",title:"iFrame Egenskaper",toolbar:"iFrame"});

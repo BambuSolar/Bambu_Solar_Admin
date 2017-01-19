@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("smiley","sl",{options:"Mo\u017enosti Sme\u0161ka",title:"Vstavi sme\u0161ka",toolbar:"Sme\u0161ko"});

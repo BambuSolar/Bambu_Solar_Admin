@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("pagebreak","he",{alt:"\u05e9\u05d1\u05d9\u05e8\u05ea \u05d3\u05e3",toolbar:"\u05d4\u05d5\u05e1\u05e4\u05ea \u05e9\u05d1\u05d9\u05e8\u05ea \u05d3\u05e3"});

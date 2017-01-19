@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("showblocks","is",{toolbar:"S\xfdna blokkir"});

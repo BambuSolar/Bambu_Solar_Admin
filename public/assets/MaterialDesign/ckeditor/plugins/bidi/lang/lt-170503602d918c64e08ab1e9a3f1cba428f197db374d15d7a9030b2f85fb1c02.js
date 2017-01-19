@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("bidi","lt",{ltr:"Tekstas i\u0161 kair\u0117s \u012f de\u0161in\u0119",rtl:"Tekstas i\u0161 de\u0161in\u0117s \u012f kair\u0119"});

@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("preview","lv",{preview:"Priek\u0161skat\u012bt"});

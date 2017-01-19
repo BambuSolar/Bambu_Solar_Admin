@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("save","sk",{toolbar:"Ulo\u017ei\u0165"});

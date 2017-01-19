@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("devtools","gl",{title:"Informaci\xf3n do elemento",dialogName:"Nome da xanela de di\xe1logo",tabName:"Nome da lapela",elementId:"ID do elemento",elementType:"Tipo do elemento"});

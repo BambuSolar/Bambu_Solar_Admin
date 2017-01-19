@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("print","bg",{toolbar:"\u041f\u0435\u0447\u0430\u0442"});

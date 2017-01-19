@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("selectall","tr",{toolbar:"T\xfcm\xfcn\xfc Se\xe7"});

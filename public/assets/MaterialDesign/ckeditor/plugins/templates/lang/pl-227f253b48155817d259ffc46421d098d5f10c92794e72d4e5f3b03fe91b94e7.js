@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("templates","pl",{button:"Szablony",emptyListMsg:"(Brak zdefiniowanych szablon\xf3w)",insertOption:"Zast\u0105p obecn\u0105 zawarto\u015b\u0107",options:"Opcje szablon\xf3w",selectPromptMsg:"Wybierz szablon do otwarcia w edytorze<br>(obecna zawarto\u015b\u0107 okna edytora zostanie utracona):",title:"Szablony zawarto\u015bci"});

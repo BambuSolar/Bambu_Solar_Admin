@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("showblocks","lv",{toolbar:"Par\u0101d\u012bt blokus"});
