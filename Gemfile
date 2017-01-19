@@ -54,3 +54,5 @@ gem 'rails-i18n'
 gem 'uuidtools'
 
 gem 'sprockets'
+
+gem 'sass', '~> 3.2.0'
