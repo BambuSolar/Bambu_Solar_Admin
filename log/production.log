@@ -8087,3 +8087,203 @@ D, [2017-01-03T00:43:18.559737 #4391] DEBUG -- :   [1m[35m (0.3ms)[0m  SELECT
 D, [2017-01-03T00:43:18.560189 #4391] DEBUG -- :   [1m[36mProductType Load (0.2ms)[0m  [1mSELECT "product_types".* FROM "product_types"[0m
 I, [2017-01-03T00:43:18.560894 #4391]  INFO -- :   Rendered product_types/index.html.erb within layouts/application (1.7ms)
 I, [2017-01-03T00:43:18.561588 #4391]  INFO -- : Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.5ms)
+I, [2017-01-18T21:08:52.516542 #13949]  INFO -- : Started GET "/opinions" for 127.0.0.1 at 2017-01-18 21:08:52 -0300
+F, [2017-01-18T21:08:52.569255 #13949] FATAL -- : 
+ActiveRecord::NoDatabaseError (FATAL:  database "bambu_solar_admin_production" does not exist
+):
+  activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
+  activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/jcaballero/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/jcaballero/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.6) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.6) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /home/jcaballero/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/jcaballero/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/jcaballero/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+D, [2017-01-18T21:11:53.278272 #14315] DEBUG -- :   [1m[36m (55.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+D, [2017-01-18T21:11:53.328290 #14315] DEBUG -- :   [1m[35m (48.7ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+D, [2017-01-18T21:11:53.330168 #14315] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+I, [2017-01-18T21:11:53.331946 #14315]  INFO -- : Migrating to Picture (20170098011832)
+D, [2017-01-18T21:12:28.591091 #14377] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+I, [2017-01-18T21:12:28.592795 #14377]  INFO -- : Migrating to Picture (20170098011832)
+D, [2017-01-18T21:12:28.593130 #14377] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2017-01-18T21:12:28.673715 #14377] DEBUG -- :   [1m[36m (79.7ms)[0m  [1mCREATE TABLE "pictures" ("id" serial primary key, "photo" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+D, [2017-01-18T21:12:28.678823 #14377] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20170098011832"]]
+D, [2017-01-18T21:12:28.695423 #14377] DEBUG -- :   [1m[36m (16.4ms)[0m  [1mCOMMIT[0m
+I, [2017-01-18T21:12:28.695519 #14377]  INFO -- : Migrating to CreateProductTypes (20170101053533)
+D, [2017-01-18T21:12:28.696022 #14377] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2017-01-18T21:12:28.757830 #14377] DEBUG -- :   [1m[36m (61.2ms)[0m  [1mCREATE TABLE "product_types" ("id" serial primary key, "name" character varying, "picture_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+D, [2017-01-18T21:12:28.791398 #14377] DEBUG -- :   [1m[35m (32.2ms)[0m  CREATE  INDEX  "index_product_types_on_picture_id" ON "product_types"  ("picture_id")
+D, [2017-01-18T21:12:28.792765 #14377] DEBUG -- :   [1m[36m (0.9ms)[0m  [1mALTER TABLE "product_types" ADD CONSTRAINT "fk_rails_6b240ddf76"
+FOREIGN KEY ("picture_id")
+  REFERENCES "pictures" ("id")
+[0m
+D, [2017-01-18T21:12:28.794157 #14377] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20170101053533"]]
+D, [2017-01-18T21:12:28.804382 #14377] DEBUG -- :   [1m[36m (10.0ms)[0m  [1mCOMMIT[0m
+I, [2017-01-18T21:12:28.804469 #14377]  INFO -- : Migrating to CreateProducts (20170102234603)
+D, [2017-01-18T21:12:28.805135 #14377] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2017-01-18T21:12:28.867274 #14377] DEBUG -- :   [1m[36m (60.8ms)[0m  [1mCREATE TABLE "products" ("id" serial primary key, "name" character varying, "description" text, "description_detail" text, "price" float, "enabled" boolean, "product_type_id" integer, "picture_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+D, [2017-01-18T21:12:28.892483 #14377] DEBUG -- :   [1m[35m (23.9ms)[0m  CREATE  INDEX  "index_products_on_picture_id" ON "products"  ("picture_id")
+D, [2017-01-18T21:12:28.893448 #14377] DEBUG -- :   [1m[36m (0.6ms)[0m  [1mALTER TABLE "products" ADD CONSTRAINT "fk_rails_dc99b2e8c9"
+FOREIGN KEY ("picture_id")
+  REFERENCES "pictures" ("id")
+[0m
+D, [2017-01-18T21:12:28.894702 #14377] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20170102234603"]]
+D, [2017-01-18T21:12:28.904556 #14377] DEBUG -- :   [1m[36m (9.7ms)[0m  [1mCOMMIT[0m
+I, [2017-01-18T21:12:28.904619 #14377]  INFO -- : Migrating to CreateMemberTeams (20170103113559)
+D, [2017-01-18T21:12:28.905174 #14377] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2017-01-18T21:12:28.959827 #14377] DEBUG -- :   [1m[36m (53.4ms)[0m  [1mCREATE TABLE "member_teams" ("id" serial primary key, "name" character varying, "description" text, "picture_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+D, [2017-01-18T21:12:28.985065 #14377] DEBUG -- :   [1m[35m (23.9ms)[0m  CREATE  INDEX  "index_member_teams_on_picture_id" ON "member_teams"  ("picture_id")
+D, [2017-01-18T21:12:28.986354 #14377] DEBUG -- :   [1m[36m (0.8ms)[0m  [1mALTER TABLE "member_teams" ADD CONSTRAINT "fk_rails_c42be65759"
+FOREIGN KEY ("picture_id")
+  REFERENCES "pictures" ("id")
+[0m
+D, [2017-01-18T21:12:28.987743 #14377] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20170103113559"]]
+D, [2017-01-18T21:12:28.996408 #14377] DEBUG -- :   [1m[36m (8.5ms)[0m  [1mCOMMIT[0m
+I, [2017-01-18T21:12:28.996479 #14377]  INFO -- : Migrating to CreateOpinions (20170103115004)
+D, [2017-01-18T21:12:29.003804 #14377] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2017-01-18T21:12:29.060816 #14377] DEBUG -- :   [1m[36m (56.3ms)[0m  [1mCREATE TABLE "opinions" ("id" serial primary key, "title" character varying, "body" text, "signature" character varying, "status" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+D, [2017-01-18T21:12:29.062047 #14377] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20170103115004"]]
+D, [2017-01-18T21:12:29.071570 #14377] DEBUG -- :   [1m[36m (9.4ms)[0m  [1mCOMMIT[0m
+I, [2017-01-18T21:12:29.071628 #14377]  INFO -- : Migrating to CreateUsers (20170110030807)
+D, [2017-01-18T21:12:29.081278 #14377] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2017-01-18T21:12:29.136522 #14377] DEBUG -- :   [1m[36m (54.9ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "first_name" character varying, "last_name" character varying, "user_name" character varying, "password_digest" character varying) [0m
+D, [2017-01-18T21:12:29.137753 #14377] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20170110030807"]]
+D, [2017-01-18T21:12:29.146876 #14377] DEBUG -- :   [1m[36m (9.0ms)[0m  [1mCOMMIT[0m
+D, [2017-01-18T21:12:36.439274 #14384] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+D, [2017-01-18T21:12:36.532459 #14384] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2017-01-18T21:12:36.536259 #14384] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "user_name", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Admin"], ["last_name", "Admin"], ["user_name", "admin"], ["password_digest", "$2a$10$tgYmNJtxmAYSh9NQfkI61.zDaJKFVUp2adl2M474Mgukht8PLUYtm"], ["created_at", "2017-01-19 00:12:36.533848"], ["updated_at", "2017-01-19 00:12:36.533848"]]
+D, [2017-01-18T21:12:36.538505 #14384] DEBUG -- :   [1m[35m (2.0ms)[0m  COMMIT
+I, [2017-01-18T21:12:41.769192 #13949]  INFO -- : Started GET "/opinions" for 127.0.0.1 at 2017-01-18 21:12:41 -0300
+I, [2017-01-18T21:12:41.785418 #13949]  INFO -- : Processing by OpinionsController#index as HTML
+I, [2017-01-18T21:12:41.790752 #13949]  INFO -- : Redirected to http://localhost:3000/login
+I, [2017-01-18T21:12:41.790842 #13949]  INFO -- : Filter chain halted as :require_user rendered or redirected
+I, [2017-01-18T21:12:41.790935 #13949]  INFO -- : Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+I, [2017-01-18T21:12:41.794780 #13949]  INFO -- : Started GET "/login" for 127.0.0.1 at 2017-01-18 21:12:41 -0300
+I, [2017-01-18T21:12:41.796202 #13949]  INFO -- : Processing by SessionsController#new as HTML
+I, [2017-01-18T21:12:41.800194 #13949]  INFO -- :   Rendered sessions/new.html.erb (1.5ms)
+I, [2017-01-18T21:12:41.800371 #13949]  INFO -- : Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+I, [2017-01-18T21:12:41.859276 #13949]  INFO -- : Started GET "/assets/application-4636bfa30f51af32c8fae72453a007dc4c91bfe6ccad1afed908df37ba3c5cd2.css" for 127.0.0.1 at 2017-01-18 21:12:41 -0300
+I, [2017-01-18T21:12:43.868442 #13949]  INFO -- : Started GET "/assets/application-ddcd2de6e2953284668178fcf521b814f84ba86d205b7cd381729c08ea6c6aff.js" for 127.0.0.1 at 2017-01-18 21:12:43 -0300
+F, [2017-01-18T21:12:47.242281 #13949] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-ddcd2de6e2953284668178fcf521b814f84ba86d205b7cd381729c08ea6c6aff.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /home/jcaballero/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/jcaballero/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/jcaballero/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2017-01-18T21:13:19.548235 #13949]  INFO -- : Started GET "/login" for 127.0.0.1 at 2017-01-18 21:13:19 -0300
+I, [2017-01-18T21:13:19.549153 #13949]  INFO -- : Processing by SessionsController#new as HTML
+I, [2017-01-18T21:13:19.550623 #13949]  INFO -- :   Rendered sessions/new.html.erb (0.8ms)
+I, [2017-01-18T21:13:19.550744 #13949]  INFO -- : Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+I, [2017-01-18T21:13:19.574239 #13949]  INFO -- : Started GET "/assets/application-4636bfa30f51af32c8fae72453a007dc4c91bfe6ccad1afed908df37ba3c5cd2.css" for 127.0.0.1 at 2017-01-18 21:13:19 -0300
+F, [2017-01-18T21:13:25.031110 #13949] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-4636bfa30f51af32c8fae72453a007dc4c91bfe6ccad1afed908df37ba3c5cd2.css"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /home/jcaballero/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/jcaballero/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/jcaballero/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2017-01-18T21:13:25.033547 #13949]  INFO -- : Started GET "/assets/application-ddcd2de6e2953284668178fcf521b814f84ba86d205b7cd381729c08ea6c6aff.js" for 127.0.0.1 at 2017-01-18 21:13:25 -0300
+F, [2017-01-18T21:13:25.036125 #13949] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-ddcd2de6e2953284668178fcf521b814f84ba86d205b7cd381729c08ea6c6aff.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /home/jcaballero/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/jcaballero/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/jcaballero/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
