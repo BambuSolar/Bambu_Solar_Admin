@@ -40,7 +40,7 @@
                       <%= image_tag product.picture.photo_url, width: '36px', height: '36px' %>
                       <%= product.name %>
                     </td>
-                    <td><%= product.price %></td>
+                    <td>$<%= number_with_precision(product.price, precision: 2) %></td>
                     <td><%= product.enabled ? 'Si' : 'No' %></td>
                     <td>
                       <%= link_to edit_product_type_product_path(@product_type,product), class: 'btn btn-default'  do %>

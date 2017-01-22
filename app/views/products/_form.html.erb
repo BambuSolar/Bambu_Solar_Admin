@@ -39,6 +39,20 @@
       <div class="col-sm-12">
         <div class="form-group">
           <div class="form-line">
+            <%= f.text_area :description_detail,
+                            class: 'form-control editor',
+                            id: 'editor',
+                            placeholder: 'Descripción'
+            %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <div class="form-line">
             <%= f.number_field :price,
                                class: 'form-control',
                                placeholder: 'Precio',
