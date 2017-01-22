@@ -27,6 +27,12 @@ class ProductTypesController < SecurityController
   def create
     @product_type = ProductType.new(product_type_params)
 
+    p = Picture.new(photo: params[:product_type][:image])
+
+    p.save!
+
+    @product_type.picture = p
+
     respond_to do |format|
       if @product_type.save
         format.html { redirect_to @product_type, notice: 'Product type was successfully created.' }
@@ -41,6 +47,19 @@ class ProductTypesController < SecurityController
   # PATCH/PUT /product_types/1
   # PATCH/PUT /product_types/1.json
   def update
+
+    unless params[:product_type][:image].nil?
+
+      @product_type.picture.remove_photo!
+
+      @product_type.picture.save!
+
+      @product_type.picture.update(photo: params[:product_type][:image])
+
+      @product_type.picture.save!
+
+    end
+
     respond_to do |format|
       if @product_type.update(product_type_params)
         format.html { redirect_to @product_type, notice: 'Product type was successfully updated.' }
@@ -55,7 +74,17 @@ class ProductTypesController < SecurityController
   # DELETE /product_types/1
   # DELETE /product_types/1.json
   def destroy
+
+    p = @product_type.picture
+
+    p.remove_photo!
+
     @product_type.destroy
+
+    p.destroy!
+
+    @product_type.destroy
+
     respond_to do |format|
       format.html { redirect_to product_types_url, notice: 'Product type was successfully destroyed.' }
       format.json { head :no_content }

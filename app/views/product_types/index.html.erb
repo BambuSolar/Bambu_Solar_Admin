@@ -27,7 +27,10 @@
           <tbody>
           <% @product_types.each do |product_type| %>
               <tr>
-                <td><%= product_type.name %></td>
+                <td>
+                  <%= image_tag product_type.picture.photo_url, width: '36px', height: '36px' %>
+                  <%= product_type.name %>
+                </td>
                 <td>
                   <%= link_to product_type, class: 'btn btn-default' do %>
                       <i class="material-icons">visibility</i>

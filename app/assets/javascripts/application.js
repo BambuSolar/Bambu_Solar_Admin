@@ -8,6 +8,7 @@
 //= require_tree ./MaterialDesign/jquery-validation
 //= require_tree ./MaterialDesign/sweetalert
 //= require_tree ./MaterialDesign/node-waves
+//= require_tree ./MaterialDesign/masonry
 //= require ./MaterialDesign/admin
 //= require ./MaterialDesign/helpers
 
@@ -79,6 +80,11 @@ $(function () {
     });
     $(document).on('change', '.file', function(){
         $(this).parent().find('.form-control').val($(this).val().replace(/C:\\fakepath\\/i, ''));
+    });
+
+    $('.grid').masonry({
+        // options
+        itemSelector: '.grid-item'
     });
 
 });

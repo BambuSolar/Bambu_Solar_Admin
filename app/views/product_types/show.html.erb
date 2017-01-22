@@ -36,7 +36,10 @@
               <tbody>
               <% @products.each do |product| %>
                   <tr>
-                    <td><%= product.name %></td>
+                    <td>
+                      <%= image_tag product.picture.photo_url, width: '36px', height: '36px' %>
+                      <%= product.name %>
+                    </td>
                     <td><%= product.price %></td>
                     <td><%= product.enabled ? 'Si' : 'No' %></td>
                     <td>

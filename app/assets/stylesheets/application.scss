@@ -4,3 +4,37 @@
  */
 
 
+.our_work{
+  width: 100%;
+  height: auto;
+}
+
+.grid-item{
+  background: white;
+}
+
+.grid-item > div{
+  position: relative;
+  padding: 10px;
+  box-shadow: 0 0 1px grey;
+}
+
+.grid-item div img{
+  border-radius: 5px;
+}
+
+.grid-item div p{
+  position: absolute;
+  bottom: 57px;
+  background: #009688;
+  width: calc(100% - 20px);
+  padding: 5px;
+  text-align: center;
+  color: white;
+  border-radius: 0 0 5px 5px;
+}
+
+.grid-item div .buttons{
+  position: relative;
+  margin: 10px 0;
+}

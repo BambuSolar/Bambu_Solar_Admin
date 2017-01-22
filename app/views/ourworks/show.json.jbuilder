@@ -1,0 +1,1 @@
+json.partial! "ourworks/ourwork", ourwork: @ourwork

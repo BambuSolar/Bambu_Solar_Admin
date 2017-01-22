@@ -51,6 +51,29 @@
       </div>
     </div>
 
+
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+
+          <% unless @product.picture.nil?  %>
+              <%= image_tag @product.picture.photo_url, style: 'width: 100%; max-width: 300px; height: auto;' %>
+          <% end %>
+          <div class="form-line input-group">
+
+            <%= f.file_field :image, class:'file', style:'display:none' %>
+
+            <span class="input-group-btn">
+                    <button class="browse btn btn-primary" type="button">
+                      <i class="material-icons">insert_photo</i>
+                    </button>
+                </span>
+            <input type="text" class="form-control" disabled placeholder="Seleccione un imágen" value="<%= (@product.picture.nil? ? '' : @product.picture.photo_identifier ) %>">
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="row clearfix">
       <div class="col-sm-12">
         <div class="form-group">
@@ -59,6 +82,8 @@
         </div>
       </div>
     </div>
+
+
 
     <div class="row">
       <div class="col-xs-6 col-sm-2">

@@ -1,0 +1,1 @@
+json.array! @ourworks, partial: 'ourworks/ourwork', as: :ourwork

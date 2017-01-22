@@ -27,6 +27,13 @@ class ProductsController < SecurityController
   # POST /products.json
   def create
     @product = Product.new(product_params)
+
+    p = Picture.new(photo: params[:product][:image])
+
+    p.save!
+
+    @product.picture = p
+
     @product.product_type_id = @product_type.id
     respond_to do |format|
       if @product.save
@@ -43,6 +50,19 @@ class ProductsController < SecurityController
   # PATCH/PUT /products/1.json
   def update
     @product.product_type_id = @product_type.id
+
+    unless params[:product][:image].nil?
+
+      @product.picture.remove_photo!
+
+      @product.picture.save!
+
+      @product.picture.update(photo: params[:product][:image])
+
+      @product.picture.save!
+
+    end
+
     respond_to do |format|
       if @product.update(product_params)
         format.html { redirect_to @product_type, notice: 'Product was successfully updated.' }
@@ -57,7 +77,17 @@ class ProductsController < SecurityController
   # DELETE /products/1
   # DELETE /products/1.json
   def destroy
+
+    p = @product.picture
+
+    p.remove_photo!
+
     @product.destroy
+
+    p.destroy!
+
+    @product.destroy
+
     respond_to do |format|
       format.html { redirect_to @product_type, notice: 'Product was successfully destroyed.' }
       format.json { head :no_content }
