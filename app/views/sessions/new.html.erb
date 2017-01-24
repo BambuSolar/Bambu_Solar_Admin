@@ -2,46 +2,48 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>BambuSolarAdmin</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 
 <body class="login-page">
-<div class="login-box">
-  <div class="logo">
-    <a>Administración de Bambú Solar</a>
-  </div>
-  <div class="card">
-    <% if notice %>
-        <div class="alert bg-teal alert-dismissible" role="alert">
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
-          <%= notice %>
-        </div>
-    <% end %>
-    <% if alert %>
-        <div class="alert bg-pink alert-dismissible" role="alert">
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
-          <%= alert %>
-        </div>
-    <% end %>
+  <div class="login-box">
+    <div class="logo">
+      <a>Administración de Bambú Solar</a>
+    </div>
+    <div class="card">
+      <% if notice %>
+      <div class="alert bg-teal alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <%= notice %>
+      </div>
+      <% end %>
+      <% if alert %>
+      <div class="alert bg-pink alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <%= alert %>
+      </div>
+      <% end %>
 
 
-    <div class="body">
-      <%= form_for(:session, url: login_path) do |f| %>
+      <div class="body">
+        <%= form_for(:session, url: login_path) do |f| %>
         <div class="msg">Sign in to start your session</div>
         <div class="input-group">
-                        <span class="input-group-addon">
-                            <i class="material-icons">person</i>
-                        </span>
+          <span class="input-group-addon">
+            <i class="material-icons">person</i>
+          </span>
           <div class="form-line">
             <%= f.text_field :user_name, :placeholder => 'Usuario', class:'form-control', require:true%>
           </div>
         </div>
         <div class="input-group">
-                        <span class="input-group-addon">
-                            <i class="material-icons">lock</i>
-                        </span>
+          <span class="input-group-addon">
+            <i class="material-icons">lock</i>
+          </span>
           <div class="form-line">
             <%= f.password_field :password, :placeholder => 'Password', class:'form-control', require:true %>
           </div>
@@ -51,11 +53,11 @@
             <button class="btn btn-block bg-pink waves-effect" type="submit">Iniciar Sesión</button>
           </div>
         </div>
-      <% end %>
+        <% end %>
+      </div>
     </div>
   </div>
-</div>
 
-<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>
 </html>
