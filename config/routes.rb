@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   resources :ourworks
+
   resources :opinions
 
   resources :member_teams
@@ -22,5 +23,7 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
 
   resources :users
+
+  get '/preview' => 'website/site#home'
 
 end
