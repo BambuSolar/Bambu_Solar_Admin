@@ -26,6 +26,7 @@
 </div>
 
 <div class="culmn">
+
   <header id="main_menu" class="header navbar-fixed-top">
     <div class="main_menu_bg">
       <div class="container">
@@ -42,7 +43,7 @@
                     <span class="icon-bar"></span>
                   </button>
                   <a class="navbar-brand" href="#home">
-                    <img src="<%= path_to_image('website/isologotipo/isologotipo.jpg')%>"/>
+                    <img src="<%= path_to_image('website/isologotipo/isologotipo.png')%>"/>
                   </a>
                 </div>
 
@@ -73,9 +74,6 @@
 
     </div>
   </header> <!--End of header -->
-
-
-
 
   <!--home Section -->
   <section id="home" class="home" data-wow-duration="2s" data-wow-dealy="1.5s">
@@ -163,18 +161,6 @@
     </div><!--End of container -->
   </section><!--End of video -->
 
-  <section id="sky" class="sky wow fadeIn" data-wow-duration="2s" data-wow-dealy="1.5s">
-    <div id="sun">
-      <div id="rings">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-    <div id="clouds" class="clouds"></div>
-  </section>
-
 
   <!-- Product Section -->
   <section id="products" class="product">
@@ -261,6 +247,18 @@
   </section><!-- End off product Section -->
 
 
+  <section id="sky" class="sky wow fadeIn" data-wow-duration="2s" data-wow-dealy="1.5s">
+    <div id="sun">
+      <div id="rings">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div id="clouds" class="clouds"></div>
+  </section>
+
 
   <!-- Team Section -->
   <section id="team" class="team fadeIn">
@@ -277,28 +275,30 @@
             </div><!-- End off Head_title -->
 
             <div class="main_team">
-              <ul>
-                <li class="wow fadeIn" data-wow-duration="2.1s" data-wow-dealy="1.5s">
+              <div class="row">
+
+                <div class="col-xs-6">
                   <div class="single_team_img">
                     <img src="<%= path_to_image('website/team1.jpg')%>" alt="" />
                   </div>
-                  <div class="single_team_text">
+                  <div class="single_team_text wow fadeIn" data-wow-duration="2.1s" data-wow-dealy="1.5s">
                     <h4>Ing. Julieta Baudo</h4>
                     <p>Julieta es Ingeniera Industrial,  fundadora de Bambú energía en movimiento, preocupada por el medio ambiente. Emprendedora constante y proactiva</p>
                   </div>
-                </li>
-                <li class="wow fadeIn" data-wow-duration="2.2s" data-wow-dealy="1.5s">
+                </div>
+
+                <div class="col-xs-6">
                   <div class="single_team_img">
                     <img src="<%= path_to_image('website/team2.jpg')%>" alt="" />
                   </div>
-                  <div class="single_team_text">
+                  <div class="single_team_text wow fadeIn" data-wow-duration="2.1s" data-wow-dealy="1.5s">
                     <h4>Ing. Andrés De Sousa</h4>
                     <p>Andrés es Ingeniero en Computación, cofundador de Bambú energía en movimiento
                       Polifacético, incansable, siempre está buscando nuevos horizontes.
                     </p>
                   </div>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div><!-- End of main team contant -->
           </div>
         </div>
@@ -451,13 +451,17 @@
         <div class="col-sm-12">
           <div class="contact_contant sections">
             <div class="head_title text-center">
+
               <h2>Contacto</h2>
+
               <div class="subtitle">
                 Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipit, dictum quam nec.
               </div>
+
               <div class="separator">
                 <img src="<%= path_to_image('website/isologotipo/logo.jpg')%>">
               </div>
+
             </div><!-- End off Head_title -->
             <div class="row">
               <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-12">
@@ -523,6 +527,7 @@
                           </div>
                         </div>
                       </div>
+
                       <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="single_contact_info">
                           <div class="single_info_text">
@@ -627,51 +632,45 @@
       </div>
     </div>
 
-</section><!-- End of contact section -->
+  </section><!-- End of contact section -->
 
+  <!--Footer section-->
+  <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
 
-<section id="tree" class="tree wow fadeIn" data-wow-duration="2s" data-wow-dealy="1.5s">
-  <img src="<%= path_to_image('website/recycle_tree.png')%>" />
-</section>
+          <div class="main_footer">
+            <div class="row">
 
-
-<!--Footer section-->
-<section class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="main_footer">
-          <div class="row">
-            <div class="col-sm-12 col-xs-12">
-              <div class="flowus">
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-youtube"></i></a>
+              <div class="col-sm-12 col-xs-12">
+                <div class="flowus">
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-youtube"></i></a>
+                </div>
               </div>
-            </div>
 
-            <div class="col-sm-6 col-xs-12">
-              <div class="copyright_text">
-
+              <div class="col-sm-6 col-xs-12">
+                <div class="copyright_text"></div>
               </div>
+
             </div>
           </div>
         </div>
       </div>
     </div>
+
+  </section><!-- End off footer Section-->
+
+
+  <!-- START SCROLL TO TOP  -->
+
+  <div class="scrollup">
+    <a href="#"><i class="fa fa-chevron-up"></i></a>
   </div>
-</section><!-- End off footer Section-->
 </div>
 
-
-
-
-<!-- START SCROLL TO TOP  -->
-
-<div class="scrollup">
-  <a href="#"><i class="fa fa-chevron-up"></i></a>
-</div>
-
-<%= javascript_include_tag 'website', 'data-turbolinks-track' => false %>
+  <%= javascript_include_tag 'website', 'data-turbolinks-track' => false %>
 
 </body>
 
