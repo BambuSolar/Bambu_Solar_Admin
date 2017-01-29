@@ -1,7 +1,8 @@
 {
   "name": "Bambu_Solar_Admin",
+  "image": "heroku/ruby",
   "scripts": {
-    "postdeploy": "rake db:migrate && rake db:seed"
+    "postdeploy": "deploy.sh"
   },
   "env": {
     "LANG": {
