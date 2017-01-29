@@ -2,6 +2,7 @@
   "name": "Bambu_Solar_Admin",
   "scripts": {
     "postdeploy": "rake db:migrate && rake db:seed"
+
   },
   "env": {
     "LANG": {
