@@ -294,6 +294,7 @@ p:last-child {
 /*
 Section
 */
+
 section{
     margin: 100px 0;
 }
@@ -632,7 +633,7 @@ input::-moz-placeholder {
     top: 3px;
 }
 
-.menu-scroll {
+.menu-scroll{
     padding-top: 0;
     padding-bottom: 0;
     position: fixed;
@@ -642,7 +643,7 @@ input::-moz-placeholder {
     z-index: 300;
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    background-color: rgba(0, 0, 0, 0.69) !important;
+    background-color: rgb(255, 255, 255) !important;
     -webkit-transition:all .3s;
     -moz-transition:all .3s;
     transition:all .3s;
@@ -694,7 +695,7 @@ input::-moz-placeholder {
     padding-bottom: 20px;
     text-transform: uppercase;
     font-size: 0.875rem;
-    color: #bfbfbf;
+    color: #6d6d6d;
     font-weight: bolder;
 }
 .navbar-brand {
@@ -800,12 +801,9 @@ input::-moz-placeholder {
 .main_home{
     padding-top: 25px;
     display: block;
-    margin-top: 250px;
-    margin-bottom: 250px;
-    /*background-color: rgba(41, 39, 34, 0.75);*/
+    position: relative;
+    top:50%;
 }
-
-
 .main_home h1{
     color: #fff;
 }
@@ -832,42 +830,6 @@ input::-moz-placeholder {
     height: 40px;
     line-height: 40px;
     color:#fff;
-    background: #fa7c06;
-}
-.main_home_slider i.nextprevleft{
-    width:40px;
-    height: 40px;
-    line-height: 40px;
-    color:#000;
-    background: #716a65;
-    float: left;
-    position: absolute;
-    z-index: 999;
-    top: 400px;
-    font-size:1.5rem;
-    transition: all 0.6s;
-    left:-60px;
-}
-.main_home_slider i.nextprevright{
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    color: #000;
-    background: #716a65;
-    float: right;
-    position: absolute;
-    z-index: 999;
-    top: 400px;
-    font-size:1.5rem;
-    transition: all 0.6s;
-    right: -50px;
-}
-.main_home_slider i.nextprevleft:hover{
-    color:#fff;
-    background: #fa7c06;
-}
-.main_home_slider i.nextprevright:hover{
-    color: #fff;
     background: #fa7c06;
 }
 
@@ -1093,7 +1055,7 @@ opinion Section Css
     outline: none;
 }
 .single_opinion_text{
-    background: rgba(255, 255, 255, 0.71);
+    background-color: rgba(246, 255, 249, 0.88);
     position: absolute;
     right:0;
     top:85px;
@@ -1115,6 +1077,7 @@ opinion Section Css
 }
 .single_opinion_right_img{
     position: relative;
+    height: 627px;
 }
 
 .single_opinion_right_img > div{
@@ -1141,6 +1104,7 @@ opinion Section Css
 /* Team section css */
 #team{
     padding-top: 30px;
+    margin-bottom: 0;
 }
 .main_team_area{
     position: relative;
@@ -1218,8 +1182,9 @@ clogo section css
 Our Work Section
 ===================================================================*/
 
-#ourWork{
+#ourWork {
     padding: 20px;
+    margin: 20px 0 !important;
 }
 
 .ourWorkSlider{
@@ -1285,6 +1250,7 @@ product Section
     border-top: 30px solid transparent;
     border-right: 30px solid #e18718;
     border-bottom: 30px solid transparent;
+    display: none;
 }
 .main_product_content .single_product_area .single_product_text.s_b_right:after{
     position: absolute;
