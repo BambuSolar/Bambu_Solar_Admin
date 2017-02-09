@@ -26,4 +26,6 @@ Rails.application.routes.draw do
 
   get '/preview' => 'website/site#home'
 
+  get '/preview/product_type/:id' => 'website/site#product_type'
+
 end
