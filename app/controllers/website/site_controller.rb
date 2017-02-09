@@ -4,7 +4,13 @@ class  Website::SiteController < ApplicationController
 
   def home
 
+  end
+
+  def type_product
+
 
 
   end
+
+
 end
