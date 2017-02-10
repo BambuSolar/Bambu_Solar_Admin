@@ -80,10 +80,13 @@
     <div class="overlay">
       <div class="home_skew_border">
                   <div class="main_home wow fadeInUp text-center" data-wow-duration="1s">
-                    <h3>Ingeniería Renovable en Mendoza, Argentina</h3>
-                    <h1>Bambú Energía en Movimiento</h1>
+
+                    <h1>
+                      <img src="<%= path_to_image('website/isologotipo/isologotipo.png')%>"/>
+                    </h1>
+                    <h4>Ingeniería Renovable en Mendoza, Argentina</h4>
                     <div class="separator5"></div>
-                    <p>Contanos cual es tu proyecto <br/>Sabemos de energía solar y queremos compartirlo</p>
+                    <p>Contanos cual es tu proyecto <br/><small>Sabemos de energía solar y queremos compartirlo</small></p>
                   </div>
         <div class="scrooldown">
           <a href="#feature"><i class="fa fa-angle-down"></i></a>
@@ -144,7 +147,7 @@
       <div class="row">
         <div class="main_video">
           <div class="col-sm-12">
-            <iframe title="YouTube video player" class="youtube-player" allowfullscreen="" type="text/html" src="https://www.youtube.com/embed/E9hvYCYQ__U" frameborder="0"></iframe>
+            <iframe title="YouTube video player" class="youtube-player" allowfullscreen="allowfullscreen" type="text/html" src="https://www.youtube.com/embed/E9hvYCYQ__U" frameborder="0"></iframe>
           </div>
         </div>
       </div><!--End of row -->
@@ -462,13 +465,13 @@
                               <div class="col-sm-12 text-center">
                                 <div class="col-xs-12 col-sm-10 col-sm-offset-1 visible-xs-block">
                                   <div class="row">
-                                    <div class="col-xs-6">
-                                      <button type="button" class="btn btn-info btn-lg">
+                                    <div class="col-xs-6 text-right">
+                                      <button type="button" class="btn btn-info btn-lg btn-phone">
                                         <i class="fa fa-whatsapp" aria-hidden="true"></i>
                                       </button>
                                     </div>
-                                    <div class="col-xs-6">
-                                      <button type="button" class="btn btn-info btn-lg">
+                                    <div class="col-xs-6 text-left">
+                                      <button type="button" class="btn btn-info btn-lg btn-phone">
                                         <i class="fa fa-phone" aria-hidden="true"></i>
                                       </button>
                                     </div>
@@ -487,13 +490,13 @@
                               <div class="col-sm-12 text-center">
                                 <div class="col-xs-12 col-sm-10 col-sm-offset-1 visible-xs-block">
                                   <div class="row">
-                                    <div class="col-xs-6">
-                                      <button type="button" class="btn btn-info btn-lg">
+                                    <div class="col-xs-6 text-right">
+                                      <button type="button" class="btn btn-info btn-lg btn-phone">
                                         <i class="fa fa-whatsapp" aria-hidden="true"></i>
                                       </button>
                                     </div>
-                                    <div class="col-xs-6">
-                                      <button type="button" class="btn btn-info btn-lg">
+                                    <div class="col-xs-6 text-left">
+                                      <button type="button" class="btn btn-info btn-lg btn-phone">
                                         <i class="fa fa-phone" aria-hidden="true"></i>
                                       </button>
                                     </div>
@@ -519,41 +522,21 @@
                           <div class="single_info_text">
                             <h3>Correo electrónico</h3>
                             <div class="row">
-                              <div class="col-sm-12 text-center">
-                                <div class="col-xs-6 col-xs-offset-3 visible-xs-block">
-                                  <button type="button" class="btn btn-info btn-lg">
-                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                  </button>
-                                </div>
-                                <div class="col-xs-12 visible-xs-block">
-                                  <h4 class="text-lowercase">info@bambusolar.com</h4>
-                                </div>
-                                <div class="col-sm-12 hidden-xs text-center">
+                                <div class="col-xs-12 col-sm-12 text-center">
                                   <h4>
                                     <a href="mailto:ventas@bambusolar.com?subject=Consulta" class="text-lowercase">
                                       <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                       info@bambusolar.com
                                     </a>
                                   </h4>
-                                </div>
                               </div>
-                              <div class="col-sm-12 text-center">
-                                <div class="col-xs-6 col-xs-offset-3 visible-xs-block">
-                                  <button type="button" class="btn btn-info btn-lg">
-                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                  </button>
-                                </div>
-                                <div class="col-xs-12 visible-xs-block">
-                                  <h4 class="text-lowercase">ventas@bambusolar.com</h4>
-                                </div>
-                                <div class="col-sm-12 hidden-xs text-center">
+                                <div class="col-xs-12 col-sm-12 text-center">
                                   <h4>
                                     <a href="mailto:ventas@bambusolar.com?subject=Consulta%20de%20Precios" class="text-lowercase">
                                       <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                       ventas@bambusolar.com
                                     </a>
                                   </h4>
-                                </div>
                               </div>
                             </div>
                           </div>
@@ -564,18 +547,7 @@
                           <div class="single_info_text">
                             <h3>Facebook</h3>
                             <div class="row">
-                              <div class="col-xs-12 text-center visible-xs-block">
-                                <div class="col-xs-6 col-xs-offset-3">
-                                  <a target="_blank" href="http://www.facebook.com/bambusolar" class="btn btn-info btn-lg">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                  </a>
-                                </div>
-                                <div class="col-xs-12">
-                                  <h5 class="text-center" style="padding: 20px;">www.facebook.com/bambusolar</h5>
-                                </div>
-                              </div>
-                              <div class="col-sm-12 text-center hidden-xs">
-                                <div class="col-sm-12 hidden-xs text-center">
+                                <div class="col-sm-12 text-center">
                                   <a href="http://www.facebook.com/bambusolar">
                                     <h4 class="text-lowercase">
                                       <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -583,7 +555,6 @@
                                     </h4>
                                   </a>
                                 </div>
-                              </div>
                             </div>
                           </div>
                         </div>

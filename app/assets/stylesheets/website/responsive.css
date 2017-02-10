@@ -186,12 +186,19 @@
         text-align: center;
     }
     .main_home {
-        margin-top: 100px;
-        margin-bottom: 100px;
+
     }
     .ourWorkSlider .item{
         height: 100px;
     }
+    .scrooldown{
+        bottom: 70px;
+    }
+
+    .home .main_home h1{
+        background: none !important;
+    }
+
 }
 
 
@@ -210,8 +217,7 @@
         left: 30%;
     }
     .main_home {
-        margin-top: 75px;
-        margin-bottom: 75px;
+
     }
 
     .sections {
