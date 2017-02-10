@@ -2,7 +2,7 @@
   "name": "Bambu_Solar_Admin",
   "image": "heroku/ruby",
   "scripts": {
-    "postdeploy": "deploy.sh"
+    "postdeploy": "./deploy.sh"
   },
   "env": {
     "LANG": {
