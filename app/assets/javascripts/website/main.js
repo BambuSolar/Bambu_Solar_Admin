@@ -2,7 +2,13 @@
 "use strict";
 jQuery(document).ready(function ($) {
 
-    $('.home_skew_border').css('height', $(window).height());
+    var home_skew_border = $('.home_skew_border');
+
+    home_skew_border.css('height', $(window).height());
+
+    var main_home = home_skew_border.find('.main_home');
+
+    main_home.css('top', ($(window).height() - main_home.height())/2);
 
     $(window).on('load',function () {
         $(".loaded").fadeOut();
@@ -87,7 +93,6 @@ wow.init();
 jQuery(window).scroll(function () {
     var top = jQuery(document).scrollTop();
     var height = 300;
-//alert(batas);
 
 if (top > height) {
     jQuery('.navbar-fixed-top').addClass('menu-scroll');
