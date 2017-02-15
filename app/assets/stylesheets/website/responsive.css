@@ -194,6 +194,11 @@
     .scrooldown{
         bottom: 70px;
     }
+
+    .home .main_home h1{
+        background: none !important;
+    }
+
 }
 
 
