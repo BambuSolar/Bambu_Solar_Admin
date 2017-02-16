@@ -1,3 +1,5 @@
+require 'i18n'
+
 class  Website::SiteController < ApplicationController
 
   layout false
@@ -6,9 +8,11 @@ class  Website::SiteController < ApplicationController
 
   end
 
-  def type_product
+  def product_type
 
+    @product_types = ProductType.all
 
+    @product_type = ProductType.find(params[:id])
 
   end
 

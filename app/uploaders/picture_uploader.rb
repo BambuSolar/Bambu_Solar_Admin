@@ -9,20 +9,25 @@ class PictureUploader < CarrierWave::Uploader::Base
   # Choose what kind of storage to use for this uploader:
   # storage :file
 
-  if Rails.env.test? or Rails.env.development?
-
-      storage :file
-
-  else
-
+  if Rails.env.production?
     storage :fog
-
+  else
+    storage :file
   end
 
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
   def store_dir
-    "#{Rails.env}/uploads/#{model.class.to_s.underscore}/#{model.id}"
+    if Rails.env.production?
+
+      "#{Rails.env}/uploads/#{model.class.to_s.underscore}/#{model.id}"
+
+    else
+
+      "public/uploads/#{Rails.env}/#{model.class.to_s.underscore}/#{model.id}"
+
+    end
+
   end
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
@@ -48,7 +53,7 @@ class PictureUploader < CarrierWave::Uploader::Base
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
   def extension_white_list
-     %w(jpg jpeg gif png)
+    %w(jpg jpeg gif png)
   end
 
   # Override the filename of the uploaded files:

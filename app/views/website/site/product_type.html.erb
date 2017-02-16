@@ -1,0 +1,166 @@
+<!doctype html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Bambú Energía en Movimiento</title>
+  <%= stylesheet_link_tag  'website_product_type', media: 'all', 'data-turbolinks-track' => false %>
+  <meta name="description" content="">
+  <link rel="icon" type="image/png" href="<%= path_to_image('website/favicon.png')%>">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse">
+
+<div class='preloader'>
+  <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+    <div class="row">
+      <div class="col-xs-12 sun">
+        <img src="<%= path_to_image('website/loader/sun.png')%>" alt="" width="100px;">
+      </div>
+      <div class="col-xs-12 lightbulb">
+        <img src="<%= path_to_image('website/loader/lightbulb.gif')%>" alt="" width="100px;">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="culmn">
+  <header id="main_menu" class="header navbar-fixed-top">
+    <div class="main_menu_bg">
+      <div class="container">
+        <div class="row">
+          <div class="nave_menu">
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed visible-xs-block" data-toggle="collapse" data-target="#mobile_header_menu" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="..">
+                    <img src="<%= path_to_image('website/isologotipo/isologotipo.jpg')%>"/>
+                  </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+
+
+
+                <div class="collapse navbar-collapse " id="mobile_header_menu">
+
+                  <ul class="nav navbar-nav navbar-right">
+                    <li>
+                      <a href="..">
+                        <i class="fa fa-home hidden-xs"></i> Inicio
+                      </a>
+                    </li>
+                    <li class="visible-xs-block">
+                      <a href="./termotanques.html">
+                        Termotanques Solares
+                      </a>
+                    </li>
+                    <li class="visible-xs-block">
+                      <a href="./paneles.html">
+                        Paneles Solares
+                      </a>
+                    </li>
+                    <li class="visible-xs-block">
+                      <a class="active">
+                        Climatización de Picinas y Piletas
+                      </a>
+                    </li>
+                  </ul>
+
+                </div>
+
+              </div>
+            </nav>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </header> <!--End of header -->
+
+
+  <div id="slider_type_products" class="hidden-xs">
+    <div class="row" >
+      <% @product_types.each do |p_t| %>
+        <a href="./<%= I18n.transliterate(p_t.name.split(' ')[0].to_s.downcase) %>.html" 
+           class="col-xs-4" 
+           id="type_product_<%= I18n.transliterate(p_t.name.downcase.gsub(' ', '_')) %>">
+          <span style="background-image: url('<%= p_t.picture.photo %>')"></span>
+          <p class="title"><%= p_t.name.scrub %></p>
+        </a>
+      <% end %>
+    </div>
+  </div>
+
+  <section id="products" class="container text-center">
+
+    <div class="head_title text-center">
+      <h2><%= @product_type.name.capitalize %></h2>
+      <div class="subtitle">
+        Ideales para mantener una agradable temperatura de su piletas o picina durante todo el año.
+      </div>
+      <div class="separator"><img src="<%= path_to_image('website/isologotipo/logo.jpg')%>"></div>
+    </div><!-- End off Head_title -->
+
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+        <div class="card  product">
+          <div class="ribbon-container">
+
+            <!-- /.ribbon -->
+            <div class="ribbon-right sale">
+              <div class="theribbon">
+                4 <i class="fa fa-users" aria-hidden="true"></i>
+              </div>
+            </div>
+            <!-- /.ribbon -->
+          </div>
+          <a href="#product_modal" class="product_modal_btn">
+            <div class="image" style="background-image: url(<%= path_to_image('website/type_products/paneles/panel-01.jpg')%>);"></div>
+            <h4 class="title text-capitalize">Panel Solar 120w</h4>
+            <p class="description text-overflow"></p>
+            <p class="price"> $ 34.000</p>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <div id="product_modal">
+    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+    <div  id="btn-close-modal" class="close-product_modal">
+      <img class="closebt" src="<%= path_to_image('website/closebt.svg')%>">
+    </div>
+
+    <div class="modal-content">
+
+    </div>
+  </div>
+
+
+  <!-- START SCROLL TO TOP  -->
+
+  <div class="scrollup">
+    <a href="#"><i class="fa fa-chevron-up"></i></a>
+  </div>
+
+</div>
+
+<%= javascript_include_tag 'website', 'data-turbolinks-track' => false %>
+
+</body>
+
+</html>
