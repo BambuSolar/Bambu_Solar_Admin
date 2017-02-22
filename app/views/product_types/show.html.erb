@@ -29,10 +29,9 @@
                 <th>Nombre</th>
                 <th>Precio</th>
                 <th>Habilitado</th>
-                <th style="width: 112px;"></th>
+                <th style="width: 160px;"></th>
               </tr>
               </thead>
-
               <tbody>
               <% @products.each do |product| %>
                   <tr>
@@ -43,6 +42,9 @@
                     <td>$<%= number_with_precision(product.price, precision: 2) %></td>
                     <td><%= product.enabled ? 'Si' : 'No' %></td>
                     <td>
+                      <%= link_to product_type_product_product_pictures_path(@product_type,product), class: 'btn btn-default'  do %>
+                          <i class="material-icons">photo_library</i>
+                      <% end %>
                       <%= link_to edit_product_type_product_path(@product_type,product), class: 'btn btn-default'  do %>
                           <i class="material-icons">create</i>
                       <% end %>

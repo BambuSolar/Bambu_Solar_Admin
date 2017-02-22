@@ -11,7 +11,9 @@ Rails.application.routes.draw do
   root 'home#landing'
 
   resources :product_types do
-    resources :products
+    resources :products do
+      resources :product_pictures
+    end
   end
 
   get 'signup'  => 'users#new'
