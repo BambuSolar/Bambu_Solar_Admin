@@ -24,8 +24,8 @@ Rails.application.routes.draw do
 
   resources :users
 
-  get '/preview' => 'website/site#home'
+  get '/preview' => 'website/site#home', as: 'preview'
 
-  get '/preview/product_type/:id' => 'website/site#product_type'
+  get '/preview/product_type/:id' => 'website/site#product_type', as: 'preview_product_type'
 
 end

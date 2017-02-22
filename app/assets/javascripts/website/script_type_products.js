@@ -36,3 +36,21 @@ function square_img_product(){
 	$('.product').find('.image').css('height', img_width);
 
 }
+
+
+$(window).scroll(function(event){
+    var st = $(this).scrollTop();
+
+    if (st > 100){
+
+        // downscroll code
+
+        $('#slider_type_products').addClass('mini');
+
+    } else {
+        // upscroll code
+        $('#slider_type_products').removeClass('mini');
+
+    }
+
+});
