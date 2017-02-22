@@ -28,7 +28,9 @@
           <% @product_types.each do |product_type| %>
               <tr>
                 <td>
-                  <%= image_tag product_type.picture.photo_url, width: '36px', height: '36px' %>
+                  <% unless product_type.picture.nil? %>
+                    <%= image_tag product_type.picture.photo_url, width: '36px', height: '36px' %>
+                  <% end %>
                   <%= product_type.name %>
                 </td>
                 <td>

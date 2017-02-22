@@ -224,6 +224,10 @@
         padding-top: 35px;
         padding-bottom: 35px;
     }
+
+    #mobile_header_menu{
+        border-bottom: solid #bfbaba !important;
+    }
 }
 @media (max-width: 320px) {
 

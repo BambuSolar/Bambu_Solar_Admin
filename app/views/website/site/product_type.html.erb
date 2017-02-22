@@ -112,7 +112,7 @@
       <% @products.each do |p| %>
           <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
             <div class="card  product">
-              <a href="#product_modal" class="product_modal_btn">
+              <a href="#product_modal_<%= p.id %>" class="product_modal_btn" id="product_modal_<%= p.id %>_btn">
                 <div class="image" style="background-image: url(<%= p.picture.photo %>);"></div>
                 <h4 class="title text-capitalize"><%= p.name %></h4>
                 <p class="description text-overflow"></p>
@@ -126,16 +126,40 @@
   </section>
 
 
-  <div id="product_modal">
-    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
-    <div  id="btn-close-modal" class="close-product_modal">
-      <img class="closebt" src="<%= path_to_image('website/closebt.svg')%>">
-    </div>
+  <% @products.each do |p| %>
+    <div id="product_modal_<%= p.id %>">
+      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+      <div  id="btn-close-modal" class="close-product_modal_<%= p.id %>">
+        <img class="closebt" src="<%= path_to_image('website/closebt.svg')%>">
+      </div>
 
-    <div class="modal-content">
+      <div class="modal-content">
+        <div class="col-xs-12 col-sm-6">
+          <div class="pictures">
+          <%= image_tag p.picture.photo_url, width: '100%', height: 'auto' %>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <h1 class="title"><%= p.name %></h1>
+          <p class="description"><%= p.description %></p>
+          <div class="col-xs-6">
+            <h3>$ <%= number_with_precision(p.price, precision: 2) %></h3>
+          </div>
+          <div class="col-xs-6">
 
+          </div>
+
+        </div>
+
+        <div class="col-xs-12">
+          <div class="description_detail">
+            <%= simple_format p.description_detail %>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
+  <% end %>
 
 
   <!-- START SCROLL TO TOP  -->
@@ -145,6 +169,8 @@
   </div>
 
 </div>
+
+<%= Gon::Base.render_data %>
 
 <%= javascript_include_tag 'website_product_type', 'data-turbolinks-track' => false %>
 

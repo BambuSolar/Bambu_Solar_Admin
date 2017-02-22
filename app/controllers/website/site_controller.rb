@@ -16,6 +16,8 @@ class  Website::SiteController < ApplicationController
 
     @products = Product.where(product_type_id: @product_type)
 
+    gon.products = @products.select(:id)
+
   end
 
 

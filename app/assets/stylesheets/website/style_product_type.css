@@ -274,5 +274,45 @@
 }
 
 #mobile_header_menu{
-    border-bottom: solid #bfbaba;
+    border-bottom: none;
 }
+
+
+.modal-content{
+
+}
+
+.modal-content h1.title {
+    font-size: 4rem;
+    text-align: center;
+    padding: 20px;
+    border-bottom: solid 1px white;
+}
+
+.modal-content p.description {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.modal-content .description_detail{
+    padding: 20px;
+    border-top: solid white 1px;
+    color: white;
+}
+
+.modal-content .description_detail h1{
+    font-size: 2em;
+}
+
+.modal-content .description_detail p{
+    font-size: 1em;
+}
+
+
+
+.modal-content .pictures{
+    padding: 20px;
+}
+

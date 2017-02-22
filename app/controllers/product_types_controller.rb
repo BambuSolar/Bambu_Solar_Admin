@@ -50,13 +50,27 @@ class ProductTypesController < SecurityController
 
     unless params[:product_type][:image].nil?
 
-      @product_type.picture.remove_photo!
 
-      @product_type.picture.save!
+      unless @product_type.picture.nil?
 
-      @product_type.picture.update(photo: params[:product_type][:image])
+        @product_type.picture.remove_photo!
 
-      @product_type.picture.save!
+        @product_type.picture.save!
+
+        @product_type.picture.update(photo: params[:product_type][:image])
+
+        @product_type.picture.save!
+
+      else
+
+        p = Picture.new(photo: params[:product_type][:image])
+
+        p.save!
+
+        @product_type.picture = p
+
+      end
+
 
     end
 
