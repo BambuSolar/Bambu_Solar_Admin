@@ -28,6 +28,7 @@
 
 <div class="culmn">
   <header id="main_menu" class="header navbar-fixed-top">
+
     <div class="main_menu_bg">
       <div class="container">
         <div class="row">
@@ -42,38 +43,33 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="..">
-                    <img src="<%= path_to_image('website/isologotipo/isologotipo.jpg')%>"/>
+                  <a class="navbar-brand" href="#home">
+                    <img src="<%= path_to_image('website/isologotipo/isologotipo.png')%>"/>
                   </a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
 
-
-
                 <div class="collapse navbar-collapse " id="mobile_header_menu">
 
                   <ul class="nav navbar-nav navbar-right">
                     <li>
-                      <a href="..">
+                      <a href="/">
                         <i class="fa fa-home hidden-xs"></i> Inicio
                       </a>
                     </li>
+
+                    <% @product_types.each do |p_t| %>
                     <li class="visible-xs-block">
-                      <a href="./termotanques.html">
-                        Termotanques Solares
+                      <a href="./<%= I18n.transliterate(p_t.name.split(' ')[0].to_s.downcase) %>.html"
+                         <% if p_t.id == @product_type.id %>
+                            class="active"
+                         <% end %>
+                      >
+                        <%= p_t.name.scrub %>
                       </a>
                     </li>
-                    <li class="visible-xs-block">
-                      <a href="./paneles.html">
-                        Paneles Solares
-                      </a>
-                    </li>
-                    <li class="visible-xs-block">
-                      <a class="active">
-                        Climatización de Picinas y Piletas
-                      </a>
-                    </li>
+                    <% end %>
                   </ul>
 
                 </div>
@@ -92,12 +88,12 @@
   <div id="slider_type_products" class="hidden-xs">
     <div class="row" >
       <% @product_types.each do |p_t| %>
-        <a href="./<%= I18n.transliterate(p_t.name.split(' ')[0].to_s.downcase) %>.html" 
-           class="col-xs-4" 
-           id="type_product_<%= I18n.transliterate(p_t.name.downcase.gsub(' ', '_')) %>">
-          <span style="background-image: url('<%= p_t.picture.photo %>')"></span>
-          <p class="title"><%= p_t.name.scrub %></p>
-        </a>
+          <a href="./<%= I18n.transliterate(p_t.name.split(' ')[0].to_s.downcase) %>.html"
+             class="col-xs-4 <%= p_t.id == @product_type.id ? 'active' : '' %>"
+             id="type_product_<%= I18n.transliterate(p_t.name.downcase.gsub(' ', '_')) %>">
+            <span style="background-image: url('<%= p_t.picture.photo %>')"></span>
+            <p class="title"><%= p_t.name.scrub %></p>
+          </a>
       <% end %>
     </div>
   </div>
@@ -113,42 +109,57 @@
     </div><!-- End off Head_title -->
 
     <div class="row">
-      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-        <div class="card  product">
-          <div class="ribbon-container">
-
-            <!-- /.ribbon -->
-            <div class="ribbon-right sale">
-              <div class="theribbon">
-                4 <i class="fa fa-users" aria-hidden="true"></i>
-              </div>
+      <% @products.each do |p| %>
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+            <div class="card  product">
+              <a href="#product_modal_<%= p.id %>" class="product_modal_btn" id="product_modal_<%= p.id %>_btn">
+                <div class="image" style="background-image: url(<%= p.picture.photo %>);"></div>
+                <h4 class="title text-capitalize"><%= p.name %></h4>
+                <p class="description text-overflow"></p>
+                <p class="price"> $ <%= p.price %> </p>
+              </a>
             </div>
-            <!-- /.ribbon -->
           </div>
-          <a href="#product_modal" class="product_modal_btn">
-            <div class="image" style="background-image: url(<%= path_to_image('website/type_products/paneles/panel-01.jpg')%>);"></div>
-            <h4 class="title text-capitalize">Panel Solar 120w</h4>
-            <p class="description text-overflow"></p>
-            <p class="price"> $ 34.000</p>
-          </a>
-        </div>
-      </div>
-
+      <% end %>
     </div>
 
   </section>
 
 
-  <div id="product_modal">
-    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
-    <div  id="btn-close-modal" class="close-product_modal">
-      <img class="closebt" src="<%= path_to_image('website/closebt.svg')%>">
-    </div>
+  <% @products.each do |p| %>
+    <div id="product_modal_<%= p.id %>">
+      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+      <div  id="btn-close-modal" class="close-product_modal_<%= p.id %>">
+        <img class="closebt" src="<%= path_to_image('website/closebt.svg')%>">
+      </div>
 
-    <div class="modal-content">
+      <div class="modal-content">
+        <div class="col-xs-12 col-sm-6">
+          <div class="pictures">
+          <%= image_tag p.picture.photo_url, width: '100%', height: 'auto' %>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <h1 class="title"><%= p.name %></h1>
+          <p class="description"><%= p.description %></p>
+          <div class="col-xs-6">
+            <h3>$ <%= number_with_precision(p.price, precision: 2) %></h3>
+          </div>
+          <div class="col-xs-6">
 
+          </div>
+
+        </div>
+
+        <div class="col-xs-12">
+          <div class="description_detail">
+            <%= simple_format p.description_detail %>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
+  <% end %>
 
 
   <!-- START SCROLL TO TOP  -->
@@ -159,7 +170,9 @@
 
 </div>
 
-<%= javascript_include_tag 'website', 'data-turbolinks-track' => false %>
+<%= Gon::Base.render_data %>
+
+<%= javascript_include_tag 'website_product_type', 'data-turbolinks-track' => false %>
 
 </body>
 

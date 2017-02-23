@@ -24,7 +24,7 @@ class PictureUploader < CarrierWave::Uploader::Base
 
     else
 
-      "public/uploads/#{Rails.env}/#{model.class.to_s.underscore}/#{model.id}"
+      "uploads/#{Rails.env}/#{model.class.to_s.underscore}/#{model.id}"
 
     end
 

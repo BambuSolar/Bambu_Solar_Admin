@@ -16,9 +16,10 @@
 
 //= require website/animatedModal.min
 
-
 //= require website/jquery.matchHeight-min
 
 //= require website/plugins
+
 //= require website/main
 
+//= require website/script_type_products

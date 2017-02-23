@@ -20,7 +20,7 @@
           <thead>
           <tr>
             <th>Nombre</th>
-            <th style="width: 160px;"></th>
+            <th style="width: 240px;"></th>
           </tr>
           </thead>
 
@@ -28,10 +28,15 @@
           <% @product_types.each do |product_type| %>
               <tr>
                 <td>
-                  <%= image_tag product_type.picture.photo_url, width: '36px', height: '36px' %>
+                  <% unless product_type.picture.nil? %>
+                    <%= image_tag product_type.picture.photo_url, width: '36px', height: '36px' %>
+                  <% end %>
                   <%= product_type.name %>
                 </td>
                 <td>
+                  <%= link_to preview_product_type_path(product_type.id), target: '_blank', class: 'btn btn-default' do %>
+                      <i class="material-icons">public</i>
+                  <% end %>
                   <%= link_to product_type, class: 'btn btn-default' do %>
                       <i class="material-icons">visibility</i>
                   <% end %>
