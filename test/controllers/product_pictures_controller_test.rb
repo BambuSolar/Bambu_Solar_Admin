@@ -5,18 +5,18 @@ class ProductPicturesControllerTest < ActionController::TestCase
     @product_picture = product_pictures(:one)
   end
 
-  test "should get index" do
+  test 'should get index' do
     get :index
     assert_response :success
     assert_not_nil assigns(:product_pictures)
   end
 
-  test "should get new" do
+  test 'should get new' do
     get :new
     assert_response :success
   end
 
-  test "should create product_picture" do
+  test 'should create product_picture' do
     assert_difference('ProductPicture.count') do
       post :create, product_picture: {  }
     end
@@ -24,22 +24,22 @@ class ProductPicturesControllerTest < ActionController::TestCase
     assert_redirected_to product_picture_path(assigns(:product_picture))
   end
 
-  test "should show product_picture" do
+  test 'should show product_picture' do
     get :show, id: @product_picture
     assert_response :success
   end
 
-  test "should get edit" do
+  test 'should get edit' do
     get :edit, id: @product_picture
     assert_response :success
   end
 
-  test "should update product_picture" do
+  test 'should update product_picture' do
     patch :update, id: @product_picture, product_picture: {  }
     assert_redirected_to product_picture_path(assigns(:product_picture))
   end
 
-  test "should destroy product_picture" do
+  test 'should destroy product_picture' do
     assert_difference('ProductPicture.count', -1) do
       delete :destroy, id: @product_picture
     end
