@@ -1,0 +1,1 @@
+json.array! @product_pictures, partial: 'product_pictures/product_picture', as: :product_picture
