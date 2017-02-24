@@ -2,7 +2,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.remotipart
-//= require turbolinks
 //= require_tree ./MaterialDesign/bootstrap
 //= require_tree ./MaterialDesign/bootstrap-select
 //= require_tree ./MaterialDesign/jquery-slimscroll
@@ -15,6 +14,8 @@
 //= require_tree ./MaterialDesign/tinymce/plugins
 //= require ./MaterialDesign/admin
 //= require ./MaterialDesign/helpers
+
+
 
 $(function () {
     $('.form_validation').validate({
@@ -171,37 +172,40 @@ var fileInput  = document.querySelector( ".input-file" ),
     btn_submit_file = $(".btn-file-submit");
 
 
-button.addEventListener( "keydown", function( event ) {
-    if ( event.keyCode == 13 || event.keyCode == 32 ) {
+if(button && fileInput) {
+
+    button.addEventListener("keydown", function (event) {
+        if (event.keyCode == 13 || event.keyCode == 32) {
+            fileInput.focus();
+        }
+    });
+    button.addEventListener("click", function (event) {
         fileInput.focus();
-    }
-});
-button.addEventListener( "click", function( event ) {
-    fileInput.focus();
-    return false;
-});
-fileInput.addEventListener( "change", function( event ) {
-     var file_name = this.value.split("C:\\fakepath\\")[1];
+        return false;
+    });
+    fileInput.addEventListener("change", function (event) {
+        var file_name = this.value.split("C:\\fakepath\\")[1];
 
-     if(file_name){
-         the_return.innerHTML = file_name;
+        if (file_name) {
+            the_return.innerHTML = file_name;
 
-         if(the_return.innerHTML.length > 0){
-             btn_submit_file.removeAttr('disabled');
-         }else{
-             btn_submit_file.attr('disabled', 'disabled');
-         }
+            if (the_return.innerHTML.length > 0) {
+                btn_submit_file.removeAttr('disabled');
+            } else {
+                btn_submit_file.attr('disabled', 'disabled');
+            }
 
-     }else{
+        } else {
 
-         the_return.innerHTML = "";
+            the_return.innerHTML = "";
 
-         btn_submit_file.attr('disabled', 'disabled');
+            btn_submit_file.attr('disabled', 'disabled');
 
-     }
+        }
 
-});
+    });
 
-btn_submit_file.on('click',function (e) {
-   $('#modal_form_upload').find('.progress').show();
-});
+    btn_submit_file.on('click', function (e) {
+        $('#modal_form_upload').find('.progress').show();
+    });
+}

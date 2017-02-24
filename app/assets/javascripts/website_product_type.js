@@ -1,5 +1,4 @@
 //= require jquery
-//= require turbolinks
 
 //= require website/vendor/modernizr.custom.28468
 //= require website/vendor/bootstrap.min

@@ -336,3 +336,20 @@
     padding: 20px;
 }
 
+
+.modal-content .pictures .thumbnails{
+    margin-top: 20px;
+}
+
+.modal-content .pictures .thumbnails img{
+    margin: auto;
+    cursor: pointer;
+}
+
+
+.modal-content .pictures .screen img{
+    max-height: 400px;
+    margin: 0 auto;
+    position: relative;
+
+}
