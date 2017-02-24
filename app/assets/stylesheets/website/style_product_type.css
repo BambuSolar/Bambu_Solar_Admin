@@ -292,12 +292,14 @@
 .modal-content p.description {
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
     font-size: 20px;
+    margin-bottom: -5px;
 }
 
 .modal-content .description_detail{
     padding: 20px;
+    margin-top: 15px;
     border-top: solid white 1px;
     color: white;
 }
@@ -310,7 +312,25 @@
     font-size: 1em;
 }
 
+.modal-content .buttons{
+    padding: 20px 0;
+    text-align: center;
+}
 
+.modal-content .buttons .price{
+    font-size: 2.3em;
+    text-align: center;
+    color: white;
+    line-height: 46px;
+}
+
+.modal-content .buttons .modal-contact-btn{
+    margin: 0;
+    text-transform: uppercase;
+    color: white;
+    background: #dd8418;
+    border: 2px white solid;
+}
 
 .modal-content .pictures{
     padding: 20px;

@@ -35,6 +35,25 @@ $(function () {
         });
 
     });
+
+
+});
+
+
+$('#modal-contact').iziModal({
+    title: 'Contactanos',
+    icon: 'fa fa-phone',
+    attached: 'bottom',
+    headerColor: '#e18718',
+    iconColor: 'white',
+    fullscreen: false,
+    openFullscreen: true,
+    zindex: 20000
+});
+
+$(document).on('click', '.modal-contact-btn', function (event) {
+    event.preventDefault();
+    $('#modal-contact').iziModal('open');
 });
 
 
@@ -63,3 +82,4 @@ $(window).scroll(function(event){
     }
 
 });
+

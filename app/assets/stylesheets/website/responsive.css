@@ -228,6 +228,14 @@
     #mobile_header_menu{
         border-bottom: solid #bfbaba !important;
     }
+
+    .modal-content h1.title {
+        font-size: 3.5rem;
+    }
+
+    .modal-content .buttons .modal-contact-btn {
+        margin-top: 8px;
+    }
 }
 @media (max-width: 320px) {
 

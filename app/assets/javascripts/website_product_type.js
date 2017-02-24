@@ -18,8 +18,13 @@
 
 //= require website/jquery.matchHeight-min
 
+//= require website/vendor/iziModal.min
+
 //= require website/plugins
 
 //= require website/main
 
 //= require website/script_type_products
+
+
+

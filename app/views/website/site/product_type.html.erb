@@ -60,15 +60,15 @@
                     </li>
 
                     <% @product_types.each do |p_t| %>
-                    <li class="visible-xs-block">
-                      <a href="./<%= I18n.transliterate(p_t.name.split(' ')[0].to_s.downcase) %>.html"
-                         <% if p_t.id == @product_type.id %>
-                            class="active"
-                         <% end %>
-                      >
-                        <%= p_t.name.scrub %>
-                      </a>
-                    </li>
+                        <li class="visible-xs-block">
+                          <a href="./<%= I18n.transliterate(p_t.name.split(' ')[0].to_s.downcase) %>.html"
+                             <% if p_t.id == @product_type.id %>
+                             class="active"
+                             <% end %>
+                             >
+                            <%= p_t.name.scrub %>
+                          </a>
+                        </li>
                     <% end %>
                   </ul>
 
@@ -127,40 +127,48 @@
 
 
   <% @products.each do |p| %>
-    <div id="product_modal_<%= p.id %>">
-      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
-      <div  id="btn-close-modal" class="close-product_modal_<%= p.id %>">
-        <img class="closebt" src="<%= path_to_image('website/closebt.svg')%>">
+      <div id="product_modal_<%= p.id %>">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div  id="btn-close-modal" class="close-product_modal_<%= p.id %>">
+          <img class="closebt" src="<%= path_to_image('website/closebt.svg')%>">
+        </div>
+
+        <div class="modal-content">
+          <div class="col-xs-12 col-sm-6">
+            <div class="pictures">
+              <%= image_tag p.picture.photo_url, width: '100%', height: 'auto' %>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <h1 class="title"><%= p.name %></h1>
+            <% if p.description.to_s.size > 0 %>
+              <p class="description"><%= p.description %></p>
+            <% end %>
+            <div class="buttons">
+              <div class="col-xs-6">
+                <p class="price">$ <%= number_with_precision(p.price, precision: 2) %></p>
+              </div>
+              <div class="col-xs-6">
+                <button type="button" class="modal-contact-btn btn">Consultar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12">
+            <div class="description_detail">
+              <%= simple_format p.description_detail %>
+            </div>
+          </div>
+
+        </div>
       </div>
-
-      <div class="modal-content">
-        <div class="col-xs-12 col-sm-6">
-          <div class="pictures">
-          <%= image_tag p.picture.photo_url, width: '100%', height: 'auto' %>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <h1 class="title"><%= p.name %></h1>
-          <p class="description"><%= p.description %></p>
-          <div class="col-xs-6">
-            <h3>$ <%= number_with_precision(p.price, precision: 2) %></h3>
-          </div>
-          <div class="col-xs-6">
-
-          </div>
-
-        </div>
-
-        <div class="col-xs-12">
-          <div class="description_detail">
-            <%= simple_format p.description_detail %>
-          </div>
-        </div>
-
-      </div>
-    </div>
   <% end %>
 
+
+
+  <div id="modal-contact" class="iziModal">
+    <%= render 'contact' %>
+  </div>
 
   <!-- START SCROLL TO TOP  -->
 
