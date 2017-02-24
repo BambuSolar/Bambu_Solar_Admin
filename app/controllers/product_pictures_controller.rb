@@ -6,7 +6,7 @@ class ProductPicturesController < SecurityController
   # GET /product_pictures
   # GET /product_pictures.json
   def index
-    @product_pictures = ProductPicture.all
+    @product_pictures = ProductPicture.where(product: @product)
     @product_picture = ProductPicture.new
   end
 
