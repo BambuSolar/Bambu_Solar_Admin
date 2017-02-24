@@ -60,3 +60,5 @@ gem 'sass', '~> 3.2.0'
 gem 'fog-aws'
 
 gem 'gon'
+
+gem 'remotipart', '~> 1.2'

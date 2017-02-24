@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>BambuSolarAdmin</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <%= csrf_meta_tag %>
 </head>
 
 <body class="theme-teal">
@@ -147,7 +147,6 @@
       <%= yield %>
     </div>
   </section>
-
 
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 

@@ -1,21 +1,76 @@
-<p id="notice"><%= notice %></p>
+<div class="block-header">
+  <ol class="breadcrumb breadcrumb-col-teal">
+    <li>
+      <a href="/">
+        <i class="material-icons">home</i>
+      </a>
+    </li>
+    <li>
+      <%= link_to 'Tipo de Productos', product_types_path %>
+    </li>
+    <li>
+      <%= link_to @product.product_type.name, @product.product_type %>
+    </li>
+    <li>
+      <%= link_to @product.name, [@product.product_type, @product] %>
+    </li>
+    <li class="active">Editar</li>
+  </ol>
+  <h1>
+    <%= @product.name %> - Imágenes
+  </h1>
+</div>
+<!-- Input -->
+<div class="row clearfix">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="card">
+      <div class="header">
+        <h2>Imágenes</h2>
+      </div>
+      <div class="body">
 
-<h1>Listing Product Pictures</h1>
+        <div class="row" id="pictures">
+          <% @product_pictures.each do |p| %>
+              <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                <div class="card product_picture" id="product_picture_<%= p.id %>">
+                  <%= link_to product_type_product_product_picture_path(p.product.product_type, p.product, p), :method => :delete, data: { confirm: 'Are you sure?' }, :remote => true do %>
+                    <div class="image" style="background-image: url('<%= p.picture.photo %>');"></div>
+                      <div class="cover-delete">
+                        <i class="material-icons">delete</i>
+                      </div>
+                  <% end %>
+                </div>
+              </div>
+          <% end %>
+        </div>
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+      </div>
+      <div class="footer">
 
-  <tbody>
-    <% @product_pictures.each do |product_picture| %>
-      <tr>
-        <td><%= link_to 'Show', product_picture %></td>
-        <td><%= link_to 'Edit', edit_product_picture_path(product_picture) %></td>
-        <td><%= link_to 'Destroy', product_picture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+        <button type="button" class="btn waves-effect m-r-20 btn-block bg-teal btn-lg" data-toggle="modal" data-target="#modal_form_upload">
+          Cargar Imagen
+        </button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_form_upload" tabindex="-1" role="dialog" style="display: none;">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="defaultModalLabel">Cargar Imágenes</h4>
+      </div>
+      <%= render 'form' %>
+
+      <div class="progress" style="display: none;">
+        <div class="progress-bar bg-teal progress-bar-striped active" role="progressbar"  style="width: 100%;">
+          Subiendo imagen
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+

@@ -38,3 +38,67 @@
   position: relative;
   margin: 10px 0;
 }
+
+.product_picture .image{
+  background-size: cover;
+  height: 200px;
+}
+
+.product_picture .cover-delete{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(50,50,50,0.7);
+  display: none;
+  color: white ;
+  text-align: center;
+}
+
+.product_picture .cover-delete i {
+  font-size: 100px;
+
+  line-height: 200px;
+}
+
+.product_picture:hover .cover-delete{
+  display: block;
+}
+
+.card .footer{
+  border-top: 1px solid rgba(204, 204, 204, 0.35);
+  padding: 20px;
+}
+
+
+.input-file-container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.input-file-container label{
+  color: white;
+}
+
+.input-file-trigger {
+  display: block;
+  cursor: pointer;
+}
+
+.input-file-trigger:hover{
+  color: white;
+}
+
+.input-file {
+  position: absolute;
+  top: 0; left: 0;
+  width: 225px;
+  opacity: 0;
+  padding: 14px 0;
+  cursor: pointer;
+}
+
+.file-return{
+  text-align: center;
+}
