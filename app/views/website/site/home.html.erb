@@ -226,28 +226,16 @@
 
   <section id="ourWork" class="ourWork fadeIn">
     <div class="ourWorkSlider">
-      <div class="item">
-        <div class="content">
-          <div class="image" style="background-image: url(<%= path_to_image('website/our_work/our_work_1.jpg')%>);"></div>
-          <p>Nuestros productos instalados</p>
-        </div>
-      </div>
-      <div class="item">
-        <div class="content">
-          <div class="image" style="background-image: url(<%= path_to_image('website/our_work/our_work_2.jpg')%>);"></div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="content">
-          <div class="image" style="background-image: url(<%= path_to_image('website/our_work/our_work_3.png')%>);"></div>
-          <p>Nuestro trabajo</p>
-        </div>
-      </div>
-      <div class="item">
-        <div class="content">
-          <div class="image" style="background-image: url(<%= path_to_image('website/our_work/our_work_4.jpg')%>);"></div>
-        </div>
-      </div>
+      <% @ourworks.each do |ow|%>
+          <div class="item">
+            <div class="content">
+              <div class="image" style="background-image: url('<%= ow.picture.photo_url %>');"></div>
+              <% if ow.title.to_s.size > 0 %>
+                <p><%= ow.title.titlecase %></p>
+              <% end %>
+            </div>
+          </div>
+      <% end %>
     </div>
   </section>
   <section id="contact" class="contact">

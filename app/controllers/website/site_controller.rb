@@ -8,6 +8,8 @@ class  Website::SiteController < ApplicationController
 
     @product_types = ProductType.all
 
+    @ourworks = Ourwork.all
+
   end
 
   def product_type_index
