@@ -88,7 +88,7 @@
   <div id="slider_type_products" class="hidden-xs">
     <div class="row" >
       <% @product_types.each do |p_t| %>
-          <a href="./<%= I18n.transliterate(p_t.name.split(' ')[0].to_s.downcase) %>.html"
+          <a href="/productos/<%= I18n.transliterate(p_t.name.split(' ')[0].to_s.downcase) %>"
              class="col-xs-4 <%= p_t.id == @product_type.id ? 'active' : '' %>"
              id="type_product_<%= I18n.transliterate(p_t.name.downcase.gsub(' ', '_')) %>">
             <span style="background-image: url('<%= p_t.picture.photo %>')"></span>

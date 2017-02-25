@@ -80,16 +80,15 @@
 
         <h4>Ingeniería Renovable en Mendoza, Argentina</h4>
 
-                  <div class="main_home wow fadeInUp text-center" data-wow-duration="1s">
+        <div class="main_home wow fadeInUp text-center" data-wow-duration="1s">
 
+          <h1>
+            <img src="<%= path_to_image('website/isologotipo/isologotipo.png')%>"/>
+          </h1>
 
-                    <h1>
-                      <img src="<%= path_to_image('website/isologotipo/isologotipo.png')%>"/>
-                    </h1>
+          <div class="separator5"></div>
 
-                    <div class="separator5"></div>
-
-                  </div>
+        </div>
         <div class="scrooldown">
           <a href="#products"><i class="fa fa-angle-down"></i></a>
         </div>
@@ -118,69 +117,40 @@
             <h2 class="margin-top-20">¡Conocé nuestros productos!</h2>
           </div><!-- End off Head_title -->
 
+          <% product_time_animation = 1.5 %>
+
           <div class="main_product_content">
-            <div class="col-sm-12 col-md-4 wow fadeInUp" data-wow-duration="1.5s" data-wow-dealy="1.5s">
-              <div class="single_product_area textwhite">
-                <div class="row">
-                  <div class="col-xs-6 no-padding">
-                    <div class="single_product_img">
-                      <img src="<%= path_to_image('website/type_products/termotanques_solares.jpg')%>" alt="" />
-                    </div>
-                  </div>
-                  <div class="col-xs-6 no-padding">
-                    <div class="single_product_text s_b_left">
-                      <h3>Termotanques Solares</h3>
-                      <div class="separator2"></div>
-                      <p></p>
 
-                      <a href="./type_products/termotanques.html" class="read_more">Ver Productos</a>
+            <% @product_types.each do |p_t| %>
+
+                <div class="col-sm-12 col-md-4 wow fadeInUp" data-wow-duration="<%= product_time_animation%>s" data-wow-dealy="1.5s">
+                  <div class="single_product_area textwhite">
+                    <div class="row">
+                      <div class="col-xs-6 no-padding">
+                        <div class="single_product_img">
+                          <% if p_t.picture.nil? %>
+                              <img src="<%= path_to_image('website/no-image.png')%>">
+                          <% else %>
+                              <%= image_tag p_t.picture.photo_url %>
+                          <% end %>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 no-padding">
+                        <div class="single_product_text s_b_left">
+                          <h3><%= p_t.name %></h3>
+                          <div class="separator2"></div>
+                          <p></p>
+
+                          <a href="productos/<%= I18n.transliterate(p_t.name.split(' ')[0].to_s.downcase) %>" class="read_more">Ver Productos</a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
 
-            <div class="col-sm-12 col-md-4 wow fadeInUp" data-wow-duration="2s" data-wow-dealy="1.5s">
-              <div class="single_product_area textwhite">
-                <div class="row">
-                  <div class="col-xs-6 no-padding">
-                    <div class="single_product_img">
-                      <img src="<%= path_to_image('website/type_products/paneles_solares.jpg')%>" alt="" />
-                    </div>
-                  </div>
-                  <div class="col-xs-6 no-padding">
-                    <div class="single_product_text s_b_left">
-                      <h3>Paneles Solares</h3>
-                      <div class="separator2"></div>
-                      <p></p>
+                <% product_time_animation += 0.5 %>
 
-                      <a href="./type_products/paneles.html" class="read_more">Ver Productos</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-12 col-md-4 wow fadeInUp" data-wow-duration="2.5s" data-wow-dealy="1.5s">
-              <div class="single_product_area textwhite">
-                <div class="row">
-                  <div class="col-xs-6 no-padding">
-                    <div class="single_product_img">
-                      <img src="<%= path_to_image('website/type_products/picinas.jpg')%>" alt="" />
-                    </div>
-                  </div>
-                  <div class="col-xs-6 no-padding">
-                    <div class="single_product_text s_b_left">
-                      <h3>Climatización de Picinas y Piletas</h3>
-                      <div class="separator2"></div>
-                      <p></p>
-
-                      <a href="./type_products/piletas.html" class="read_more">Ver Productos</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <% end %>
 
           </div>
 
@@ -284,14 +254,14 @@
   </section><!-- End off footer Section-->
 
 </div>
-  <!-- START SCROLL TO TOP  -->
+<!-- START SCROLL TO TOP  -->
 
-  <div class="scrollup">
-    <a href="#"><i class="fa fa-chevron-up"></i></a>
-  </div>
+<div class="scrollup">
+  <a href="#"><i class="fa fa-chevron-up"></i></a>
+</div>
 
 
-  <%= javascript_include_tag 'website_home'%>
+<%= javascript_include_tag 'website_home'%>
 
 </body>
 
