@@ -122,85 +122,7 @@
           </div>
       <% end %>
     </div>
-
   </section>
-
-
-  <% @products.each do |p| %>
-      <div id="product_modal_<%= p.id %>">
-        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
-        <div  id="btn-close-modal" class="close-product_modal_<%= p.id %>">
-          <img class="closebt" src="<%= path_to_image('website/closebt.svg')%>">
-        </div>
-
-        <div class="modal-content">
-          <div class="col-xs-12 col-sm-6">
-            <div class="pictures">
-              <% pictures = ProductPicture.where(product: p) %>
-              <% if p.url_video_youtube.to_s.size > 0 || pictures.to_a.size > 0 %>
-                  <div class="screen">
-                    <div class="item">
-                      <div class="content">
-                        <%= image_tag p.picture.photo_url, width: 'auto', height: 'auto' %>
-                      </div>
-                    </div>
-                    <% pictures.to_a.each do |i| %>
-                        <div class="item">
-                          <div class="content">
-                            <%= image_tag i.picture.photo_url, width: 'auto', height: 'auto' %>
-                          </div>
-                        </div>
-                    <% end %>
-                  </div>
-                  <div class="thumbnails">
-                    <div class="item">
-                      <div class="content">
-                        <%= image_tag p.picture.photo_url, width: 'auto', height: '50px' %>
-                      </div>
-                    </div>
-                    <% pictures.to_a.each do |i| %>
-                        <div class="item">
-                          <div class="content">
-                            <%= image_tag i.picture.photo_url, width: 'auto', height: '50px' %>
-                          </div>
-                        </div>
-                    <% end %>
-                  </div>
-              <% else %>
-                  <%= image_tag p.picture.photo_url, width: '100%', height: 'auto' %>
-              <% end %>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6">
-            <h1 class="title"><%= p.name %></h1>
-            <% if p.description.to_s.size > 0 %>
-                <p class="description"><%= p.description %></p>
-            <% end %>
-            <div class="buttons">
-              <div class="col-xs-6">
-                <p class="price">$ <%= number_with_precision(p.price, precision: 2) %></p>
-              </div>
-              <div class="col-xs-6">
-                <button type="button" class="modal-contact-btn btn">Consultar</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xs-12">
-            <div class="description_detail">
-              <%= simple_format p.description_detail %>
-            </div>
-          </div>
-
-        </div>
-      </div>
-  <% end %>
-
-
-
-  <div id="modal-contact" class="iziModal">
-    <%= render 'contact' %>
-  </div>
 
   <!-- START SCROLL TO TOP  -->
 
@@ -208,6 +130,105 @@
     <a href="#"><i class="fa fa-chevron-up"></i></a>
   </div>
 
+</div>
+
+
+<% @products.each do |p| %>
+    <div id="product_modal_<%= p.id %>">
+      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+      <div  id="btn-close-modal" class="close-product_modal_<%= p.id %>">
+        <img class="closebt" src="<%= path_to_image('website/closebt.svg')%>">
+      </div>
+
+      <div class="modal-content">
+        <div class="col-xs-12 col-sm-6">
+          <div class="pictures">
+            <% pictures = ProductPicture.where(product: p) %>
+            <% if p.url_video_youtube.to_s.size > 0 || pictures.to_a.size > 0 %>
+                <div class="screen">
+                  <div class="item">
+                    <div class="content">
+                      <%= image_tag p.picture.photo_url, width: '100%', height: 'auto' %>
+                    </div>
+                  </div>
+                  <% pictures.to_a.each do |i| %>
+                      <div class="item">
+                        <div class="content">
+                          <%= image_tag i.picture.photo_url, width: '100%', height: 'auto' %>
+                        </div>
+                      </div>
+                  <% end %>
+                  <% if p.url_video_youtube.to_s.size > 0 %>
+                      <div class="item">
+                        <div class="content">
+                          <iframe width="420"
+                                  height="315"
+                                  class="youtube-player"
+                                  allowfullscreen="allowfullscreen"
+                                  mozallowfullscreen="mozallowfullscreen"
+                                  msallowfullscreen="msallowfullscreen"
+                                  oallowfullscreen="oallowfullscreen"
+                                  webkitallowfullscreen="webkitallowfullscreen"
+                                  type="text/html"
+                                  src="<%= p.url_video_youtube.to_s %>"
+                                  frameborder="0"></iframe>
+                        </div>
+                      </div>
+                  <% end %>
+                </div>
+                <div class="thumbnails">
+                  <div class="item">
+                    <div class="content">
+                      <%= image_tag p.picture.photo_url, width: 'auto', height: '50px' %>
+                    </div>
+                  </div>
+                  <% pictures.to_a.each do |i| %>
+                      <div class="item">
+                        <div class="content">
+                          <%= image_tag i.picture.photo_url, width: 'auto', height: '50px' %>
+                        </div>
+                      </div>
+                  <% end %>
+                  <% if p.url_video_youtube.to_s.size > 0 %>
+                      <div class="item">
+                        <div class="content">
+                          <img src="<%= path_to_image('website/youtubelogo.jpg')%>" width="auto" height="50px">
+                        </div>
+                      </div>
+                  <% end %>
+                </div>
+            <% else %>
+                <%= image_tag p.picture.photo_url, width: '100%', height: 'auto' %>
+            <% end %>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <h1 class="title"><%= p.name %></h1>
+          <% if p.description.to_s.size > 0 %>
+              <p class="description"><%= p.description %></p>
+          <% end %>
+          <div class="buttons">
+            <div class="col-xs-6">
+              <p class="price">$ <%= number_with_precision(p.price, precision: 2) %></p>
+            </div>
+            <div class="col-xs-6">
+              <button type="button" class="modal-contact-btn btn">Consultar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12">
+          <div class="description_detail">
+            <%= simple_format p.description_detail %>
+          </div>
+        </div>
+
+      </div>
+    </div>
+<% end %>
+
+<div id="modal-contact" class="iziModal">
+  <%= render 'contact' %>
 </div>
 
 <%= Gon::Base.render_data %>

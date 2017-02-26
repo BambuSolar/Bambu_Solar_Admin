@@ -353,3 +353,8 @@
     position: relative;
 
 }
+
+
+.btn:hover {
+    box-shadow: none !important;
+}
