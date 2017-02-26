@@ -1,0 +1,24 @@
+
+<%= form_for([@product.product_type, @product, @product_picture], :remote => true, :html => {multipart: true}) do |f| %>
+
+    <div class="modal-body">
+
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+
+      <div class="input-file-container">
+        <input class="input-file" id="image" type="file" name="image">
+        <label tabindex="0" for="image" class="input-file-trigger btn bg-teal">Seleccione una imágen</label>
+      </div>
+      <p class="file-return"></p>
+
+    </div>
+    <div class="modal-footer">
+
+      <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">Cancelar</button>
+
+      <button type="submit" class="btn btn-link waves-effect btn-file-submit" disabled > Subir </button>
+
+    </div>
+
+
+<% end %>

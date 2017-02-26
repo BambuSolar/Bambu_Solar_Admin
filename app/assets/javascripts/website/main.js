@@ -1,4 +1,3 @@
-
 "use strict";
 jQuery(document).ready(function ($) {
 
@@ -33,13 +32,6 @@ $('#bs-example-navbar-collapse-1').find('a[href*=\\#]:not([href=\\#])').click(fu
     }
 });
 
-$(".opinion_slider").slick({
-    dots: true,
-    arrows:false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true
-});
 
 $('.ourWorkSlider').slick({
     centerMode: true,

@@ -6,6 +6,20 @@ class  Website::SiteController < ApplicationController
 
   def home
 
+    @product_types = ProductType.all
+
+    @ourworks = Ourwork.all
+
+  end
+
+  def product_type_index
+
+    @product_types = ProductType.all
+
+    respond_to do |format|
+      format.any { render content_type: 'application/json' }
+    end
+
   end
 
   def product_type
@@ -14,7 +28,12 @@ class  Website::SiteController < ApplicationController
 
     @product_type = ProductType.find(params[:id])
 
+    @products = Product.where(product_type_id: @product_type, enabled: true)
+
+    gon.products = @products.select(:id)
+
   end
+
 
 
 end

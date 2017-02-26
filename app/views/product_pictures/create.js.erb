@@ -1,0 +1,23 @@
+
+var item = '<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12"> \
+              <div class="card product_picture" id="product_picture_<%= @product_picture.id %>"> \
+                <a data-confirm="Are you sure?" data-remote="true" rel="nofollow" data-method="delete" href="/product_types/<%= @product_picture.product.product_type.id %>/products/<%= @product_picture.product.id %>/product_pictures/<%= @product_picture.id %>"> \
+                  <div class="image" style="background-image: url(\'<%= @product_picture.picture.photo %>\');"></div> \
+                  <div class="cover-delete"> \
+                    <i class="material-icons">delete</i> \
+                  </div> \
+                </a> \
+              </div> \
+            </div>';
+
+$('#pictures').append(item);
+
+$('#modal_form_upload').modal('hide');
+
+$('#modal_form_upload').find('.progress').hide();
+
+$('#modal_form_upload').find('.input-file').val('');
+
+$('#modal_form_upload').find('.file-return').html('');
+
+$(".btn-file-submit").attr('disabled', 'disabled');

@@ -28,16 +28,23 @@ class ProductsController < SecurityController
   def create
     @product = Product.new(product_params)
 
-    p = Picture.new(photo: params[:product][:image])
-
-    p.save!
-
-    @product.picture = p
-
     @product.product_type_id = @product_type.id
     respond_to do |format|
       if @product.save
-        format.html { redirect_to @product_type, notice: 'Product was successfully created.' }
+
+        unless params[:product][:image].nil?
+
+          p = Picture.new(photo: params[:product][:image])
+
+          p.save!
+
+          @product.picture = p
+
+          @product.save
+
+        end
+
+        format.html { redirect_to @product_type, notice: 'El producto ha sido creado correctamente' }
         format.json { render :show, status: :created, location: @product }
       else
         format.html { render :new }
@@ -51,21 +58,29 @@ class ProductsController < SecurityController
   def update
     @product.product_type_id = @product_type.id
 
-    unless params[:product][:image].nil?
-
-      @product.picture.remove_photo!
-
-      @product.picture.save!
-
-      @product.picture.update(photo: params[:product][:image])
-
-      @product.picture.save!
-
-    end
-
     respond_to do |format|
+
       if @product.update(product_params)
-        format.html { redirect_to @product_type, notice: 'Product was successfully updated.' }
+
+        unless params[:product][:image].nil?
+
+          unless @product.picture.nil?
+
+            @product.picture.remove_photo!
+
+            @product.picture.save!
+
+          end
+
+          @product.picture.update(photo: params[:product][:image])
+
+          @product.picture.save!
+
+          @product.save!
+
+        end
+
+        format.html { redirect_to @product_type, notice: 'El producto ha sido actualizado correctamente' }
         format.json { render :show, status: :ok, location: @product }
       else
         format.html { render :edit }
@@ -86,10 +101,8 @@ class ProductsController < SecurityController
 
     p.destroy!
 
-    @product.destroy
-
     respond_to do |format|
-      format.html { redirect_to @product_type, notice: 'Product was successfully destroyed.' }
+      format.html { redirect_to @product_type, notice: 'El producto ha sido eliminado correctamente' }
       format.json { head :no_content }
     end
   end
@@ -106,6 +119,6 @@ class ProductsController < SecurityController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :description, :description_detail, :price, :enabled, :product_type_id)
+      params.require(:product).permit(:name, :description, :description_detail, :price, :enabled, :product_type_id, :url_video_youtube)
     end
 end
