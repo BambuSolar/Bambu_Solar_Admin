@@ -89,11 +89,23 @@ class ProductTypesController < SecurityController
   # DELETE /product_types/1.json
   def destroy
 
+    products = Product.where(product_type_id: @product_type.id)
+
+    products.each do |product|
+
+      p = @product.picture
+
+      p.remove_photo!
+
+      product.destroy
+
+      p.destroy!
+
+    end
+
     p = @product_type.picture
 
     p.remove_photo!
-
-    @product_type.destroy
 
     p.destroy!
 
