@@ -76,7 +76,7 @@ class ProductsController < SecurityController
 
           else
 
-            p = Picture.new(photo: params[:product_type][:image])
+            p = Picture.new(photo: params[:product][:image])
 
             p.save!
 
