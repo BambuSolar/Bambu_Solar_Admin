@@ -36,7 +36,9 @@
               <% @products.each do |product| %>
                   <tr>
                     <td>
-                      <%= image_tag product.picture.photo_url, width: '36px', height: '36px' %>
+                      <% unless image_tag product.picture.nil? %>
+                          <%= image_tag product.picture.photo_url, width: '36px', height: '36px' %>
+                      <% end %>
                       <%= product.name %>
                     </td>
                     <td>$<%= number_with_precision(product.price, precision: 2) %></td>
