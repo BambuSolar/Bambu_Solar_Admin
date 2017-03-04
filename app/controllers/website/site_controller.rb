@@ -28,7 +28,7 @@ class  Website::SiteController < ApplicationController
 
     @product_type = ProductType.find(params[:id])
 
-    @products = Product.where(product_type_id: @product_type, enabled: true)
+    @products = Product.where(product_type_id: @product_type, enabled: true).order(:name)
 
     gon.products = @products.select(:id)
 

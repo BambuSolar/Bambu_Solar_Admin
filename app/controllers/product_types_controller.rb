@@ -10,7 +10,7 @@ class ProductTypesController < SecurityController
   # GET /product_types/1
   # GET /product_types/1.json
   def show
-    @products = Product.where(product_type_id: @product_type.id)
+    @products = Product.where(product_type_id: @product_type.id).order(:name)
   end
 
   # GET /product_types/new
