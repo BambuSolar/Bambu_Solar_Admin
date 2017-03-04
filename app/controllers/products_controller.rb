@@ -70,13 +70,21 @@ class ProductsController < SecurityController
 
             @product.picture.save!
 
+            @product.picture.update(photo: params[:product][:image])
+
+            @product.picture.save!
+
+          else
+
+            p = Picture.new(photo: params[:product_type][:image])
+
+            p.save!
+
+            @product.picture = p
+
+            @product.save!
+
           end
-
-          @product.picture.update(photo: params[:product][:image])
-
-          @product.picture.save!
-
-          @product.save!
 
         end
 
