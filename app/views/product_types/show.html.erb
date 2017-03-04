@@ -41,7 +41,7 @@
                       <% end %>
                       <%= product.name %>
                     </td>
-                    <td>$<%= number_with_precision(product.price, precision: 2) %></td>
+                    <td>$ <%= number_with_precision(product.price, precision: 2) %></td>
                     <td><%= product.enabled ? 'Si' : 'No' %></td>
                     <td>
                       <%= link_to product_type_product_product_pictures_path(@product_type,product), class: 'btn btn-default'  do %>
