@@ -4,6 +4,8 @@ class  Website::SiteController < ApplicationController
 
   layout false
 
+  before_action :set_environment
+
   def home
 
     @product_types = ProductType.all
@@ -34,6 +36,11 @@ class  Website::SiteController < ApplicationController
 
   end
 
+  private
+
+  def set_environment
+    @environment = params[:environment].to_s.size > 0 ? params[:environment].to_s : 'beta'
+  end
 
 
 end
