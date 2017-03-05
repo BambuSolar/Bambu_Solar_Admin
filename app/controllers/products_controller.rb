@@ -127,6 +127,6 @@ class ProductsController < SecurityController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :description, :description_detail, :price, :enabled, :product_type_id, :url_video_youtube)
+      params.require(:product).permit(:name, :description, :description_detail, :price, :enabled, :product_type_id, :url_video_youtube, :category)
     end
 end

@@ -1,0 +1,10 @@
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+  <div class="card  product">
+    <a href="#product_modal_<%= @p.id %>" class="product_modal_btn" id="product_modal_<%= @p.id %>_btn">
+      <%= image_tag @p.picture.photo_url, width: '100%', height: 'auto' %>
+      <h4 class="title text-capitalize"><%= @p.name %></h4>
+      <p class="description text-overflow"></p>
+      <p class="price"> $ <%= @p.price %> </p>
+    </a>
+  </div>
+</div>

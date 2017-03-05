@@ -78,6 +78,20 @@
     <div class="row clearfix">
       <div class="col-sm-12">
         <div class="form-group">
+          <div class="form-line">
+            <%= f.select(:category) do %>
+                <% [['Producto', 'product'], ['Accesorio', 'accessory'],['Respuesto', 'replacement']].each do |c| -%>
+                    <%= content_tag(:option, c.first, value: c.last) %>
+                <% end %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
 
           <% unless @product.picture.nil?  %>
               <%= image_tag @product.picture.photo_url, style: 'width: 100%; max-width: 300px; height: auto;' %>
