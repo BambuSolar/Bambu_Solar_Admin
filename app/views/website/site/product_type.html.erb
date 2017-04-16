@@ -129,13 +129,37 @@
 
                 <div class="row">
 
-                  <% products_product.each do |p| %>
+                  <% products_product.where(:sub_type_id => nil).each do |p| %>
 
                       <%= render 'product_item', :object => [@p = p] %>
 
                   <% end %>
 
                 </div>
+
+                <% @product_sub_types.each do |sub_type| %>
+
+                    <% if products_product.where(:sub_type_id => sub_type.id).size > 0 %>
+
+                        <div class="sub_type_products_container">
+
+                          <h4><%= sub_type.name %></h4>
+
+                          <div class="row">
+
+                            <% products_product.where(:sub_type_id => sub_type.id).each do |p| %>
+
+                                <%= render 'product_item', :object => [@p = p] %>
+
+                            <% end %>
+
+                          </div>
+
+                        </div>
+
+                    <% end %>
+
+                <% end %>
 
             <% end %>
 
@@ -147,13 +171,37 @@
 
                 <div class="row">
 
-                  <% products_accessory.each do |p| %>
+                  <% products_accessory.where(:sub_type_id => nil).each do |p| %>
 
                       <%= render 'product_item', :object => [@p = p] %>
 
                   <% end %>
 
                 </div>
+
+                <% @product_sub_types.each do |sub_type| %>
+
+                    <% if products_accessory.where(:sub_type_id => sub_type.id).size > 0 %>
+
+                        <div class="sub_type_products_container">
+
+                          <h4><%= sub_type.name %></h4>
+
+                          <div class="row">
+
+                            <% products_accessory.where(:sub_type_id => sub_type.id).each do |p| %>
+
+                                <%= render 'product_item', :object => [@p = p] %>
+
+                            <% end %>
+
+                          </div>
+
+                        </div>
+
+                    <% end %>
+
+                <% end %>
 
             <% end %>
 
@@ -165,13 +213,37 @@
 
                 <div class="row">
 
-                  <% products_replacement.each do |p| %>
+                  <% products_replacement.where(:sub_type_id => nil).each do |p| %>
 
                       <%= render 'product_item', :object => [@p = p] %>
 
                   <% end %>
 
                 </div>
+
+                <% @product_sub_types.each do |sub_type| %>
+
+                    <% if products_replacement.where(:sub_type_id => sub_type.id).size > 0 %>
+
+                        <div class="sub_type_products_container">
+
+                          <h4><%= sub_type.name %></h4>
+
+                          <div class="row">
+
+                            <% products_replacement.where(:sub_type_id => sub_type.id).each do |p| %>
+
+                                <%= render 'product_item', :object => [@p = p] %>
+
+                            <% end %>
+
+                          </div>
+
+                        </div>
+
+                    <% end %>
+
+                <% end %>
 
             <% end %>
 

@@ -1,0 +1,66 @@
+<div class="block-header">
+  <ol class="breadcrumb breadcrumb-col-teal">
+    <li>
+      <a href="/">
+        <i class="material-icons">home</i>
+      </a>
+    </li>
+    <li>
+      <%= link_to 'Tipo de Productos', product_types_path %>
+    </li>
+    <li class="active">Sub Tipo de Productos</li>
+  </ol>
+  <h1>
+    <%= @product_type.name %>
+  </h1>
+</div>
+<div class="row clearfix">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="card">
+      <div class="header">
+        <h2>Sub Tipos de Producto</h2>
+      </div>
+      <div class="body table-responsive">
+        <% if @product_sub_types.size > 0 %>
+            <table class="table table-striped">
+              <thead>
+              <tr>
+                <th>Name</th>
+                <th style="width: 120px;"></th>
+              </tr>
+              </thead>
+
+              <tbody>
+              <% @product_sub_types.each do |product_sub_type| %>
+                  <tr>
+                    <td><%= product_sub_type.name %></td>
+                    <td>
+                      <%= link_to edit_product_type_product_sub_type_path(@product_type, product_sub_type), class: 'btn btn-default' do %>
+                          <i class="material-icons">create</i>
+                      <% end %>
+                      <%= link_to [@product_type, product_sub_type], method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' do %>
+                          <i class="material-icons">delete</i>
+                      <% end %>
+                    </td>
+                  </tr>
+              <% end %>
+              </tbody>
+            </table>
+
+        <% else %>
+            <div class="alert alert-info margin-0 text-center">
+              No existe ningún sub tipo de producto cargado en el sistema para el tipo de producto seleccionado
+            </div>
+        <% end %>
+        <div class="row">
+          <div class="col-xs-6 col-sm-2">
+            <%= link_to 'Atrás', product_types_path, class: 'btn btn-default m-t-15 waves-effect btn-block' %>
+          </div>
+          <div class="col-xs-6 col-sm-2">
+            <%= link_to 'Nuevo Sub Tipo de Producto', new_product_type_product_sub_type_path( @product_type), class: 'btn btn-primary m-t-15 waves-effect btn-block' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

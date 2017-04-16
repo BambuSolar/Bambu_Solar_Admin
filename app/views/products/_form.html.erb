@@ -92,6 +92,21 @@
     <div class="row clearfix">
       <div class="col-sm-12">
         <div class="form-group">
+          <div class="form-line">
+            <%= f.select(:sub_type_id) do %>
+                <%= content_tag(:option,' - Sin Sub Tipo - ', value: '') %>
+                <% ProductSubType.where(:product_type_id => @product_type.id).collect {|p| [ p.name, p.id ] }.each do |c| -%>
+                    <%= content_tag(:option, c.first, value: c.last) %>
+                <% end %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
 
           <% unless @product.picture.nil?  %>
               <%= image_tag @product.picture.photo_url, style: 'width: 100%; max-width: 300px; height: auto;' %>

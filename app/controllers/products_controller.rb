@@ -6,7 +6,7 @@ class ProductsController < SecurityController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+      @products = Product.all
   end
 
   # GET /products/1
@@ -17,10 +17,12 @@ class ProductsController < SecurityController
   # GET /products/new
   def new
     @product = Product.new
+    @product_sub_types = ProductSubType.where(product_type_id: @product_type.id).order(:name)
   end
 
   # GET /products/1/edit
   def edit
+    @product_sub_types = ProductSubType.where(product_type_id: @product_type.id).order(:name)
   end
 
   # POST /products
@@ -127,6 +129,6 @@ class ProductsController < SecurityController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :description, :description_detail, :price, :enabled, :product_type_id, :url_video_youtube, :category)
+      params.require(:product).permit(:name, :description, :description_detail, :price, :enabled, :product_type_id, :url_video_youtube, :category, :sub_type_id)
     end
 end
