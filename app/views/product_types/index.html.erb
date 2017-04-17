@@ -20,7 +20,7 @@
           <thead>
           <tr>
             <th>Nombre</th>
-            <th style="width: 240px;"></th>
+            <th style="width: 300px;"></th>
           </tr>
           </thead>
 
@@ -36,6 +36,9 @@
                 <td>
                   <%= link_to preview_product_type_path(product_type.id), target: '_blank', class: 'btn btn-default' do %>
                       <i class="material-icons">public</i>
+                  <% end %>
+                  <%= link_to product_type_product_sub_types_path(product_type.id), class: 'btn btn-default' do %>
+                      <i class="material-icons">local_offer</i>
                   <% end %>
                   <%= link_to product_type, class: 'btn btn-default' do %>
                       <i class="material-icons">visibility</i>

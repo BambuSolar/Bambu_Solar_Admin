@@ -9,7 +9,7 @@ class PictureUploader < CarrierWave::Uploader::Base
   # Choose what kind of storage to use for this uploader:
   # storage :file
 
-  if !ENV['OMEGA'] && Rails.env.production?
+  if !ENV['OMEGA'] && !Rails.env.development?
     storage :fog
   else
     storage :file
@@ -18,7 +18,7 @@ class PictureUploader < CarrierWave::Uploader::Base
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
   def store_dir
-    if !ENV['OMEGA'] && Rails.env.production?
+    if !ENV['OMEGA'] && !Rails.env.development?
 
       "#{Rails.env}/uploads/#{model.class.to_s.underscore}/#{model.id}"
 

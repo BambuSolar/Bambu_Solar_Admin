@@ -35,7 +35,7 @@ class ProductTypesController < SecurityController
 
     respond_to do |format|
       if @product_type.save
-        format.html { redirect_to @product_type, notice: 'Product type was successfully created.' }
+        format.html { redirect_to @product_type, notice:'El tipo de producto ha sido creado correctamente.' }
         format.json { render :show, status: :created, location: @product_type }
       else
         format.html { render :new }
@@ -76,7 +76,7 @@ class ProductTypesController < SecurityController
 
     respond_to do |format|
       if @product_type.update(product_type_params)
-        format.html { redirect_to @product_type, notice: 'Product type was successfully updated.' }
+        format.html { redirect_to @product_type, notice: 'El tipo de producto ha sido editado correctamente.' }
         format.json { render :show, status: :ok, location: @product_type }
       else
         format.html { render :edit }
@@ -112,7 +112,7 @@ class ProductTypesController < SecurityController
     @product_type.destroy
 
     respond_to do |format|
-      format.html { redirect_to product_types_url, notice: 'Product type was successfully destroyed.' }
+      format.html { redirect_to product_types_url, notice: 'El tipo de producto ha sido eliminado correctamente.' }
       format.json { head :no_content }
     end
   end
@@ -125,6 +125,6 @@ class ProductTypesController < SecurityController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_type_params
-      params.require(:product_type).permit(:name, :have_category)
+      params.require(:product_type).permit(:name, :have_category, :have_sub_type)
     end
 end

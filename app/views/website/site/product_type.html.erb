@@ -117,68 +117,150 @@
       <div class="separator"><img src="<%= path_to_image('website/isologotipo/logo.jpg')%>"></div>
     </div><!-- End off Head_title -->
 
-    <% if @product_type.have_category %>
+    <% if @products.size > 0 %>
 
-        <% products_product = @products.where(category: 'product' ) %>
+        <% if @product_type.have_category %>
 
-        <% if products_product.size > 0 %>
+            <% products_product = @products.where(category: 'product' ) %>
 
-            <h3> Productos </h3>
+            <% if products_product.size > 0 %>
 
+                <h3> Productos </h3>
+
+                <div class="row">
+
+                  <% products_product.where(:sub_type_id => nil).each do |p| %>
+
+                      <%= render 'product_item', :object => [@p = p] %>
+
+                  <% end %>
+
+                </div>
+
+                <% @product_sub_types.each do |sub_type| %>
+
+                    <% if products_product.where(:sub_type_id => sub_type.id).size > 0 %>
+
+                        <div class="sub_type_products_container">
+
+                          <h4><%= sub_type.name %></h4>
+
+                          <div class="row">
+
+                            <% products_product.where(:sub_type_id => sub_type.id).each do |p| %>
+
+                                <%= render 'product_item', :object => [@p = p] %>
+
+                            <% end %>
+
+                          </div>
+
+                        </div>
+
+                    <% end %>
+
+                <% end %>
+
+            <% end %>
+
+            <% products_accessory = @products.where(category: 'accessory' ) %>
+
+            <% if products_accessory.size > 0 %>
+
+                <h3> Accesorios </h3>
+
+                <div class="row">
+
+                  <% products_accessory.where(:sub_type_id => nil).each do |p| %>
+
+                      <%= render 'product_item', :object => [@p = p] %>
+
+                  <% end %>
+
+                </div>
+
+                <% @product_sub_types.each do |sub_type| %>
+
+                    <% if products_accessory.where(:sub_type_id => sub_type.id).size > 0 %>
+
+                        <div class="sub_type_products_container">
+
+                          <h4><%= sub_type.name %></h4>
+
+                          <div class="row">
+
+                            <% products_accessory.where(:sub_type_id => sub_type.id).each do |p| %>
+
+                                <%= render 'product_item', :object => [@p = p] %>
+
+                            <% end %>
+
+                          </div>
+
+                        </div>
+
+                    <% end %>
+
+                <% end %>
+
+            <% end %>
+
+            <% products_replacement = @products.where(category: 'replacement' ) %>
+
+            <% if products_replacement.size > 0 %>
+
+                <h3> Respuestos </h3>
+
+                <div class="row">
+
+                  <% products_replacement.where(:sub_type_id => nil).each do |p| %>
+
+                      <%= render 'product_item', :object => [@p = p] %>
+
+                  <% end %>
+
+                </div>
+
+                <% @product_sub_types.each do |sub_type| %>
+
+                    <% if products_replacement.where(:sub_type_id => sub_type.id).size > 0 %>
+
+                        <div class="sub_type_products_container">
+
+                          <h4><%= sub_type.name %></h4>
+
+                          <div class="row">
+
+                            <% products_replacement.where(:sub_type_id => sub_type.id).each do |p| %>
+
+                                <%= render 'product_item', :object => [@p = p] %>
+
+                            <% end %>
+
+                          </div>
+
+                        </div>
+
+                    <% end %>
+
+                <% end %>
+
+            <% end %>
+
+        <% else %>
             <div class="row">
-
-              <% products_product.each do |p| %>
-
+              <% @products.each do |p| %>
                   <%= render 'product_item', :object => [@p = p] %>
-
               <% end %>
-
             </div>
-
-        <% end %>
-
-        <% products_accessory = @products.where(category: 'accessory' ) %>
-
-        <% if products_accessory.size > 0 %>
-
-            <h3> Accesorios </h3>
-
-            <div class="row">
-
-              <% products_accessory.each do |p| %>
-
-                  <%= render 'product_item', :object => [@p = p] %>
-
-              <% end %>
-
-            </div>
-
-        <% end %>
-
-        <% products_replacement = @products.where(category: 'replacement' ) %>
-
-        <% if products_replacement.size > 0 %>
-
-            <h3> Respuestos </h3>
-
-            <div class="row">
-
-              <% products_replacement.each do |p| %>
-
-                  <%= render 'product_item', :object => [@p = p] %>
-
-              <% end %>
-
-            </div>
-
         <% end %>
 
     <% else %>
-        <div class="row">
-          <% @products.each do |p| %>
-              <%= render 'product_item', :object => [@p = p] %>
-          <% end %>
+
+        <div class="jumbotron margin-top-40">
+          <h4>No existen productos cargados para esta categoría</h4>
         </div>
+
     <% end %>
 
   </section>
