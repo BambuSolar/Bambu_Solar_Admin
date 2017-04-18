@@ -284,9 +284,15 @@
 
 .modal-content h1.title {
     font-size: 4rem;
-    text-align: center;
+    text-align: left;
     padding: 20px;
     border-bottom: solid 1px white;
+}
+
+.modal-content h1.title2 {
+
+    font-size: 2.7rem;
+
 }
 
 .modal-content p.description {
@@ -304,12 +310,21 @@
     color: white;
 }
 
+.modal-content .description_detail .title{
+    border: none;
+    text-align: left;
+    font-size: 2.6em;
+    padding: 0;
+}
+
 .modal-content .description_detail h1{
     font-size: 2em;
+    line-height: 1.1;
+    padding: 0;
 }
 
 .modal-content .description_detail p{
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 .modal-content .buttons{
