@@ -8,7 +8,7 @@ class  Website::SiteController < ApplicationController
 
   def home
 
-    @product_types = ProductType.all
+    @product_types = ProductType.all.order(:order)
 
     @ourworks = Ourwork.all
 
@@ -16,7 +16,7 @@ class  Website::SiteController < ApplicationController
 
   def product_type_index
 
-    @product_types = ProductType.all
+    @product_types = ProductType.all.order(:order)
 
     respond_to do |format|
       format.any { render content_type: 'application/json' }
@@ -26,7 +26,7 @@ class  Website::SiteController < ApplicationController
 
   def product_type
 
-    @product_types = ProductType.all
+    @product_types = ProductType.all.order(:order)
 
     @product_type = ProductType.find(params[:id])
 
