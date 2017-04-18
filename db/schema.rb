@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170416221531) do
+ActiveRecord::Schema.define(version: 20170418041101) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -65,6 +65,7 @@ ActiveRecord::Schema.define(version: 20170416221531) do
     t.integer  "product_type_id"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.integer  "order"
   end
 
   create_table "product_types", force: :cascade do |t|
@@ -74,6 +75,7 @@ ActiveRecord::Schema.define(version: 20170416221531) do
     t.datetime "updated_at",                    null: false
     t.boolean  "have_category", default: false
     t.boolean  "have_sub_type", default: false
+    t.integer  "order"
   end
 
   add_index "product_types", ["picture_id"], name: "index_product_types_on_picture_id", using: :btree
@@ -91,6 +93,7 @@ ActiveRecord::Schema.define(version: 20170416221531) do
     t.string   "url_video_youtube"
     t.string   "category",           default: "product"
     t.integer  "sub_type_id"
+    t.integer  "order"
   end
 
   add_index "products", ["picture_id"], name: "index_products_on_picture_id", using: :btree

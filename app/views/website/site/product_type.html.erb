@@ -350,7 +350,7 @@
           <% end %>
           <div class="buttons">
             <div class="col-xs-6">
-              <p class="price">$ <%= number_with_precision(p.price, precision: 2) %></p>
+              <p class="price"><%= number_to_currency(@p.price, unit: '$ ', separator: ',', delimiter: '.', :precision => 2) %></p>
             </div>
             <div class="col-xs-6">
               <button type="button" class="modal-contact-btn btn">Consultar</button>

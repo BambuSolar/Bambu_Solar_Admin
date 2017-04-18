@@ -17,6 +17,24 @@
         </div>
       </div>
     </div>
+
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <div class="form-line">
+            <%= f.number_field :order,
+                               class: 'form-control',
+                               placeholder: 'Orden',
+                               required: 'required',
+                               :'aria-required'=>'true',
+                               min: 0,
+                               step: 1
+            %>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="row">
       <div class="col-xs-6 col-sm-2">
         <button type="submit" class="btn btn-primary m-t-15 waves-effect btn-block teal">Guardar</button>
@@ -25,4 +43,5 @@
         <%= link_to 'Atrás', @product_type, class: 'btn btn-default m-t-15 waves-effect btn-block' %>
       </div>
     </div>
+
 <% end %>
