@@ -1,6 +1,32 @@
-<h1>Editing Product Sub Type</h1>
+<div class="block-header">
+  <ol class="breadcrumb breadcrumb-col-teal">
+    <li>
+      <a href="/">
+        <i class="material-icons">home</i>
+      </a>
+    </li>
+    <li>
+      <%= link_to 'Tipo de Productos', product_types_path %>
+    </li>
+    <li>
+      <%= link_to @product_type.name, @product_type %>
+    </li>
+    <li class="active">Editar</li>
+  </ol>
+  <h1>
+    Sub Tipo de Productos
+  </h1>
+</div>
 
-<%= render 'form' %>
-
-<%= link_to 'Show', @product_sub_type %> |
-<%= link_to 'Back', product_sub_types_path %>
+<div class="row clearfix">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="card">
+      <div class="header">
+        <h2>Editar Sub Tipo de Producto</h2>
+      </div>
+      <div class="body">
+        <%= render 'form' %>
+      </div>
+    </div>
+  </div>
+</div>
