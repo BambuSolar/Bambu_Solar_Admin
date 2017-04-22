@@ -348,12 +348,14 @@
           <% if p.description.to_s.size > 0 %>
               <p class="description"><%= p.description %></p>
           <% end %>
-          <div class="buttons">
+          <div class="row buttons">
             <div class="col-xs-6">
-              <p class="price"><%= number_to_currency(@p.price, unit: '$ ', separator: ',', delimiter: '.', :precision => 2) %></p>
+              <p class="price modal-contact-btn btn btn-block">
+                <%= number_to_currency(@p.price, unit: '$ ', separator: ',', delimiter: '.', :precision => 2) %>
+              </p>
             </div>
             <div class="col-xs-6">
-              <button type="button" class="modal-contact-btn btn">Consultar</button>
+              <button type="button" class="modal-contact-btn btn btn-block">Consultar</button>
             </div>
           </div>
         </div>

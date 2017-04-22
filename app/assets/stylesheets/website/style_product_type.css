@@ -163,6 +163,7 @@
     white-space: nowrap;
     margin: 0 -10px;
 }
+
 #products .product .image{
     height: 200px;
     width: 100%;
@@ -304,10 +305,10 @@
 }
 
 .modal-content .description_detail{
-    padding: 20px;
-    margin-top: 15px;
+    padding: 0 20px;
     border-top: solid white 1px;
     color: white;
+    line-height: 1rem;
 }
 
 .modal-content .description_detail .title{
@@ -327,16 +328,32 @@
     font-size: 1.5em;
 }
 
+.modal-content .description_detail ul{
+    list-style-type: square;
+    margin-left: 15px;
+    top: -15px;
+    position: relative;
+}
+
 .modal-content .buttons{
     padding: 20px 0;
     text-align: center;
+    margin: 0;
+    border-bottom: solid 1px white;
 }
 
 .modal-content .buttons .price{
-    font-size: 2.3em;
     text-align: center;
-    color: white;
-    line-height: 46px;
+    color: #dd8418;
+    background: white;
+}
+
+.modal-content .buttons .modal-contact-btn.price{
+    background: white;
+    color: #dd8418;
+    font-size: 1.95rem;
+    padding: 0;
+    border: solid 2px #bbbbbb;
 }
 
 .modal-content .buttons .modal-contact-btn{
@@ -349,6 +366,7 @@
 
 .modal-content .pictures{
     padding: 20px;
+    text-align: center;
 }
 
 
@@ -366,9 +384,20 @@
     max-height: 400px;
     margin: 0 auto;
     position: relative;
-
+    border: solid 10px #bbbbbb;
+    max-width: 512px;
+    height: auto;
 }
 
+.modal-content .pictures > img{
+    border: solid 10px #bbbbbb;
+    max-width: 512px;
+    height: auto;
+}
+
+.modal-content .pictures .slick-track{
+    margin: 0 auto;
+}
 
 .btn:hover {
     box-shadow: none !important;
