@@ -10,7 +10,7 @@ class ProductTypesController < SecurityController
   # GET /product_types/1
   # GET /product_types/1.json
   def show
-    @products = Product.where(product_type_id: @product_type.id).order(:name)
+    @products = Product.where(product_type_id: @product_type.id).order(:name).paginate(:page => params[:page], :per_page => 10)
   end
 
   # GET /product_types/new

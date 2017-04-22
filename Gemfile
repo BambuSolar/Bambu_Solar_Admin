@@ -62,3 +62,7 @@ gem 'fog-aws'
 gem 'gon'
 
 gem 'remotipart', '~> 1.2'
+
+gem 'will_paginate', '~> 3.1.0'
+
+gem 'will_paginate-bootstrap'

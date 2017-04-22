@@ -58,6 +58,9 @@
               <% end %>
               </tbody>
             </table>
+            <div class="pagination_container">
+              <%= will_paginate @products, renderer: BootstrapPagination::Rails %>
+            </div>
         <% else %>
             <div class="alert alert-info margin-0 text-center">
               No existe ningún producto cargado en el sistema para el tipo de producto seleccionado
