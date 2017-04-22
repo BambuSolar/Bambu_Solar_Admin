@@ -655,9 +655,23 @@ input::-moz-placeholder {
   top: -8px;
   position: relative;
 }
+
+.nave_menu .collapse.in{
+  transition: all 0s;
+  background: #e7e7e7;
+
+}
+
+.nave_menu .collapse.in .navbar-nav > li > a {
+  color: #6d6d6d;
+}
+
+.nave_menu .collapse.in .navbar-nav > li.active > a {
+  color: #fa7c06;
+}
+
 .main_menu_bg{
   margin-top: 0;
-  /*background-color: rgba(19, 19, 19, 0.56);*/
 }
 .main_menu_bg > .container > .row{
 
@@ -685,7 +699,7 @@ input::-moz-placeholder {
   padding: 0;
 }
 
-.main_menu_bg .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
+.main_menu_bg .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover{
   color: #fa7c06;
   padding-bottom: 8px;
   border-bottom: 1px solid #fa7c06;
@@ -697,8 +711,11 @@ input::-moz-placeholder {
   padding-bottom: 20px;
   text-transform: uppercase;
   font-size: 0.875rem;
-  color: #6d6d6d;
+  color: #bdbdbd;
   font-weight: bolder;
+}
+.menu-scroll > .main_menu_bg .navbar-nav>li>a {
+  color: #6d6d6d;
 }
 .navbar-brand {
   padding: 0 15px;
@@ -1785,4 +1802,8 @@ footer section
 
 .who_we_are{
   padding-top: 100px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent;
 }
