@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+
+  get 'home_website_config' => 'home_website_configs#index', :as => 'home_website_config'
+  get 'home_website_config/edit' => 'home_website_configs#edit', :as => 'edit_home_website_config'
+  put 'home_website_config/edit' => 'home_website_configs#update'
+
+  #resources :home_website_configs
+  #resources :home_website_configs
+
   resources :ourworks
 
   resources :opinions

@@ -1,0 +1,79 @@
+<%= form_for('home_website_config/edit', html: {:method => :put, novalidate:'novalidate', class: 'form_validation'}) do |f| %>
+
+
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <div class="form-line">
+            <label>Mensaje de Bienvenida</label>
+            <%= f.text_area :welcome_message,
+                            class: 'form-control',
+                            placeholder: 'Mensaje de Bienvenida',
+                            value: @home_website_config.welcome_message
+            %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+
+          <label>Imagen Vertical</label>
+
+          <% unless @home_website_config.vertical_picture.nil?  %>
+              <%= image_tag @home_website_config.vertical_picture.photo_url, style: '',  class: 'img-thumbnail center-block picture_vertical_form' %>
+          <% else %>
+              <img class="img-thumbnail picture_horizontal_form center-block hidden">
+          <% end %>
+          <div class="form-line input-group">
+
+            <%= f.file_field :vertical_picture, class:'file img_form', style:'display:none' %>
+
+            <span class="input-group-btn">
+                    <button class="browse btn btn-primary" type="button">
+                      <i class="material-icons">insert_photo</i>
+                    </button>
+                </span>
+            <input type="text" class="form-control" disabled placeholder="Seleccione un imágen" value="<%= (@home_website_config.vertical_picture.nil? ? '' : @home_website_config.vertical_picture.photo_identifier ) %>">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+
+          <label>Imagen Horizontal</label>
+
+          <% unless @home_website_config.horizontal_picture.nil?  %>
+              <%= image_tag @home_website_config.horizontal_picture.photo_url, style: '',  class: 'img-thumbnail picture_horizontal_form center-block' %>
+          <% else %>
+              <img class="img-thumbnail picture_horizontal_form center-block hidden">
+          <% end %>
+          <div class="form-line input-group">
+
+            <%= f.file_field :horizontal_picture, class:'file img_form', style:'display:none' %>
+
+            <span class="input-group-btn">
+                    <button class="browse btn btn-primary" type="button">
+                      <i class="material-icons">insert_photo</i>
+                    </button>
+                </span>
+            <input type="text" class="form-control" disabled placeholder="Seleccione un imágen" value="<%= (@home_website_config.horizontal_picture.nil? ? '' : @home_website_config.horizontal_picture.photo_identifier ) %>">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-6 col-sm-2">
+        <button type="submit" class="btn btn-primary m-t-15 waves-effect btn-block teal">Guardar</button>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <%= link_to 'Atrás', home_website_config_url, class: 'btn btn-default m-t-15 waves-effect btn-block' %>
+      </div>
+    </div>
+<% end %>

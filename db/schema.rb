@@ -11,10 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170418041101) do
+ActiveRecord::Schema.define(version: 20170501134552) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "home_website_configs", force: :cascade do |t|
+    t.integer  "horizontal_picture_id"
+    t.integer  "vertical_picture_id"
+    t.text     "welcome_message"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+  end
+
+  add_index "home_website_configs", ["horizontal_picture_id"], name: "index_home_website_configs_on_horizontal_picture_id", using: :btree
+  add_index "home_website_configs", ["vertical_picture_id"], name: "index_home_website_configs_on_vertical_picture_id", using: :btree
 
   create_table "member_teams", force: :cascade do |t|
     t.string   "name"

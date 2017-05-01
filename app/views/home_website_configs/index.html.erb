@@ -1,0 +1,55 @@
+<div class="block-header">
+  <ol class="breadcrumb breadcrumb-col-teal">
+    <li>
+      <a href="/app/assets/images">
+        <i class="material-icons">home</i>
+      </a>
+    </li>
+    <li class="active">Configuración del home</li>
+  </ol>
+  <h1>
+    Configuración del Home del Sitio
+  </h1>
+</div>
+<div class="row clearfix">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="card">
+      <div class="body">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <h4 class="list-group-item-heading">Mensaje de Bienvenida</h4>
+            <hr/>
+            <p class="list-group-item-text"><%= @home_website_config.welcome_message %></p>
+          </li>
+          <li class="list-group-item">
+            <h4 class="list-group-item-heading">Fondo Pantalla Horizontal</h4>
+            <hr/>
+            <p class="list-group-item-text">
+              <% if @home_website_config.horizontal_picture.nil? %>
+                  <i>Sin imágen cargada</i>
+              <% else %>
+                  <%= image_tag @home_website_config.horizontal_picture.photo_url, class: 'picture_horizontal_form center-block' %>
+              <% end %>
+            </p>
+          </li>
+          <li class="list-group-item">
+            <h4 class="list-group-item-heading">Fondo Pantalla Vertical</h4>
+            <hr/>
+            <p class="list-group-item-text">
+              <% if @home_website_config.vertical_picture.nil? %>
+                  <i>Sin imágen cargada</i>
+              <% else %>
+                  <%= image_tag @home_website_config.vertical_picture.photo_url, class: 'picture_vertical_form center-block' %>
+              <% end %>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-sm-3">
+    <%= link_to 'Editar Configuración', edit_home_website_config_path, class:'btn btn-primary waves-effect btn-block teal' %>
+  </div>
+</div>

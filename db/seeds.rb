@@ -22,3 +22,11 @@ ProductType.find_or_create_by(
 ProductType.find_or_create_by(
     name: 'Climatización de Picinas y Piletas'
 )
+
+if HomeWebsiteConfig.all.size < 1
+
+  cwh = HomeWebsiteConfig.new
+
+  cwh.save!
+
+end
