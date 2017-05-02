@@ -21,3 +21,5 @@
 
 //= require website/main
 
+//= require website/script_home
+
