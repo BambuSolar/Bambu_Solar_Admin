@@ -191,7 +191,21 @@
     .ourWorkSlider .item{
         height: 100px;
     }
-    .scrooldown{
+    .home_skew_border:before, .home_skew_border:after{
+        display: none;
+    }
+    #home .ribbons .ribbon .image {
+
+    }
+    .scrooldown {
+        bottom: -20px;
+        position: absolute;
+    }
+    .scrooldown a i {
+        font-size: 50px;
+        line-height: 30px;
+    }
+    #home .ribbons{
         bottom: 50px;
     }
 
@@ -238,15 +252,10 @@
     }
 
     .scrooldown{
-        bottom: 70px;
-        width: 50px;
-        height: 50px;
-        left: calc(50% - 25px);
+
     }
-    .scrooldown a i {
-        font-size: 80px;
-        line-height: 50px;
-        color: white;
+    #home .ribbons{
+        bottom: 100px;
     }
 
     .home .main_home h1 img {

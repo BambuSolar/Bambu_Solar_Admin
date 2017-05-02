@@ -80,19 +80,11 @@
   </header> <!--End of header -->
 
   <!--home Section -->
-  <section id="home" class="home" data-wow-duration="2s" data-wow-dealy="1.5s">
+  <section id="home" class="home" data-wow-duration="2s" data-wow-dealy="1.5s" style="background-image: url('<%= HomeWebsiteConfig.first.vertical_picture.photo_url %>')">
     <div class="overlay">
       <div class="home_skew_border">
 
         <h4>Ingeniería Renovable en Mendoza, Argentina</h4>
-
-        <div class="main_home wow fadeInUp text-center" data-wow-duration="1s">
-
-          <h1>
-            <img src="<%= path_to_image('website/isologotipo/isologotipo.png')%>"/>
-          </h1>
-
-        </div>
 
         <div class="ribbons">
           <div class="separator5"></div>
@@ -139,9 +131,7 @@
 
           <div class="head_title text-center">
             <h3>
-              ¡Hola! Somos una empresa mendocina dedicada a las energías renovables. Desde
-              el 2014 trabajamos cada día para que nuestra provincia sea más verde. Nuestro objetivo es ofrecer
-              soluciones personalizadas económicas y sustentables.
+              <%= @home_website_config.welcome_message %>
             </h3>
             <div class="separator margin-top-80">
               <img src="<%= path_to_image('website/isologotipo/logo.jpg')%>">
@@ -270,6 +260,7 @@
               <div class="col-sm-12 col-xs-12">
                 <div class="flowus">
                   <a href="https://www.facebook.com/bambuenergia"><i class="fa fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/bambusolar/"><i class="fa fa-instagram"></i></a>
                   <a href="https://www.youtube.com/channel/UCc_2oYeuEMKZDk8pgi3auhQ"><i class="fa fa-youtube"></i></a>
                 </div>
               </div>
@@ -293,6 +284,11 @@
   <a href="#"><i class="fa fa-chevron-up"></i></a>
 </div>
 
+<script>
+    var bgH = '<%= HomeWebsiteConfig.first.horizontal_picture.photo_url %>';
+
+    var bgV = '<%= HomeWebsiteConfig.first.vertical_picture.photo_url %>';
+</script>
 
 <%= javascript_include_tag 'website_home'%>
 

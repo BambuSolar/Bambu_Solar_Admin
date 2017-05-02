@@ -25,7 +25,7 @@
           <% unless @home_website_config.vertical_picture.nil?  %>
               <%= image_tag @home_website_config.vertical_picture.photo_url, style: '',  class: 'img-thumbnail center-block picture_vertical_form' %>
           <% else %>
-              <img class="img-thumbnail picture_horizontal_form center-block hidden">
+              <img class="img-thumbnail picture_vertical_form center-block hidden">
           <% end %>
           <div class="form-line input-group">
 

@@ -12,6 +12,8 @@ class  Website::SiteController < ApplicationController
 
     @ourworks = Ourwork.all
 
+    @home_website_config = HomeWebsiteConfig.first
+
   end
 
   def product_type_index

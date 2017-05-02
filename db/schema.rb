@@ -104,7 +104,6 @@ ActiveRecord::Schema.define(version: 20170501134552) do
     t.string   "url_video_youtube"
     t.string   "category",           default: "product"
     t.integer  "sub_type_id"
-    t.integer  "order"
   end
 
   add_index "products", ["picture_id"], name: "index_products_on_picture_id", using: :btree
