@@ -22,6 +22,24 @@
       <div class="col-sm-12">
         <div class="form-group">
           <div class="form-line">
+            <%= f.text_field :denomination,
+                             class: 'form-control',
+                             placeholder: 'Denominación',
+                             required: '',
+                             :'aria-required'=>'true',
+                             :'aria-invalid'=>'true',
+                             maxlength:'50',
+                             minlength:'5'
+            %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <div class="form-line">
             <%= f.number_field :order,
                                class: 'form-control',
                                placeholder: 'Orden',
