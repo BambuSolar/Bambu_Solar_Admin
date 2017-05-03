@@ -77,6 +77,6 @@ class ProductSubTypesController < SecurityController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def product_sub_type_params
-    params.require(:product_sub_type).permit(:name, :type_product, :order)
+    params.require(:product_sub_type).permit(:name, :type_product, :order, :denomination)
   end
 end
