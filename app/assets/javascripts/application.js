@@ -154,7 +154,7 @@ $.rails.showConfirmationDialog = function (link) {
             );
             swal({
                 title: "Eliminado",
-                text: "El archivo ha sido eliminado",
+                text: "El elemento ha sido eliminado",
                 type: "success"
             }, function () {
                 $.rails.confirmed(link);
