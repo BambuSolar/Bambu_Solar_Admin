@@ -70,7 +70,7 @@
 
                     <% @product_types.each do |p_t| %>
                         <li class="visible-xs-block">
-                          <a href="/<%= I18n.transliterate(p_t.name.split(' ')[0].to_s.downcase) %>.html"
+                          <a href="/productos/<%= I18n.transliterate(p_t.name.split(' ')[0].to_s.downcase) %>"
                              <% if p_t.id == @product_type.id %>
                              class="active"
                              <% end %>
