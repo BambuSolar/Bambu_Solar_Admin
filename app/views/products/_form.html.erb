@@ -64,6 +64,15 @@
     <div class="row clearfix">
       <div class="col-sm-12">
         <div class="form-group">
+          <%= f.check_box :to_quote%>
+          <label for="product_to_quote">A cotizar</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
           <div class="form-line">
             <%= f.text_field :url_video_youtube,
                                class: 'form-control',

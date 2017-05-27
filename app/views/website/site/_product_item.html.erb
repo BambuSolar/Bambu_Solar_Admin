@@ -4,7 +4,11 @@
       <%= image_tag @p.picture.photo_url, width: '100%', height: 'auto' %>
       <h4 class="title text-capitalize"><%= @p.name %></h4>
       <p class="description text-overflow"></p>
-      <p class="price"> <%= number_to_currency(@p.price, unit: '$ ', separator: ',', delimiter: '.', :precision => 2) %> </p>
+      <% unless @p.to_quote %>
+          <p class="price"> <%= number_to_currency(@p.price, unit: '$ ', separator: ',', delimiter: '.', :precision => 2) %> </p>
+      <% else %>
+          <p class="price"> A cotizar </p>
+      <% end %>
     </a>
   </div>
 </div>

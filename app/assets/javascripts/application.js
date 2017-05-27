@@ -115,7 +115,22 @@ $(function () {
         toolbar_items_size: 'small'
     });
 
+    toQuoteProduct();
+
+    $('#product_to_quote').on('change', function () {
+        toQuoteProduct();
+    });
+
 });
+
+function toQuoteProduct(){
+    if($('#product_to_quote').is(':checked')){
+        $('#product_price').val(0.0);
+        $('#product_price').attr('disabled', 'disabled');
+    }else{
+        $('#product_price').removeAttr('disabled');
+    }
+}
 
 
 //Override the default confirm dialog by rails

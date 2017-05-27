@@ -46,6 +46,14 @@ class ProductsController < SecurityController
 
         end
 
+        if @product.to_quote
+
+          @product.price = 0
+
+          @product.save!
+
+        end
+
         format.html { redirect_to @product_type, notice: 'El producto ha sido creado correctamente' }
         format.json { render :show, status: :created, location: @product }
       else
@@ -90,6 +98,14 @@ class ProductsController < SecurityController
 
         end
 
+        if @product.to_quote
+
+          @product.price = 0
+
+          @product.save!
+
+        end
+
         format.html { redirect_to @product_type, notice: 'El producto ha sido actualizado correctamente' }
         format.json { render :show, status: :ok, location: @product }
       else
@@ -130,6 +146,6 @@ class ProductsController < SecurityController
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
       params.require(:product).permit(:name, :description, :description_detail, :price, :enabled, :product_type_id,
-                                      :url_video_youtube, :category, :sub_type_id)
+                                      :url_video_youtube, :category, :sub_type_id, :to_quote)
     end
 end
