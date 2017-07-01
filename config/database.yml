@@ -27,11 +27,11 @@ default: &default
 
 development:
   <<: *default
-  database: BambuSolarAdmin_development
+  database: bambusolaradmin_development
 
 test:
   <<: *default
-  database: BambuSolarAdmin_test
+  database: bambusolaradmin_test
 
 
 # On Heroku and other platform providers, you may have a full connection URL

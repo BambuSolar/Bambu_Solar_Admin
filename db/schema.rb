@@ -105,7 +105,6 @@ ActiveRecord::Schema.define(version: 20170527153429) do
     t.string   "url_video_youtube"
     t.string   "category",           default: "product"
     t.integer  "sub_type_id"
-    t.integer  "order"
     t.boolean  "to_quote",           default: false
   end
 

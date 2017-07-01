@@ -276,12 +276,14 @@
 
 </div>
 
+<div class="product_modal_container">
 
 <% @products.each do |p| %>
+    <div class="cover_modal" id="cover_modal_<%= p.id %>" data-id="<%= p.id %>"></div>
     <div id="product_modal_<%= p.id %>">
       <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
       <div  id="btn-close-modal" class="close-product_modal_<%= p.id %>">
-        <img class="closebt" src="<%= path_to_image('website/closebt.svg')%>">
+        <img class="closebt" src="<%= path_to_image('website/closebt.png')%>">
       </div>
 
       <div class="modal-content">
@@ -382,6 +384,8 @@
       </div>
     </div>
 <% end %>
+
+</div>
 
 <div id="modal-contact" class="iziModal">
   <%= render 'contact' %>
