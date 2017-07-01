@@ -31,7 +31,7 @@ class ProductSubTypesController < SecurityController
     @product_sub_type.product_type_id = @product_type.id
     respond_to do |format|
       if @product_sub_type.save
-        format.html { redirect_to product_type_product_sub_types_path(@product_type), notice: 'Product sub type was successfully created.' }
+        format.html { redirect_to product_type_product_sub_types_path(@product_type), notice: 'El sub tipo de producto fue creado correctamente.' }
         format.json { render :show, status: :created, location: @product_sub_type }
       else
         format.html { render :new }
@@ -46,7 +46,7 @@ class ProductSubTypesController < SecurityController
     @product_sub_type.product_type_id = @product_type.id
     respond_to do |format|
       if @product_sub_type.update(product_sub_type_params)
-        format.html { redirect_to product_type_product_sub_types_path(@product_type), notice: 'Product sub type was successfully updated.' }
+        format.html { redirect_to product_type_product_sub_types_path(@product_type), notice: 'El sub tipo de producto fue editado correctamente.' }
         format.json { render :show, status: :ok, location: @product_sub_type }
       else
         format.html { render :edit }
@@ -60,7 +60,7 @@ class ProductSubTypesController < SecurityController
   def destroy
     @product_sub_type.destroy
     respond_to do |format|
-      format.html { redirect_to product_type_product_sub_types_path(@product_type), notice: 'Product sub type was successfully destroyed.' }
+      format.html { redirect_to product_type_product_sub_types_path(@product_type), notice: 'El sub tipo de producto fue eliminado correctamente.' }
       format.json { head :no_content }
     end
   end
