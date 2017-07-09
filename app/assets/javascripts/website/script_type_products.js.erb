@@ -1,3 +1,5 @@
+var product_id = 0;
+
 $(function () {
 
     square_img_product();
@@ -7,38 +9,34 @@ $(function () {
         ajust_size_iframe();
     });
 
-    $(".product_modal_btn").animatedModal();
-
-    $("#product_modal_2_btn").animatedModal({
-        modalTarget: 'product_modal_2'
+    $('.product_modal_btn').on('click', function () {
+        product_id = $(this).attr('data-id');
     });
 
-    $.each(gon.products, function(index, item){
-
-        $("#product_modal_" + item.id + "_btn").animatedModal({
-            modalTarget:"product_modal_" + item.id,
-            animatedIn:'zoomIn',
-            animatedOut:'zoomOut',
-            color:'#ffffff',
-            // Callbacks
-            beforeOpen: function() {
-                $('#cover_modal_' + item.id).show();
-            },
-            afterOpen: function() {
-            },
-            beforeClose: function() {
-                $('#cover_modal_' + item.id).hide();
-            },
-            afterClose: function() {
-            }
-        });
-
+    $(".product_modal_btn").animatedModal({
+        modalTarget:"product_modal",
+        animatedIn:'zoomIn',
+        animatedOut:'zoomOut',
+        color:'#ffffff',
+        // Callbacks
+        beforeOpen: function() {
+            $('#cover_modal').show();
+            $.getJSON('/info/products/' + product_id + '.json', function (data) {
+                render_product_modal(data);
+            })
+        },
+        afterOpen: function() {
+        },
+        beforeClose: function() {
+            $('#cover_modal').hide();
+        },
+        afterClose: function() {
+        }
     });
 
     $('.cover_modal').on('click',function () {
-        var id = $(this).attr('data-id');
 
-        $("#product_modal_" + id).css({
+        $("#product_modal").css({
             'z-index': -9999,
             'opacity': 0
         });
@@ -118,5 +116,19 @@ function ajust_size_iframe() {
     iframe.width($(iframe.parents()[2]).find('img').width());
 }
 
+function render_product_modal(product) {
 
+    console.log(product);
 
+    $('#product_modal').find('h1.title').text(product.name);
+    $('#product_modal').find('p.description').text(product.description);
+
+    if(!product.to_quote) {
+        $('#product_modal').find('p.price').text(product.price);
+    }else{
+        $('#product_modal').find('p.price').text('A cotizar');
+    }
+    $('#product_modal').find('div.modal-content').find('div.description_detail').html(product.description_detail);
+
+    $('#product_modal').find('.pictures').find('img').attr('src', product.picture);
+}

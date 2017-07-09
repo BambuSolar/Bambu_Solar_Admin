@@ -276,122 +276,52 @@
 
 </div>
 
-<div class="product_modal_container">
 
-<% @products.each do |p| %>
-    <div class="cover_modal" id="cover_modal_<%= p.id %>" data-id="<%= p.id %>"></div>
-    <div id="product_modal_<%= p.id %>">
-      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
-      <div  id="btn-close-modal" class="close-product_modal_<%= p.id %>">
-        <img class="closebt" src="<%= path_to_image('website/closebt.png')%>">
-      </div>
-
-      <div class="modal-content">
-        <div class="col-xs-12 col-sm-6">
-          <div class="pictures">
-            <% pictures = ProductPicture.where(product: p) %>
-            <% if p.url_video_youtube.to_s.size > 0 || pictures.to_a.size > 0 %>
-                <div class="screen">
-                  <div class="item">
-                    <div class="content">
-                      <%= image_tag p.picture.photo_url, width: '100%', height: 'auto' %>
-                    </div>
-                  </div>
-                  <% pictures.to_a.each do |i| %>
-                      <div class="item">
-                        <div class="content">
-                          <%= image_tag i.picture.photo_url, width: '100%', height: 'auto' %>
-                        </div>
-                      </div>
-                  <% end %>
-                  <% if p.url_video_youtube.to_s.size > 0 %>
-                      <div class="item">
-                        <div class="content">
-                          <iframe width="420"
-                                  height="315"
-                                  class="youtube-player"
-                                  allowfullscreen="allowfullscreen"
-                                  mozallowfullscreen="mozallowfullscreen"
-                                  msallowfullscreen="msallowfullscreen"
-                                  oallowfullscreen="oallowfullscreen"
-                                  webkitallowfullscreen="webkitallowfullscreen"
-                                  type="text/html"
-                                  src="<%= p.url_video_youtube.to_s %>"
-                                  frameborder="0"></iframe>
-                        </div>
-                      </div>
-                  <% end %>
-                </div>
-                <div class="thumbnails">
-                  <div class="item">
-                    <div class="content">
-                      <%= image_tag p.picture.photo_url, width: 'auto', height: '50px' %>
-                    </div>
-                  </div>
-                  <% pictures.to_a.each do |i| %>
-                      <div class="item">
-                        <div class="content">
-                          <%= image_tag i.picture.photo_url, width: 'auto', height: '50px' %>
-                        </div>
-                      </div>
-                  <% end %>
-                  <% if p.url_video_youtube.to_s.size > 0 %>
-                      <div class="item">
-                        <div class="content">
-                          <img src="<%= path_to_image('website/youtubelogo.jpg')%>" width="auto" height="50px">
-                        </div>
-                      </div>
-                  <% end %>
-                </div>
-            <% else %>
-                <%= image_tag p.picture.photo_url, width: '100%', height: 'auto' %>
-            <% end %>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <h1 class="title"><%= p.name %></h1>
-          <% if p.description.to_s.size > 0 %>
-              <p class="description"><%= p.description %></p>
-          <% end %>
-          <div class="row buttons">
-            <div class="col-xs-6">
-              <% unless p.to_quote %>
-                  <p class="price modal-contact-btn btn btn-block">
-                    <%= number_to_currency(p.price, unit: '$ ', separator: ',', delimiter: '.', :precision => 2) %>
-                  </p>
-              <% else %>
-                  <p class="price modal-contact-btn btn btn-block">
-                    A cotizar
-                  </p>
-              <% end %>
-
-            </div>
-            <div class="col-xs-6">
-              <button type="button" class="modal-contact-btn btn btn-block">Consultar</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xs-12">
-          <h1 class="title2">Características</h1>
-        </div>
-        <div class="col-xs-12">
-          <div class="description_detail">
-            <%= simple_format p.description_detail %>
-          </div>
-        </div>
-
-      </div>
+  <div class="cover_modal" id="cover_modal" data-id=""></div>
+  <div id="product_modal">
+    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+    <div  id="btn-close-modal" class="close-product_modal">
+      <img class="closebt" src="<%= path_to_image('website/closebt.png')%>">
     </div>
-<% end %>
 
-</div>
+    <div class="modal-content">
+      <div class="col-xs-12 col-sm-6">
+        <div class="pictures">
+          <img class="" src="" width="100%" height="auto">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <h1 class="title"></h1>
+        <p class="description"></p>
+        <div class="row buttons">
+          <div class="col-xs-6">
+            <p class="price modal-contact-btn btn btn-block">
+
+            </p>
+          </div>
+          <div class="col-xs-6">
+            <button type="button" class="modal-contact-btn btn btn-block">Consultar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12">
+        <h1 class="title2">Características</h1>
+      </div>
+      <div class="col-xs-12">
+        <div class="description_detail">
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
 
 <div id="modal-contact" class="iziModal">
   <%= render 'contact' %>
 </div>
-
-<%= Gon::Base.render_data %>
 
 <%= javascript_include_tag 'website_product_type' %>
 

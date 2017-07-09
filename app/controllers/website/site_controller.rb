@@ -40,6 +40,18 @@ class  Website::SiteController < ApplicationController
 
   end
 
+  def products_index
+
+    @products = Product.where(product_type_id: params[:product_type_id], enabled: true).order(:price)
+
+  end
+
+  def product_show
+
+    @product = Product.find(params[:id])
+
+  end
+
   private
 
   def set_environment
