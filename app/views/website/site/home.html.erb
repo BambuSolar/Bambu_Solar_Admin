@@ -1,11 +1,6 @@
 <!doctype html>
 
 <head>
-  <% if @environment == 'prod' %>
-
-    <%= render 'google_tag_head' %>
-
-  <% end %>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Bambú Energía en Movimiento</title>
@@ -13,7 +8,6 @@
   <meta name="description" CONTENT="<%= @home_website_config.welcome_message %>"/>
   <meta name="Revisit" content="10 days"/>
   <meta name="Revisit-After" content="2 days">
-  <%= stylesheet_link_tag  'website_home', media: 'all'%>
   <!-- Open Graph data -->
   <meta property="og:title" content="Bambú Energía en Movimiento" />
   <meta property="og:type" content="company" />
@@ -23,6 +17,85 @@
   <meta name="description" content="<%= @home_website_config.welcome_message %>">
   <link rel="icon" type="image/x-icon" href="<%= path_to_image('website/favicon.ico')%>" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #fefefe;
+      z-index: 99999;
+      height: 100%;
+      width: 100%;
+      overflow: hidden !important;
+    }
+
+    .preloader > div{
+      position: absolute;
+      top: 50%;
+      margin-top: -60px;
+    }
+
+    .preloader > div > div{
+      text-align: center;
+    }
+
+    .preloader .lightbulb{
+      top: -103px;
+      animation: pulse2 5s infinite linear;
+      opacity: 1;
+    }
+
+    .preloader .sun{
+      animation: pulse 5s infinite linear;
+      opacity: 0;
+    }
+
+    .preloader .sun img{
+      animation: rotateR 12s infinite linear;
+    }
+
+    @keyframes pulse {
+      0% {
+
+        opacity: 0;
+
+      }
+      50% {
+
+        opacity: 1;
+
+      }
+    }
+
+    @keyframes pulse2 {
+      0% {
+
+        opacity: 1;
+
+      }
+      50% {
+
+        opacity: 0;
+
+      }
+    }
+    img {
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-user-drag: none;
+      user-drag: none;
+    }
+  </style>
+  <% if @environment == 'prod' %>
+
+      <%= render 'google_tag_head' %>
+
+  <% end %>
 
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse">
@@ -294,13 +367,15 @@
   <a href="#"><i class="fa fa-chevron-up"></i></a>
 </div>
 
+<%= stylesheet_link_tag  'website_home', media: 'all', async: true %>
+
 <script>
     var bgH = '<%= HomeWebsiteConfig.first.horizontal_picture.photo_url %>';
 
     var bgV = '<%= HomeWebsiteConfig.first.vertical_picture.photo_url %>';
 </script>
 
-<%= javascript_include_tag 'website_home'%>
+<%= javascript_include_tag 'website_home', async: true %>
 
 </body>
 

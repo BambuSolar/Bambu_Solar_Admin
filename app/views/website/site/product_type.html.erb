@@ -1,29 +1,96 @@
 <!doctype html>
 
 <head>
-  <% if @environment == 'prod' %>
-
-      <%= render 'google_tag_head' %>
-
-  <% end %>
   <meta name="Keywords" Content="energia_solar, calefon solar, mendoza, argentina, bambu, energía en movimiento, energia_renovable, colector solar, agua caliente solar, solar energy, losa radiante, termica, fotovoltaica, solar , medioambiente ,calefaccionar"/>
   <meta name="Revisit" content="10 days"/>
   <meta name="Revisit-After" content="2 days">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Bambú Energía en Movimiento</title>
-  <%= stylesheet_link_tag  'website_product_type', media: 'all' %>
   <meta name="description" content="">
   <link rel="icon" type="image/ico" href="<%= path_to_image('website/favicon.ico')%>" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
 
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #fefefe;
+      z-index: 99999;
+      height: 100%;
+      width: 100%;
+      overflow: hidden !important;
+    }
+
+    .preloader > div{
+      position: absolute;
+      top: 50%;
+      margin-top: -60px;
+    }
+
+    .preloader > div > div{
+      text-align: center;
+    }
+
+    .preloader .lightbulb{
+      top: -103px;
+      animation: pulse2 5s infinite linear;
+      opacity: 1;
+    }
+
+    .preloader .sun{
+      animation: pulse 5s infinite linear;
+      opacity: 0;
+    }
+
+    .preloader .sun img{
+      animation: rotateR 12s infinite linear;
+    }
+
+    @keyframes pulse {
+      0% {
+
+        opacity: 0;
+
+      }
+      50% {
+
+        opacity: 1;
+
+      }
+    }
+
+    @keyframes pulse2 {
+      0% {
+
+        opacity: 1;
+
+      }
+      50% {
+
+        opacity: 0;
+
+      }
+    }
+    img {
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-user-drag: none;
+      user-drag: none;
+    }
+  </style>
+  <% if @environment == 'prod' %>
+
+      <%= render 'google_tag_head' %>
+
+  <% end %>
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse">
-<% if @environment == 'prod' %>
-
-    <%= render 'google_tag_body' %>
-
-<% end %>
 <div class='preloader'>
   <div class="col-xs-12 col-sm-6 col-sm-offset-3">
     <div class="row">
@@ -317,13 +384,19 @@
     </div>
   </div>
 
-
-
 <div id="modal-contact" class="iziModal">
   <%= render 'contact' %>
 </div>
 
-<%= javascript_include_tag 'website_product_type' %>
+<%= stylesheet_link_tag  'website_product_type', media: 'all', async: true  %>
+
+<%= javascript_include_tag 'website_product_type', async: true %>
+
+<% if @environment == 'prod' %>
+
+    <%= render 'google_tag_body' %>
+
+<% end %>
 
 </body>
 
