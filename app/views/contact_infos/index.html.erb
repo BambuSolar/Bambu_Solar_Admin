@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Contact Infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lat map</th>
+      <th>Lon map</th>
+      <th>Telepones</th>
+      <th>Emails</th>
+      <th>Facebook link</th>
+      <th>Mercadolibre link</th>
+      <th>Address text</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contact_infos.each do |contact_info| %>
+      <tr>
+        <td><%= contact_info.lat_map %></td>
+        <td><%= contact_info.lon_map %></td>
+        <td><%= contact_info.telepones %></td>
+        <td><%= contact_info.emails %></td>
+        <td><%= contact_info.facebook_link %></td>
+        <td><%= contact_info.mercadolibre_link %></td>
+        <td><%= contact_info.address_text %></td>
+        <td><%= link_to 'Show', contact_info %></td>
+        <td><%= link_to 'Edit', edit_contact_info_path(contact_info) %></td>
+        <td><%= link_to 'Destroy', contact_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Contact info', new_contact_info_path %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @ribbon.text %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @ribbon.link %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @ribbon.image_id %>
+</p>
+
+<%= link_to 'Edit', edit_ribbon_path(@ribbon) %> |
+<%= link_to 'Back', ribbons_path %>

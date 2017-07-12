@@ -1,0 +1,45 @@
+<%= form_for(@contact_info) do |f| %>
+  <% if @contact_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@contact_info.errors.count, "error") %> prohibited this contact_info from being saved:</h2>
+
+      <ul>
+      <% @contact_info.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :lat_map %><br>
+    <%= f.text_field :lat_map %>
+  </div>
+  <div class="field">
+    <%= f.label :lon_map %><br>
+    <%= f.text_field :lon_map %>
+  </div>
+  <div class="field">
+    <%= f.label :telepones %><br>
+    <%= f.text_field :telepones %>
+  </div>
+  <div class="field">
+    <%= f.label :emails %><br>
+    <%= f.text_field :emails %>
+  </div>
+  <div class="field">
+    <%= f.label :facebook_link %><br>
+    <%= f.text_field :facebook_link %>
+  </div>
+  <div class="field">
+    <%= f.label :mercadolibre_link %><br>
+    <%= f.text_field :mercadolibre_link %>
+  </div>
+  <div class="field">
+    <%= f.label :address_text %><br>
+    <%= f.text_field :address_text %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

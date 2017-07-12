@@ -84,11 +84,37 @@
             <% end %>
           </li>
           <li>
+            <%= link_to home_website_config_url do %>
+                <i class="material-icons">build</i>
+                <span>Configuración del Home</span>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to ribbons_path do %>
+                <i class="material-icons">brightness_low</i>
+                <span>Ribbons</span>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to contact_infos_path do %>
+                <i class="material-icons">pin_drop</i>
+                <span>Información de Contacto</span>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to contact_infos_path do %>
+                <i class="material-icons">contact_phone</i>
+                <span>Redes Sociales</span>
+            <% end %>
+          </li>
+          <!--
+          <li>
             <%= link_to member_teams_path do %>
             <i class="material-icons">people</i>
             <span>Equipo</span>
             <% end %>
           </li>
+          -->
           <li>
             <%= link_to opinions_path do %>
             <i class="material-icons">question_answer</i>
@@ -111,12 +137,6 @@
             <%= link_to users_url do %>
             <i class="material-icons">face</i>
             <span>Usuarios</span>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to home_website_config_url do %>
-                <i class="material-icons">build</i>
-                <span>Configuración del Home</span>
             <% end %>
           </li>
           <li>

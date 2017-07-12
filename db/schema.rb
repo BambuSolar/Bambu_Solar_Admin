@@ -11,10 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170527153429) do
+ActiveRecord::Schema.define(version: 20170712020551) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "contact_infos", force: :cascade do |t|
+    t.string   "lat_map"
+    t.string   "lon_map"
+    t.string   "telepones"
+    t.string   "emails"
+    t.string   "facebook_link"
+    t.string   "mercadolibre_link"
+    t.string   "address_text"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+  end
 
   create_table "home_website_configs", force: :cascade do |t|
     t.integer  "horizontal_picture_id"
@@ -110,6 +122,26 @@ ActiveRecord::Schema.define(version: 20170527153429) do
 
   add_index "products", ["picture_id"], name: "index_products_on_picture_id", using: :btree
 
+  create_table "ribbons", force: :cascade do |t|
+    t.string   "text"
+    t.string   "link"
+    t.integer  "picture_id"
+    t.integer  "order"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "ribbons", ["picture_id"], name: "index_ribbons_on_picture_id", using: :btree
+
+  create_table "social_networks", force: :cascade do |t|
+    t.string   "name"
+    t.string   "link"
+    t.string   "icon"
+    t.integer  "order"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
@@ -125,4 +157,5 @@ ActiveRecord::Schema.define(version: 20170527153429) do
   add_foreign_key "product_pictures", "products"
   add_foreign_key "product_types", "pictures"
   add_foreign_key "products", "pictures"
+  add_foreign_key "ribbons", "pictures"
 end
