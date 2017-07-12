@@ -28,7 +28,7 @@ class RibbonsController < SecurityController
 
     respond_to do |format|
       if @ribbon.save
-        format.html { redirect_to @ribbon, notice: 'Ribbon was successfully created.' }
+        format.html { redirect_to ribbons_path, notice: 'El ribbon ha sido creado correctamente.' }
         format.json { render :show, status: :created, location: @ribbon }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class RibbonsController < SecurityController
   def update
     respond_to do |format|
       if @ribbon.update(ribbon_params)
-        format.html { redirect_to @ribbon, notice: 'Ribbon was successfully updated.' }
+        format.html { redirect_to ribbons_path, notice: 'El ribbon ha sido editado correctamente.' }
         format.json { render :show, status: :ok, location: @ribbon }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class RibbonsController < SecurityController
   def destroy
     @ribbon.destroy
     respond_to do |format|
-      format.html { redirect_to ribbons_url, notice: 'Ribbon was successfully destroyed.' }
+      format.html { redirect_to ribbons_url, notice: 'El ribbon ha sido eliminado correctamente.' }
       format.json { head :no_content }
     end
   end

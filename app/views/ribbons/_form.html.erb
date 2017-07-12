@@ -1,29 +1,72 @@
-<%= form_for(@ribbon) do |f| %>
-  <% if @ribbon.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@ribbon.errors.count, "error") %> prohibited this ribbon from being saved:</h2>
+<%= form_for(@ribbon, html: {novalidate:'novalidate', class: 'form_validation'}) do |f| %>
 
-      <ul>
-      <% @ribbon.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+    <% if @ribbon.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@ribbon.errors.count, "error") %> prohibited this product_type from being saved:</h2>
+
+          <ul>
+            <% @ribbon.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <div class="form-line">
+            <%= f.text_field :text,
+                             class: 'form-control',
+                             placeholder: 'Texto',
+                             required: '',
+                             :'aria-required'=>'true',
+                             :'aria-invalid'=>'true',
+                             maxlength:'100',
+                             minlength:'5'
+            %>
+          </div>
+        </div>
+      </div>
     </div>
-  <% end %>
 
-  <div class="field">
-    <%= f.label :text %><br>
-    <%= f.text_field :text %>
-  </div>
-  <div class="field">
-    <%= f.label :link %><br>
-    <%= f.text_field :link %>
-  </div>
-  <div class="field">
-    <%= f.label :image_id_id %><br>
-    <%= f.text_field :image_id_id %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <div class="form-line">
+            <%= f.text_field :link,
+                             class: 'form-control',
+                             placeholder: 'Link'
+            %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <div class="form-line">
+            <%= f.number_field :order,
+                               class: 'form-control',
+                               placeholder: 'Orden',
+                               required: 'required',
+                               :'aria-required'=>'true',
+                               min: 0,
+                               step: 1
+            %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-6 col-sm-2">
+        <button type="submit" class="btn btn-primary m-t-15 waves-effect btn-block teal">Guardar</button>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <%= link_to 'Atrás', ribbons_path, class: 'btn btn-default m-t-15 waves-effect btn-block' %>
+      </div>
+    </div>
+
 <% end %>
