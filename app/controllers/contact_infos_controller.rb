@@ -4,7 +4,7 @@ class ContactInfosController < SecurityController
   # GET /contact_infos
   # GET /contact_infos.json
   def index
-    @contact_infos = ContactInfo.all
+    @contact_infos = ContactInfo.first
   end
 
   # GET /contact_infos/1

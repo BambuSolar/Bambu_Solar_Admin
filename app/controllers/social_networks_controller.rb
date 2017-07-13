@@ -28,7 +28,7 @@ class SocialNetworksController < SecurityController
 
     respond_to do |format|
       if @social_network.save
-        format.html { redirect_to @social_network, notice: 'Social network was successfully created.' }
+        format.html { redirect_to social_networks_path, notice: 'La red social ha sido creada correctamente.' }
         format.json { render :show, status: :created, location: @social_network }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class SocialNetworksController < SecurityController
   def update
     respond_to do |format|
       if @social_network.update(social_network_params)
-        format.html { redirect_to @social_network, notice: 'Social network was successfully updated.' }
+        format.html { redirect_to social_networks_path, notice: 'La red social ha sido actualizada correctamente.' }
         format.json { render :show, status: :ok, location: @social_network }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class SocialNetworksController < SecurityController
   def destroy
     @social_network.destroy
     respond_to do |format|
-      format.html { redirect_to social_networks_url, notice: 'Social network was successfully destroyed.' }
+      format.html { redirect_to social_networks_url, notice: 'La red social ha sido eliminada correctamente.' }
       format.json { head :no_content }
     end
   end

@@ -60,6 +60,30 @@
       </div>
     </div>
 
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+
+          <% unless @ribbon.picture.nil?  %>
+              <div class="text-center">
+                <%= image_tag @ribbon.picture.photo_url, class: 'img-square' %>
+              </div>
+          <% end %>
+          <div class="form-line input-group">
+
+            <%= f.file_field :image, class:'file', style:'display:none' %>
+
+            <span class="input-group-btn">
+                    <button class="browse btn btn-primary" type="button">
+                      <i class="material-icons">insert_photo</i>
+                    </button>
+                </span>
+            <input type="text" class="form-control" disabled placeholder="Seleccione un imágen" value="<%= (@ribbon.picture.nil? ? '' : @ribbon.picture.photo_identifier ) %>">
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="row">
       <div class="col-xs-6 col-sm-2">
         <button type="submit" class="btn btn-primary m-t-15 waves-effect btn-block teal">Guardar</button>

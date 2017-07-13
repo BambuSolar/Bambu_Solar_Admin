@@ -30,3 +30,13 @@ if HomeWebsiteConfig.all.size < 1
   cwh.save!
 
 end
+
+if ContactInfo.all.size < 1
+
+  ci = ContactInfo.new
+
+
+
+  ci.save!
+
+end

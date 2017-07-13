@@ -20,7 +20,7 @@
               <thead>
               <tr>
                 <th>Nombre</th>
-                <th style="width: 300px;"></th>
+                <th style="width: 120px;"></th>
               </tr>
               </thead>
 
@@ -28,6 +28,9 @@
               <% @ribbons.each do |ribbon| %>
                   <tr>
                     <td>
+                      <% unless ribbon.picture.nil? %>
+                          <%= image_tag ribbon.picture.photo_url, width: '36px', height: '36px' %>
+                      <% end %>
                       <%= ribbon.text %>
                     </td>
                     <td>

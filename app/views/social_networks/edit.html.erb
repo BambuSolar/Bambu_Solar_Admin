@@ -1,6 +1,31 @@
-<h1>Editing Social Network</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @social_network %> |
-<%= link_to 'Back', social_networks_path %>
+<div class="block-header">
+  <ol class="breadcrumb breadcrumb-col-teal">
+    <li>
+      <a href="/">
+        <i class="material-icons">home</i>
+      </a>
+    </li>
+    <li>
+      <%= link_to 'Redes Sociales', social_networks_path %>
+    </li>
+    <li class="active">Editar</li>
+  </ol>
+  <h1>
+    Redes Sociales
+  </h1>
+</div>
+<!-- Input -->
+<div class="row clearfix">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="card">
+      <div class="header">
+        <h2>
+          Editar Red Social
+        </h2>
+      </div>
+      <div class="body">
+        <%= render 'form' %>
+      </div>
+    </div>
+  </div>
+</div>

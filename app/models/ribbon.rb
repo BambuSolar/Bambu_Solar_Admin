@@ -1,3 +1,3 @@
 class Ribbon < ActiveRecord::Base
-  belongs_to :image_id
+  belongs_to :picture
 end

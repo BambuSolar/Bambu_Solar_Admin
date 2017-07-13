@@ -1,5 +1,6 @@
 /*
  *= require_tree ./MaterialDesign
+
  *= require_self
  */
 
@@ -117,4 +118,38 @@
 .picture_horizontal_form{
   margin: 20px auto;
   max-width: 500px;
+}
+
+.form-group .img-square{
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  text-align: center;
+  background: #d2d2d2;
+  padding: 10px;
+  margin: auto;
+  border: #c1c1c1 2px solid;
+  border-radius: 5px;
+}
+
+.table img{
+  background: #c3c3c3;
+  padding: 5px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.table .icon{
+  font-size: 20px;
+  line-height: 20px;
+  top: 2px;
+  position: relative;
+  padding: 5px;
+  background: gray;
+  height: 30px;
+  color: white;
+  width: 30px;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 3px;
 }
