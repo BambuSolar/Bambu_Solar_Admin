@@ -1,45 +1,138 @@
 <%= form_for(@contact_info) do |f| %>
-  <% if @contact_info.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@contact_info.errors.count, "error") %> prohibited this contact_info from being saved:</h2>
+    <% if @contact_info.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@contact_info.errors.count, "error") %> prohibited this contact_info from being saved:</h2>
 
-      <ul>
-      <% @contact_info.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+          <ul>
+            <% @contact_info.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <div class="form-line">
+            <%= f.text_field :iframe_map,
+                             class: 'form-control',
+                             placeholder: 'Iframe Google Maps',
+                             required: '',
+                             :'aria-required'=>'true',
+                             :'aria-invalid'=>'true',
+                             maxlength:'100',
+                             minlength:'5',
+                             autocomplete: false
+            %>
+          </div>
+        </div>
+      </div>
     </div>
-  <% end %>
 
-  <div class="field">
-    <%= f.label :lat_map %><br>
-    <%= f.text_field :lat_map %>
-  </div>
-  <div class="field">
-    <%= f.label :lon_map %><br>
-    <%= f.text_field :lon_map %>
-  </div>
-  <div class="field">
-    <%= f.label :telepones %><br>
-    <%= f.text_field :telepones %>
-  </div>
-  <div class="field">
-    <%= f.label :emails %><br>
-    <%= f.text_field :emails %>
-  </div>
-  <div class="field">
-    <%= f.label :facebook_link %><br>
-    <%= f.text_field :facebook_link %>
-  </div>
-  <div class="field">
-    <%= f.label :mercadolibre_link %><br>
-    <%= f.text_field :mercadolibre_link %>
-  </div>
-  <div class="field">
-    <%= f.label :address_text %><br>
-    <%= f.text_field :address_text %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <div class="form-line">
+            <%= f.text_field :address_text,
+                             class: 'form-control',
+                             placeholder: 'Dirección',
+                             required: '',
+                             :'aria-required'=>'true',
+                             :'aria-invalid'=>'true',
+                             maxlength:'100',
+                             minlength:'5',
+                             autocomplete: false
+            %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <div class="form-line">
+            <%= f.text_field :telepones,
+                             class: 'form-control',
+                             placeholder: 'Teléfonos',
+                             required: '',
+                             :'aria-required'=>'true',
+                             :'aria-invalid'=>'true',
+                             maxlength:'100',
+                             minlength:'5',
+                             :'data-role'=>'tagsinput',
+                             autocomplete: false
+            %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <div class="form-line">
+            <%= f.text_field :emails,
+                             class: 'form-control',
+                             placeholder: 'Emails',
+                             required: '',
+                             :'aria-required'=>'true',
+                             :'aria-invalid'=>'true',
+                             maxlength:'100',
+                             minlength:'5',
+                             :'data-role'=>'tagsinput',
+                             autocomplete: false
+            %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <div class="form-line">
+            <%= f.text_field :facebook_link,
+                             class: 'form-control',
+                             placeholder: 'Link de Facebook',
+                             required: '',
+                             :'aria-required'=>'true',
+                             :'aria-invalid'=>'true',
+                             maxlength:'100',
+                             minlength:'5',
+                             autocomplete: false
+            %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <div class="form-line">
+            <%= f.text_field :mercadolibre_link,
+                             class: 'form-control',
+                             placeholder: 'Link de MercadoLibre',
+                             required: '',
+                             :'aria-required'=>'true',
+                             :'aria-invalid'=>'true',
+                             maxlength:'100',
+                             minlength:'5',
+                             autocomplete: false
+            %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-6 col-sm-2">
+        <button type="submit" class="btn btn-primary m-t-15 waves-effect btn-block teal">Guardar</button>
+      </div>
+      <div class="col-xs-6 col-sm-2">
+        <%= link_to 'Atrás', contact_info_path, class: 'btn btn-default m-t-15 waves-effect btn-block' %>
+      </div>
+    </div>
 <% end %>

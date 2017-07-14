@@ -1,14 +1,16 @@
 Rails.application.routes.draw do
 
   resources :social_networks
-  resources :contact_infos
+
   resources :ribbons
+
   get 'home_website_config' => 'home_website_configs#index', :as => 'home_website_config'
   get 'home_website_config/edit' => 'home_website_configs#edit', :as => 'edit_home_website_config'
   put 'home_website_config/edit' => 'home_website_configs#update'
 
-  #resources :home_website_configs
-  #resources :home_website_configs
+  get 'contact_info' => 'contact_infos#index', :as => 'contact_info'
+  get 'contact_info/edit' => 'contact_infos#edit', :as => 'edit_contact_info'
+  put 'contact_info/edit' => 'contact_infos#update'
 
   resources :ourworks
 

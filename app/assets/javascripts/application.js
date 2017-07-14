@@ -14,6 +14,7 @@
 //= require_tree ./MaterialDesign/tinymce/plugins
 //= require ./MaterialDesign/admin
 //= require ./MaterialDesign/helpers
+//= require ./MaterialDesign/bootstrap-tagsinput.min
 
 
 

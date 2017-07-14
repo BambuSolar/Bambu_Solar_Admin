@@ -153,3 +153,24 @@
   margin-right: 10px;
   border-radius: 3px;
 }
+
+.panel.panel-default{
+  padding: 0 20px;
+  border-radius: 0;
+}
+
+.panel-default>.panel-heading{
+  background-color: transparent;
+  border-color: #eee;
+  padding: 15px 0;
+  color: #555;
+}
+
+.panel-default>.panel-heading * {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.map-container iframe{
+  width: 100%;
+}

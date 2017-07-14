@@ -17,8 +17,7 @@ ActiveRecord::Schema.define(version: 20170712020551) do
   enable_extension "plpgsql"
 
   create_table "contact_infos", force: :cascade do |t|
-    t.string   "lat_map"
-    t.string   "lon_map"
+    t.text     "iframe_map"
     t.string   "telepones"
     t.string   "emails"
     t.string   "facebook_link"
