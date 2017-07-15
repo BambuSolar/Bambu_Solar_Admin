@@ -10,136 +10,106 @@
 
         </div>
 
-        <div class="separator">
-          <img src="<%= path_to_image('website/isologotipo/logo.jpg')%>">
-        </div>
-
       </div><!-- End off Head_title -->
-      <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-12">
-          <div class="main_contact_info">
-            <div class="row">
-              <div class="contact_info_content">
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                  <div class="single_contact_info">
-                    <div class="single_info_text">
-                      <h3>Teléfonos</h3>
-                      <div class="row">
-                        <div class="col-sm-12 text-center">
-                          <div class="col-xs-12 col-sm-10 col-sm-offset-1 visible-xs-block">
-                            <div class="row">
-                              <div class="col-xs-6 text-right">
-                                <button type="button" class="btn btn-info btn-lg btn-phone">
-                                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                                </button>
-                              </div>
-                              <div class="col-xs-6 text-left">
-                                <button type="button" class="btn btn-info btn-lg btn-phone">
-                                  <i class="fa fa-phone" aria-hidden="true"></i>
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-xs-12 visible-xs-block">
-                            <h4>+54 9 261 512-4590</h4>
-                          </div>
-                          <div class="col-sm-12 hidden-xs text-center">
-                            <h4 class="text-lowercase">
-                              <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                              +54 9 261 512-4590
-                            </h4>
-                          </div>
-                        </div>
-                        <div class="col-sm-12 text-center">
-                          <div class="col-xs-12 col-sm-10 col-sm-offset-1 visible-xs-block">
-                            <div class="row">
-                              <div class="col-xs-6 text-right">
-                                <button type="button" class="btn btn-info btn-lg btn-phone">
-                                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                                </button>
-                              </div>
-                              <div class="col-xs-6 text-left">
-                                <button type="button" class="btn btn-info btn-lg btn-phone">
-                                  <i class="fa fa-phone" aria-hidden="true"></i>
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-xs-12 visible-xs-block">
-                            <h4>+54 9 261 592-3570</h4>
-                          </div>
-                          <div class="col-sm-12 hidden-xs text-center">
-                            <h4>
-                              <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                              +54 9 261 592-3570
-                            </h4>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                  <div class="single_contact_info">
-                    <div class="single_info_text">
-                      <h3>Correo electrónico</h3>
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-12 text-center">
-                          <h4>
-                            <a href="mailto:ventas@bambusolar.com?subject=Consulta" class="text-lowercase">
-                              <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                              info@bambusolar.com
-                            </a>
-                          </h4>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 text-center">
-                          <h4>
-                            <a href="mailto:ventas@bambusolar.com?subject=Consulta%20de%20Precios" class="text-lowercase">
-                              <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                              ventas@bambusolar.com
-                            </a>
-                          </h4>
+      <div class="row contact_info_content">
+
+        <div class="col-xs-12 col-md-6">
+          <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-12">
+              <div class="main_contact_info">
+                <div class="row">
+                  <div class="">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                      <div class="single_contact_info">
+                        <div class="single_info_text">
+                          <h3>Teléfonos</h3>
+                          <div class="row">
+
+                            <% @contact_info.telepones.split(',').to_a.each do |t| %>
+
+                                <div class="col-sm-12 text-center">
+                                  <div class="col-xs-12 visible-xs-block">
+                                    <a class="text_telephone" href="whatsapp://send?phone=<%= t.to_s.gsub(' ','').gsub('-','').gsub('(','').gsub(')','') %>&text=Hola, tengo una consulta">
+                                      <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                      <%= t %>
+                                    </a>
+                                  </div>
+                                  <div class="col-sm-12 hidden-xs text-center">
+                                    <h4 class="text-lowercase">
+                                      <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                      <%= t %>
+                                    </h4>
+                                  </div>
+                                </div>
+
+                            <% end %>
+
+
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                  <div class="single_contact_info">
-                    <div class="single_info_text">
-                      <h3>Facebook</h3>
-                      <div class="row">
-                        <div class="col-sm-12 text-center">
-                          <a href="https://www.facebook.com/bambuenergia">
-                            <h4 class="text-lowercase">
-                              <i class="fa fa-facebook" aria-hidden="true"></i>
-                              www.facebook.com/bambuenergia
+
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                      <div class="single_contact_info">
+                        <div class="single_info_text">
+                          <h3>Correo electrónico</h3>
+                          <div class="row">
+
+                            <% @contact_info.emails.split(',').to_a.each do |e| %>
+
+                                <div class="col-xs-12 col-sm-12 text-center">
+                                  <a href="mailto:<%= e %>?subject=Consulta" class="text-lowercase text_email">
+                                      <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                      <%= e %>
+                                    </a>
+                                </div>
+
+                            <% end %>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="single_contact_info">
+                        <div class="single_info_text">
+                          <h3>Facebook</h3>
+                          <div class="row">
+                            <div class="col-sm-12 text-center">
+                              <a href="https://www.facebook.com/bambuenergia">
+                                <h4 class="text-lowercase">
+                                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                                  www.facebook.com/bambuenergia
+                                </h4>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="single_contact_info">
+                        <div class="single_info_text">
+                          <h3>Tienda Mercado Libre</h3>
+                          <a target="_blank" href="http://listado.mercadolibre.com.ar/_CustId_227447839">
+                            <h4 class="text-center text-lowercase">
+                              listado.mercadolibre.com.ar/_CustId_227447839
                             </h4>
                           </a>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                  <div class="single_contact_info">
-                    <div class="single_info_text">
-                      <h3>Tienda Mercado Libre</h3>
-                      <a target="_blank" href="http://listado.mercadolibre.com.ar/_CustId_227447839">
-                        <h4 class="text-center text-lowercase">
-                          listado.mercadolibre.com.ar/_CustId_227447839
-                        </h4>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-12">
-                  <div class="single_contact_info">
-                    <div class="single_info_text">
-                      <h3>Ubicación</h3>
-                      <h4 class="text-center">Luján de Cuyo, Mendoza. CP: 5509 - Argentina.</h4>
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d704.2016585351911!2d-68.83872710514328!3d-32.90434158799786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e096b135750f5%3A0x557f5837841f441a!2sBrasil+390%2C+M5500GAC+Mendoza!5e0!3m2!1ses!2sar!4v1499996893278" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="single_contact_info">
+                        <div class="single_info_text">
+                          <h3>Ubicación</h3>
+                          <h4 class="text-center">
+                            <%= @contact_info.address_text %>
+                          </h4>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -147,7 +117,14 @@
             </div>
           </div>
         </div>
+
+        <div class="col-xs-12 col-sm-6 iframe-full-container">
+          <%= @contact_info.iframe_map.html_safe %>
+        </div>
+
       </div>
+
+
     </div>
   </div>
 </div>

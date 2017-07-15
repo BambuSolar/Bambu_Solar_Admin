@@ -16,6 +16,10 @@ class  Website::SiteController < ApplicationController
 
     @ribbons = Ribbon.all.order(:order)
 
+    @contact_info = ContactInfo.first
+
+    @social_networks = SocialNetwork.all.order(:order)
+
   end
 
   def product_type_index
@@ -37,6 +41,8 @@ class  Website::SiteController < ApplicationController
     @product_sub_types = ProductSubType.where(product_type_id: @product_type.id).order(:order)
 
     @products = Product.where(product_type_id: @product_type, enabled: true).order(:price)
+
+    @contact_info = ContactInfo.first
 
     gon.products = @products.select(:id)
 

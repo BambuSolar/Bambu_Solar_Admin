@@ -302,7 +302,7 @@
     </div><!-- End of container -->
   </section><!-- End off Team Section -->
 
-  <section id="ourWork" class="ourWork fadeIn">
+  <section id="ourWork" class="ourWork fadeIn" style="display: none">
     <div class="ourWorkSlider">
       <% @ourworks.each do |ow|%>
           <div class="item">
@@ -316,6 +316,13 @@
       <% end %>
     </div>
   </section>
+
+  <div class="text-center">
+    <div class="separator margin-80">
+      <img src="<%= path_to_image('website/isologotipo/logo.jpg')%>">
+    </div>
+  </div>
+
   <section id="contact" class="contact">
     <div class="container">
       <%= render 'contact' %>
@@ -333,9 +340,11 @@
 
               <div class="col-sm-12 col-xs-12">
                 <div class="flowus">
-                  <a href="https://www.facebook.com/bambuenergia"><i class="fa fa-facebook"></i></a>
-                  <a href="https://www.instagram.com/bambusolar/"><i class="fa fa-instagram"></i></a>
-                  <a href="https://www.youtube.com/channel/UCc_2oYeuEMKZDk8pgi3auhQ"><i class="fa fa-youtube"></i></a>
+                  <% @social_networks.each do |sn| %>
+                      <%= link_to sn.link do %>
+                          <i class="fa <%= sn.icon %>"></i>
+                      <% end %>
+                  <% end %>
                 </div>
               </div>
 
@@ -357,6 +366,8 @@
 <div class="scrollup">
   <a href="#"><i class="fa fa-chevron-up"></i></a>
 </div>
+
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
 <%= stylesheet_link_tag  'website_home', media: 'all', async: true %>
 

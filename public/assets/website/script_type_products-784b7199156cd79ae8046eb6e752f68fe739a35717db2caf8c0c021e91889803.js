@@ -136,3 +136,4 @@ function render_product_modal(product) {
 
     $('#product_modal').find('.pictures').find('img').attr('src', product.picture);
 }
+;

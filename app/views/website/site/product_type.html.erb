@@ -184,7 +184,7 @@
       <div class="subtitle">
 
       </div>
-      <div class="separator"><img src="<%= path_to_image('website/isologotipo/logo.jpg')%>"></div>
+      <div class="separator"><img src="<%= path_to_image('website/isologotipo/logo.png')%>"></div>
     </div><!-- End off Head_title -->
 
     <% if @products.size > 0 %>
@@ -351,7 +351,11 @@
       <img class="closebt" src="<%= path_to_image('website/closebt.png')%>">
     </div>
 
-    <div class="modal-content">
+    <div class="modal-loading">
+      <img src="<%= path_to_image('website/ajax-loader.gif')%>">
+    </div>
+
+    <div class="modal-content" style="display: none">
       <div class="col-xs-12 col-sm-6">
         <div class="pictures">
           <img class="" src="" width="100%" height="auto">
@@ -387,6 +391,8 @@
 <div id="modal-contact" class="iziModal">
   <%= render 'contact' %>
 </div>
+
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
 <%= stylesheet_link_tag  'website_product_type', media: 'all', async: true  %>
 

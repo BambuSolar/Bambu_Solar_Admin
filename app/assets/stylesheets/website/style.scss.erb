@@ -1,8 +1,5 @@
-@font-face {
-  font-family: 'Roboto';
-  src:  font-url('website/Roboto-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+*{
+  font-family: 'Raleway', sans-serif;
 }
 
 html,
@@ -16,11 +13,7 @@ body {
   margin-left: 0;
   margin-right: 0;
   font-weight: 300;
-  font-family: "Roboto", sans-serif;
-}
 
-a{
-  font-family: 'Roboto', sans-serif !important;
 }
 
 textarea{
@@ -125,7 +118,6 @@ h5 {
   line-height: 2rem;
 }
 h1 {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 5.143rem;
   line-height: 5.5rem;
@@ -133,7 +125,6 @@ h1 {
   letter-spacing: .4rem;
 }
 h2 {
-  font-family: 'Source Sans Pro', sans-serif;
   font-size:2.571rem;
   line-height: 3rem;
   text-transform: uppercase;
@@ -141,7 +132,6 @@ h2 {
   color: #6b6b6b;
 }
 h3 {
-  font-family: 'Source Sans Pro', sans-serif;
   font-size:1.714rem;
   line-height: 2.5rem;
   color:#fff;
@@ -149,7 +139,6 @@ h3 {
   text-align: center;
 }
 h4 {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 1.286rem;
   line-height: 2rem;
@@ -169,7 +158,6 @@ p:last-child {
 .home-wrap h5,
 .home-wrap p{
   color: #ffffff;
-  font-family: 'roboto', sans-serif;
 }
 .textwhite {
   color: #fff;
@@ -275,8 +263,8 @@ ul{
 Separator
 */
 .separator {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   margin: 10px auto;
   background: none;
   position: relative;
@@ -356,7 +344,6 @@ Button
   font-size:0.8125rem;
   margin: 20px 0 0;
   transition: all .5s;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   padding: 0.8rem 3rem;
   border-radius: 2px;
@@ -874,7 +861,6 @@ service section Style
 }
 .main_service .single_service.single_service_text .single_service_right_text p{
   color:#999999;
-  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
 }
 /*======================================================================
@@ -900,7 +886,6 @@ button.btn-md {
   background-color: transparent;
   transition: .5s;
   border: 0 solid #fa7c06;
-  font-family: 'montserratregular', serif;
 }
 button.btn-md:hover {
   background-color: transparent;
@@ -1233,11 +1218,10 @@ product Section
   background: #fff;
   overflow: hidden;
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.01);
-  padding: 50px 20px 20px;
+  padding: 20px 0;
 }
 .contact_info_content h3{
   color:#57936d;
-  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
   margin-bottom: 0;
 
@@ -1245,20 +1229,48 @@ product Section
   border-bottom: solid 2px;
 }
 .contact_info_content h4{
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
 .contact_info_content h4{
   margin:0;
   padding: 20px;
 }
+
+
+.contact_info_content .text_telephone{
+  color: rgb(121, 121, 121);
+  font-size: 6vw;
+  line-height: 16vw;
+}
+
+.contact_info_content .text_email{
+
+  color: rgb(121, 121, 121);
+  font-size: 5vw;
+  line-height: 16vw;
+
+}
+
+@media (min-width: 760px) {
+  .contact_info_content .text_telephone{
+    font-size: 22px;
+    line-height: 70px;
+  }
+
+  .contact_info_content .text_email{
+    font-size: 20px;
+    line-height: 70px;
+
+  }
+}
+
 .single_contant_left{
   background: #fff;
   overflow: hidden;
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.01);
 }
 .single_contact_info{
-  margin-bottom:45px;
+  margin-bottom: 20px;
   overflow: hidden;
 }
 
@@ -1668,4 +1680,23 @@ footer section
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
   background-color: transparent;
+}
+
+.iframe-full-container iframe{
+  width: 100%;
+}
+
+.modal-loading{
+
+  height: calc(100% - 70px);
+  text-align: center;
+
+}
+
+.modal-loading img{
+
+  top: 50%;
+  position: relative;
+  margin-top: -129px;
+
 }
