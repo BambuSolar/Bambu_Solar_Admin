@@ -4,7 +4,7 @@ class RibbonsController < SecurityController
   # GET /ribbons
   # GET /ribbons.json
   def index
-    @ribbons = Ribbon.all
+    @ribbons = Ribbon.all.order(:order)
   end
 
   # GET /ribbons/1

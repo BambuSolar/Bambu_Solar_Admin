@@ -169,37 +169,28 @@
 
         <h4>Ingeniería Renovable en Mendoza, Argentina</h4>
 
-        <div class="ribbons">
+        <!--
+        <div class="ribbons" >
           <div class="separator5"></div>
           <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 ">
             <div class="row">
-              <div class="col-xs-4 ribbon">
-                <div class="image">
-                  <img src="<%= path_to_image('website/ribbon/Engineering.png')%>" width="auto" height="auto">
-                </div>
-                <div class="col-xs-12">
-                  Ingeniería
-                </div>
-              </div>
-              <div class="col-xs-4 ribbon">
-                <div class="image">
-                  <img src="<%= path_to_image('website/ribbon/Experience.png')%>" width="auto" height="auto">
-                </div>
-                <div class="col-xs-12">
-                  Experiencia
-                </div>
-              </div>
-              <div class="col-xs-4 ribbon">
-                <div class="image">
-                  <img src="<%= path_to_image('website/ribbon/Payments.png')%>" width="auto" height="auto">
-                </div>
-                <div class="col-xs-12">
-                  Facilidades de Pago
-                </div>
-              </div>
+
+              <% @ribbons.each do |r| %>
+                  <a href="<%= r.link %>">
+                    <div class="col-xs-4 ribbon">
+                      <div class="image">
+                        <img src="<%= r.picture.photo_url%>" width="auto" height="auto">
+                      </div>
+                      <div class="col-xs-12">
+                        <%= r.text %>
+                      </div>
+                    </div>
+                  </a>
+              <% end %>
             </div>
           </div>
         </div>
+        -->
 
         <div class="scrooldown">
           <a href="#who_we_are"><i class="fa fa-angle-down"></i></a>
@@ -212,15 +203,15 @@
     <div class="container-fluid">
       <div class="row">
 
-          <div class="head_title text-center">
-            <h3>
-              <%= @home_website_config.welcome_message %>
-            </h3>
-            <div class="separator margin-top-80">
-              <img src="<%= path_to_image('website/isologotipo/logo.jpg')%>">
-            </div>
-          </div><!-- End off Head_title -->
-        </div>
+        <div class="head_title text-center">
+          <h3>
+            <%= @home_website_config.welcome_message %>
+          </h3>
+          <div class="separator margin-top-80">
+            <img src="<%= path_to_image('website/isologotipo/logo.jpg')%>">
+          </div>
+        </div><!-- End off Head_title -->
+      </div>
     </div>
   </section>
 
@@ -318,7 +309,7 @@
             <div class="content">
               <div class="image" style="background-image: url('<%= ow.picture.photo_url %>');"></div>
               <% if ow.title.to_s.size > 0 %>
-                <p><%= ow.title.titlecase %></p>
+                  <p><%= ow.title.titlecase %></p>
               <% end %>
             </div>
           </div>

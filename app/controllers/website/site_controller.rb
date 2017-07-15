@@ -14,6 +14,8 @@ class  Website::SiteController < ApplicationController
 
     @home_website_config = HomeWebsiteConfig.first
 
+    @ribbons = Ribbon.all.order(:order)
+
   end
 
   def product_type_index
