@@ -18,7 +18,7 @@ class ContactInfosControllerTest < ActionController::TestCase
 
   test "should create contact_info" do
     assert_difference('ContactInfo.count') do
-      post :create, contact_info: { address_text: @contact_info.address_text, emails: @contact_info.emails, facebook_link: @contact_info.facebook_link, lat_map: @contact_info.lat_map, lon_map: @contact_info.lon_map, mercadolibre_link: @contact_info.mercadolibre_link, telepones: @contact_info.telepones }
+      post :create, contact_info: {address_text: @contact_info.address_text, emails: @contact_info.emails, facebook_link: @contact_info.facebook_link, lat_map: @contact_info.lat_map, lon_map: @contact_info.lon_map, mercadolibre_link: @contact_info.mercadolibre_link, telephones: @contact_info.telepones }
     end
 
     assert_redirected_to contact_info_path(assigns(:contact_info))
@@ -35,7 +35,7 @@ class ContactInfosControllerTest < ActionController::TestCase
   end
 
   test "should update contact_info" do
-    patch :update, id: @contact_info, contact_info: { address_text: @contact_info.address_text, emails: @contact_info.emails, facebook_link: @contact_info.facebook_link, lat_map: @contact_info.lat_map, lon_map: @contact_info.lon_map, mercadolibre_link: @contact_info.mercadolibre_link, telepones: @contact_info.telepones }
+    patch :update, id: @contact_info, contact_info: {address_text: @contact_info.address_text, emails: @contact_info.emails, facebook_link: @contact_info.facebook_link, lat_map: @contact_info.lat_map, lon_map: @contact_info.lon_map, mercadolibre_link: @contact_info.mercadolibre_link, telephones: @contact_info.telepones }
     assert_redirected_to contact_info_path(assigns(:contact_info))
   end
 

@@ -1,4 +1,4 @@
-<%= form_for(@contact_info) do |f| %>
+<%= form_for(edit_contact_info_path, :html => {:method => 'PUT'}) do |f| %>
     <% if @contact_info.errors.any? %>
         <div id="error_explanation">
           <h2><%= pluralize(@contact_info.errors.count, "error") %> prohibited this contact_info from being saved:</h2>
@@ -23,7 +23,8 @@
                              :'aria-invalid'=>'true',
                              maxlength:'100',
                              minlength:'5',
-                             autocomplete: false
+                             autocomplete: false,
+                             value: @contact_info.iframe_map
             %>
           </div>
         </div>
@@ -42,7 +43,8 @@
                              :'aria-invalid'=>'true',
                              maxlength:'100',
                              minlength:'5',
-                             autocomplete: false
+                             autocomplete: false,
+                             value: @contact_info.address_text
             %>
           </div>
         </div>
@@ -53,7 +55,7 @@
       <div class="col-sm-12">
         <div class="form-group">
           <div class="form-line">
-            <%= f.text_field :telepones,
+            <%= f.text_field :telephones,
                              class: 'form-control',
                              placeholder: 'Teléfonos',
                              required: '',
@@ -62,7 +64,8 @@
                              maxlength:'100',
                              minlength:'5',
                              :'data-role'=>'tagsinput',
-                             autocomplete: false
+                             autocomplete: false,
+                             value: @contact_info.telephones
             %>
           </div>
         </div>
@@ -82,7 +85,8 @@
                              maxlength:'100',
                              minlength:'5',
                              :'data-role'=>'tagsinput',
-                             autocomplete: false
+                             autocomplete: false,
+                             value: @contact_info.emails
             %>
           </div>
         </div>
@@ -101,7 +105,8 @@
                              :'aria-invalid'=>'true',
                              maxlength:'100',
                              minlength:'5',
-                             autocomplete: false
+                             autocomplete: false,
+                             value: @contact_info.facebook_link
             %>
           </div>
         </div>
@@ -120,7 +125,8 @@
                              :'aria-invalid'=>'true',
                              maxlength:'100',
                              minlength:'5',
-                             autocomplete: false
+                             autocomplete: false,
+                             value: @contact_info.mercadolibre_link
             %>
           </div>
         </div>

@@ -18,7 +18,7 @@ class ContactInfosController < SecurityController
 
     respond_to do |format|
       if @contact_info.update(contact_info_params)
-        format.html { redirect_to @contact_info, notice: 'Contact info was successfully updated.' }
+        format.html { redirect_to contact_info_path, notice: 'Contact info was successfully updated.' }
         format.json { render :index, status: :ok, location: @contact_info }
       else
         format.html { render :edit }
@@ -29,6 +29,6 @@ class ContactInfosController < SecurityController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def contact_info_params
-      params.require(:contact_info).permit(:iframe_map, :telepones, :emails, :facebook_link, :mercadolibre_link, :address_text)
+      params.require(:contact_info).permit(:iframe_map, :telephones, :emails, :facebook_link, :mercadolibre_link, :address_text)
     end
 end

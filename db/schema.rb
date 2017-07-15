@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20170712020551) do
 
   create_table "contact_infos", force: :cascade do |t|
     t.text     "iframe_map"
-    t.string   "telepones"
+    t.string   "telephones"
     t.string   "emails"
     t.string   "facebook_link"
     t.string   "mercadolibre_link"
