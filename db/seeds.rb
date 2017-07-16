@@ -35,7 +35,7 @@ if ContactInfo.all.size < 1
 
   ci = ContactInfo.new
 
-  ci.telepones = '+54 9 261 512-4590,+54 9 261 592-3570'
+  ci.telephones = '+54 9 261 512-4590,+54 9 261 592-3570'
 
   ci.emails = 'info@bambusolar.com,ventas@bambusolar.com'
 
