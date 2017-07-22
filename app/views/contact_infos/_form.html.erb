@@ -15,14 +15,12 @@
       <div class="col-sm-12">
         <div class="form-group">
           <div class="form-line">
-            <%= f.text_field :iframe_map,
+            <%= f.text_area :iframe_map,
                              class: 'form-control',
                              placeholder: 'Iframe Google Maps',
                              required: '',
                              :'aria-required'=>'true',
                              :'aria-invalid'=>'true',
-                             maxlength:'100',
-                             minlength:'5',
                              autocomplete: false,
                              value: @contact_info.iframe_map
             %>
