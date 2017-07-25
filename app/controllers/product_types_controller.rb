@@ -10,7 +10,28 @@ class ProductTypesController < SecurityController
   # GET /product_types/1
   # GET /product_types/1.json
   def show
-    @products = Product.where(product_type_id: @product_type.id).order(:name).paginate(:page => params[:page], :per_page => 10)
+
+    query_by_name = params[:q].to_s
+
+    @products =
+
+    if query_by_name.size > 0
+
+      @products = Product
+                      .where(product_type_id: @product_type.id)
+                      .where('lower(name) LIKE ?' , "%#{query_by_name.downcase}%")
+                      .order(:name)
+                      .paginate(:page => params[:page], :per_page => 10)
+
+    else
+
+      @products = Product
+          .where(product_type_id: @product_type.id)
+          .order(:name)
+          .paginate(:page => params[:page], :per_page => 10)
+
+    end
+
   end
 
   # GET /product_types/new

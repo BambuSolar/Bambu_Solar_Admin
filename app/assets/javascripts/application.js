@@ -19,6 +19,7 @@
 
 
 $(function () {
+
     $('.form_validation').validate({
         rules: {
             'checkbox': {
@@ -251,7 +252,6 @@ $(function () {
             input_img.removeClass('hidden');
 
         });
-
 
     });
 });

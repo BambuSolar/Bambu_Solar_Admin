@@ -6,7 +6,17 @@ class ProductsController < SecurityController
   # GET /products
   # GET /products.json
   def index
+
+      query_by_name = params[:q].to_s
+
       @products = Product.all.paginate(:page => params[:page], :per_page => 10)
+
+      if query_by_name.size > 0
+
+        @products.where('name LIKE ?' , "%#{query_by_name}%")
+
+      end
+
   end
 
   # GET /products/1
