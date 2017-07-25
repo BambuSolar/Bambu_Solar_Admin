@@ -16,44 +16,56 @@
     <div class="card">
       <div class="body table-responsive">
         <% if @product_types.size > 0 %>
-        <table class="table table-striped">
-          <thead>
-          <tr>
-            <th>Nombre</th>
-            <th style="width: 300px;"></th>
-          </tr>
-          </thead>
-
-          <tbody>
-          <% @product_types.each do |product_type| %>
+            <table class="table table-striped">
+              <thead>
               <tr>
-                <td>
-                  <% unless product_type.picture.nil? %>
-                    <%= image_tag product_type.picture.photo_url, width: '36px', height: '36px' %>
-                  <% end %>
-                  <%= product_type.name %>
-                </td>
-                <td>
-                  <%= link_to preview_product_type_path(product_type.id), target: '_blank', class: 'btn btn-default' do %>
-                      <i class="material-icons">public</i>
-                  <% end %>
-                  <%= link_to product_type_product_sub_types_path(product_type.id), class: 'btn btn-default' do %>
-                      <i class="material-icons">local_offer</i>
-                  <% end %>
-                  <%= link_to product_type, class: 'btn btn-default' do %>
-                      <i class="material-icons">visibility</i>
-                  <% end %>
-                  <%= link_to edit_product_type_path(product_type), class: 'btn btn-default'  do %>
-                      <i class="material-icons">create</i>
-                  <% end %>
-                  <%= link_to product_type, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger'  do %>
-                      <i class="material-icons">delete</i>
-                  <% end %>
-                </td>
+                <th>Nombre</th>
+                <th style="width: 360px;"></th>
               </tr>
-          <% end %>
-          </tbody>
-        </table>
+              </thead>
+
+              <tbody>
+              <% @product_types.each do |product_type| %>
+                  <tr>
+                    <td>
+                      <% unless product_type.picture.nil? %>
+                          <%= image_tag product_type.picture.photo_url, width: '36px', height: '36px' %>
+                      <% end %>
+                      <%= product_type.name %>
+                    </td>
+                    <td>
+                      <%= link_to preview_product_type_path(product_type.id), target: '_blank', class: 'btn btn-default',
+                                  'data-toggle'=> 'tooltip', 'data-placement'=> 'top', 'title'=> 'Vista Previa'  do %>
+                          <i class="material-icons">public</i>
+                      <% end %>
+                      <%= link_to product_type_product_categories_path(product_type.id),
+                                  class: 'btn btn-default', 'data-toggle'=> 'tooltip',
+                                  'data-placement'=> 'top', 'title'=> 'Categoria de Producto' do %>
+                          <i class="material-icons">dns</i>
+                      <% end %>
+                      <%= link_to product_type_product_sub_types_path(product_type.id),
+                                  class: 'btn btn-default', 'data-toggle'=> 'tooltip',
+                                  'data-placement'=> 'top', 'title'=> 'Sub Tipos de Producto' do %>
+                          <i class="material-icons">local_offer</i>
+                      <% end %>
+                      <%= link_to product_type, class: 'btn btn-default', 'data-toggle'=> 'tooltip',
+                                  'data-placement'=> 'top', 'title'=> 'Ver Productos'  do %>
+                          <i class="material-icons">list</i>
+                      <% end %>
+                      <%= link_to edit_product_type_path(product_type), class: 'btn btn-default', 'data-toggle'=> 'tooltip',
+                                  'data-placement'=> 'top', 'title'=> 'Editar Tipo de Producto'   do %>
+                          <i class="material-icons">create</i>
+                      <% end %>
+                      <%= link_to product_type, method: :delete, data: { confirm: 'Are you sure?' },
+                                  class: 'btn btn-danger', 'data-toggle'=> 'tooltip',
+                                  'data-placement'=> 'top', 'title'=> 'Eliminar Tipo de Producto'   do %>
+                          <i class="material-icons">delete</i>
+                      <% end %>
+                    </td>
+                  </tr>
+              <% end %>
+              </tbody>
+            </table>
         <% else %>
             <div class="alert alert-info margin-0 text-center">
               No existe ningún tipo de producto cargado en el sistema

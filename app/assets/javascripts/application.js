@@ -20,6 +20,8 @@
 
 $(function () {
 
+    $('[data-toggle="tooltip"]').tooltip()
+
     $('.form_validation').validate({
         rules: {
             'checkbox': {

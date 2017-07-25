@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  resources :product_categories
   resources :social_networks
 
   resources :ribbons
@@ -24,6 +23,7 @@ Rails.application.routes.draw do
   root 'home#landing'
 
   resources :product_types do
+    resources :product_categories
     resources :product_sub_types
     resources :products do
       resources :product_pictures

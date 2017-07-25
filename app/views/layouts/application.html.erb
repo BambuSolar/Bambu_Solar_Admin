@@ -10,104 +10,104 @@
 </head>
 
 <body class="theme-teal">
-  <!-- Page Loader -->
-  <div class="page-loader-wrapper">
-    <div class="loader">
-      <div class="preloader">
-        <div class="spinner-layer pl-red">
-          <div class="circle-clipper left">
-            <div class="circle"></div>
-          </div>
-          <div class="circle-clipper right">
-            <div class="circle"></div>
-          </div>
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+  <div class="loader">
+    <div class="preloader">
+      <div class="spinner-layer pl-red">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
         </div>
       </div>
-      <p>Por favor espere...</p>
+    </div>
+    <p>Por favor espere...</p>
+  </div>
+</div>
+<!-- #END# Page Loader -->
+<!-- Overlay For Sidebars -->
+<div class="overlay"></div>
+<!-- #END# Overlay For Sidebars -->
+
+<!-- Top Bar -->
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="javascript:void(0);" class="bars"></a>
+      <a class="navbar-brand" href="/">Bambu Solar Administración</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="dropdown user-dropdown">
+          <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">
+            <i class="material-icons">person</i>
+            <span><%= @current_user.first_name + ' ' + @current_user.last_name %></span>
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="body">
+              <ul class="menu">
+                <li>
+                  <%= link_to '/logout', method: :delete, class: 'waves-effect waves-block'  do %>
+                      <div class="menu-info">
+                        <h4><i class="material-icons">exit_to_app</i>Cerrar Session</h4>
+                      </div>
+                  <% end %>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </div>
-  <!-- #END# Page Loader -->
-  <!-- Overlay For Sidebars -->
-  <div class="overlay"></div>
-  <!-- #END# Overlay For Sidebars -->
-
-  <!-- Top Bar -->
-  <nav class="navbar">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a href="javascript:void(0);" class="bars"></a>
-        <a class="navbar-brand" href="/">Bambu Solar Administración</a>
-      </div>
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-
-          <li class="dropdown user-dropdown">
-            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">
-              <i class="material-icons">person</i>
-              <span><%= @current_user.first_name + ' ' + @current_user.last_name %></span>
-              <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="body">
-                <ul class="menu">
-                  <li>
-                    <%= link_to '/logout', method: :delete, class: 'waves-effect waves-block'  do %>
-                    <div class="menu-info">
-                      <h4><i class="material-icons">exit_to_app</i>Cerrar Session</h4>
-                    </div>
-                    <% end %>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+</nav>
+<!-- #Top Bar -->
+<section>
+  <!-- Left Sidebar -->
+  <aside id="leftsidebar" class="sidebar">
+    <!-- User Info -->
+    <div class="user-info">
     </div>
-  </nav>
-  <!-- #Top Bar -->
-  <section>
-    <!-- Left Sidebar -->
-    <aside id="leftsidebar" class="sidebar">
-      <!-- User Info -->
-      <div class="user-info" style="')">
-      </div>
-      <!-- #User Info -->
-      <!-- Menu -->
-      <div class="menu">
-        <ul class="list">
-          <li class="header"></li>
-          <li>
-            <%= link_to home_landing_path do %>
-            <i class="material-icons">home</i>
-            <span>Home</span>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to home_website_config_url do %>
-                <i class="material-icons">build</i>
-                <span>Configuración del Home</span>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to ribbons_path do %>
-                <i class="material-icons">brightness_low</i>
-                <span>Ribbons</span>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to contact_info_path do %>
-                <i class="material-icons">pin_drop</i>
-                <span>Información de Contacto</span>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to social_networks_path do %>
-                <i class="material-icons">contact_phone</i>
-                <span>Redes Sociales</span>
-            <% end %>
-          </li>
-          <!--
+    <!-- #User Info -->
+    <!-- Menu -->
+    <div class="menu">
+      <ul class="list">
+        <li class="header"></li>
+        <li>
+          <%= link_to home_landing_path do %>
+              <i class="material-icons">home</i>
+              <span>Home</span>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to home_website_config_url do %>
+              <i class="material-icons">build</i>
+              <span>Configuración del Home</span>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to ribbons_path do %>
+              <i class="material-icons">brightness_low</i>
+              <span>Ribbons</span>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to contact_info_path do %>
+              <i class="material-icons">pin_drop</i>
+              <span>Información de Contacto</span>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to social_networks_path do %>
+              <i class="material-icons">contact_phone</i>
+              <span>Redes Sociales</span>
+          <% end %>
+        </li>
+        <!--
           <li>
             <%= link_to member_teams_path do %>
             <i class="material-icons">people</i>
@@ -115,67 +115,67 @@
             <% end %>
           </li>
           -->
-          <li>
-            <%= link_to opinions_path do %>
-            <i class="material-icons">question_answer</i>
-            <span>Opiniones</span>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to ourworks_path do %>
-            <i class="material-icons">recent_actors</i>
-            <span>Nuestro Trabajo</span>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to product_types_path do %>
-            <i class="material-icons">shopping_cart</i>
-            <span>Tipo de Productos</span>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to users_url do %>
-            <i class="material-icons">face</i>
-            <span>Usuarios</span>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to preview_path, target: '_blank' do %>
-                <i class="material-icons">visibility</i>
-                <span>Vista Previa</span>
-            <% end %>
-          </li>
-        </ul>
-      </div>
-      <!-- #Menu -->
-      <div class="legal">
-        <div class="version">
-          <b>Version: </b> 0.0.1 Beta
-        </div>
-      </div>
-    </aside>
-    <!-- #END# Left Sidebar -->
-  </section>
-
-  <section class="content">
-    <div class="container-fluid">
-      <% if notice %>
-      <div class="alert bg-teal alert-dismissible" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
-        <%= notice %>
-      </div>
-      <% end %>
-      <% if alert %>
-      <div class="alert bg-pink alert-dismissible" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
-        <%= alert %>
-      </div>
-      <% end %>
-      <%= yield %>
+        <li>
+          <%= link_to opinions_path do %>
+              <i class="material-icons">question_answer</i>
+              <span>Opiniones</span>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to ourworks_path do %>
+              <i class="material-icons">recent_actors</i>
+              <span>Nuestro Trabajo</span>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to product_types_path do %>
+              <i class="material-icons">shopping_cart</i>
+              <span>Tipo de Productos</span>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to users_url do %>
+              <i class="material-icons">face</i>
+              <span>Usuarios</span>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to preview_path, target: '_blank' do %>
+              <i class="material-icons">visibility</i>
+              <span>Vista Previa</span>
+          <% end %>
+        </li>
+      </ul>
     </div>
-  </section>
+    <!-- #Menu -->
+    <div class="legal">
+      <div class="version">
+        <b>Version: </b> 0.0.1 Beta
+      </div>
+    </div>
+  </aside>
+  <!-- #END# Left Sidebar -->
+</section>
 
-  <%= javascript_include_tag 'application'%>
+<section class="content">
+  <div class="container-fluid">
+    <% if notice %>
+        <div class="alert bg-teal alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <%= notice %>
+        </div>
+    <% end %>
+    <% if alert %>
+        <div class="alert bg-pink alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <%= alert %>
+        </div>
+    <% end %>
+    <%= yield %>
+  </div>
+</section>
+
+<%= javascript_include_tag 'application'%>
 
 </body>
 
