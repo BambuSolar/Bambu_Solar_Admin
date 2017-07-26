@@ -73,7 +73,7 @@ ActiveRecord::Schema.define(version: 20170726024640) do
   end
 
   create_table "product_categories", force: :cascade do |t|
-    t.string   "Name"
+    t.string   "name"
     t.integer  "product_type_id"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
@@ -81,15 +81,15 @@ ActiveRecord::Schema.define(version: 20170726024640) do
 
   add_index "product_categories", ["product_type_id"], name: "index_product_categories_on_product_type_id", using: :btree
 
-  create_table "product_category_products", force: :cascade do |t|
+  create_table "product_category_product_sub_types", force: :cascade do |t|
     t.integer  "product_sub_type_id"
     t.integer  "product_category_id"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
   end
 
-  add_index "product_category_products", ["product_category_id"], name: "index_product_category_products_on_product_category_id", using: :btree
-  add_index "product_category_products", ["product_sub_type_id"], name: "index_product_category_products_on_product_sub_type_id", using: :btree
+  add_index "product_category_product_sub_types", ["product_category_id"], name: "index_product_category_products_on_product_category_id", using: :btree
+  add_index "product_category_product_sub_types", ["product_sub_type_id"], name: "index_product_category_products_on_product_sub_type_id", using: :btree
 
   create_table "product_pictures", force: :cascade do |t|
     t.integer  "product_id"

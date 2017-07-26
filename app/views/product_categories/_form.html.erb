@@ -1,25 +1,31 @@
-<%= form_for(@product_category) do |f| %>
-  <% if @product_category.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@product_category.errors.count, "error") %> prohibited this product_category from being saved:</h2>
+<%= form_for([@product_type,@product_category], html: {novalidate:'novalidate', class: 'form_validation'}) do |f| %>
 
-      <ul>
-      <% @product_category.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <div class="form-line">
+            <%= f.text_field :name,
+                             class: 'form-control',
+                             placeholder: 'Nombre',
+                             required: '',
+                             :'aria-required'=>'true',
+                             :'aria-invalid'=>'true',
+                             :autocomplete => :off,
+                             maxlength:'150',
+                             minlength:'5'
+            %>
+          </div>
+        </div>
+      </div>
     </div>
-  <% end %>
 
-  <div class="field">
-    <%= f.label :Name %><br>
-    <%= f.text_field :Name %>
-  </div>
-  <div class="field">
-    <%= f.label :product_type %><br>
-    <%= f.text_field :product_type %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <div class="row">
+      <div class="col-xs-6 col-sm-4">
+        <button type="submit" class="btn btn-primary m-t-15 waves-effect btn-block teal">Guardar</button>
+      </div>
+      <div class="col-xs-6 col-sm-4">
+        <%= link_to 'Atrás', @product_type, class: 'btn btn-default m-t-15 waves-effect btn-block' %>
+      </div>
+    </div>
+
 <% end %>
