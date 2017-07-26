@@ -1,10 +1,12 @@
-class ProductCategoriesController < ApplicationController
+class ProductCategoriesController < SecurityController
   before_action :set_product_category, only: [:show, :edit, :update, :destroy]
+
+  before_action :set_product_type
 
   # GET /product_categories
   # GET /product_categories.json
   def index
-    @product_categories = ProductCategory.all
+    @product_categories = ProductCategory.where(:product_type_id => @product_type.id)
   end
 
   # GET /product_categories/1
@@ -25,6 +27,8 @@ class ProductCategoriesController < ApplicationController
   # POST /product_categories.json
   def create
     @product_category = ProductCategory.new(product_category_params)
+
+    @product_category.product_type = @product_type
 
     respond_to do |format|
       if @product_category.save
@@ -65,6 +69,10 @@ class ProductCategoriesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_product_category
       @product_category = ProductCategory.find(params[:id])
+    end
+
+    def set_product_type
+      @product_type = ProductType.find(params[:product_type_id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
