@@ -19,12 +19,33 @@
       </div>
     </div>
 
+    <% if @product_category.id %>
+
+        <ul class="list-group">
+
+          <% @product_sub_types.each do |s_t| %>
+
+              <li class="list-group-item">
+
+                <p>
+                  <input type="checkbox" id="sub_type_<%= s_t.id %>" value="<%= s_t.id %>" name="sub_types[]" <%= @product_category_product_sub_types.include?(s_t.id) ? 'checked': '' %> />
+                  <label for="sub_type_<%= s_t.id %>"><%= s_t.name %></label>
+                </p>
+
+              </li>
+
+          <% end %>
+
+        </ul>
+
+    <% end %>
+
     <div class="row">
       <div class="col-xs-6 col-sm-4">
         <button type="submit" class="btn btn-primary m-t-15 waves-effect btn-block teal">Guardar</button>
       </div>
       <div class="col-xs-6 col-sm-4">
-        <%= link_to 'Atrás', product_types_path, class: 'btn btn-default m-t-15 waves-effect btn-block' %>
+        <%= link_to 'Atrás', product_type_product_categories_path(@product_type), class: 'btn btn-default m-t-15 waves-effect btn-block' %>
       </div>
     </div>
 
