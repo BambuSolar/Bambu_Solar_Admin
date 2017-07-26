@@ -191,15 +191,36 @@
 
         <% if @product_type.have_classification %>
 
-            <% products_product = @products.where(classification: 'product' ) %>
+            <%
 
-            <% if products_product.size > 0 %>
+              product_classifications = [
+                  {
+                      :classification => 'product',
+                      :name => 'Productos'
+                  },
+                  {
+                      :classification => 'accessory',
+                      :name => 'Accesorios'
+                  },
+                  {
+                      :classification => 'replacement',
+                      :name => 'Respuestos'
+                  }
+              ]
 
-                <h3> Productos </h3>
+            %>
+
+            <% product_classifications.each do |p_c| %>
+
+              <% products = @products.where(classification: p_c[:classification] ) %>
+
+              <% if products.size > 0 %>
+
+                <h3> <%= p_c[:name] %> </h3>
 
                 <div class="row">
 
-                  <% products_product.where(:sub_type_id => nil).each do |p| %>
+                  <% products.where(:sub_type_id => nil).each do |p| %>
 
                       <%= render 'product_item', :object => [@p = p] %>
 
@@ -209,7 +230,9 @@
 
                 <% @product_sub_types.each do |sub_type| %>
 
-                    <% if products_product.where(:sub_type_id => sub_type.id).size > 0 %>
+                        <% product_s_ts = products.where(:sub_type_id => sub_type.id) %>
+
+                    <% if product_s_ts.size > 0 %>
 
                         <div class="sub_type_products_container">
 
@@ -217,7 +240,7 @@
 
                           <div class="row">
 
-                            <% products_product.where(:sub_type_id => sub_type.id).each do |p| %>
+                            <% product_s_ts.each do |p| %>
 
                                 <%= render 'product_item', :object => [@p = p] %>
 
@@ -232,88 +255,6 @@
                 <% end %>
 
             <% end %>
-
-            <% products_accessory = @products.where(classification: 'accessory' ) %>
-
-            <% if products_accessory.size > 0 %>
-
-                <h3> Accesorios </h3>
-
-                <div class="row">
-
-                  <% products_accessory.where(:sub_type_id => nil).each do |p| %>
-
-                      <%= render 'product_item', :object => [@p = p] %>
-
-                  <% end %>
-
-                </div>
-
-                <% @product_sub_types.each do |sub_type| %>
-
-                    <% if products_accessory.where(:sub_type_id => sub_type.id).size > 0 %>
-
-                        <div class="sub_type_products_container">
-
-                          <h4><%= sub_type.name %></h4>
-
-                          <div class="row">
-
-                            <% products_accessory.where(:sub_type_id => sub_type.id).each do |p| %>
-
-                                <%= render 'product_item', :object => [@p = p] %>
-
-                            <% end %>
-
-                          </div>
-
-                        </div>
-
-                    <% end %>
-
-                <% end %>
-
-            <% end %>
-
-            <% products_replacement = @products.where(classification: 'replacement' ) %>
-
-            <% if products_replacement.size > 0 %>
-
-                <h3> Respuestos </h3>
-
-                <div class="row">
-
-                  <% products_replacement.where(:sub_type_id => nil).each do |p| %>
-
-                      <%= render 'product_item', :object => [@p = p] %>
-
-                  <% end %>
-
-                </div>
-
-                <% @product_sub_types.each do |sub_type| %>
-
-                    <% if products_replacement.where(:sub_type_id => sub_type.id).size > 0 %>
-
-                        <div class="sub_type_products_container">
-
-                          <h4><%= sub_type.name %></h4>
-
-                          <div class="row">
-
-                            <% products_replacement.where(:sub_type_id => sub_type.id).each do |p| %>
-
-                                <%= render 'product_item', :object => [@p = p] %>
-
-                            <% end %>
-
-                          </div>
-
-                        </div>
-
-                    <% end %>
-
-                <% end %>
 
             <% end %>
 
@@ -344,49 +285,49 @@
 </div>
 
 
-  <div class="cover_modal" id="cover_modal" data-id=""></div>
-  <div id="product_modal">
-    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
-    <div  id="btn-close-modal" class="close-product_modal">
-      <img class="closebt" src="<%= path_to_image('website/closebt.png')%>">
-    </div>
-
-    <div class="modal-loading">
-      <img src="<%= path_to_image('website/ajax-loader.gif')%>">
-    </div>
-
-    <div class="modal-content" style="display: none">
-      <div class="col-xs-12 col-sm-6">
-        <div class="pictures">
-          <img class="" src="" width="100%" height="auto">
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6">
-        <h1 class="title"></h1>
-        <p class="description"></p>
-        <div class="row buttons">
-          <div class="col-xs-6">
-            <p class="price modal-contact-btn btn btn-block">
-
-            </p>
-          </div>
-          <div class="col-xs-6">
-            <button type="button" class="modal-contact-btn btn btn-block">Consultar</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xs-12">
-        <h1 class="title2">Características</h1>
-      </div>
-      <div class="col-xs-12">
-        <div class="description_detail">
-
-        </div>
-      </div>
-
-    </div>
+<div class="cover_modal" id="cover_modal" data-id=""></div>
+<div id="product_modal">
+  <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+  <div  id="btn-close-modal" class="close-product_modal">
+    <img class="closebt" src="<%= path_to_image('website/closebt.png')%>">
   </div>
+
+  <div class="modal-loading">
+    <img src="<%= path_to_image('website/ajax-loader.gif')%>">
+  </div>
+
+  <div class="modal-content" style="display: none">
+    <div class="col-xs-12 col-sm-6">
+      <div class="pictures">
+        <img class="" src="" width="100%" height="auto">
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <h1 class="title"></h1>
+      <p class="description"></p>
+      <div class="row buttons">
+        <div class="col-xs-6">
+          <p class="price modal-contact-btn btn btn-block">
+
+          </p>
+        </div>
+        <div class="col-xs-6">
+          <button type="button" class="modal-contact-btn btn btn-block">Consultar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12">
+      <h1 class="title2">Características</h1>
+    </div>
+    <div class="col-xs-12">
+      <div class="description_detail">
+
+      </div>
+    </div>
+
+  </div>
+</div>
 
 <div id="modal-contact" class="iziModal">
   <%= render 'contact' %>
