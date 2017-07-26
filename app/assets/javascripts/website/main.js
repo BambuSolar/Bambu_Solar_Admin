@@ -25,7 +25,7 @@ jQuery(document).ready(function ($) {
         }
     });
 
-
+/*
     $('.ourWorkSlider').slick({
         centerMode: true,
         centerPadding: '60px',
@@ -54,7 +54,7 @@ jQuery(document).ready(function ($) {
                 }
             }]
     });
-
+*/
     /*---------------------------------------------*
      * STICKY scroll
      ---------------------------------------------*/

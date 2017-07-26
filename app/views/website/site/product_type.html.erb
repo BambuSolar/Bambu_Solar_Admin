@@ -189,9 +189,9 @@
 
     <% if @products.size > 0 %>
 
-        <% if @product_type.have_category %>
+        <% if @product_type.have_classification %>
 
-            <% products_product = @products.where(category: 'product' ) %>
+            <% products_product = @products.where(classification: 'product' ) %>
 
             <% if products_product.size > 0 %>
 
@@ -233,7 +233,7 @@
 
             <% end %>
 
-            <% products_accessory = @products.where(category: 'accessory' ) %>
+            <% products_accessory = @products.where(classification: 'accessory' ) %>
 
             <% if products_accessory.size > 0 %>
 
@@ -275,7 +275,7 @@
 
             <% end %>
 
-            <% products_replacement = @products.where(category: 'replacement' ) %>
+            <% products_replacement = @products.where(classification: 'replacement' ) %>
 
             <% if products_replacement.size > 0 %>
 

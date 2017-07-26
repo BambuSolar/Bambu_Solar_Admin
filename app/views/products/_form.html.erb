@@ -75,9 +75,9 @@
         <div class="form-group">
           <div class="form-line">
             <%= f.text_field :url_video_youtube,
-                               class: 'form-control',
-                               type: 'url',
-                               placeholder: 'Url Video YouTuBe'
+                             class: 'form-control',
+                             type: 'url',
+                             placeholder: 'Url Video YouTuBe'
             %>
           </div>
         </div>
@@ -88,11 +88,13 @@
       <div class="col-sm-12">
         <div class="form-group">
           <div class="form-line">
-            <%= f.select(:category) do %>
-                <% [['Producto', 'product'], ['Accesorio', 'accessory'],['Respuesto', 'replacement']].each do |c| -%>
-                    <%= content_tag(:option, c.first, value: c.last) %>
-                <% end %>
-            <% end %>
+            <%= f.select(
+                    :classification,
+                    options_for_select(
+                        [['Producto', 'product'], ['Accesorio', 'accessory'],['Respuesto', 'replacement']],
+                        @product.classification
+                    )
+                ) %>
           </div>
         </div>
       </div>
@@ -102,12 +104,13 @@
       <div class="col-sm-12">
         <div class="form-group">
           <div class="form-line">
-            <%= f.select(:sub_type_id) do %>
-                <%= content_tag(:option,' - Sin Sub Tipo - ', value: '') %>
-                <% ProductSubType.where(:product_type_id => @product_type.id).collect {|p| [ p.name, p.id ] }.each do |c| -%>
-                    <%= content_tag(:option, c.first, value: c.last) %>
-                <% end %>
-            <% end %>
+            <%= f.select(
+                :sub_type_id,
+                options_for_select(
+                    ProductSubType.where(:product_type_id => @product_type.id).collect {|p| [ p.name, p.id ] }.to_a.prepend( [' - Sin Sub Tipo - ', ''] ),
+                    @product.sub_type_id
+                )
+            ) %>
           </div>
         </div>
       </div>

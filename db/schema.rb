@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170724232045) do
+ActiveRecord::Schema.define(version: 20170726024640) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -113,10 +113,10 @@ ActiveRecord::Schema.define(version: 20170724232045) do
   create_table "product_types", force: :cascade do |t|
     t.string   "name"
     t.integer  "picture_id"
-    t.datetime "created_at",                     null: false
-    t.datetime "updated_at",                     null: false
-    t.boolean  "have_category",  default: false
-    t.boolean  "have_sub_type",  default: false
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
+    t.boolean  "have_classification", default: false
+    t.boolean  "have_sub_type",       default: false
     t.integer  "order"
     t.boolean  "allow_category"
   end
@@ -134,7 +134,7 @@ ActiveRecord::Schema.define(version: 20170724232045) do
     t.datetime "created_at",                             null: false
     t.datetime "updated_at",                             null: false
     t.string   "url_video_youtube"
-    t.string   "category",           default: "product"
+    t.string   "classification",     default: "product"
     t.integer  "sub_type_id"
     t.boolean  "to_quote",           default: false
   end
