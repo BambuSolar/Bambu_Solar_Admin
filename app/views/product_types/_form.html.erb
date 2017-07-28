@@ -68,6 +68,15 @@
     <div class="row clearfix">
       <div class="col-sm-12">
         <div class="form-group">
+          <%= f.check_box :allow_category%>
+          <label for="product_type_allow_category">Subdividir en Categorias los Productos</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
 
           <% unless @product_type.picture.nil?  %>
               <%= image_tag @product_type.picture.photo_url, style: 'width: 100%; max-width: 300px; height: auto;' %>

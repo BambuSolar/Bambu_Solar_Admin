@@ -196,15 +196,18 @@
               product_classifications = [
                   {
                       :classification => 'product',
-                      :name => 'Productos'
+                      :name => 'Productos',
+                      :categories => true
                   },
                   {
                       :classification => 'accessory',
-                      :name => 'Accesorios'
+                      :name => 'Accesorios',
+                      :categories => false
                   },
                   {
                       :classification => 'replacement',
-                      :name => 'Respuestos'
+                      :name => 'Respuestos',
+                      :categories => false
                   }
               ]
 
@@ -212,49 +215,81 @@
 
             <% product_classifications.each do |p_c| %>
 
-              <% products = @products.where(classification: p_c[:classification] ) %>
+                <% products = @products.where(classification: p_c[:classification] ) %>
 
-              <% if products.size > 0 %>
+                <% if products.size > 0 %>
 
-                <h3> <%= p_c[:name] %> </h3>
+                    <h3> <%= p_c[:name] %> </h3>
 
-                <div class="row">
+                    <% if p_c[:categories] %>
 
-                  <% products.where(:sub_type_id => nil).each do |p| %>
+                        <div class="list_product_categories">
 
-                      <%= render 'product_item', :object => [@p = p] %>
+                          <ul>
+                        <% @categories.each do |c| %>
 
-                  <% end %>
+                            <li class="product_category_<%= c.id %>" data-id="<%= c.id %>" ><%= c.name %></li>
 
-                </div>
+                        <% end %>
 
-                <% @product_sub_types.each do |sub_type| %>
+                          </ul>
 
-                        <% product_s_ts = products.where(:sub_type_id => sub_type.id) %>
+                        </div>
 
-                    <% if product_s_ts.size > 0 %>
 
-                        <div class="sub_type_products_container">
+                    <% end %>
 
-                          <h4><%= sub_type.name %></h4>
+                    <div class="<%= p_c[:categories] ? 'product_category_container' : '' %>">
 
-                          <div class="row">
+                      <% @product_sub_types.each do |sub_type| %>
 
-                            <% product_s_ts.each do |p| %>
+                          <% if p_c[:categories] %>
 
-                                <%= render 'product_item', :object => [@p = p] %>
+                              <% products_categories = ProductCategoryProductSubType.where(:product_sub_type_id => sub_type.id).select(:product_category_id).map(&:product_category_id) %>
+
+                          <% end %>
+
+                          <div class="<%= p_c[:categories] ?  products_categories.map! {|id| "category_id_#{id}" }.join(' ') : '' %>">
+
+                            <% product_s_ts = products.where(:sub_type_id => sub_type.id) %>
+
+                            <% if product_s_ts.size > 0 %>
+
+                                <div class="sub_type_products_container">
+
+                                  <h4><%= sub_type.name %></h4>
+
+                                  <div class="row">
+
+                                    <% product_s_ts.each do |p| %>
+
+                                        <%= render 'product_item', :object => [@p = p] %>
+
+                                    <% end %>
+
+                                  </div>
+
+                                </div>
 
                             <% end %>
 
                           </div>
 
-                        </div>
+                      <% end %>
 
-                    <% end %>
+                    </div>
+
+                    <div class="row">
+
+                      <% products.where(:sub_type_id => nil).each do |p| %>
+
+                          <%= render 'product_item', :object => [@p = p] %>
+
+                      <% end %>
+
+                    </div>
 
                 <% end %>
-
-            <% end %>
 
             <% end %>
 

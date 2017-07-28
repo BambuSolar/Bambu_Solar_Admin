@@ -1,6 +1,11 @@
 //= require jquery
 
 //= require website/vendor/modernizr.custom.28468
+
+//= require website/vendor/iziModal.min
+
+//= require website/plugins
+
 //= require website/vendor/bootstrap.min
 
 //= require website/jquery.magnific-popup
@@ -16,10 +21,6 @@
 //= require website/animatedModal.min
 
 //= require website/jquery.matchHeight-min
-
-//= require website/vendor/iziModal.min
-
-//= require website/plugins
 
 //= require website/main
 

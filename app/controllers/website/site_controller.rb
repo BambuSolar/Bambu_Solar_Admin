@@ -38,6 +38,8 @@ class  Website::SiteController < ApplicationController
 
     @product_type = ProductType.find(params[:id])
 
+    @categories = ProductCategory.where(product_type_id: @product_type.id).order(:name)
+
     @product_sub_types = ProductSubType.where(product_type_id: @product_type.id).order(:order)
 
     @products = Product.where(product_type_id: @product_type, enabled: true).order(:price)

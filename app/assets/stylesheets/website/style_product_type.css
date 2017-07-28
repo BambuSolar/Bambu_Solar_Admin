@@ -462,3 +462,50 @@ h3{
 .product_modal_container .animated {
     box-shadow: 0 0 50px 3px black;
 }
+
+.list_product_categories{
+    width: 20%;
+    float: left;
+}
+
+.list_product_categories > ul{
+    margin-top: 20px;
+}
+
+.list_product_categories > ul > li{
+    color: #6b6b6b;
+    padding: 11px 10%;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.list_product_categories > ul > li.selected{
+    background: #e18718;
+    color: white;
+}
+
+.product_category_container{
+    width: 80%;
+    float: right;
+    border-left: solid 1px #e18718;
+    padding-left: 20px;
+}
+
+@media (max-width: 479px) {
+
+    h3{
+        font-size: 2.2rem;
+    }
+
+    .list_product_categories > ul > li{
+        font-size: 1.8rem;
+    }
+
+    .list_product_categories, .product_category_container{
+        width: 100%;
+        float: none;
+        border: none;
+        padding: 0;
+    }
+
+}
