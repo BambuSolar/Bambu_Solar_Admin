@@ -21,7 +21,7 @@ class ContactInfosController < SecurityController
         format.html { redirect_to contact_info_path, notice: 'Contact info was successfully updated.' }
         format.json { render :index, status: :ok, location: @contact_info }
       else
-        format.html { render :edit }
+        format.html { render edit_contact_info }
         format.json { render json: @contact_info.errors, status: :unprocessable_entity }
       end
     end

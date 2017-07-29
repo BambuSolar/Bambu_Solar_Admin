@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'contact_info' => 'contact_infos#index', :as => 'contact_info'
   get 'contact_info/edit' => 'contact_infos#edit', :as => 'edit_contact_info'
   put 'contact_info/edit' => 'contact_infos#update'
+  post 'contact_info/edit' => 'contact_infos#update'
 
   resources :ourworks
 
