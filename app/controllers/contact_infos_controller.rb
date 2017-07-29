@@ -1,4 +1,4 @@
-class ContactInfosController < SecurityController
+ class ContactInfosController < SecurityController
 
   # GET /contact_infos
   # GET /contact_infos.json
@@ -29,6 +29,6 @@ class ContactInfosController < SecurityController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def contact_info_params
-      params.require('/contact_info/edit').permit(:iframe_map, :telephones, :emails, :facebook_link, :mercadolibre_link, :address_text)
+      params.require('contact_info/edit').permit(:iframe_map, :telephones, :emails, :facebook_link, :mercadolibre_link, :address_text)
     end
 end
