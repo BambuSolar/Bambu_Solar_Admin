@@ -14,7 +14,7 @@
   # PATCH/PUT /contact_infos/1.json
   def update
 
-    @contact_info = HomeWebsiteConfig.first
+    @contact_info = ContactInfo.first
 
     respond_to do |format|
       if @contact_info.update(contact_info_params)
