@@ -147,6 +147,7 @@
                     <li><a href="#home">Inicio</a></li>
                     <li><a href="#who_we_are">¿Quienes somos?</a></li>
                     <li><a href="#products">Productos</a></li>
+                    <li><a href="#ourWork">Experiencia</a></li>
                     <li><a href="#contact">Contacto</a></li>
                   </ul>
 
@@ -281,39 +282,21 @@
     <div id="clouds" class="clouds"></div>
   </section>
 
+  <div class="text-center">
+    <div class="separator margin-80">
+      <img src="<%= path_to_image('website/isologotipo/logo.jpg')%>">
+    </div>
+  </div>
 
-  <!-- Team Section -->
-  <section id="team" class="team fadeIn">
-    <div class="main_team_area">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="head_title text-center">
-              <h2 class="text-title">
-                Contanos cual es tu proyecto
-                <br/>
-                Sabemos de energía solar y queremos compartirlo
-              </h2>
-            </div><!-- End off Head_title -->
+  <section id="ourWork" class="ourWork fadeIn" style="">
 
-          </div>
-        </div>
+    <div class="head_title text-center">
+      <h2 class="">¡Conocé nuestro trabajo!</h2>
+    </div><!-- End off Head_title -->
+    <div class="ourWorkSlider-container">
+      <div class="ourWorkSlider">
+
       </div>
-    </div><!-- End of container -->
-  </section><!-- End off Team Section -->
-
-  <section id="ourWork" class="ourWork fadeIn" style="display: none">
-    <div class="ourWorkSlider">
-      <% @ourworks.each do |ow|%>
-          <div class="item">
-            <div class="content">
-              <div class="image" style="background-image: url('<%= ow.picture.photo_url %>');"></div>
-              <% if ow.title.to_s.size > 0 %>
-                  <p><%= ow.title.titlecase %></p>
-              <% end %>
-            </div>
-          </div>
-      <% end %>
     </div>
   </section>
 

@@ -1097,8 +1097,17 @@ Our Work Section
 ===================================================================*/
 
 #ourWork {
-  padding: 20px;
-  margin: 20px 0 !important;
+
+}
+
+#ourWork .head_title{
+  margin-bottom: 30px;
+}
+
+.ourWorkSlider-container{
+  width: 100%;
+  background: #e88325;
+  box-shadow: inset 0 0 10px rgba(50,50,50,0.6);
 }
 
 .ourWorkSlider{
@@ -1163,6 +1172,7 @@ product Section
   padding: 30px 10px 70px 10px;
   position: relative;
   height: 250px;
+  box-shadow: inset 0 0 10px rgba(50,50,50,0.6);
 }
 .main_product_content .single_product_area .single_product_text.s_b_left:after{
   position: absolute;
@@ -1204,6 +1214,7 @@ product Section
   width:100%;
   height: 250px;
   display: inline-block;
+  box-shadow: 0 0 10px rgba(50,50,50,0.6);
 }
 .main_product_content .single_product_area .single_product_img img{
   width:100%;
@@ -1310,6 +1321,7 @@ Tree section
 footer section
 ===================================================================*/
 .footer{
+  box-shadow: 0 0 10px rgba(50,50,50,0.6);
   background: #fa7c06;
 }
 .main_footer{
@@ -1703,6 +1715,7 @@ footer section
 
 .iframe-full-container iframe{
   width: 100%;
+  box-shadow: 0 0 10px rgba(50,50,50,0.6);
 }
 
 .modal-loading{
@@ -1719,3 +1732,59 @@ footer section
   margin-top: -129px;
 
 }
+
+.slider{
+  position: relative;
+  width: calc(100% - 20px);
+  margin: 0px auto;
+  text-align: center;
+  padding:0px;
+
+  img{
+    display: block;
+    padding: 0px;
+    margin:auto;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(50,50,50,0.6);
+  }
+
+}
+.slide{
+  padding: 10px;
+}
+
+.slick-slide img{
+  position: relative;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(50,50,50,0.6);
+}
+
+.slick-next {
+  right: 20px;
+}
+
+.slick-prev{
+  left: 20px;
+}
+
+.slick-next, .slick-prev{
+  background: transparent;
+  color: gray;
+  z-index: 300;
+}
+
+.slick-next:hover, .slick-next:focus, .slick-prev:hover, .slick-prev:focus{
+  background: transparent;
+  color: white;
+}
+
+.slick-next:before, .slick-prev:before{
+  display: none;
+}
+
+.slick-next i, .slick-prev i {
+
+  font-size: 30px;
+
+}
+

@@ -49,5 +49,6 @@ Rails.application.routes.draw do
   get '/preview/product_types/:product_type_id/products' => 'website/site#products_index', as: 'preview_products_index'
   get '/preview/product_types/:product_type_id/products/:id' => 'website/site#product_show', as: 'preview_product_show'
   get '/info/products/:id' => 'website/site#product_show', as: 'preview_product_info'
-  
+  get '/info/ourworks' => 'website/site#ourworks_index', as: 'preview_ourworks_index'
+
 end
