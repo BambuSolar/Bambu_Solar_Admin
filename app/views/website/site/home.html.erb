@@ -108,10 +108,10 @@
   <div class="col-xs-12 col-sm-6 col-sm-offset-3">
     <div class="row">
       <div class="col-xs-12 sun">
-        <img src="<%= path_to_image('website/loader/sun.png')%>" alt="" width="100px;">
+        <img src="<%= path_to_image('website/loader/sun.png')%>" alt="gif loading" width="100px;">
       </div>
       <div class="col-xs-12 lightbulb">
-        <img src="<%= path_to_image('website/loader/lightbulb.gif')%>" alt="" width="100px;">
+        <img src="<%= path_to_image('website/loader/lightbulb.gif')%>" alt="gif loading" width="100px;" >
       </div>
     </div>
   </div>
@@ -135,7 +135,7 @@
                     <span class="icon-bar"></span>
                   </button>
                   <a class="navbar-brand" href="#home">
-                    <img src="<%= path_to_image('website/isologotipo/isologotipo.png')%>"/>
+                    <img src="<%= path_to_image('website/isologotipo/isologotipo.png')%>" alt="logo"/>
                   </a>
                 </div>
 
@@ -180,7 +180,7 @@
                   <a href="<%= r.link %>">
                     <div class="col-xs-4 ribbon">
                       <div class="image">
-                        <img src="<%= r.picture.photo_url%>" width="auto" height="auto">
+                        <img src="<%= r.picture.photo_url%>" width="auto" height="auto" alt="ribbon">
                       </div>
                       <div class="col-xs-12">
                         <%= r.text %>
@@ -209,7 +209,7 @@
             <%= @home_website_config.welcome_message %>
           </h3>
           <div class="separator margin-top-80">
-            <img src="<%= path_to_image('website/isologotipo/logo.jpg')%>">
+            <img src="<%= path_to_image('website/isologotipo/logo.jpg')%>" alt="logo">
           </div>
         </div><!-- End off Head_title -->
       </div>
@@ -241,7 +241,7 @@
                           <% if p_t.picture.nil? %>
                               <img src="<%= path_to_image('website/no-image.png')%>">
                           <% else %>
-                              <%= image_tag p_t.picture.photo_url %>
+                              <%= image_tag p_t.picture.photo_url  %>
                           <% end %>
                         </div>
                       </div>
@@ -283,12 +283,12 @@
   </section>
 
   <div class="text-center">
-    <div class="separator margin-80">
-      <img src="<%= path_to_image('website/isologotipo/logo.jpg')%>">
+    <div class="separator margin-40">
+      <img src="<%= path_to_image('website/isologotipo/logo.jpg')%>" alt="logo">
     </div>
   </div>
 
-  <section id="ourWork" class="ourWork fadeIn" style="margin-bottom: -20px; margin-top: 20px;">
+  <section id="ourWork" class="ourWork fadeIn">
 
     <div class="head_title text-center">
       <h2 class="">¡Conocé nuestro trabajo!</h2>
@@ -302,7 +302,7 @@
 
   <div class="text-center">
     <div class="separator margin-80">
-      <img src="<%= path_to_image('website/isologotipo/logo.jpg')%>">
+      <img src="<%= path_to_image('website/isologotipo/logo.jpg')%>" alt="logo">
     </div>
   </div>
 
@@ -352,7 +352,7 @@
 
 <link href="https://fonts.googleapis.com/css?family=Raleway"/>
 
-<%= stylesheet_link_tag  'website_home', media: 'all', async: true %>
+<%= stylesheet_link_tag  'website_home', media: 'all'%>
 
 <script>
     var bgH = '<%= HomeWebsiteConfig.first.horizontal_picture.photo_url %>';
