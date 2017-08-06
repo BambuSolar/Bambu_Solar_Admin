@@ -16431,7 +16431,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
-/* line 22, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 22, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -16439,26 +16439,26 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-fill-mode: both;
 }
 
-/* line 29, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 29, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .animated.hinge {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
 }
 
 @-webkit-keyframes bounce {
-  /* line 35, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 35, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 
-  /* line 40, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 40, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   40% {
     -webkit-transform: translateY(-30px);
     transform: translateY(-30px);
   }
 
-  /* line 45, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 45, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   60% {
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px);
@@ -16466,21 +16466,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes bounce {
-  /* line 52, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 52, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
   }
 
-  /* line 58, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 58, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   40% {
     -webkit-transform: translateY(-30px);
     -ms-transform: translateY(-30px);
     transform: translateY(-30px);
   }
 
-  /* line 64, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 64, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   60% {
     -webkit-transform: translateY(-15px);
     -ms-transform: translateY(-15px);
@@ -16488,37 +16488,37 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 71, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 71, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .bounce {
   -webkit-animation-name: bounce;
   animation-name: bounce;
 }
 
 @-webkit-keyframes flash {
-  /* line 77, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 77, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0%, 50%, 100% {
     opacity: 1;
   }
 
-  /* line 81, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 81, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   25%, 75% {
     opacity: 0;
   }
 }
 
 @keyframes flash {
-  /* line 87, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 87, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0%, 50%, 100% {
     opacity: 1;
   }
 
-  /* line 91, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 91, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   25%, 75% {
     opacity: 0;
   }
 }
 
-/* line 96, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 96, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .flash {
   -webkit-animation-name: flash;
   animation-name: flash;
@@ -16526,19 +16526,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 @-webkit-keyframes pulse {
-  /* line 104, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 104, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
 
-  /* line 109, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 109, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   50% {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
 
-  /* line 114, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 114, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -16546,21 +16546,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes pulse {
-  /* line 121, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 121, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
   }
 
-  /* line 127, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 127, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   50% {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
   }
 
-  /* line 133, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 133, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -16568,26 +16568,26 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 140, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 140, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .pulse {
   -webkit-animation-name: pulse;
   animation-name: pulse;
 }
 
 @-webkit-keyframes shake {
-  /* line 146, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 146, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0%, 100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 151, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 151, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
 
-  /* line 156, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 156, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   20%, 40%, 60%, 80% {
     -webkit-transform: translateX(10px);
     transform: translateX(10px);
@@ -16595,21 +16595,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes shake {
-  /* line 163, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 163, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0%, 100% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 169, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 169, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateX(-10px);
     -ms-transform: translateX(-10px);
     transform: translateX(-10px);
   }
 
-  /* line 175, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 175, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   20%, 40%, 60%, 80% {
     -webkit-transform: translateX(10px);
     -ms-transform: translateX(10px);
@@ -16617,38 +16617,38 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 182, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 182, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .shake {
   -webkit-animation-name: shake;
   animation-name: shake;
 }
 
 @-webkit-keyframes swing {
-  /* line 188, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 188, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   20% {
     -webkit-transform: rotate(15deg);
     transform: rotate(15deg);
   }
 
-  /* line 193, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 193, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   40% {
     -webkit-transform: rotate(-10deg);
     transform: rotate(-10deg);
   }
 
-  /* line 198, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 198, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   60% {
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
   }
 
-  /* line 203, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 203, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   80% {
     -webkit-transform: rotate(-5deg);
     transform: rotate(-5deg);
   }
 
-  /* line 208, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 208, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -16656,35 +16656,35 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes swing {
-  /* line 215, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 215, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   20% {
     -webkit-transform: rotate(15deg);
     -ms-transform: rotate(15deg);
     transform: rotate(15deg);
   }
 
-  /* line 221, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 221, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   40% {
     -webkit-transform: rotate(-10deg);
     -ms-transform: rotate(-10deg);
     transform: rotate(-10deg);
   }
 
-  /* line 227, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 227, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   60% {
     -webkit-transform: rotate(5deg);
     -ms-transform: rotate(5deg);
     transform: rotate(5deg);
   }
 
-  /* line 233, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 233, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   80% {
     -webkit-transform: rotate(-5deg);
     -ms-transform: rotate(-5deg);
     transform: rotate(-5deg);
   }
 
-  /* line 239, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 239, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
@@ -16692,7 +16692,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 246, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 246, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .swing {
   -webkit-transform-origin: top center;
   -ms-transform-origin: top center;
@@ -16702,31 +16702,31 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @-webkit-keyframes tada {
-  /* line 255, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 255, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
 
-  /* line 260, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 260, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   10%, 20% {
     -webkit-transform: scale(0.9) rotate(-3deg);
     transform: scale(0.9) rotate(-3deg);
   }
 
-  /* line 265, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 265, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   30%, 50%, 70%, 90% {
     -webkit-transform: scale(1.1) rotate(3deg);
     transform: scale(1.1) rotate(3deg);
   }
 
-  /* line 270, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 270, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   40%, 60%, 80% {
     -webkit-transform: scale(1.1) rotate(-3deg);
     transform: scale(1.1) rotate(-3deg);
   }
 
-  /* line 275, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 275, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: scale(1) rotate(0);
     transform: scale(1) rotate(0);
@@ -16734,35 +16734,35 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes tada {
-  /* line 282, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 282, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
   }
 
-  /* line 288, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 288, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   10%, 20% {
     -webkit-transform: scale(0.9) rotate(-3deg);
     -ms-transform: scale(0.9) rotate(-3deg);
     transform: scale(0.9) rotate(-3deg);
   }
 
-  /* line 294, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 294, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   30%, 50%, 70%, 90% {
     -webkit-transform: scale(1.1) rotate(3deg);
     -ms-transform: scale(1.1) rotate(3deg);
     transform: scale(1.1) rotate(3deg);
   }
 
-  /* line 300, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 300, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   40%, 60%, 80% {
     -webkit-transform: scale(1.1) rotate(-3deg);
     -ms-transform: scale(1.1) rotate(-3deg);
     transform: scale(1.1) rotate(-3deg);
   }
 
-  /* line 306, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 306, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: scale(1) rotate(0);
     -ms-transform: scale(1) rotate(0);
@@ -16770,7 +16770,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 313, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 313, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .tada {
   -webkit-animation-name: tada;
   animation-name: tada;
@@ -16778,43 +16778,43 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 @-webkit-keyframes wobble {
-  /* line 321, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 321, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: translateX(0%);
     transform: translateX(0%);
   }
 
-  /* line 326, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 326, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   15% {
     -webkit-transform: translateX(-25%) rotate(-5deg);
     transform: translateX(-25%) rotate(-5deg);
   }
 
-  /* line 331, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 331, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   30% {
     -webkit-transform: translateX(20%) rotate(3deg);
     transform: translateX(20%) rotate(3deg);
   }
 
-  /* line 336, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 336, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   45% {
     -webkit-transform: translateX(-15%) rotate(-3deg);
     transform: translateX(-15%) rotate(-3deg);
   }
 
-  /* line 341, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 341, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   60% {
     -webkit-transform: translateX(10%) rotate(2deg);
     transform: translateX(10%) rotate(2deg);
   }
 
-  /* line 346, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 346, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   75% {
     -webkit-transform: translateX(-5%) rotate(-1deg);
     transform: translateX(-5%) rotate(-1deg);
   }
 
-  /* line 351, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 351, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: translateX(0%);
     transform: translateX(0%);
@@ -16822,49 +16822,49 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes wobble {
-  /* line 358, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 358, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: translateX(0%);
     -ms-transform: translateX(0%);
     transform: translateX(0%);
   }
 
-  /* line 364, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 364, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   15% {
     -webkit-transform: translateX(-25%) rotate(-5deg);
     -ms-transform: translateX(-25%) rotate(-5deg);
     transform: translateX(-25%) rotate(-5deg);
   }
 
-  /* line 370, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 370, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   30% {
     -webkit-transform: translateX(20%) rotate(3deg);
     -ms-transform: translateX(20%) rotate(3deg);
     transform: translateX(20%) rotate(3deg);
   }
 
-  /* line 376, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 376, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   45% {
     -webkit-transform: translateX(-15%) rotate(-3deg);
     -ms-transform: translateX(-15%) rotate(-3deg);
     transform: translateX(-15%) rotate(-3deg);
   }
 
-  /* line 382, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 382, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   60% {
     -webkit-transform: translateX(10%) rotate(2deg);
     -ms-transform: translateX(10%) rotate(2deg);
     transform: translateX(10%) rotate(2deg);
   }
 
-  /* line 388, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 388, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   75% {
     -webkit-transform: translateX(-5%) rotate(-1deg);
     -ms-transform: translateX(-5%) rotate(-1deg);
     transform: translateX(-5%) rotate(-1deg);
   }
 
-  /* line 394, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 394, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: translateX(0%);
     -ms-transform: translateX(0%);
@@ -16872,34 +16872,34 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 401, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 401, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .wobble {
   -webkit-animation-name: wobble;
   animation-name: wobble;
 }
 
 @-webkit-keyframes bounceIn {
-  /* line 407, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 407, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: scale(0.3);
     transform: scale(0.3);
   }
 
-  /* line 413, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 413, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   50% {
     opacity: 1;
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
   }
 
-  /* line 419, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 419, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   70% {
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
   }
 
-  /* line 424, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 424, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -16907,7 +16907,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes bounceIn {
-  /* line 431, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 431, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: scale(0.3);
@@ -16915,7 +16915,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: scale(0.3);
   }
 
-  /* line 438, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 438, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   50% {
     opacity: 1;
     -webkit-transform: scale(1.05);
@@ -16923,14 +16923,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: scale(1.05);
   }
 
-  /* line 445, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 445, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   70% {
     -webkit-transform: scale(0.9);
     -ms-transform: scale(0.9);
     transform: scale(0.9);
   }
 
-  /* line 451, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 451, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -16938,34 +16938,34 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 458, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 458, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .bounceIn {
   -webkit-animation-name: bounceIn;
   animation-name: bounceIn;
 }
 
 @-webkit-keyframes bounceInDown {
-  /* line 464, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 464, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
     transform: translateY(-2000px);
   }
 
-  /* line 470, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 470, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   60% {
     opacity: 1;
     -webkit-transform: translateY(30px);
     transform: translateY(30px);
   }
 
-  /* line 476, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 476, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   80% {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
   }
 
-  /* line 481, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 481, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -16973,7 +16973,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes bounceInDown {
-  /* line 488, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 488, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
@@ -16981,7 +16981,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(-2000px);
   }
 
-  /* line 495, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 495, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   60% {
     opacity: 1;
     -webkit-transform: translateY(30px);
@@ -16989,14 +16989,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(30px);
   }
 
-  /* line 502, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 502, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   80% {
     -webkit-transform: translateY(-10px);
     -ms-transform: translateY(-10px);
     transform: translateY(-10px);
   }
 
-  /* line 508, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 508, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -17004,34 +17004,34 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 515, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 515, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .bounceInDown {
   -webkit-animation-name: bounceInDown;
   animation-name: bounceInDown;
 }
 
 @-webkit-keyframes bounceInLeft {
-  /* line 521, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 521, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
     transform: translateX(-2000px);
   }
 
-  /* line 527, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 527, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   60% {
     opacity: 1;
     -webkit-transform: translateX(30px);
     transform: translateX(30px);
   }
 
-  /* line 533, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 533, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   80% {
     -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
 
-  /* line 538, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 538, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -17039,7 +17039,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes bounceInLeft {
-  /* line 545, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 545, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
@@ -17047,7 +17047,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(-2000px);
   }
 
-  /* line 552, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 552, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   60% {
     opacity: 1;
     -webkit-transform: translateX(30px);
@@ -17055,14 +17055,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(30px);
   }
 
-  /* line 559, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 559, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   80% {
     -webkit-transform: translateX(-10px);
     -ms-transform: translateX(-10px);
     transform: translateX(-10px);
   }
 
-  /* line 565, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 565, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -17070,34 +17070,34 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 572, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 572, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .bounceInLeft {
   -webkit-animation-name: bounceInLeft;
   animation-name: bounceInLeft;
 }
 
 @-webkit-keyframes bounceInRight {
-  /* line 578, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 578, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
     transform: translateX(2000px);
   }
 
-  /* line 584, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 584, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   60% {
     opacity: 1;
     -webkit-transform: translateX(-30px);
     transform: translateX(-30px);
   }
 
-  /* line 590, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 590, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   80% {
     -webkit-transform: translateX(10px);
     transform: translateX(10px);
   }
 
-  /* line 595, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 595, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -17105,7 +17105,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes bounceInRight {
-  /* line 602, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 602, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
@@ -17113,7 +17113,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(2000px);
   }
 
-  /* line 609, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 609, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   60% {
     opacity: 1;
     -webkit-transform: translateX(-30px);
@@ -17121,14 +17121,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(-30px);
   }
 
-  /* line 616, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 616, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   80% {
     -webkit-transform: translateX(10px);
     -ms-transform: translateX(10px);
     transform: translateX(10px);
   }
 
-  /* line 622, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 622, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -17136,34 +17136,34 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 629, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 629, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .bounceInRight {
   -webkit-animation-name: bounceInRight;
   animation-name: bounceInRight;
 }
 
 @-webkit-keyframes bounceInUp {
-  /* line 635, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 635, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateY(2000px);
     transform: translateY(2000px);
   }
 
-  /* line 641, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 641, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   60% {
     opacity: 1;
     -webkit-transform: translateY(-30px);
     transform: translateY(-30px);
   }
 
-  /* line 647, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 647, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   80% {
     -webkit-transform: translateY(10px);
     transform: translateY(10px);
   }
 
-  /* line 652, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 652, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -17171,7 +17171,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes bounceInUp {
-  /* line 659, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 659, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateY(2000px);
@@ -17179,7 +17179,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(2000px);
   }
 
-  /* line 666, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 666, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   60% {
     opacity: 1;
     -webkit-transform: translateY(-30px);
@@ -17187,14 +17187,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(-30px);
   }
 
-  /* line 673, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 673, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   80% {
     -webkit-transform: translateY(10px);
     -ms-transform: translateY(10px);
     transform: translateY(10px);
   }
 
-  /* line 679, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 679, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -17202,33 +17202,33 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 686, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 686, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .bounceInUp {
   -webkit-animation-name: bounceInUp;
   animation-name: bounceInUp;
 }
 
 @-webkit-keyframes bounceOut {
-  /* line 692, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 692, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
 
-  /* line 697, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 697, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   25% {
     -webkit-transform: scale(0.95);
     transform: scale(0.95);
   }
 
-  /* line 702, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 702, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   50% {
     opacity: 1;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
 
-  /* line 708, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 708, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: scale(0.3);
@@ -17237,21 +17237,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes bounceOut {
-  /* line 716, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 716, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
   }
 
-  /* line 722, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 722, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   25% {
     -webkit-transform: scale(0.95);
     -ms-transform: scale(0.95);
     transform: scale(0.95);
   }
 
-  /* line 728, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 728, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   50% {
     opacity: 1;
     -webkit-transform: scale(1.1);
@@ -17259,7 +17259,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: scale(1.1);
   }
 
-  /* line 735, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 735, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: scale(0.3);
@@ -17268,27 +17268,27 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 743, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 743, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .bounceOut {
   -webkit-animation-name: bounceOut;
   animation-name: bounceOut;
 }
 
 @-webkit-keyframes bounceOutDown {
-  /* line 749, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 749, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 
-  /* line 754, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 754, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   20% {
     opacity: 1;
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
 
-  /* line 760, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 760, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateY(2000px);
@@ -17297,14 +17297,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes bounceOutDown {
-  /* line 768, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 768, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
   }
 
-  /* line 774, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 774, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   20% {
     opacity: 1;
     -webkit-transform: translateY(-20px);
@@ -17312,7 +17312,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(-20px);
   }
 
-  /* line 781, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 781, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateY(2000px);
@@ -17321,27 +17321,27 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 789, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 789, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .bounceOutDown {
   -webkit-animation-name: bounceOutDown;
   animation-name: bounceOutDown;
 }
 
 @-webkit-keyframes bounceOutLeft {
-  /* line 795, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 795, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 800, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 800, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   20% {
     opacity: 1;
     -webkit-transform: translateX(20px);
     transform: translateX(20px);
   }
 
-  /* line 806, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 806, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
@@ -17350,14 +17350,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes bounceOutLeft {
-  /* line 814, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 814, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 820, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 820, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   20% {
     opacity: 1;
     -webkit-transform: translateX(20px);
@@ -17365,7 +17365,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(20px);
   }
 
-  /* line 827, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 827, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
@@ -17374,27 +17374,27 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 835, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 835, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .bounceOutLeft {
   -webkit-animation-name: bounceOutLeft;
   animation-name: bounceOutLeft;
 }
 
 @-webkit-keyframes bounceOutRight {
-  /* line 841, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 841, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 846, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 846, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   20% {
     opacity: 1;
     -webkit-transform: translateX(-20px);
     transform: translateX(-20px);
   }
 
-  /* line 852, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 852, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
@@ -17403,14 +17403,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes bounceOutRight {
-  /* line 860, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 860, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 866, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 866, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   20% {
     opacity: 1;
     -webkit-transform: translateX(-20px);
@@ -17418,7 +17418,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(-20px);
   }
 
-  /* line 873, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 873, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
@@ -17427,27 +17427,27 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 881, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 881, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .bounceOutRight {
   -webkit-animation-name: bounceOutRight;
   animation-name: bounceOutRight;
 }
 
 @-webkit-keyframes bounceOutUp {
-  /* line 887, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 887, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 
-  /* line 892, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 892, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   20% {
     opacity: 1;
     -webkit-transform: translateY(20px);
     transform: translateY(20px);
   }
 
-  /* line 898, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 898, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
@@ -17456,14 +17456,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes bounceOutUp {
-  /* line 906, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 906, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
   }
 
-  /* line 912, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 912, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   20% {
     opacity: 1;
     -webkit-transform: translateY(20px);
@@ -17471,7 +17471,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(20px);
   }
 
-  /* line 919, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 919, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
@@ -17480,51 +17480,51 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 927, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 927, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .bounceOutUp {
   -webkit-animation-name: bounceOutUp;
   animation-name: bounceOutUp;
 }
 
 @-webkit-keyframes fadeIn {
-  /* line 933, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 933, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
   }
 
-  /* line 937, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 937, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 1;
   }
 }
 
 @keyframes fadeIn {
-  /* line 943, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 943, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
   }
 
-  /* line 947, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 947, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 1;
   }
 }
 
-/* line 952, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 952, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
 
 @-webkit-keyframes fadeInDown {
-  /* line 958, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 958, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
 
-  /* line 964, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 964, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -17533,7 +17533,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeInDown {
-  /* line 972, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 972, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateY(-20px);
@@ -17541,7 +17541,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(-20px);
   }
 
-  /* line 979, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 979, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -17550,21 +17550,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 987, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 987, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
 }
 
 @-webkit-keyframes fadeInDownBig {
-  /* line 993, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 993, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
     transform: translateY(-2000px);
   }
 
-  /* line 999, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 999, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -17573,7 +17573,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeInDownBig {
-  /* line 1007, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1007, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
@@ -17581,7 +17581,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(-2000px);
   }
 
-  /* line 1014, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1014, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -17590,21 +17590,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1022, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 1022, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .fadeInDownBig {
   -webkit-animation-name: fadeInDownBig;
   animation-name: fadeInDownBig;
 }
 
 @-webkit-keyframes fadeInLeft {
-  /* line 1028, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1028, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-20px);
     transform: translateX(-20px);
   }
 
-  /* line 1034, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1034, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -17613,7 +17613,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeInLeft {
-  /* line 1042, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1042, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-20px);
@@ -17621,7 +17621,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(-20px);
   }
 
-  /* line 1049, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1049, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -17630,21 +17630,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1057, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 1057, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
 
 @-webkit-keyframes fadeInLeftBig {
-  /* line 1063, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1063, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
     transform: translateX(-2000px);
   }
 
-  /* line 1069, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1069, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -17653,7 +17653,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeInLeftBig {
-  /* line 1077, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1077, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
@@ -17661,7 +17661,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(-2000px);
   }
 
-  /* line 1084, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1084, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -17670,21 +17670,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1092, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 1092, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .fadeInLeftBig {
   -webkit-animation-name: fadeInLeftBig;
   animation-name: fadeInLeftBig;
 }
 
 @-webkit-keyframes fadeInRight {
-  /* line 1098, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1098, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateX(20px);
     transform: translateX(20px);
   }
 
-  /* line 1104, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1104, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -17693,7 +17693,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeInRight {
-  /* line 1112, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1112, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateX(20px);
@@ -17701,7 +17701,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(20px);
   }
 
-  /* line 1119, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1119, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -17710,21 +17710,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1127, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 1127, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
 
 @-webkit-keyframes fadeInRightBig {
-  /* line 1133, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1133, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
     transform: translateX(2000px);
   }
 
-  /* line 1139, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1139, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -17733,7 +17733,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeInRightBig {
-  /* line 1147, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1147, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
@@ -17741,7 +17741,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(2000px);
   }
 
-  /* line 1154, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1154, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -17750,21 +17750,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1162, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 1162, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .fadeInRightBig {
   -webkit-animation-name: fadeInRightBig;
   animation-name: fadeInRightBig;
 }
 
 @-webkit-keyframes fadeInUp {
-  /* line 1168, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1168, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateY(20px);
     transform: translateY(20px);
   }
 
-  /* line 1174, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1174, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -17773,7 +17773,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeInUp {
-  /* line 1182, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1182, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateY(20px);
@@ -17781,7 +17781,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(20px);
   }
 
-  /* line 1189, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1189, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -17790,21 +17790,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1197, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 1197, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
 
 @-webkit-keyframes fadeInUpBig {
-  /* line 1203, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1203, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateY(2000px);
     transform: translateY(2000px);
   }
 
-  /* line 1209, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1209, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -17813,7 +17813,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeInUpBig {
-  /* line 1217, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1217, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateY(2000px);
@@ -17821,7 +17821,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(2000px);
   }
 
-  /* line 1224, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1224, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -17830,51 +17830,51 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1232, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 1232, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .fadeInUpBig {
   -webkit-animation-name: fadeInUpBig;
   animation-name: fadeInUpBig;
 }
 
 @-webkit-keyframes fadeOut {
-  /* line 1238, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1238, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 1;
   }
 
-  /* line 1242, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1242, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
   }
 }
 
 @keyframes fadeOut {
-  /* line 1248, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1248, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 1;
   }
 
-  /* line 1252, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1252, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
   }
 }
 
-/* line 1257, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 1257, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .fadeOut {
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
 }
 
 @-webkit-keyframes fadeOutDown {
-  /* line 1263, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1263, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 
-  /* line 1269, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1269, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateY(20px);
@@ -17883,7 +17883,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeOutDown {
-  /* line 1277, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1277, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -17891,7 +17891,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(0);
   }
 
-  /* line 1284, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1284, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateY(20px);
@@ -17900,21 +17900,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1292, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 1292, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .fadeOutDown {
   -webkit-animation-name: fadeOutDown;
   animation-name: fadeOutDown;
 }
 
 @-webkit-keyframes fadeOutDownBig {
-  /* line 1298, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1298, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 
-  /* line 1304, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1304, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateY(2000px);
@@ -17923,7 +17923,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeOutDownBig {
-  /* line 1312, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1312, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -17931,7 +17931,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(0);
   }
 
-  /* line 1319, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1319, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateY(2000px);
@@ -17940,21 +17940,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1327, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 1327, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .fadeOutDownBig {
   -webkit-animation-name: fadeOutDownBig;
   animation-name: fadeOutDownBig;
 }
 
 @-webkit-keyframes fadeOutLeft {
-  /* line 1333, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1333, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 1339, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1339, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateX(-20px);
@@ -17963,7 +17963,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeOutLeft {
-  /* line 1347, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1347, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -17971,7 +17971,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(0);
   }
 
-  /* line 1354, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1354, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateX(-20px);
@@ -17980,21 +17980,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1362, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 1362, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .fadeOutLeft {
   -webkit-animation-name: fadeOutLeft;
   animation-name: fadeOutLeft;
 }
 
 @-webkit-keyframes fadeOutLeftBig {
-  /* line 1368, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1368, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 1374, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1374, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
@@ -18003,7 +18003,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeOutLeftBig {
-  /* line 1382, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1382, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -18011,7 +18011,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(0);
   }
 
-  /* line 1389, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1389, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
@@ -18020,21 +18020,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1397, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 1397, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .fadeOutLeftBig {
   -webkit-animation-name: fadeOutLeftBig;
   animation-name: fadeOutLeftBig;
 }
 
 @-webkit-keyframes fadeOutRight {
-  /* line 1403, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1403, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 1409, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1409, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateX(20px);
@@ -18043,7 +18043,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeOutRight {
-  /* line 1417, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1417, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -18051,7 +18051,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(0);
   }
 
-  /* line 1424, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1424, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateX(20px);
@@ -18060,21 +18060,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1432, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 1432, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .fadeOutRight {
   -webkit-animation-name: fadeOutRight;
   animation-name: fadeOutRight;
 }
 
 @-webkit-keyframes fadeOutRightBig {
-  /* line 1438, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1438, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 1444, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1444, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
@@ -18083,7 +18083,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeOutRightBig {
-  /* line 1452, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1452, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -18091,7 +18091,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(0);
   }
 
-  /* line 1459, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1459, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
@@ -18100,21 +18100,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1467, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 1467, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .fadeOutRightBig {
   -webkit-animation-name: fadeOutRightBig;
   animation-name: fadeOutRightBig;
 }
 
 @-webkit-keyframes fadeOutUp {
-  /* line 1473, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1473, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 
-  /* line 1479, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1479, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateY(-20px);
@@ -18123,7 +18123,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeOutUp {
-  /* line 1487, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1487, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -18131,7 +18131,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(0);
   }
 
-  /* line 1494, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1494, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateY(-20px);
@@ -18140,21 +18140,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1502, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 1502, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .fadeOutUp {
   -webkit-animation-name: fadeOutUp;
   animation-name: fadeOutUp;
 }
 
 @-webkit-keyframes fadeOutUpBig {
-  /* line 1508, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1508, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 
-  /* line 1514, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1514, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
@@ -18163,7 +18163,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeOutUpBig {
-  /* line 1522, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1522, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -18171,7 +18171,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(0);
   }
 
-  /* line 1529, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1529, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
@@ -18180,14 +18180,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1537, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 1537, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .fadeOutUpBig {
   -webkit-animation-name: fadeOutUpBig;
   animation-name: fadeOutUpBig;
 }
 
 @-webkit-keyframes flip {
-  /* line 1543, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1543, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
     transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
@@ -18195,7 +18195,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-out;
   }
 
-  /* line 1550, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1550, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   40% {
     -webkit-transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);
     transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);
@@ -18203,7 +18203,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-out;
   }
 
-  /* line 1557, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1557, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   50% {
     -webkit-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
     transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
@@ -18211,7 +18211,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-in;
   }
 
-  /* line 1564, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1564, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   80% {
     -webkit-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(0.95);
     transform: perspective(400px) translateZ(0) rotateY(360deg) scale(0.95);
@@ -18219,7 +18219,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-in;
   }
 
-  /* line 1571, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1571, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
     transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
@@ -18229,7 +18229,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes flip {
-  /* line 1580, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1580, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
     -ms-transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
@@ -18238,7 +18238,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-out;
   }
 
-  /* line 1588, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1588, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   40% {
     -webkit-transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);
     -ms-transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);
@@ -18247,7 +18247,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-out;
   }
 
-  /* line 1596, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1596, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   50% {
     -webkit-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
     -ms-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
@@ -18256,7 +18256,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-in;
   }
 
-  /* line 1604, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1604, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   80% {
     -webkit-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(0.95);
     -ms-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(0.95);
@@ -18265,7 +18265,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-in;
   }
 
-  /* line 1612, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1612, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
     -ms-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
@@ -18275,7 +18275,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1621, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 1621, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .animated.flip {
   -webkit-backface-visibility: visible;
   -ms-backface-visibility: visible;
@@ -18285,26 +18285,26 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @-webkit-keyframes flipInX {
-  /* line 1630, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1630, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: perspective(400px) rotateX(90deg);
     transform: perspective(400px) rotateX(90deg);
     opacity: 0;
   }
 
-  /* line 1636, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1636, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   40% {
     -webkit-transform: perspective(400px) rotateX(-10deg);
     transform: perspective(400px) rotateX(-10deg);
   }
 
-  /* line 1641, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1641, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   70% {
     -webkit-transform: perspective(400px) rotateX(10deg);
     transform: perspective(400px) rotateX(10deg);
   }
 
-  /* line 1646, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1646, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: perspective(400px) rotateX(0deg);
     transform: perspective(400px) rotateX(0deg);
@@ -18313,7 +18313,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes flipInX {
-  /* line 1654, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1654, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: perspective(400px) rotateX(90deg);
     -ms-transform: perspective(400px) rotateX(90deg);
@@ -18321,21 +18321,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 1661, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1661, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   40% {
     -webkit-transform: perspective(400px) rotateX(-10deg);
     -ms-transform: perspective(400px) rotateX(-10deg);
     transform: perspective(400px) rotateX(-10deg);
   }
 
-  /* line 1667, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1667, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   70% {
     -webkit-transform: perspective(400px) rotateX(10deg);
     -ms-transform: perspective(400px) rotateX(10deg);
     transform: perspective(400px) rotateX(10deg);
   }
 
-  /* line 1673, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1673, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: perspective(400px) rotateX(0deg);
     -ms-transform: perspective(400px) rotateX(0deg);
@@ -18344,7 +18344,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1681, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 1681, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .flipInX {
   -webkit-backface-visibility: visible !important;
   -ms-backface-visibility: visible !important;
@@ -18354,26 +18354,26 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @-webkit-keyframes flipInY {
-  /* line 1690, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1690, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: perspective(400px) rotateY(90deg);
     transform: perspective(400px) rotateY(90deg);
     opacity: 0;
   }
 
-  /* line 1696, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1696, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   40% {
     -webkit-transform: perspective(400px) rotateY(-10deg);
     transform: perspective(400px) rotateY(-10deg);
   }
 
-  /* line 1701, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1701, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   70% {
     -webkit-transform: perspective(400px) rotateY(10deg);
     transform: perspective(400px) rotateY(10deg);
   }
 
-  /* line 1706, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1706, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: perspective(400px) rotateY(0deg);
     transform: perspective(400px) rotateY(0deg);
@@ -18382,7 +18382,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes flipInY {
-  /* line 1714, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1714, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: perspective(400px) rotateY(90deg);
     -ms-transform: perspective(400px) rotateY(90deg);
@@ -18390,21 +18390,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 1721, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1721, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   40% {
     -webkit-transform: perspective(400px) rotateY(-10deg);
     -ms-transform: perspective(400px) rotateY(-10deg);
     transform: perspective(400px) rotateY(-10deg);
   }
 
-  /* line 1727, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1727, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   70% {
     -webkit-transform: perspective(400px) rotateY(10deg);
     -ms-transform: perspective(400px) rotateY(10deg);
     transform: perspective(400px) rotateY(10deg);
   }
 
-  /* line 1733, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1733, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: perspective(400px) rotateY(0deg);
     -ms-transform: perspective(400px) rotateY(0deg);
@@ -18413,7 +18413,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1741, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 1741, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .flipInY {
   -webkit-backface-visibility: visible !important;
   -ms-backface-visibility: visible !important;
@@ -18423,14 +18423,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @-webkit-keyframes flipOutX {
-  /* line 1750, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1750, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: perspective(400px) rotateX(0deg);
     transform: perspective(400px) rotateX(0deg);
     opacity: 1;
   }
 
-  /* line 1756, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1756, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: perspective(400px) rotateX(90deg);
     transform: perspective(400px) rotateX(90deg);
@@ -18439,7 +18439,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes flipOutX {
-  /* line 1764, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1764, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: perspective(400px) rotateX(0deg);
     -ms-transform: perspective(400px) rotateX(0deg);
@@ -18447,7 +18447,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 1771, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1771, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: perspective(400px) rotateX(90deg);
     -ms-transform: perspective(400px) rotateX(90deg);
@@ -18456,7 +18456,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1779, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 1779, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .flipOutX {
   -webkit-animation-name: flipOutX;
   animation-name: flipOutX;
@@ -18466,14 +18466,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @-webkit-keyframes flipOutY {
-  /* line 1788, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1788, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: perspective(400px) rotateY(0deg);
     transform: perspective(400px) rotateY(0deg);
     opacity: 1;
   }
 
-  /* line 1794, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1794, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: perspective(400px) rotateY(90deg);
     transform: perspective(400px) rotateY(90deg);
@@ -18482,7 +18482,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes flipOutY {
-  /* line 1802, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1802, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: perspective(400px) rotateY(0deg);
     -ms-transform: perspective(400px) rotateY(0deg);
@@ -18490,7 +18490,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 1809, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1809, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: perspective(400px) rotateY(90deg);
     -ms-transform: perspective(400px) rotateY(90deg);
@@ -18499,7 +18499,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1817, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 1817, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .flipOutY {
   -webkit-backface-visibility: visible !important;
   -ms-backface-visibility: visible !important;
@@ -18509,28 +18509,28 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @-webkit-keyframes lightSpeedIn {
-  /* line 1826, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1826, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: translateX(100%) skewX(-30deg);
     transform: translateX(100%) skewX(-30deg);
     opacity: 0;
   }
 
-  /* line 1832, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1832, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   60% {
     -webkit-transform: translateX(-20%) skewX(30deg);
     transform: translateX(-20%) skewX(30deg);
     opacity: 1;
   }
 
-  /* line 1838, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1838, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   80% {
     -webkit-transform: translateX(0%) skewX(-15deg);
     transform: translateX(0%) skewX(-15deg);
     opacity: 1;
   }
 
-  /* line 1844, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1844, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: translateX(0%) skewX(0deg);
     transform: translateX(0%) skewX(0deg);
@@ -18539,7 +18539,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes lightSpeedIn {
-  /* line 1852, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1852, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: translateX(100%) skewX(-30deg);
     -ms-transform: translateX(100%) skewX(-30deg);
@@ -18547,7 +18547,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 1859, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1859, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   60% {
     -webkit-transform: translateX(-20%) skewX(30deg);
     -ms-transform: translateX(-20%) skewX(30deg);
@@ -18555,7 +18555,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 1866, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1866, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   80% {
     -webkit-transform: translateX(0%) skewX(-15deg);
     -ms-transform: translateX(0%) skewX(-15deg);
@@ -18563,7 +18563,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 1873, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1873, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: translateX(0%) skewX(0deg);
     -ms-transform: translateX(0%) skewX(0deg);
@@ -18572,7 +18572,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1881, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 1881, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .lightSpeedIn {
   -webkit-animation-name: lightSpeedIn;
   animation-name: lightSpeedIn;
@@ -18581,14 +18581,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @-webkit-keyframes lightSpeedOut {
-  /* line 1889, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1889, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: translateX(0%) skewX(0deg);
     transform: translateX(0%) skewX(0deg);
     opacity: 1;
   }
 
-  /* line 1895, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1895, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: translateX(100%) skewX(-30deg);
     transform: translateX(100%) skewX(-30deg);
@@ -18597,7 +18597,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes lightSpeedOut {
-  /* line 1903, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1903, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: translateX(0%) skewX(0deg);
     -ms-transform: translateX(0%) skewX(0deg);
@@ -18605,7 +18605,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 1910, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1910, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: translateX(100%) skewX(-30deg);
     -ms-transform: translateX(100%) skewX(-30deg);
@@ -18614,7 +18614,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1918, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 1918, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .lightSpeedOut {
   -webkit-animation-name: lightSpeedOut;
   animation-name: lightSpeedOut;
@@ -18623,7 +18623,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @-webkit-keyframes rotateIn {
-  /* line 1926, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1926, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform-origin: center center;
     transform-origin: center center;
@@ -18632,7 +18632,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 1934, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1934, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform-origin: center center;
     transform-origin: center center;
@@ -18643,7 +18643,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes rotateIn {
-  /* line 1944, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1944, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform-origin: center center;
     -ms-transform-origin: center center;
@@ -18654,7 +18654,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 1954, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1954, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform-origin: center center;
     -ms-transform-origin: center center;
@@ -18666,14 +18666,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1965, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 1965, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .rotateIn {
   -webkit-animation-name: rotateIn;
   animation-name: rotateIn;
 }
 
 @-webkit-keyframes rotateInDownLeft {
-  /* line 1971, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1971, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
@@ -18682,7 +18682,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 1979, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1979, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
@@ -18693,7 +18693,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes rotateInDownLeft {
-  /* line 1989, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1989, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform-origin: left bottom;
     -ms-transform-origin: left bottom;
@@ -18704,7 +18704,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 1999, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 1999, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform-origin: left bottom;
     -ms-transform-origin: left bottom;
@@ -18716,14 +18716,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2010, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 2010, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .rotateInDownLeft {
   -webkit-animation-name: rotateInDownLeft;
   animation-name: rotateInDownLeft;
 }
 
 @-webkit-keyframes rotateInDownRight {
-  /* line 2016, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2016, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
@@ -18732,7 +18732,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 2024, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2024, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
@@ -18743,7 +18743,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes rotateInDownRight {
-  /* line 2034, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2034, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform-origin: right bottom;
     -ms-transform-origin: right bottom;
@@ -18754,7 +18754,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 2044, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2044, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform-origin: right bottom;
     -ms-transform-origin: right bottom;
@@ -18766,14 +18766,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2055, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 2055, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .rotateInDownRight {
   -webkit-animation-name: rotateInDownRight;
   animation-name: rotateInDownRight;
 }
 
 @-webkit-keyframes rotateInUpLeft {
-  /* line 2061, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2061, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
@@ -18782,7 +18782,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 2069, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2069, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
@@ -18793,7 +18793,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes rotateInUpLeft {
-  /* line 2079, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2079, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform-origin: left bottom;
     -ms-transform-origin: left bottom;
@@ -18804,7 +18804,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 2089, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2089, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform-origin: left bottom;
     -ms-transform-origin: left bottom;
@@ -18816,14 +18816,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2100, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 2100, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .rotateInUpLeft {
   -webkit-animation-name: rotateInUpLeft;
   animation-name: rotateInUpLeft;
 }
 
 @-webkit-keyframes rotateInUpRight {
-  /* line 2106, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2106, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
@@ -18832,7 +18832,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 2114, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2114, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
@@ -18843,7 +18843,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes rotateInUpRight {
-  /* line 2124, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2124, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform-origin: right bottom;
     -ms-transform-origin: right bottom;
@@ -18854,7 +18854,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 2134, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2134, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform-origin: right bottom;
     -ms-transform-origin: right bottom;
@@ -18866,14 +18866,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2145, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 2145, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .rotateInUpRight {
   -webkit-animation-name: rotateInUpRight;
   animation-name: rotateInUpRight;
 }
 
 @-webkit-keyframes rotateOut {
-  /* line 2151, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2151, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform-origin: center center;
     transform-origin: center center;
@@ -18882,7 +18882,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 2159, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2159, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform-origin: center center;
     transform-origin: center center;
@@ -18893,7 +18893,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes rotateOut {
-  /* line 2169, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2169, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform-origin: center center;
     -ms-transform-origin: center center;
@@ -18904,7 +18904,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 2179, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2179, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform-origin: center center;
     -ms-transform-origin: center center;
@@ -18916,14 +18916,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2190, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 2190, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .rotateOut {
   -webkit-animation-name: rotateOut;
   animation-name: rotateOut;
 }
 
 @-webkit-keyframes rotateOutDownLeft {
-  /* line 2196, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2196, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
@@ -18932,7 +18932,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 2204, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2204, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
@@ -18943,7 +18943,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes rotateOutDownLeft {
-  /* line 2214, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2214, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform-origin: left bottom;
     -ms-transform-origin: left bottom;
@@ -18954,7 +18954,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 2224, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2224, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform-origin: left bottom;
     -ms-transform-origin: left bottom;
@@ -18966,14 +18966,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2235, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 2235, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .rotateOutDownLeft {
   -webkit-animation-name: rotateOutDownLeft;
   animation-name: rotateOutDownLeft;
 }
 
 @-webkit-keyframes rotateOutDownRight {
-  /* line 2241, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2241, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
@@ -18982,7 +18982,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 2249, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2249, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
@@ -18993,7 +18993,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes rotateOutDownRight {
-  /* line 2259, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2259, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform-origin: right bottom;
     -ms-transform-origin: right bottom;
@@ -19004,7 +19004,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 2269, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2269, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform-origin: right bottom;
     -ms-transform-origin: right bottom;
@@ -19016,14 +19016,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2280, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 2280, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .rotateOutDownRight {
   -webkit-animation-name: rotateOutDownRight;
   animation-name: rotateOutDownRight;
 }
 
 @-webkit-keyframes rotateOutUpLeft {
-  /* line 2286, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2286, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
@@ -19032,7 +19032,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 2294, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2294, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
@@ -19043,7 +19043,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes rotateOutUpLeft {
-  /* line 2304, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2304, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform-origin: left bottom;
     -ms-transform-origin: left bottom;
@@ -19054,7 +19054,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 2314, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2314, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform-origin: left bottom;
     -ms-transform-origin: left bottom;
@@ -19066,14 +19066,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2325, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 2325, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .rotateOutUpLeft {
   -webkit-animation-name: rotateOutUpLeft;
   animation-name: rotateOutUpLeft;
 }
 
 @-webkit-keyframes rotateOutUpRight {
-  /* line 2331, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2331, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
@@ -19082,7 +19082,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 2339, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2339, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
@@ -19093,7 +19093,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes rotateOutUpRight {
-  /* line 2349, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2349, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform-origin: right bottom;
     -ms-transform-origin: right bottom;
@@ -19104,7 +19104,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 2359, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2359, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform-origin: right bottom;
     -ms-transform-origin: right bottom;
@@ -19116,21 +19116,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2370, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 2370, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .rotateOutUpRight {
   -webkit-animation-name: rotateOutUpRight;
   animation-name: rotateOutUpRight;
 }
 
 @-webkit-keyframes slideInDown {
-  /* line 2376, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2376, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
     transform: translateY(-2000px);
   }
 
-  /* line 2382, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2382, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -19138,7 +19138,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes slideInDown {
-  /* line 2389, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2389, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
@@ -19146,7 +19146,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(-2000px);
   }
 
-  /* line 2396, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2396, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -19154,21 +19154,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2403, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 2403, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .slideInDown {
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
 }
 
 @-webkit-keyframes slideInLeft {
-  /* line 2409, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2409, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
     transform: translateX(-2000px);
   }
 
-  /* line 2415, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2415, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -19176,7 +19176,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes slideInLeft {
-  /* line 2422, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2422, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
@@ -19184,7 +19184,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(-2000px);
   }
 
-  /* line 2429, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2429, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -19192,21 +19192,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2436, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 2436, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .slideInLeft {
   -webkit-animation-name: slideInLeft;
   animation-name: slideInLeft;
 }
 
 @-webkit-keyframes slideInRight {
-  /* line 2442, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2442, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
     transform: translateX(2000px);
   }
 
-  /* line 2448, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2448, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -19214,7 +19214,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes slideInRight {
-  /* line 2455, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2455, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
@@ -19222,7 +19222,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(2000px);
   }
 
-  /* line 2462, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2462, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -19230,20 +19230,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2469, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 2469, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .slideInRight {
   -webkit-animation-name: slideInRight;
   animation-name: slideInRight;
 }
 
 @-webkit-keyframes slideOutLeft {
-  /* line 2475, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2475, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 2480, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2480, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
@@ -19252,14 +19252,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes slideOutLeft {
-  /* line 2488, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2488, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 2494, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2494, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
@@ -19268,20 +19268,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2502, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 2502, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .slideOutLeft {
   -webkit-animation-name: slideOutLeft;
   animation-name: slideOutLeft;
 }
 
 @-webkit-keyframes slideOutRight {
-  /* line 2508, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2508, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 2513, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2513, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
@@ -19290,14 +19290,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes slideOutRight {
-  /* line 2521, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2521, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 2527, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2527, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
@@ -19306,20 +19306,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2535, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 2535, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .slideOutRight {
   -webkit-animation-name: slideOutRight;
   animation-name: slideOutRight;
 }
 
 @-webkit-keyframes slideOutUp {
-  /* line 2541, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2541, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 
-  /* line 2546, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2546, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
@@ -19328,14 +19328,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes slideOutUp {
-  /* line 2554, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2554, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
   }
 
-  /* line 2560, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2560, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
@@ -19344,14 +19344,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2568, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 2568, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
 
 @-webkit-keyframes hinge {
-  /* line 2574, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2574, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: rotate(0);
     transform: rotate(0);
@@ -19361,7 +19361,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-in-out;
   }
 
-  /* line 2583, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2583, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   20%, 60% {
     -webkit-transform: rotate(80deg);
     transform: rotate(80deg);
@@ -19371,7 +19371,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-in-out;
   }
 
-  /* line 2592, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2592, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   40% {
     -webkit-transform: rotate(60deg);
     transform: rotate(60deg);
@@ -19381,7 +19381,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-in-out;
   }
 
-  /* line 2601, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2601, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   80% {
     -webkit-transform: rotate(60deg) translateY(0);
     transform: rotate(60deg) translateY(0);
@@ -19392,7 +19392,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-in-out;
   }
 
-  /* line 2611, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2611, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: translateY(700px);
     transform: translateY(700px);
@@ -19401,7 +19401,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes hinge {
-  /* line 2619, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2619, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     -webkit-transform: rotate(0);
     -ms-transform: rotate(0);
@@ -19413,7 +19413,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-in-out;
   }
 
-  /* line 2630, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2630, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   20%, 60% {
     -webkit-transform: rotate(80deg);
     -ms-transform: rotate(80deg);
@@ -19425,7 +19425,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-in-out;
   }
 
-  /* line 2641, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2641, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   40% {
     -webkit-transform: rotate(60deg);
     -ms-transform: rotate(60deg);
@@ -19437,7 +19437,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-in-out;
   }
 
-  /* line 2652, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2652, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   80% {
     -webkit-transform: rotate(60deg) translateY(0);
     -ms-transform: rotate(60deg) translateY(0);
@@ -19450,7 +19450,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-in-out;
   }
 
-  /* line 2664, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2664, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     -webkit-transform: translateY(700px);
     -ms-transform: translateY(700px);
@@ -19459,7 +19459,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2672, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 2672, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .hinge {
   -webkit-animation-name: hinge;
   animation-name: hinge;
@@ -19467,14 +19467,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 @-webkit-keyframes rollIn {
-  /* line 2680, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2680, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-100%) rotate(-120deg);
     transform: translateX(-100%) rotate(-120deg);
   }
 
-  /* line 2686, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2686, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0px) rotate(0deg);
@@ -19483,7 +19483,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes rollIn {
-  /* line 2694, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2694, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-100%) rotate(-120deg);
@@ -19491,7 +19491,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(-100%) rotate(-120deg);
   }
 
-  /* line 2701, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2701, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0px) rotate(0deg);
@@ -19500,7 +19500,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2709, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 2709, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .rollIn {
   -webkit-animation-name: rollIn;
   animation-name: rollIn;
@@ -19508,14 +19508,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 @-webkit-keyframes rollOut {
-  /* line 2717, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2717, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 1;
     -webkit-transform: translateX(0px) rotate(0deg);
     transform: translateX(0px) rotate(0deg);
   }
 
-  /* line 2723, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2723, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateX(100%) rotate(120deg);
@@ -19524,7 +19524,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes rollOut {
-  /* line 2731, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2731, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   0% {
     opacity: 1;
     -webkit-transform: translateX(0px) rotate(0deg);
@@ -19532,7 +19532,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(0px) rotate(0deg);
   }
 
-  /* line 2738, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+  /* line 2738, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
   100% {
     opacity: 0;
     -webkit-transform: translateX(100%) rotate(120deg);
@@ -19541,7 +19541,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2746, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/plugins.scss */
+/* line 2746, /home/jcaballero/Software_Development/BambuSolar/BambuSolarAdmin/app/assets/stylesheets/website/animate.css */
 .rollOut {
   -webkit-animation-name: rollOut;
   animation-name: rollOut;
