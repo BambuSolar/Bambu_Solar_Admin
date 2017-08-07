@@ -60,7 +60,7 @@
                             <% @contact_info.emails.split(',').to_a.each do |e| %>
 
                                 <div class="col-xs-12 col-sm-12 text-center">
-                                  <a href="mailto:<%= e %>?subject=Consulta" class="text-lowercase text_email">
+                                  <a href="mailto:<%= e %>" class="text-lowercase text_email">
                                       <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                       <%= e %>
                                     </a>
@@ -79,7 +79,7 @@
                           <div class="row">
                             <div class="col-sm-12 text-center">
                               <%= link_to @contact_info.facebook_link, :target => '_blank' do %>
-                                  <img class="logo" src="<%= path_to_image('website/logo_face.png')%>">
+                                  <img class="logo" src="<%= path_to_image('website/logo_face.png')%>" alt="logo">
                               <% end %>
                             </div>
                           </div>
@@ -91,7 +91,7 @@
                         <div class="single_info_text">
                           <h3>Tienda Mercado Libre</h3>
                           <%= link_to @contact_info.mercadolibre_link, :target => '_blank' do %>
-                            <img class="logo" src="<%= path_to_image('website/logo_meli.png')%>">
+                            <img class="logo" src="<%= path_to_image('website/logo_meli.png')%>" alt="logo">
                           <% end %>
                         </div>
                       </div>
