@@ -97,7 +97,7 @@ class ProductTypesController < SecurityController
 
     respond_to do |format|
       if @product_type.update(product_type_params)
-        format.html { redirect_to @product_type, notice: 'El tipo de producto ha sido editado correctamente.' }
+        format.html { redirect_to product_types_path, notice: 'El tipo de producto ha sido editado correctamente.' }
         format.json { render :show, status: :ok, location: @product_type }
       else
         format.html { render :edit }

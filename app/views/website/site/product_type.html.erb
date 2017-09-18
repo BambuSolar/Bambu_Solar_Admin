@@ -148,7 +148,7 @@
 
                     <h3> <%= p_c[:name] %> </h3>
 
-                    <% if p_c[:categories] %>
+                    <% if p_c[:categories] && @product_type.allow_category %>
 
                         <div class="list_product_categories">
 
@@ -166,17 +166,17 @@
 
                     <% end %>
 
-                    <div class="<%= p_c[:categories] ? 'product_category_container' : '' %>">
+                    <div class="<%= p_c[:categories] && @product_type.allow_category ? 'product_category_container' : '' %>">
 
                       <% @product_sub_types.each do |sub_type| %>
 
-                          <% if p_c[:categories] %>
+                          <% if p_c[:categories]  && @product_type.allow_category %>
 
                               <% products_categories = ProductCategoryProductSubType.where(:product_sub_type_id => sub_type.id).select(:product_category_id).map(&:product_category_id) %>
 
                           <% end %>
 
-                          <div class="<%= p_c[:categories] ?  products_categories.map! {|id| "category_id_#{id}" }.join(' ') : '' %>">
+                          <div class="<%= p_c[:categories] && @product_type.allow_category ?  products_categories.map! {|id| "category_id_#{id}" }.join(' ') : '' %>">
 
                             <% product_s_ts = products.where(:sub_type_id => sub_type.id) %>
 
