@@ -59,46 +59,6 @@
       <div class="col-sm-12">
         <div class="form-group">
           <div class="form-line">
-            <%= f.text_field :address_text,
-                             class: 'form-control',
-                             placeholder: 'Link a GoogleMaps',
-                             required: '',
-                             :'aria-required'=>'true',
-                             :'aria-invalid'=>'true',
-                             maxlength:'250',
-                             minlength:'5',
-                             autocomplete: false,
-                             value: @contact_info.link_to_map
-            %>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row clearfix">
-      <div class="col-sm-12">
-        <div class="form-group">
-          <div class="form-line">
-            <%= f.text_field :address_text,
-                             class: 'form-control',
-                             placeholder: 'Dirección',
-                             required: '',
-                             :'aria-required'=>'true',
-                             :'aria-invalid'=>'true',
-                             maxlength:'100',
-                             minlength:'5',
-                             autocomplete: false,
-                             value: @contact_info.address_text
-            %>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row clearfix">
-      <div class="col-sm-12">
-        <div class="form-group">
-          <div class="form-line">
             <%= f.text_field :telephones,
                              class: 'form-control',
                              placeholder: 'Teléfonos',
