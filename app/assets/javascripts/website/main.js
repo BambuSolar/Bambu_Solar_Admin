@@ -6,77 +6,6 @@ jQuery(document).ready(function ($) {
 
 
 
-    /*---------------------------------------------*
-     * Mobile menu
-     ---------------------------------------------*/
-    $('#bs-example-navbar-collapse-1').find('a[href*=\\#]:not([href=\\#])').click(function () {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: (target.offset().top)
-                }, 1000);
-                if ($('.navbar-toggle').css('display') != 'none') {
-                    $(this).parents('.container').find(".navbar-toggle").trigger("click");
-                }
-                return false;
-            }
-        }
-    });
-
-/*
-    $('.ourWorkSlider').slick({
-        centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 3,
-        autoplay: true,
-        autoplaySpeed: 1000,
-        dots: true,
-        arrows: false,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 1
-                }
-            }]
-    });
-*/
-    /*---------------------------------------------*
-     * STICKY scroll
-     ---------------------------------------------*/
-
-    $("").localScroll({
-        "offset":{
-            "top": "500px"
-        }
-    });
-
-    /*---------------------------------------------*
-     * WOW
-     ---------------------------------------------*/
-
-    var wow = new WOW({
-        mobile: false // trigger animations on mobile devices (default is true)
-    });
-    wow.init();
-
-
-
-
 // main-menu-scroll
 
     $(window).scroll(function () {
@@ -110,7 +39,7 @@ jQuery(document).ready(function ($) {
     $('.scrooldown a').bind('click', function () {
         $('html , body').stop().animate({
             scrollTop: $($(this).attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
+        }, 2000, 'easeInOutExpo');
         event.preventDefault();
     });
 

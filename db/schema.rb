@@ -11,13 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170726024640) do
+ActiveRecord::Schema.define(version: 20170918020137) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "contact_infos", force: :cascade do |t|
-    t.text     "iframe_map"
     t.string   "telephones"
     t.string   "emails"
     t.string   "facebook_link"
@@ -25,6 +24,8 @@ ActiveRecord::Schema.define(version: 20170726024640) do
     t.string   "address_text"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
+    t.integer  "picture_id"
+    t.string   "link_to_map"
   end
 
   create_table "home_website_configs", force: :cascade do |t|
@@ -173,8 +174,8 @@ ActiveRecord::Schema.define(version: 20170726024640) do
   add_foreign_key "member_teams", "pictures"
   add_foreign_key "ourworks", "pictures"
   add_foreign_key "product_categories", "product_types"
-  add_foreign_key "product_category_products", "product_categories"
-  add_foreign_key "product_category_products", "product_sub_types"
+  add_foreign_key "product_category_product_sub_types", "product_categories"
+  add_foreign_key "product_category_product_sub_types", "product_sub_types"
   add_foreign_key "product_pictures", "pictures"
   add_foreign_key "product_pictures", "products"
   add_foreign_key "product_types", "pictures"

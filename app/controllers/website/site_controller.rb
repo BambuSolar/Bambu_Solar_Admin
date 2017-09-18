@@ -62,6 +62,12 @@ class  Website::SiteController < ApplicationController
 
   end
 
+  def ourworks_index
+
+    @ourworks = Ourwork.all
+
+  end
+
   private
 
   def set_environment

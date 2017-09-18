@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Bambú Energía en Movimiento</title>
-  <meta name="Keywords" Content="energia_solar, calefon solar, mendoza, argentina, bambu, energía en movimiento, energia_renovable, colector solar, agua caliente solar, solar energy, losa radiante, termica, fotovoltaica, solar , medioambiente ,calefaccionar"/>
-  <meta name="description" CONTENT="<%= @home_website_config.welcome_message %>"/>
+  <meta name="Keywords" Content="energia_solar, calefon solar, mendoza, argentina, Bambú, Energía, Bambú Energía en Movimiento, bambu, energía en movimiento, energia_renovable, colector solar, agua caliente solar, solar energy, losa radiante, termica, fotovoltaica, solar , medioambiente ,calefaccionar"/>
+  <meta name="description" content="<%= @home_website_config.welcome_message.truncate(160) %>"/>
   <meta name="Revisit" content="10 days"/>
   <meta name="Revisit-After" content="2 days">
   <!-- Open Graph data -->
@@ -14,83 +14,9 @@
   <meta property="og:image" content="<%= @home_website_config.horizontal_picture.photo_url %>" />
   <meta property="og:description" content="<%= @home_website_config.welcome_message %>" />
   <meta property="og:url" content="http://www.bambusolar.com" />
-  <meta name="description" content="<%= @home_website_config.welcome_message %>">
   <link rel="icon" type="image/x-icon" href="<%= path_to_image('website/favicon.ico')%>" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style type="text/css">
-
-    .preloader {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #fefefe;
-      z-index: 99999;
-      height: 100%;
-      width: 100%;
-      overflow: hidden !important;
-    }
-
-    .preloader > div{
-      position: absolute;
-      top: 50%;
-      margin-top: -60px;
-    }
-
-    .preloader > div > div{
-      text-align: center;
-    }
-
-    .preloader .lightbulb{
-      top: -103px;
-      animation: pulse2 5s infinite linear;
-      opacity: 1;
-    }
-
-    .preloader .sun{
-      animation: pulse 5s infinite linear;
-      opacity: 0;
-    }
-
-    .preloader .sun img{
-      animation: rotateR 12s infinite linear;
-    }
-
-    @keyframes pulse {
-      0% {
-
-        opacity: 0;
-
-      }
-      50% {
-
-        opacity: 1;
-
-      }
-    }
-
-    @keyframes pulse2 {
-      0% {
-
-        opacity: 1;
-
-      }
-      50% {
-
-        opacity: 0;
-
-      }
-    }
-    img {
-      -moz-user-select: none;
-      -webkit-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      -webkit-user-drag: none;
-      user-drag: none;
-    }
-  </style>
+  <style type="text/css">.preloader{position:fixed;top:0;left:0;right:0;bottom:0;background-color:#fefefe;z-index:99999;height:100%;width:100%;overflow:hidden!important}.preloader>div{position:absolute;top:50%;margin-top:-60px}.preloader>div>div{text-align:center}.preloader .lightbulb{top:-103px;animation:pulse2 5s infinite linear;opacity:1}.preloader .sun{animation:pulse 5s infinite linear;opacity:0}.preloader .sun img{animation:rotateR 12s infinite linear}@keyframes pulse{0%{opacity:0}50%{opacity:1}}@keyframes pulse2{0%{opacity:1}50%{opacity:0}}img{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;-webkit-user-drag:none;user-drag:none}</style>
   <% if @environment == 'prod' %>
 
       <%= render 'google_tag_head' %>
@@ -108,10 +34,10 @@
   <div class="col-xs-12 col-sm-6 col-sm-offset-3">
     <div class="row">
       <div class="col-xs-12 sun">
-        <img src="<%= path_to_image('website/loader/sun.png')%>" alt="" width="100px;">
+        <img src="<%= path_to_image('website/loader/sun.png')%>" alt="gif loading" width="100px;">
       </div>
       <div class="col-xs-12 lightbulb">
-        <img src="<%= path_to_image('website/loader/lightbulb.gif')%>" alt="" width="100px;">
+        <img src="<%= path_to_image('website/loader/lightbulb.gif')%>" alt="gif loading" width="100px;" >
       </div>
     </div>
   </div>
@@ -135,7 +61,7 @@
                     <span class="icon-bar"></span>
                   </button>
                   <a class="navbar-brand" href="#home">
-                    <img src="<%= path_to_image('website/isologotipo/isologotipo.png')%>"/>
+                    <img src="<%= path_to_image('website/isologotipo/isologotipo.png')%>" alt="logo"/>
                   </a>
                 </div>
 
@@ -147,6 +73,7 @@
                     <li><a href="#home">Inicio</a></li>
                     <li><a href="#who_we_are">¿Quienes somos?</a></li>
                     <li><a href="#products">Productos</a></li>
+                    <li><a href="#ourWork">Experiencia</a></li>
                     <li><a href="#contact">Contacto</a></li>
                   </ul>
 
@@ -167,9 +94,9 @@
     <div class="overlay">
       <div class="home_skew_border">
 
-        <h4>Ingeniería Renovable en Mendoza, Argentina</h4>
+        <h1>Ingeniería Renovable en Mendoza, Argentina</h1>
 
-        <!--
+
         <div class="ribbons" >
           <div class="separator5"></div>
           <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 ">
@@ -179,7 +106,7 @@
                   <a href="<%= r.link %>">
                     <div class="col-xs-4 ribbon">
                       <div class="image">
-                        <img src="<%= r.picture.photo_url%>" width="auto" height="auto">
+                        <img src="<%= r.picture.photo_url%>" width="auto" height="auto" alt="ribbon">
                       </div>
                       <div class="col-xs-12">
                         <%= r.text %>
@@ -190,7 +117,7 @@
             </div>
           </div>
         </div>
-        -->
+
 
         <div class="scrooldown">
           <a href="#who_we_are"><i class="fa fa-angle-down"></i></a>
@@ -208,7 +135,7 @@
             <%= @home_website_config.welcome_message %>
           </h3>
           <div class="separator margin-top-80">
-            <img src="<%= path_to_image('website/isologotipo/logo.jpg')%>">
+            <img src="<%= path_to_image('website/isologotipo/logo.jpg')%>" alt="logo">
           </div>
         </div><!-- End off Head_title -->
       </div>
@@ -240,7 +167,7 @@
                           <% if p_t.picture.nil? %>
                               <img src="<%= path_to_image('website/no-image.png')%>">
                           <% else %>
-                              <%= image_tag p_t.picture.photo_url %>
+                              <%= image_tag p_t.picture.photo_url, alt: p_t.name %>
                           <% end %>
                         </div>
                       </div>
@@ -281,45 +208,21 @@
     <div id="clouds" class="clouds"></div>
   </section>
 
+  <section id="ourWork" class="ourWork fadeIn">
 
-  <!-- Team Section -->
-  <section id="team" class="team fadeIn">
-    <div class="main_team_area">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="head_title text-center">
-              <h2 class="text-title">
-                Contanos cual es tu proyecto
-                <br/>
-                Sabemos de energía solar y queremos compartirlo
-              </h2>
-            </div><!-- End off Head_title -->
+    <div class="head_title text-center">
+      <h2 class="">¡Conocé nuestro trabajo!</h2>
+    </div><!-- End off Head_title -->
+    <div class="ourWorkSlider-container">
+      <div class="ourWorkSlider">
 
-          </div>
-        </div>
       </div>
-    </div><!-- End of container -->
-  </section><!-- End off Team Section -->
-
-  <section id="ourWork" class="ourWork fadeIn" style="display: none">
-    <div class="ourWorkSlider">
-      <% @ourworks.each do |ow|%>
-          <div class="item">
-            <div class="content">
-              <div class="image" style="background-image: url('<%= ow.picture.photo_url %>');"></div>
-              <% if ow.title.to_s.size > 0 %>
-                  <p><%= ow.title.titlecase %></p>
-              <% end %>
-            </div>
-          </div>
-      <% end %>
     </div>
   </section>
 
   <div class="text-center">
     <div class="separator margin-80">
-      <img src="<%= path_to_image('website/isologotipo/logo.jpg')%>">
+      <img src="<%= path_to_image('website/isologotipo/logo.jpg')%>" alt="logo">
     </div>
   </div>
 
@@ -367,9 +270,9 @@
   <a href="#"><i class="fa fa-chevron-up"></i></a>
 </div>
 
-<link href="https://fonts.googleapis.com/css?family=Raleway"/>
+<link type="text/css" href="https://fonts.googleapis.com/css?family=Raleway"/>
 
-<%= stylesheet_link_tag  'website_home', media: 'all', async: true %>
+<%= stylesheet_link_tag  'website_home', media: 'all'%>
 
 <script>
     var bgH = '<%= HomeWebsiteConfig.first.horizontal_picture.photo_url %>';

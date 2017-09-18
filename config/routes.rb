@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'contact_info' => 'contact_infos#index', :as => 'contact_info'
   get 'contact_info/edit' => 'contact_infos#edit', :as => 'edit_contact_info'
   put 'contact_info/edit' => 'contact_infos#update'
+  post 'contact_info/edit' => 'contact_infos#update'
 
   resources :ourworks
 
@@ -48,5 +49,6 @@ Rails.application.routes.draw do
   get '/preview/product_types/:product_type_id/products' => 'website/site#products_index', as: 'preview_products_index'
   get '/preview/product_types/:product_type_id/products/:id' => 'website/site#product_show', as: 'preview_product_show'
   get '/info/products/:id' => 'website/site#product_show', as: 'preview_product_info'
-  
+  get '/info/ourworks' => 'website/site#ourworks_index', as: 'preview_ourworks_index'
+
 end

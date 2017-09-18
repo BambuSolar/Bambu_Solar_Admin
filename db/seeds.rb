@@ -75,3 +75,14 @@ if SocialNetwork.all.count() < 1
   )
 
 end
+
+
+ci = ContactInfo.first
+
+unless ci.nil?
+
+  ci.link_to_map = 'https://www.google.com/maps/place/Bamb%C3%BA+Energ%C3%ADa+en+Movimiento/@-32.903855,-68.838907,17z/data=!4m5!3m4!1s0x0:0x2332fa78be053fbf!8m2!3d-32.9043815!4d-68.8389073?hl=es'
+
+  ci.save!
+
+end

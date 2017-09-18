@@ -28,14 +28,14 @@
 
                             <% @contact_info.telephones.split(',').to_a.each do |t| %>
 
-                                <div class="col-sm-12 text-center">
+                                <div class="col-sm-12">
                                   <div class="col-xs-12 visible-xs-block">
-                                    <a class="text_telephone" href="whatsapp://send?phone=<%= t.to_s.gsub(' ','').gsub('-','').gsub('(','').gsub(')','') %>&text=Hola, tengo una consulta">
+                                    <a class="text_telephone" href="whatsapp://send?phone=<%= t.to_s.gsub(' ','').gsub('-','').gsub('(','').gsub(')','') %>&text=Hola,%20tengo%20una%20consulta">
                                       <i class="fa fa-whatsapp" aria-hidden="true"></i>
                                       <%= t %>
                                     </a>
                                   </div>
-                                  <div class="col-sm-12 hidden-xs text-center">
+                                  <div class="col-sm-12 hidden-xs">
                                     <h4 class="text-lowercase">
                                       <i class="fa fa-whatsapp" aria-hidden="true"></i>
                                       <%= t %>
@@ -59,8 +59,8 @@
 
                             <% @contact_info.emails.split(',').to_a.each do |e| %>
 
-                                <div class="col-xs-12 col-sm-12 text-center">
-                                  <a href="mailto:<%= e %>?subject=Consulta" class="text-lowercase text_email">
+                                <div class="col-xs-12 col-sm-12">
+                                  <a href="mailto:<%= e %>" class="text-lowercase text_email col-sm-12 ">
                                       <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                       <%= e %>
                                     </a>
@@ -79,7 +79,7 @@
                           <div class="row">
                             <div class="col-sm-12 text-center">
                               <%= link_to @contact_info.facebook_link, :target => '_blank' do %>
-                                  <img class="logo" src="<%= path_to_image('website/logo_face.png')%>">
+                                  <img class="logo" src="<%= path_to_image('website/logo_face.png')%>" alt="logo">
                               <% end %>
                             </div>
                           </div>
@@ -91,7 +91,7 @@
                         <div class="single_info_text">
                           <h3>Tienda Mercado Libre</h3>
                           <%= link_to @contact_info.mercadolibre_link, :target => '_blank' do %>
-                            <img class="logo" src="<%= path_to_image('website/logo_meli.png')%>">
+                            <img class="logo" src="<%= path_to_image('website/logo_meli.png')%>" alt="logo">
                           <% end %>
                         </div>
                       </div>
@@ -113,8 +113,10 @@
           </div>
         </div>
 
-        <div class="col-xs-12 col-sm-6 iframe-full-container">
-          <%= @contact_info.iframe_map.html_safe %>
+        <div class="col-xs-12 col-md-6 iframe-full-container">
+          <%= link_to @contact_info.link_to_map, target: '_blank' do %>
+            <%= image_tag @contact_info.picture.photo_url, alt: 'Mapa de Bambu Solar', class: 'map_img'  %>
+          <% end %>
         </div>
 
       </div>
