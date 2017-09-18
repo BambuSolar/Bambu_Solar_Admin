@@ -16,6 +16,31 @@
 
     @contact_info = ContactInfo.first
 
+    unless params['contact_info/edit'][:picture].nil?
+
+
+      unless @contact_info.picture.nil?
+
+        @contact_info.picture.remove_photo!
+
+        @contact_info.picture.save!
+
+        @contact_info.picture.update(photo: params['contact_info/edit'][:picture])
+
+        @contact_info.picture.save!
+
+      else
+
+        p = Picture.new(photo: params['contact_info/edit'][:picture])
+
+        p.save!
+
+        @contact_info.picture = p
+
+      end
+
+    end
+
     respond_to do |format|
       if @contact_info.update(contact_info_params)
         format.html { redirect_to contact_info_path, notice: 'Contact info was successfully updated.' }
@@ -29,6 +54,6 @@
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def contact_info_params
-      params.require('contact_info/edit').permit(:iframe_map, :telephones, :emails, :facebook_link, :mercadolibre_link, :address_text)
+      params.require('contact_info/edit').permit(:iframe_map, :telephones, :emails, :facebook_link, :mercadolibre_link, :address_text, :link_to_map)
     end
 end

@@ -15,14 +15,60 @@
       <div class="col-sm-12">
         <div class="form-group">
           <div class="form-line">
-            <%= f.text_area :iframe_map,
+            <%= f.text_field :link_to_map,
                              class: 'form-control',
-                             placeholder: 'Iframe Google Maps',
+                             placeholder: 'Link Google Maps',
                              required: '',
                              :'aria-required'=>'true',
                              :'aria-invalid'=>'true',
                             :autocomplete => :off,
-                             value: @contact_info.iframe_map
+                             value: @contact_info.link_to_map
+            %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+
+          <label>Imágen de Mapa</label>
+
+          <% unless @contact_info.picture.nil?  %>
+              <%= image_tag @contact_info.picture.photo_url, style: '',  class: 'img-thumbnail center-block picture_vertical_form' %>
+          <% else %>
+              <img class="img-thumbnail picture_vertical_form center-block hidden">
+          <% end %>
+          <div class="form-line input-group">
+
+            <%= f.file_field :picture, class:'file img_form', style:'display:none' %>
+
+            <span class="input-group-btn">
+                    <button class="browse btn btn-primary" type="button">
+                      <i class="material-icons">insert_photo</i>
+                    </button>
+                </span>
+            <input type="text" class="form-control" disabled placeholder="Seleccione un imágen" value="<%= (@contact_info.picture.nil? ? '' : @contact_info.picture.photo_identifier ) %>">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <div class="form-line">
+            <%= f.text_field :address_text,
+                             class: 'form-control',
+                             placeholder: 'Link a GoogleMaps',
+                             required: '',
+                             :'aria-required'=>'true',
+                             :'aria-invalid'=>'true',
+                             maxlength:'250',
+                             minlength:'5',
+                             autocomplete: false,
+                             value: @contact_info.link_to_map
             %>
           </div>
         </div>
@@ -132,10 +178,10 @@
     </div>
 
     <div class="row">
-      <div class="col-xs-6 col-sm-4">
+      <div class="col-xs-6 col-sm-">
         <button type="submit" class="btn btn-primary m-t-15 waves-effect btn-block teal">Guardar</button>
       </div>
-      <div class="col-xs-6 col-sm-4">
+      <div class="col-xs-6 col-sm-3">
         <%= link_to 'Atrás', contact_info_path, class: 'btn btn-default m-t-15 waves-effect btn-block' %>
       </div>
     </div>
