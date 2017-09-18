@@ -38,7 +38,7 @@ class  Website::SiteController < ApplicationController
 
     @product_type = ProductType.find(params[:id])
 
-    @categories = ProductCategory.where(product_type_id: @product_type.id).order(:name)
+    @categories = ProductCategory.where(product_type_id: @product_type.id).order(:order)
 
     @product_sub_types = ProductSubType.where(product_type_id: @product_type.id).order(:order)
 

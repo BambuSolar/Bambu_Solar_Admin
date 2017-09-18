@@ -19,6 +19,23 @@
       </div>
     </div>
 
+    <div class="row clearfix">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <div class="form-line">
+            <%= f.number_field :order,
+                               class: 'form-control',
+                               placeholder: 'Orden',
+                               required: 'required',
+                               :'aria-required'=>'true',
+                               min: 0,
+                               step: 1
+            %>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <% if @product_category.id %>
 
         <ul class="list-group">
