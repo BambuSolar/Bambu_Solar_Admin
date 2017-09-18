@@ -159,3 +159,4 @@ function set_select_product_category(p_c_id) {
     $('.product_category_' + p_c_id).addClass('selected');
 
 }
+;

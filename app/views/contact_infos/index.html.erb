@@ -88,9 +88,19 @@
                 <h4 class="list-group-item-heading">Mapa</h4>
               </div>
               <div class="panel-body">
-                <div class="map-container">
-                <%= @contact_info.iframe_map.html_safe %>
-                </div>
+
+                <%= link_to @contact_info.link_to_map, target: '_blank' do %>
+
+                    <p class="list-group-item-text">
+                      <% if @contact_info.picture.nil? %>
+                          <i>Sin imágen cargada</i>
+                      <% else %>
+                          <%= image_tag @contact_info.picture.photo_url, class: 'picture_horizontal_form center-block' %>
+                      <% end %>
+                    </p>
+
+                <% end %>
+
               </div>
             </div>
           </div>
