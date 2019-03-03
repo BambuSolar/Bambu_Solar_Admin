@@ -33,6 +33,7 @@ $(function () {
         // Callbacks
         beforeOpen: function() {
             $('#cover_modal').show();
+            $('#product_modal').show();
             $.getJSON('/info/products/' + product_id + '.json', function (data) {
                 render_product_modal(data);
                 $('#product_modal').find('.modal-loading').hide();
@@ -43,6 +44,7 @@ $(function () {
         },
         beforeClose: function() {
             $('#cover_modal').hide();
+            $('#product_modal').hide();
         },
         afterClose: function() {
             $('#product_modal').find('.modal-content').hide();
@@ -139,9 +141,9 @@ function render_product_modal(product) {
     $('#product_modal').find('p.description').text(product.description);
 
     if(!product.to_quote) {
-        $('#product_modal').find('p.price').text(product.price);
+        $('#product_modal').find('button.price').text(product.price);
     }else{
-        $('#product_modal').find('p.price').text('A cotizar');
+        $('#product_modal').find('button.price').text('A cotizar');
     }
     $('#product_modal').find('div.modal-content').find('div.description_detail').html(product.description_detail);
 
