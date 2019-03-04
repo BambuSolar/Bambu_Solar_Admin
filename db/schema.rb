@@ -11,10 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170918031159) do
+ActiveRecord::Schema.define(version: 20190302211531) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "hstore"
 
   create_table "contact_infos", force: :cascade do |t|
     t.string   "telephones"
@@ -26,6 +27,13 @@ ActiveRecord::Schema.define(version: 20170918031159) do
     t.datetime "updated_at",        null: false
     t.integer  "picture_id"
     t.string   "link_to_map"
+  end
+
+  create_table "general_information", force: :cascade do |t|
+    t.string   "demonstrative_video"
+    t.string   "catalog"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
   end
 
   create_table "home_website_configs", force: :cascade do |t|
@@ -90,8 +98,8 @@ ActiveRecord::Schema.define(version: 20170918031159) do
     t.datetime "updated_at",          null: false
   end
 
-  add_index "product_category_product_sub_types", ["product_category_id"], name: "index_product_category_products_on_product_category_id", using: :btree
-  add_index "product_category_product_sub_types", ["product_sub_type_id"], name: "index_product_category_products_on_product_sub_type_id", using: :btree
+  add_index "product_category_product_sub_types", ["product_category_id"], name: "index_product_category_product_sub_types_on_product_category_id", using: :btree
+  add_index "product_category_product_sub_types", ["product_sub_type_id"], name: "index_product_category_product_sub_types_on_product_sub_type_id", using: :btree
 
   create_table "product_pictures", force: :cascade do |t|
     t.integer  "product_id"
@@ -133,12 +141,13 @@ ActiveRecord::Schema.define(version: 20170918031159) do
     t.boolean  "enabled"
     t.integer  "product_type_id"
     t.integer  "picture_id"
-    t.datetime "created_at",                             null: false
-    t.datetime "updated_at",                             null: false
+    t.datetime "created_at",                              null: false
+    t.datetime "updated_at",                              null: false
     t.string   "url_video_youtube"
-    t.string   "classification",     default: "product"
+    t.string   "classification",      default: "product"
     t.integer  "sub_type_id"
-    t.boolean  "to_quote",           default: false
+    t.boolean  "to_quote",            default: false
+    t.string   "installation_manual"
   end
 
   add_index "products", ["picture_id"], name: "index_products_on_picture_id", using: :btree

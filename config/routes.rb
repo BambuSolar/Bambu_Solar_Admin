@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   get 'home_website_config/edit' => 'home_website_configs#edit', :as => 'edit_home_website_config'
   put 'home_website_config/edit' => 'home_website_configs#update'
 
+  get 'general_information' => 'general_information#index', :as => 'general_information'
+  get 'general_information/edit' => 'general_information#edit', :as => 'edit_general_information'
+  put 'general_information/edit' => 'general_information#update'
+
   get 'contact_info' => 'contact_infos#index', :as => 'contact_info'
   get 'contact_info/edit' => 'contact_infos#edit', :as => 'edit_contact_info'
   put 'contact_info/edit' => 'contact_infos#update'

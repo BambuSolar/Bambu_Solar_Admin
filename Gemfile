@@ -1,10 +1,10 @@
-source 'https://rubygems.org'
-
+source 'http://www.rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+ruby '2.6.0'
+gem 'rails', '4.2.10'
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 0.15'
+gem 'pg', '0.20'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -55,7 +55,7 @@ gem 'uuidtools'
 
 gem 'sprockets'
 
-gem 'sass', '~> 3.2.0'
+gem 'sass'
 
 gem 'fog-aws'
 
@@ -68,3 +68,5 @@ gem 'will_paginate', '~> 3.1.0'
 gem 'will_paginate-bootstrap'
 
 gem 'mini_magick'
+
+gem 'nokogiri'

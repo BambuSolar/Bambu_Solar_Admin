@@ -1,0 +1,46 @@
+<%= form_for('general_information/edit', html: {:method => :put, novalidate: 'novalidate', class: 'form_validation'}) do |f| %>
+
+  <div class="row clearfix">
+    <div class="col-sm-12">
+      <div class="form-group">
+        <div class="form-line">
+          <label>Video Demostrativo</label>
+          <%= f.text_field :demonstrative_video,
+                           class: 'form-control',
+                           placeholder: 'Video Demostratico',
+                           value: @general_information.demonstrative_video
+          %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row clearfix">
+    <div class="col-sm-12">
+      <div class="form-group">
+        <div class="form-line input-group">
+
+          <%= f.file_field :catalog, class:'file', style:'display:none' %>
+
+          <span class="input-group-btn">
+                    <button class="browse btn btn-primary" type="button">
+                      <i class="material-icons">cloud_upload</i>
+                    </button>
+                </span>
+          <input type="text" class="form-control" disabled placeholder="Seleccione un imágen"
+                 value="<%= (@general_information.catalog.nil? ? '' : @general_information.catalog_identifier ) %>">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-6 col-sm-4">
+      <button type="submit" class="btn btn-primary m-t-15 waves-effect btn-block teal">Guardar</button>
+    </div>
+    <div class="col-xs-6 col-sm-4">
+      <%= link_to 'Atrás', general_information_url, class: 'btn btn-default m-t-15 waves-effect btn-block' %>
+    </div>
+  </div>
+
+<% end %>
