@@ -8,12 +8,75 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Bambú Energía en Movimiento</title>
   <meta name="description" content="">
-  <link rel="icon" type="image/ico" href="<%= path_to_image('website/favicon.ico')%>" />
+  <link rel="icon" type="image/ico" href="<%= path_to_image('website/favicon.ico') %>"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style type="text/css">.preloader{position:fixed;top:0;left:0;right:0;bottom:0;background-color:#fefefe;z-index:99999;height:100%;width:100%;overflow:hidden!important}.preloader>div{position:absolute;top:50%;margin-top:-60px}.preloader>div>div{text-align:center}.preloader .lightbulb{top:-103px;animation:pulse2 5s infinite linear;opacity:1}.preloader .sun{animation:pulse 5s infinite linear;opacity:0}.preloader .sun img{animation:rotateR 12s infinite linear}@keyframes pulse{0%{opacity:0}50%{opacity:1}}@keyframes pulse2{0%{opacity:1}50%{opacity:0}}img{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;-webkit-user-drag:none;user-drag:none}</style>
+  <style type="text/css">.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fefefe;
+    z-index: 99999;
+    height: 100%;
+    width: 100%;
+    overflow: hidden !important
+  }
+
+  .preloader > div {
+    position: absolute;
+    top: 50%;
+    margin-top: -60px
+  }
+
+  .preloader > div > div {
+    text-align: center
+  }
+
+  .preloader .lightbulb {
+    top: -103px;
+    animation: pulse2 5s infinite linear;
+    opacity: 1
+  }
+
+  .preloader .sun {
+    animation: pulse 5s infinite linear;
+    opacity: 0
+  }
+
+  .preloader .sun img {
+    animation: rotateR 12s infinite linear
+  }
+
+  @keyframes pulse {
+    0% {
+      opacity: 0
+    }
+    50% {
+      opacity: 1
+    }
+  }
+
+  @keyframes pulse2 {
+    0% {
+      opacity: 1
+    }
+    50% {
+      opacity: 0
+    }
+  }
+
+  img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none
+  }</style>
   <% if @environment == 'prod' %>
 
-      <%= render 'google_tag_head' %>
+    <%= render 'google_tag_head' %>
 
   <% end %>
 </head>
@@ -22,10 +85,10 @@
   <div class="col-xs-12 col-sm-6 col-sm-offset-3">
     <div class="row">
       <div class="col-xs-12 sun">
-        <img src="<%= path_to_image('website/loader/sun.png')%>" alt="" width="100px;">
+        <img src="<%= path_to_image('website/loader/sun.png') %>" alt="" width="100px;">
       </div>
       <div class="col-xs-12 lightbulb">
-        <img src="<%= path_to_image('website/loader/lightbulb.gif')%>" alt="" width="100px;">
+        <img src="<%= path_to_image('website/loader/lightbulb.gif') %>" alt="" width="100px;">
       </div>
     </div>
   </div>
@@ -50,7 +113,7 @@
                     <span class="icon-bar"></span>
                   </button>
                   <a class="navbar-brand" href="/">
-                    <img src="<%= path_to_image('website/isologotipo/isologotipo.png')%>"/>
+                    <img src="<%= path_to_image('website/isologotipo/isologotipo.png') %>"/>
                   </a>
                 </div>
 
@@ -66,15 +129,15 @@
                     </li>
 
                     <% @product_types.each do |p_t| %>
-                        <li class="visible-xs-block">
-                          <a href="/productos/<%= I18n.transliterate(p_t.name.split(' ')[0].to_s.downcase) %>"
-                             <% if p_t.id == @product_type.id %>
-                             class="active"
-                             <% end %>
-                             >
-                            <%= p_t.name.scrub %>
-                          </a>
-                        </li>
+                      <li class="visible-xs-block">
+                        <a href="/productos/<%= I18n.transliterate(p_t.name.split(' ')[0].to_s.downcase) %>"
+                           <% if p_t.id == @product_type.id %>
+                           class="active"
+                           <% end %>
+                           >
+                          <%= p_t.name.scrub %>
+                        </a>
+                      </li>
                     <% end %>
                   </ul>
 
@@ -92,14 +155,14 @@
 
 
   <div id="slider_type_products" class="hidden-xs">
-    <div class="row" >
+    <div class="row">
       <% @product_types.each do |p_t| %>
-          <a href="/productos/<%= I18n.transliterate(p_t.name.split(' ')[0].to_s.downcase) %>"
-             class="col-xs-4 <%= p_t.id == @product_type.id ? 'active' : '' %>"
-             id="type_product_<%= I18n.transliterate(p_t.name.downcase.gsub(' ', '_')) %>">
-            <span style="background-image: url('<%= p_t.picture.photo %>')"></span>
-            <p class="title"><%= p_t.name.scrub %></p>
-          </a>
+        <a href="/productos/<%= I18n.transliterate(p_t.name.split(' ')[0].to_s.downcase) %>"
+           class="col-xs-4 <%= p_t.id == @product_type.id ? 'active' : '' %>"
+           id="type_product_<%= I18n.transliterate(p_t.name.downcase.gsub(' ', '_')) %>">
+          <span style="background-image: url('<%= p_t.picture.photo %>')"></span>
+          <p class="title"><%= p_t.name.scrub %></p>
+        </a>
       <% end %>
     </div>
   </div>
@@ -111,128 +174,128 @@
       <div class="subtitle">
 
       </div>
-      <div class="separator"><img src="<%= path_to_image('website/isologotipo/logo.png')%>"></div>
+      <div class="separator"><img src="<%= path_to_image('website/isologotipo/logo.png') %>"></div>
     </div><!-- End off Head_title -->
 
     <% if @products.size > 0 %>
 
-        <% if @product_type.have_classification %>
+      <% if @product_type.have_classification %>
 
-            <%
+        <%
 
-              product_classifications = [
-                  {
-                      :classification => 'product',
-                      :name => 'Productos',
-                      :categories => true
-                  },
-                  {
-                      :classification => 'accessory',
-                      :name => 'Accesorios',
-                      :categories => false
-                  },
-                  {
-                      :classification => 'replacement',
-                      :name => 'Respuestos',
-                      :categories => false
-                  }
-              ]
+          product_classifications = [
+              {
+                  :classification => 'product',
+                  :name => 'Productos',
+                  :categories => true
+              },
+              {
+                  :classification => 'accessory',
+                  :name => 'Accesorios',
+                  :categories => false
+              },
+              {
+                  :classification => 'replacement',
+                  :name => 'Respuestos',
+                  :categories => false
+              }
+          ]
 
-            %>
+        %>
 
-            <% product_classifications.each do |p_c| %>
+        <% product_classifications.each do |p_c| %>
 
-                <% products = @products.where(classification: p_c[:classification] ) %>
+          <% products = @products.where(classification: p_c[:classification]) %>
 
-                <% if products.size > 0 %>
+          <% if products.size > 0 %>
 
-                    <h3> <%= p_c[:name] %> </h3>
+            <h3> <%= p_c[:name] %> </h3>
 
-                    <% if p_c[:categories] && @product_type.allow_category %>
+            <% if p_c[:categories] && @product_type.allow_category %>
 
-                        <div class="list_product_categories">
+              <div class="list_product_categories">
 
-                          <ul>
-                        <% @categories.each do |c| %>
+                <ul>
+                  <% @categories.each do |c| %>
 
-                            <li class="product_category_<%= c.id %>" data-id="<%= c.id %>" ><%= c.name %></li>
+                    <li class="product_category_<%= c.id %>" data-id="<%= c.id %>"><%= c.name %></li>
 
-                        <% end %>
+                  <% end %>
 
-                          </ul>
+                </ul>
 
-                        </div>
+              </div>
 
-
-                    <% end %>
-
-                    <div class="<%= p_c[:categories] && @product_type.allow_category ? 'product_category_container' : '' %>">
-
-                      <% @product_sub_types.each do |sub_type| %>
-
-                          <% if p_c[:categories]  && @product_type.allow_category %>
-
-                              <% products_categories = ProductCategoryProductSubType.where(:product_sub_type_id => sub_type.id).select(:product_category_id).map(&:product_category_id) %>
-
-                          <% end %>
-
-                          <div class="<%= p_c[:categories] && @product_type.allow_category ?  products_categories.map! {|id| "category_id_#{id}" }.join(' ') : '' %>">
-
-                            <% product_s_ts = products.where(:sub_type_id => sub_type.id) %>
-
-                            <% if product_s_ts.size > 0 %>
-
-                                <div class="sub_type_products_container">
-
-                                  <h4><%= sub_type.name %></h4>
-
-                                  <div class="row">
-
-                                    <% product_s_ts.each do |p| %>
-
-                                        <%= render 'product_item', :object => [@p = p] %>
-
-                                    <% end %>
-
-                                  </div>
-
-                                </div>
-
-                            <% end %>
-
-                          </div>
-
-                      <% end %>
-
-                    </div>
-
-                    <div class="row">
-
-                      <% products.where(:sub_type_id => nil).each do |p| %>
-
-                          <%= render 'product_item', :object => [@p = p] %>
-
-                      <% end %>
-
-                    </div>
-
-                <% end %>
 
             <% end %>
 
-        <% else %>
-            <div class="row">
-              <% @products.each do |p| %>
-                  <%= render 'product_item', :object => [@p = p] %>
+            <div class="<%= p_c[:categories] && @product_type.allow_category ? 'product_category_container' : '' %>">
+
+              <% @product_sub_types.each do |sub_type| %>
+
+                <% if p_c[:categories] && @product_type.allow_category %>
+
+                  <% products_categories = ProductCategoryProductSubType.where(:product_sub_type_id => sub_type.id).select(:product_category_id).map(&:product_category_id) %>
+
+                <% end %>
+
+                <div class="<%= p_c[:categories] && @product_type.allow_category ? products_categories.map! {|id| "category_id_#{id}"}.join(' ') : '' %>">
+
+                  <% product_s_ts = products.where(:sub_type_id => sub_type.id) %>
+
+                  <% if product_s_ts.size > 0 %>
+
+                    <div class="sub_type_products_container">
+
+                      <h4><%= sub_type.name %></h4>
+
+                      <div class="row">
+
+                        <% product_s_ts.each do |p| %>
+
+                          <%= render 'product_item', :object => [@p = p] %>
+
+                        <% end %>
+
+                      </div>
+
+                    </div>
+
+                  <% end %>
+
+                </div>
+
               <% end %>
+
             </div>
+
+            <div class="row">
+
+              <% products.where(:sub_type_id => nil).each do |p| %>
+
+                <%= render 'product_item', :object => [@p = p] %>
+
+              <% end %>
+
+            </div>
+
+          <% end %>
+
         <% end %>
+
+      <% else %>
+        <div class="row">
+          <% @products.each do |p| %>
+            <%= render 'product_item', :object => [@p = p] %>
+          <% end %>
+        </div>
+      <% end %>
 
     <% else %>
 
-        <div class="jumbotron margin-top-40">
-          <h4>No existen productos cargados para esta categoría</h4>
-        </div>
+      <div class="jumbotron margin-top-40">
+        <h4>No existen productos cargados para esta categoría</h4>
+      </div>
 
     <% end %>
 
@@ -250,12 +313,12 @@
 <div class="cover_modal" id="cover_modal" data-id=""></div>
 <div id="product_modal">
   <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
-  <div  id="btn-close-modal" class="close-product_modal">
-    <img class="closebt" src="<%= path_to_image('website/closebt.png')%>">
+  <div id="btn-close-modal" class="close-product_modal">
+    <img class="closebt" src="<%= path_to_image('website/closebt.png') %>">
   </div>
 
   <div class="modal-loading">
-    <img src="<%= path_to_image('website/ajax-loader.gif')%>">
+    <img src="<%= path_to_image('website/ajax-loader.gif') %>">
   </div>
 
   <div class="modal-content" style="display: none">
@@ -289,6 +352,16 @@
       </div>
     </div>
 
+    <% if @general_information.demonstrative_video.to_s.size > 0 %>
+
+      <div class="demonstrative_videos">
+        <iframe src="<%= @general_information.demonstrative_video %>"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+      </div>
+
+    <% end %>
+
   </div>
 </div>
 
@@ -298,13 +371,13 @@
 
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" async="true">
 
-<%= stylesheet_link_tag  'website_product_type', media: 'all', async: true  %>
+<%= stylesheet_link_tag 'website_product_type', media: 'all', async: true %>
 
 <%= javascript_include_tag 'website_product_type', async: true %>
 
 <% if @environment == 'prod' %>
 
-    <%= render 'google_tag_body' %>
+  <%= render 'google_tag_body' %>
 
 <% end %>
 

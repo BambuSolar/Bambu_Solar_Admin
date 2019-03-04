@@ -46,6 +46,8 @@ class  Website::SiteController < ApplicationController
 
     @contact_info = ContactInfo.first
 
+    @general_information = GeneralInformation.first
+
     gon.products = @products.select(:id)
 
   end

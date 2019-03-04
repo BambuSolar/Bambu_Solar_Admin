@@ -89,5 +89,19 @@ hwc = HomeWebsiteConfig.first
 
 unless hwc.nil?
   hwc.welcome_message = "Hola"
+
+  hwc.save!
+end
+
+gi = GeneralInformation.all
+
+if gi.size < 1
+
+  gi = GeneralInformation.new
+
+  gi.catalog = ''
+  gi.demonstrative_video = ''
+
+  gi.save!
 end
 
